@@ -1,0 +1,1446 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"salud",
+				"salud-y-bienestar"
+			],
+			[
+				"BACK",
+				"background-color"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"labo",
+				"Laboratoria"
+			],
+			[
+				"text-decorat",
+				"text-decoration"
+			],
+			[
+				"text-",
+				"text-left"
+			],
+			[
+				"backgor",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"tra",
+				"transition"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"th",
+				"thead\tTag"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"marign",
+				"margin-right"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"Back",
+				"background-color"
+			],
+			[
+				"block",
+				"inline-block"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"PADDING",
+				"padding-left"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"inst",
+				"Instagram"
+			],
+			[
+				"insa",
+				"Instagram"
+			],
+			[
+				"face",
+				"Facebook"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"col-",
+				"col-xs-2"
+			],
+			[
+				"shado",
+				"box-shadow"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"marign-",
+				"margin-bottom"
+			],
+			[
+				"Pal",
+				"Play"
+			],
+			[
+				"background-",
+				"background-color"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"Samsung",
+				"samsung"
+			],
+			[
+				"puede",
+				"puede-esperar"
+			],
+			[
+				"font-size",
+				"font-size"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"st",
+				"style\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 247708,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "home.html",
+			"settings":
+			{
+				"buffer_size": 289455,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 147.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"synt html",
+				"Set Syntax: HTML"
+			],
+			[
+				"syn htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"SYNT HTML",
+				"Set Syntax: HTML"
+			],
+			[
+				"synt htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"synt css",
+				"Set Syntax: CSS"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"snipp",
+				"Snippet: html5"
+			],
+			[
+				"synt js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"INDEN",
+				"ReIndent: to 2"
+			],
+			[
+				"CSS",
+				"CleanCSS: Clean current file"
+			],
+			[
+				"SYNT",
+				"Set Syntax: CSS"
+			],
+			[
+				"HTML ",
+				"HTMLPrettify"
+			],
+			[
+				"CLEA",
+				"CleanCSS: Clean current file"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"synta css",
+				"Set Syntax: CSS"
+			],
+			[
+				"rein",
+				"ReIndent: to 2"
+			],
+			[
+				"html ",
+				"HTMLPrettify"
+			],
+			[
+				"install Packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/assets",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/assets/css"
+	],
+	"file_history":
+	[
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/my-wishlist.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/product-comparison.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/shopping-cart.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/sign-in.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/terms-conditions.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/track-orders.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/home.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/404.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/blog-details.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/blog.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/category-2-back.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/category-2.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/category.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/checkout.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/contact.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/detail.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/detail2-BACK.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/faq.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/home-furniture.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/home2.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/homepage1.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/homepage2.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/detail2.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/assets/css/main.css",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/assets/css/bootstrap.min.css",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/index.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/parts/navigation/sidemenu.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/parts/navigation/sidemenu2.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/parts/product/product-list.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/parts/product/product.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/parts/widgets/sidebar/hot-deals.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/pages/home-furniture.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/pages/home2.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/pages/homepage1.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/pages/homepage2.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/parts/section/blog-slider.php",
+		"/Users/TD156086LDE767E/Library/Application Support/Sublime Text 3/Packages/Inline Google Translate/Default (OSX).sublime-keymap",
+		"/Users/TD156086LDE767E/Library/Application Support/Sublime Text 3/Packages/Inline Google Translate/goTranslate.sublime-settings",
+		"/Users/TD156086LDE767E/Library/Application Support/Sublime Text 3/Packages/User/goTranslate.sublime-settings",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/parts/section/header.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/parts/widgets/header/search-bar.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/parts/navigation/top-bar.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/assets/css/orange.css",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/assets/less/variables.less",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/assets/less/wide-banners.less",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/assets/css/main.css",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/assets/css/orange.css",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/assets/less/variables.less",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/assets/less/wide-banners.less",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/index.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/parts/widgets/sidebar/checkout-progress-sidebar.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/assets/css/blue.css",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/assets/css/dark-green.css",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/assets/css/green.css",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/assets/css/red.css",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/assets/less/checkout.less",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/assets/less/color.less",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/assets/less/general.less",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/HTML/assets/less/shopping-cart.less",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/assets/css/blue.css",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/assets/css/dark-green.css",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/assets/css/green.css",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/assets/css/red.css",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/assets/less/checkout.less",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/assets/less/color.less",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/assets/less/general.less",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/assets/less/shopping-cart.less",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/pages/checkout.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/pages/faq.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/parts/section/blog-write-comment.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/parts/section/checkout-method.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/parts/section/contact-form.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/parts/section/estimate-ship-tax.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/parts/section/faq.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/parts/section/footer.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/parts/section/sign-in.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/parts/section/track-orders.php",
+		"/Users/TD156086LDE767E/Documents/ATT2017/ecommKasuva/PHP/parts/widgets/footer/contact-information.php",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/index.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/noticias/noticias.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/noticias/noticias-populares.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/noticias/el-corazon-de-iot.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/negocios/soluciones/finder-tracker-att/index.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/negocios/partials/header.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/promociones/recargas-especiales.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/promociones.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/servicios/att-cobertura.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/promociones/payday.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/noticias/att-conserva-tu-numero.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/promociones/att-consiguelo-avanzado.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/promociones/att-consiguelo-completo.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/promociones/att-consiguelo-basico.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/img/noticias.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/negocios/soluciones/busqueda-localizacion/index.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/negocios/soluciones/geocontrol/index.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/header.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/negocios/planes/att-internet-con-todo-equipo-propio.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/noticias/att-guia-para-el-becario.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/HTMLNewsletter/agosto2017/Carta 1G.txt",
+		"/Users/TD156086LDE767E/Documents/ATT2017/HTMLNewsletter/agosto2017/Carta 2G.txt",
+		"/Users/TD156086LDE767E/Documents/ATT2017/HTMLNewsletter/agosto2017/carta-1gb.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/HTMLNewsletter/agosto2017/carta-2gb.html",
+		"/Users/TD156086LDE767E/Documents/ATT2017/htmlNEws/carta-cliente-blackberry.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/negocios/index.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/servicios/manchas3.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/legales.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/servicios/portabilidad.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/negocios/css/app.css",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/negocios_back/css/app.css",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/servicios/att-cobertura10Feb.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/puede-esperar.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/puede-esperar/noticias/noticias.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/puede-esperar/noticias/att-promesa-puede-esperar.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/puede-esperar/noticias/att-termino-la-celebracion.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/puede-esperar/noticias/att-lo-demas-puede-esperar.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/puede-esperar/puede-esperar.html",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/consiguelo/views/partials/catalog_filter.php",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/consiguelo/views/partials/equipo.php",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/consiguelo/assets/css/util.carousel.skins.css",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/celulares-att/index.php",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/celulares-att/views/layout/nav.php",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/celulares-att/flight/routes.php",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/celulares-att/flight/views/index.php",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/celulares-att/flight/controllers/Device.php",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/celulares-att/views/partials/table_prepago.php",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/celulares-att/views/single.php",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/celulares-att/views/catalog.php",
+		"/Users/TD156086LDE767E/Documents/ATT2016/site-att/celulares-att/views/partials/body_single.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 181.0,
+		"where_history":
+		[
+			"<open folders>",
+			"<open files>",
+			"/Users/TD156086LDE767E/Documents/ATT2016/site-att/puede-esperar",
+			"/Users/TD156086LDE767E/Documents/ATT2016/site-att/att-consiguelo",
+			"<open folders>",
+			"",
+			"/Users/TD156086LDE767E/Documents/ATT2016/site-att/negocios/",
+			"/Users/TD156086LDE767E/Documents/ATT2016/site-att/",
+			"/Users/TD156086LDE767E/Documents/ATT2016/site-att/celulares-att/",
+			"/Users/TD156086LDE767E/Documents/ATT2016/site-att/tablets/",
+			"/Users/TD156086LDE767E/Documents/ATT2016/site-att/acerca-de-att/",
+			"/Users/TD156086LDE767E/Documents/ATT2016/site-att/",
+			"/Users/TD156086LDE767E/Documents/ATT2016/site-att/acerca-de-att/",
+			"/Users/TD156086LDE767E/Documents/ATT2016/site-att/servicios/",
+			"/Users/TD156086LDE767E/Documents/ATT2016/site-att/acerca-de-att/servicios/",
+			"/Users/TD156086LDE767E/Documents/ATT2016/site-att/acerca-de-att",
+			"/Users/TD156086LDE767E/Documents/ATT2016/site-att/negocios",
+			"",
+			"<open files>",
+			"/Users/TD156086LDE767E/Documents/ATT2016/site-att/",
+			"/Users/TD156086LDE767E/Documents/ATT2016/site-att/negocios/",
+			"/Users/TD156086LDE767E/Documents/ATT2016/site-att/",
+			"/Users/TD156086LDE767E/Documents/ATT2016/site-att/negocios",
+			"/Users/TD156086LDE767E/Documents/ATT2016/site-att",
+			"/Users/TD156086LDE767E/Documents/ATT2016/site-att/negocios",
+			"<open files>",
+			"/Users/TD156086LDE767E/Documents/ATT2016/site-att/negocios",
+			"/Users/TD156086LDE767E/Documents/ATT2016/site-att/noticias",
+			"/Users/TD156086LDE767E/Documents/ATT2016/site-att/puede-esperar",
+			"<open files>",
+			"<open folders>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"category.html",
+			"detail.html",
+			"home",
+			"home-page",
+			"top",
+			".btn",
+			"brand",
+			"category.html",
+			"detail.html",
+			"                                                                <li class=\"lnk\">\n                                                                    <a class=\"add-to-cart\" href=\"detail.html\" title=\"Compare\">\n                                                                        <i class=\"fa fa-retweet\"></i>\n                                                                    </a>\n                                                                </li>",
+			".footer .links-social",
+			"background",
+			".home-page-slider4 .owl-prev",
+			"btn",
+			"owl-prev",
+			"fa-shopping-cart",
+			"<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>",
+			"'FjallaOneRegular'",
+			"'Roboto'",
+			"#0b816a",
+			"owl-next",
+			"<a href=\"index.html\" data-hover=\"dropdown\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Home</a>",
+			"<h3 class=\"new-product-title pull-left\">New Products</h3>",
+			"<i class=\"icon fa fa-align-justify fa-fw\"></i> Categories</div>",
+			"categorie",
+			"categoria",
+			".main-header",
+			"<button class=\"btn btn-primary\" type=\"button\">Add to cart</button>",
+			"<h3 class=\"section-title\">latest form blog</h3>",
+			"last",
+			"last from",
+			"\t\t\t   <h3 class=\"new-product-title pull-left\">Nevos Productos</h3>\n\t\t\t\t<ul class=\"nav nav-tabs nav-tab-line pull-right\" id=\"new-products-1\">\n\t\t\t\t\t<li class=\"active\"><a href=\"#all\" data-toggle=\"tab\">Todos</a></li>\n\t\t\t\t</ul>",
+			"\t\t\t   <h3 class=\"new-product-title pull-left\">New Products</h3>\n\t\t\t\t<ul class=\"nav nav-tabs nav-tab-line pull-right\" id=\"new-products-1\">\n\t\t\t\t\t<li class=\"active\"><a href=\"#all\" data-toggle=\"tab\">All</a></li>\n\t\t\t\t\t<li><a href=\"#smartphone\" data-toggle=\"tab\">smartphone</a></li>\n\t\t\t\t\t<li><a href=\"#laptop\" data-toggle=\"tab\">laptop</a></li>\n\t\t\t\t\t<li><a href=\"#apple\" data-toggle=\"tab\">apple</a></li>\n\t\t\t\t</ul>",
+			"<div class=\"col-xs-12 col-sm-12 col-md-3 logo-holder\">",
+			"<input class=\"search-field\" placeholder=\"Search here...\" />",
+			"<a class=\"dropdown-toggle\"  data-toggle=\"dropdown\" href=\"category.html\">Categories <b class=\"caret\"></b></a>",
+			"currency :",
+			"<li><a href=\"#\"><i class=\"icon fa fa-sign-in\"></i>Login</a></li>",
+			"<li><a href=\"#\"><i class=\"icon fa fa-user\"></i>My Account</a></li>",
+			"<li><a href=\"#\"><i class=\"icon fa fa-shopping-cart\"></i>My Cart</a></li>\n\t\t\t\t\t<li><a href=\"#\"><i class=\"icon fa fa-key\"></i>Checkout</a></li>",
+			"\t\t<ul class=\"dropdown-menu\">\n\t\t\t<li>\n\t\t\t\t<div class=\"cart-item product-summary\">\n\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t<div class=\"col-xs-4\">\n\t\t\t\t\t\t\t<div class=\"image\">\n\t\t\t\t\t\t\t\t<a href=\"detail.html\"><img src=\"assets/images/cart.jpg\" alt=\"\"></a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"col-xs-7\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<h3 class=\"name\"><a href=\"index.php?page-detail\">Simple Product</a></h3>\n\t\t\t\t\t\t\t<div class=\"price\">$600.00</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"col-xs-1 action\">\n\t\t\t\t\t\t\t<a href=\"#\"><i class=\"fa fa-trash\"></i></a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div><!-- /.cart-item -->\n\t\t\t\t<div class=\"clearfix\"></div>\n\t\t\t<hr>\n\t\t\n\t\t\t<div class=\"clearfix cart-total\">\n\t\t\t\t<div class=\"pull-right\">\n\t\t\t\t\t\n\t\t\t\t\t\t<span class=\"text\">Sub Total :</span><span class='price'>$600.00</span>\n\t\t\t\t\t\t\n\t\t\t\t</div>\n\t\t\t\t<div class=\"clearfix\"></div>\n\t\t\t\t\t\n\t\t\t\t<a href=\"checkout.html\" class=\"btn btn-upper btn-primary btn-block m-t-20\">Checkout</a>\t\n\t\t\t</div><!-- /.cart-total-->\n\t\t\t\t\t\n\t\t\t\t\n\t\t</li>\n\t\t</ul>",
+			"<div class=\"dropdown dropdown-cart\">\n\t\t<a href=\"#\" class=\"dropdown-toggle lnk-cart\" data-toggle=\"dropdown\">\n\t\t\t<div class=\"items-cart-inner\">\n\t\t\t\t<div class=\"total-price-basket\">\n\t\t\t\t\t<span class=\"lbl\">cart -</span>\n\t\t\t\t\t<span class=\"total-price\">\n\t\t\t\t\t\t<span class=\"sign\">$</span>\n\t\t\t\t\t\t<span class=\"value\">600.00</span>\n\t\t\t\t\t</span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"basket\">\n\t\t\t\t\t<i class=\"glyphicon glyphicon-shopping-cart\"></i>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"basket-item-count\"><span class=\"count\">2</span></div>\n\t\t\t\n\t\t    </div>\n\t\t</a>\n\t\t<ul class=\"dropdown-menu\">\n\t\t\t<li>\n\t\t\t\t<div class=\"cart-item product-summary\">\n\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t<div class=\"col-xs-4\">\n\t\t\t\t\t\t\t<div class=\"image\">\n\t\t\t\t\t\t\t\t<a href=\"detail.html\"><img src=\"assets/images/cart.jpg\" alt=\"\"></a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"col-xs-7\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<h3 class=\"name\"><a href=\"index.php?page-detail\">Simple Product</a></h3>\n\t\t\t\t\t\t\t<div class=\"price\">$600.00</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"col-xs-1 action\">\n\t\t\t\t\t\t\t<a href=\"#\"><i class=\"fa fa-trash\"></i></a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div><!-- /.cart-item -->\n\t\t\t\t<div class=\"clearfix\"></div>\n\t\t\t<hr>\n\t\t\n\t\t\t<div class=\"clearfix cart-total\">\n\t\t\t\t<div class=\"pull-right\">\n\t\t\t\t\t\n\t\t\t\t\t\t<span class=\"text\">Sub Total :</span><span class='price'>$600.00</span>\n\t\t\t\t\t\t\n\t\t\t\t</div>\n\t\t\t\t<div class=\"clearfix\"></div>\n\t\t\t\t\t\n\t\t\t\t<a href=\"checkout.html\" class=\"btn btn-upper btn-primary btn-block m-t-20\">Checkout</a>\t\n\t\t\t</div><!-- /.cart-total-->\n\t\t\t\t\t\n\t\t\t\t\n\t\t</li>\n\t\t</ul><!-- /.dropdown-menu-->\n\t</div>",
+			"<div class=\"col-xs-12 col-sm-12 col-md-3 animate-dropdown top-cart-row\">\n\t\t\t\t\t<!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->\n\n\t<div class=\"dropdown dropdown-cart\">\n\t\t<a href=\"#\" class=\"dropdown-toggle lnk-cart\" data-toggle=\"dropdown\">\n\t\t\t<div class=\"items-cart-inner\">\n\t\t\t\t<div class=\"total-price-basket\">\n\t\t\t\t\t<span class=\"lbl\">cart -</span>\n\t\t\t\t\t<span class=\"total-price\">\n\t\t\t\t\t\t<span class=\"sign\">$</span>\n\t\t\t\t\t\t<span class=\"value\">600.00</span>\n\t\t\t\t\t</span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"basket\">\n\t\t\t\t\t<i class=\"glyphicon glyphicon-shopping-cart\"></i>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"basket-item-count\"><span class=\"count\">2</span></div>\n\t\t\t\n\t\t    </div>\n\t\t</a>\n\t\t<ul class=\"dropdown-menu\">\n\t\t\t<li>\n\t\t\t\t<div class=\"cart-item product-summary\">\n\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t<div class=\"col-xs-4\">\n\t\t\t\t\t\t\t<div class=\"image\">\n\t\t\t\t\t\t\t\t<a href=\"detail.html\"><img src=\"assets/images/cart.jpg\" alt=\"\"></a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"col-xs-7\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<h3 class=\"name\"><a href=\"index.php?page-detail\">Simple Product</a></h3>\n\t\t\t\t\t\t\t<div class=\"price\">$600.00</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"col-xs-1 action\">\n\t\t\t\t\t\t\t<a href=\"#\"><i class=\"fa fa-trash\"></i></a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div><!-- /.cart-item -->\n\t\t\t\t<div class=\"clearfix\"></div>\n\t\t\t<hr>\n\t\t\n\t\t\t<div class=\"clearfix cart-total\">\n\t\t\t\t<div class=\"pull-right\">\n\t\t\t\t\t\n\t\t\t\t\t\t<span class=\"text\">Sub Total :</span><span class='price'>$600.00</span>\n\t\t\t\t\t\t\n\t\t\t\t</div>\n\t\t\t\t<div class=\"clearfix\"></div>\n\t\t\t\t\t\n\t\t\t\t<a href=\"checkout.html\" class=\"btn btn-upper btn-primary btn-block m-t-20\">Checkout</a>\t\n\t\t\t</div><!-- /.cart-total-->\n\t\t\t\t\t\n\t\t\t\t\n\t\t</li>\n\t\t</ul><!-- /.dropdown-menu-->\n\t</div><!-- /.dropdown-cart -->\n\n<!-- ============================================================= SHOPPING CART DROPDOWN : END============================================================= -->\t\t\t\t</div><!-- /.top-cart-row -->\n\t\t\t</div><!-- /.row -->",
+			"cart",
+			"\t\t\t\t\t<li class=\"dropdown dropdown-small\">\n\t\t\t\t\t\t<a href=\"#\" class=\"dropdown-toggle\" data-hover=\"dropdown\" data-toggle=\"dropdown\"><span class=\"key\">language :</span><span class=\"value\">English </span><b class=\"caret\"></b></a>\n\t\t\t\t\t\t<ul class=\"dropdown-menu\">\n\t\t\t\t\t\t\t<li><a href=\"#\">English</a></li>\n\t\t\t\t\t\t\t<li><a href=\"#\">French</a></li>\n\t\t\t\t\t\t\t<li><a href=\"#\">German</a></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</li>",
+			"#f39c12",
+			"\"home.html\"",
+			"               <div class=\"copyright\">\n                   Copyright © 2014\n                    <a href=\"home.html\">kasuva Shop.</a>\n                    - All rights Reserved\n                </div>",
+			"\t<!-- For demo purposes – can be removed on production -->\n\t\n\t<div class=\"config open\">\n\t\t<div class=\"config-options\">\n\t\t\t<h4>Pages</h4>\n\t\t\t<ul class=\"list-unstyled animate-dropdown\">\n\t\t\t\t<li class=\"dropdown\">\n\t\t\t\t\t<button class=\"dropdown-toggle btn btn-primary btn-block\" data-toggle=\"dropdown\">View Pages</button>\n\t\t\t\t\t<ul class=\"dropdown-menu\" role=\"menu\">\n\t\t\t\t\t\t<li role=\"presentation\" class=\"dropdown-header\">Home Pages</li>\n\t\t\t\t\t\t<li><a href=\"home.html\">Home</a></li>\n\t\t\t\t\t\t<li><a href=\"home2.html\">Home II</a></li>\n\t\t\t\t\t\t<li><a href=\"home-furniture.html\">Home Furniture</a></li>\n\t\t\t\t\t\t<li><a href=\"homepage1.html\">Home Page I</a></li>\n\t\t\t\t\t\t<li><a href=\"homepage2.html\">Home Page II</a></li>\n\t\t\t\t\t  \t<li class=\"divider\"></li>\n\t\t\t\t\t  \t<li role=\"presentation\" class=\"dropdown-header\">Other Pages</li>\n\t\t\t\t\t\t<li><a href=\"blog.html\">Blog</a></li>\n\t\t\t\t\t\t<li><a href=\"blog-details.html\">Blog Details</a></li>\n\t\t\t\t\t\t<li><a href=\"category.html\">Category</a></li>\n\t\t\t\t\t\t<li><a href=\"category-2.html\">Category II</a></li>\n\t\t\t\t\t\t<li><a href=\"checkout.html\">Checkout</a></li>\n\t\t\t\t\t\t<li><a href=\"contact.html\">Contact</a></li>\n\t\t\t\t\t\t<li><a href=\"detail.html\">Detail</a></li>\n\t\t\t\t\t\t<li><a href=\"detail2.html\">Detail II</a></li>\n\t\t\t\t\t\t<li><a href=\"shopping-cart.html\">Shopping Cart Summary</a></li>\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t</ul>\n\t\t\t\t</li>\n\t\t\t</ul>\n\t\t\t<h4>Header Styles</h4>\n\t\t\t<ul class=\"list-unstyled\">\n\t\t\t\t<li><a href=\"home.html\">Header 1</a></li>\n\t\t\t\t<li><a href=\"homepage1.html\">Header 2</a></li>\n\t\t\t\t<li><a href=\"home-furniture.html\">Header 3</a></li>\n\t\t\t</ul>\n\t\t\t<h4>Layouts</h4>\n\t\t\t<ul class=\"list-unstyled\">\n\t\t\t\t<li><a href=\"homepage1.html\">Full Width</a></li>\n\t\t\t\t<li><a href=\"homepage2.html\">Boxed</a></li>\n\t\t\t</ul>\n\t\t\t<h4>Colors</h4>\n\t\t\t<ul>\n\t\t\t\t<li><a class=\"changecolor green-text\" href=\"#\" title=\"Green color\">Green</a></li>\n                <li><a class=\"changecolor blue-text\" href=\"#\" title=\"Blue color\">Blue</a></li>\n                <li><a class=\"changecolor red-text\" href=\"#\" title=\"Red color\">Red</a></li>\n                <li><a class=\"changecolor orange-text\" href=\"#\" title=\"Orange color\">Orange</a></li>\n                <li><a class=\"changecolor dark-green-text\" href=\"#\" title=\"Darkgreen color\">Dark Green</a></li>\n\t\t\t</ul>\n\t\t</div>\n\t\t<a class=\"show-theme-options\" href=\"#\"><i class=\"fa fa-wrench\"></i></a>\n\t</div>\n\t<!-- For demo purposes – can be removed on production : End -->",
+			"<script src=\"switchstylesheet/switchstylesheet.js\"></script>\n\t\n\t<script>\n\t\t$(document).ready(function(){ \n\t\t\t$(\".changecolor\").switchstylesheet( { seperator:\"color\"} );\n\t\t\t$('.show-theme-options').click(function(){\n\t\t\t\t$(this).parent().toggleClass('open');\n\t\t\t\treturn false;\n\t\t\t});\n\t\t});\n\n\t\t$(window).bind(\"load\", function() {\n\t\t   $('.show-theme-options').delay(2000).trigger('click');\n\t\t});\n\t</script>",
+			"\t<!-- For demo purposes – can be removed on production -->\n\t\n\t<script src=\"switchstylesheet/switchstylesheet.js\"></script>\n\t\n\t<script>\n\t\t$(document).ready(function(){ \n\t\t\t$(\".changecolor\").switchstylesheet( { seperator:\"color\"} );\n\t\t\t$('.show-theme-options').click(function(){\n\t\t\t\t$(this).parent().toggleClass('open');\n\t\t\t\treturn false;\n\t\t\t});\n\t\t});\n\n\t\t$(window).bind(\"load\", function() {\n\t\t   $('.show-theme-options').delay(2000).trigger('click');\n\t\t});\n\t</script>\n\t<!-- For demo purposes – can be removed on production : End -->",
+			"<!-- For demo purposes – can be removed on production -->\n\t\n\t<script src=\"switchstylesheet/switchstylesheet.js\"></script>\n\t\n\t<script>\n\t\t$(document).ready(function(){ \n\t\t\t$(\".changecolor\").switchstylesheet( { seperator:\"color\"} );\n\t\t\t$('.show-theme-options').click(function(){\n\t\t\t\t$(this).parent().toggleClass('open');\n\t\t\t\treturn false;\n\t\t\t});\n\t\t});\n\n\t\t$(window).bind(\"load\", function() {\n\t\t   $('.show-theme-options').delay(2000).trigger('click');\n\t\t});\n\t</script>\n\t<!-- For demo purposes – can be removed on production : End -->",
+			"<!-- Demo Purpose Only. Should be removed in production -->\n\t\t<link rel=\"stylesheet\" href=\"assets/css/config.css\">\n\n\t\t<link href=\"assets/css/green.css\" rel=\"alternate stylesheet\" title=\"Green color\">\n\t\t<link href=\"assets/css/blue.css\" rel=\"alternate stylesheet\" title=\"Blue color\">\n\t\t<link href=\"assets/css/red.css\" rel=\"alternate stylesheet\" title=\"Red color\">\n\t\t<link href=\"assets/css/orange.css\" rel=\"alternate stylesheet\" title=\"Orange color\">\n\t\t<link href=\"assets/css/dark-green.css\" rel=\"alternate stylesheet\" title=\"Darkgreen color\">\n\t\t<!-- Demo Purpose Only. Should be removed in production : END -->",
+			"Unicase",
+			"Plataformas IoT: construyendo las bases del futuro",
+			"img",
+			"geo",
+			"5 consejos para ayudar a los abuelitos a usar su celular al máximo",
+			"float",
+			"prip",
+			"cobertura AT&T",
+			"cobertura",
+			"media",
+			".solution-card__excerpt p",
+			"att",
+			"blue",
+			"src=\"puede-esperar/img/",
+			"samsung",
+			".contiene-dots",
+			"multimedia/",
+			"/DiversidadGeneracional/",
+			"media",
+			".swiper-button-next",
+			".swiper-button-prev, .swiper-container-rtl .swiper-button-next",
+			".swiper-pagination-fraction",
+			".swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction",
+			"btn_calling ",
+			"btn-chat",
+			"main_blue",
+			"llamar ahora",
+			"llamar",
+			"input",
+			"<style type=\"text/css\"> .b-slider{height:194px!important;} </style>\"text/css\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\" />",
+			"t-awesome.min.cs",
+			".b-top-nav--bottom .b-top-nav__1level > a",
+			".nav>li>a",
+			".container .md_tab_content",
+			"agente de cambio",
+			"cambio de planes",
+			"=\"../",
+			"footer",
+			"src=\"js/",
+			"src=\"../../js",
+			"src=\"../../js/",
+			"src=\"../js",
+			"src=\"../../js/",
+			"src=\"js/",
+			"src=\"img/",
+			"href=\"js/",
+			"href=\"css/",
+			"img",
+			"class=\"visible-xs\"",
+			"src=\"../",
+			"emmociones",
+			"view",
+			"noticias",
+			"#009fdb",
+			"navigation",
+			"header",
+			"href=\"img/",
+			"header",
+			"src=\"img/",
+			"href=\"css/",
+			"src=\"js/",
+			"text-transform: uppercase;",
+			".section-padding",
+			"queremos",
+			"<div class=\"rprip\"><!-- Radio Prip -->\n                                <p>Radio Prip $0.01 x seg</p>",
+			"<div class=\"right\">ilimitado<sup>(7)</sup></div>",
+			"<div class=\"left\">Radio Prip</div>",
+			"<div class=\"left1\">Radio Prip</div>",
+			"<div class=\"left1\">Radio Prip</div>\n                          <div class=\"right1\">$0.01 x segundo</div>",
+			"prip",
+			"especiales-299-2",
+			"label",
+			"over",
+			"shadow",
+			"focus"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"category-2.html",
+			"detail2.html",
+			"category-2.html",
+			"detail2.html",
+			"",
+			"fa-hand-o-up",
+			"<link href=\"https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700\" rel=\"stylesheet\">",
+			"'Raleway'",
+			"#F08621",
+			"<a href=\"index.html\" data-hover=\"dropdown\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Inicio</a>",
+			"<h3 class=\"new-product-title pull-left\">Servicios más vistos éste mes</h3>",
+			"<i class=\"icon fa fa-align-justify fa-fw\"></i> Categorias</div>",
+			"<button class=\"btn btn-primary\" type=\"button\">Me interesa</button>",
+			"<h3 class=\"section-title\">Anuncios Recientes</h3>",
+			"\t\t\t   <h3 class=\"new-product-title pull-left\">Nevos Productos</h3>",
+			"\t\t\t   <h3 class=\"new-product-title pull-left\">Nevos Productos</h3>\n\t\t\t\t<ul class=\"nav nav-tabs nav-tab-line pull-right\" id=\"new-products-1\">\n\t\t\t\t\t<li class=\"active\"><a href=\"#all\" data-toggle=\"tab\">Todos</a></li>\n\t\t\t\t</ul>",
+			"<div class=\"col-xs-12 col-sm-12 col-md-6 logo-holder\">",
+			"<input class=\"search-field\" placeholder=\"Buscar en kasuva...\" />",
+			"<a class=\"dropdown-toggle\"  data-toggle=\"dropdown\" href=\"category.html\">Categorias <b class=\"caret\"></b></a>",
+			"Moneda :",
+			"<li><a href=\"#\"><i class=\"icon fa fa-sign-in\"></i>Iniciar Sesion</a></li>",
+			"<li><a href=\"#\"><i class=\"icon fa fa-user\"></i>Mi Cuenta</a></li>",
+			"<li><a href=\"#\"><i class=\"icon fa fa-shopping-cart\"></i>Subir Producto o Servicio</a></li>\n\t\t\t\t\t<li><a href=\"#\"><i class=\"icon fa fa-key\"></i>Subir Anuncio</a></li>",
+			"",
+			"#F08621",
+			"\"index.html\"",
+			"               <div class=\"copyright\">\n                   Copyright © 2017\n                    <a href=\"home.html\">kasuva.</a>\n                    - All rights Reserved\n                </div>",
+			"",
+			"kasuva",
+			"Las plataformas tecnológicas, el corazón del IoT",
+			"8 tips para el éxito: una guía para el nuevo becario",
+			"src=\"img/",
+			"",
+			"/salud-y-bienestar/",
+			"src=\"../js/",
+			"src=\"../js",
+			"src=\"../../js",
+			"src=\"../../js/",
+			"src=\"../js/",
+			"src=\"../../js/",
+			"src=\"../../img/",
+			"href=\"../../js/",
+			" href=\"../../css/",
+			"class=\" \"",
+			"src=\"",
+			"#0568ae",
+			"href=\"../img/",
+			"src=\"../img/",
+			"href=\"../css/",
+			"src=\"../js/",
+			"",
+			"especiales-599-att",
+			"#0568ae",
+			"<tr style=\"background-color: #f2f2f2;border-top:1px solid #fff\">",
+			"<tr style=\"background-color: #f2f2f2;border-top:1px solid #f2f2f2\">",
+			"tr style=\"background-color: #f2f2f2;\"",
+			"#0568ae",
+			"",
+			"<input type=\"checkbox\" id=\"addoncontrol\" value=\"addoncontrol\"/>\n    \t\t\t\t\t\t\t\t\t\t\t<label for=\"addoncontrol\">Add on Control</label>",
+			"ATM",
+			"plan199",
+			"",
+			"attaleck/slab/",
+			"fonts/attaleck/",
+			"font-family: 'aleckslab-light'!important",
+			"font-family: '.*.'!important",
+			"-light",
+			"aleckslab-",
+			"ATTAleckSlab",
+			"src=\"img/",
+			"#5a5a5a",
+			"#0568ae",
+			"\"",
+			"\"/",
+			"#f2f2f2",
+			"tiempo aire de regalo ",
+			"<span>de regalo</span>",
+			"att",
+			"ffb81c",
+			"#5a5a5a",
+			"#009fdb",
+			"#b5bd00",
+			"#71c5e8",
+			"71c5e8",
+			"#f2f2f2",
+			"#f2f2f2;",
+			"",
+			"#f2f2f2",
+			"'aleck-medium',",
+			"'aleck-regular'",
+			"'aleck-medium',",
+			"'aleck-italica', ",
+			"",
+			"        <div class=\"tabs-info\" role=\"tablist\">\n            <div class=\"tabs\" role=\"presentation\">\n                <div class=\"tab active\" id=\"detalles\" data-content=\"car\" role=\"tab\" tabindex=\"0\" aria-selected=\"true\" aria-controls=\"car\">Detalles</div>\n                <div class=\"tab\" id=\"precios\" data-content=\"pre\" role=\"tab\" tabindex=\"-1\" aria-selected=\"true\" aria-controls=\"pre\">Precios AT&amp;T Internet con Todo</div>\n            </div>",
+			"<div data-tab=\"pre\" id=\"pre\" class=\"tabContent\" role=\"tabpanel\" tabindex=\"-1\" aria-hidden=\"false\" aria-labelledby=\"precios\">",
+			"<div data-tab=\"car\" id=\"car\" class=\"active tabContent\" role=\"tabpanel\" tabindex=\"0\" aria-hidden=\"false\" aria-labelledby=\"detalles\">",
+			"\t\t<link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"../apple-icon-57x57.png\">\n\t\t<link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"../apple-icon-60x60.png\">\n\t\t<link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"../apple-icon-72x72.png\">\n\t\t<link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"../apple-icon-76x76.png\">\n\t\t<link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"../apple-icon-114x114.png\">\n\t\t<link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"../apple-icon-120x120.png\">\n\t\t<link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"../apple-icon-144x144.png\">\n\t\t<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-icon-152x152.png\">\n\t\t<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-icon-180x180.png\">\n\t\t<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\"  href=\"../android-icon-192x192.png\">\n\t\t<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n\t\t<link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"../favicon-96x96.png\">\n\t\t<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png\">\n\t\t<link rel=\"manifest\" href=\"../manifest.json\">\n\t\t<meta name=\"msapplication-TileColor\" content=\"#ffffff\">\n\t\t<meta name=\"msapplication-TileImage\" content=\"../ms-icon-144x144.png\">\n\t\t<meta name=\"theme-color\" content=\"#ffffff\">",
+			"191919",
+			"#0568ae",
+			"#5a5a5a",
+			"content-txt .pdue",
+			"content-txt .pone",
+			"<script src=\"../js/menu.js\"></script>",
+			"0568ae",
+			"blue-color",
+			"\" ",
+			" class=\"",
+			" class=\"j-data-element b-shadow-container\"",
+			"0568ae",
+			"5a5a5a",
+			"0568ae",
+			"blue-color",
+			"0568ae",
+			"5a5a5a",
+			"0568ae",
+			"5a5a5a",
+			"",
+			"0568ae",
+			"#5a5a5a",
+			"#0568ae",
+			"",
+			" ",
+			"",
+			"https://www.att.com.mx/fonts/",
+			"js/menu.js",
+			"0,0,0,0.7",
+			"background-color: rgba(0,0,0,0.7);",
+			"container"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 247708,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "home.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 289455,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								643,
+								643
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "kasuvaproject.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"bootstra",
+				"HTML/assets/css/bootstrap.min.css"
+			],
+			[
+				"main",
+				"HTML/assets/css/main.css"
+			],
+			[
+				"home",
+				"HTML/home.html"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"recargas",
+				"promociones/recargas-especiales.html"
+			],
+			[
+				"finderindex",
+				"negocios/soluciones/finder-tracker-att/index.html"
+			],
+			[
+				"plataformas-iot.html",
+				"noticias/plataformas-iot.html"
+			],
+			[
+				"noticias",
+				"noticias/noticias-populares.html"
+			],
+			[
+				"notic",
+				"noticias/noticias.html"
+			],
+			[
+				"serviciosatt-coberut",
+				"servicios/att-cobertura.html"
+			],
+			[
+				"promocionespayday",
+				"promociones/payday.html"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"promociones",
+				"promociones.html"
+			],
+			[
+				"consiguelo",
+				"promociones/att-consiguelo-completo.html"
+			],
+			[
+				"att-consigue",
+				"promociones/att-consiguelo-basico.html"
+			],
+			[
+				"att-guia-para-el-becario.html",
+				"noticias/att-guia-para-el-becario.html"
+			],
+			[
+				"negocios/soluciones/busqueda-localizacion/index.html",
+				"negocios/soluciones/busqueda-localizacion/index.html"
+			],
+			[
+				"header",
+				"header.html"
+			],
+			[
+				"att-internet-con-todo-equipo",
+				"negocios/planes/att-internet-con-todo-equipo-propio.html"
+			],
+			[
+				"negociosindex",
+				"negocios/index.html"
+			],
+			[
+				"manchas",
+				"servicios/manchas3.html"
+			],
+			[
+				"app.css",
+				"negocios/css/app.css"
+			],
+			[
+				"portabilida",
+				"servicios/portabilidad.html"
+			],
+			[
+				"legales",
+				"legales.html"
+			],
+			[
+				"10feb",
+				"servicios/att-cobertura10Feb.html"
+			],
+			[
+				"puede",
+				"puede-esperar.html"
+			],
+			[
+				"regreso-a-clases-elektra",
+				"promociones/regreso-a-clases-elektra.html"
+			],
+			[
+				"yaestiem",
+				"yaestiempodealgomejor/index.html"
+			],
+			[
+				"cambi",
+				"cambio-tec-pospago-corp.html"
+			],
+			[
+				"cambio",
+				"cambio-tec-prepago.html"
+			],
+			[
+				"index2",
+				"att-con-todo-damos-mas/index2.html"
+			],
+			[
+				"mainblue",
+				"css/main-blue.css"
+			],
+			[
+				"att-con-todo-damos",
+				"att-con-todo-damos-mas/index.html"
+			],
+			[
+				"contododamosmasindex",
+				"att-con-todo-damos-mas/index.html"
+			],
+			[
+				"swipe",
+				"css/swiper.min.css"
+			],
+			[
+				"att-con-tofo",
+				"att-con-todo-damos-mas-nuevaoferta.html"
+			],
+			[
+				"emoji",
+				"emoji2.html"
+			],
+			[
+				"celulare-attindex",
+				"celulares-att/flight/views/index.php"
+			],
+			[
+				"acerca-de-",
+				"acerca-de-att/ambiente.html"
+			],
+			[
+				"atumane",
+				"att-a-tu-manera.html"
+			],
+			[
+				"user.js",
+				"js/user.js"
+			],
+			[
+				"promo-vera",
+				"promociones/promocion-verano.html"
+			],
+			[
+				"promocion-verano",
+				"promociones/promocion-verano.html"
+			],
+			[
+				"emoij",
+				"emoji.html"
+			],
+			[
+				"especiales",
+				"promociones/especiales-599-att.html​"
+			],
+			[
+				"footer",
+				"footer.html"
+			],
+			[
+				"att-a-",
+				"att-a-tu-manera.html"
+			],
+			[
+				"lelata",
+				"promociones/lealtad.html"
+			],
+			[
+				"leal",
+				"promociones/lealtad.html"
+			],
+			[
+				"legales.htm",
+				"legales.html"
+			],
+			[
+				"paquetes",
+				"unefon/paquetes/paquetes-unefon.php"
+			],
+			[
+				"planes-att",
+				"planes-att-prepago.html"
+			],
+			[
+				"especiales-299-2-att.html",
+				"promociones/especiales-299-2-att.html"
+			],
+			[
+				"att-con-to",
+				"att-con-todo.html"
+			],
+			[
+				"legalesaccesibili",
+				"legales/accesibilidad-att/index.php"
+			],
+			[
+				"accesibilid",
+				"legales/accesibilidad-att/index.php"
+			],
+			[
+				"atumanera",
+				"att-a-tu-manera.html"
+			],
+			[
+				"cotizador-contodo",
+				"js/cotizador-contodo.js"
+			],
+			[
+				"attcontodo",
+				"att-con-todo.html"
+			],
+			[
+				"planes",
+				"planes-att-prepago.html"
+			],
+			[
+				"negociosplanesinternet",
+				"negocios/planes/att-internet-con-todo.html"
+			],
+			[
+				"negociosheader",
+				"negocios/partials/header.html"
+			],
+			[
+				"planes/att-inter",
+				"negocios/planes/att-internet-con-todo.html"
+			],
+			[
+				"accesibilidadinde",
+				"legales/accesibilidad-att/index.php"
+			],
+			[
+				"conf",
+				"css/configurador.css"
+			],
+			[
+				"contacto",
+				"contacto.html"
+			],
+			[
+				"negociosplanes",
+				"negocios/planes/att-internet-con-todo.html"
+			],
+			[
+				"promocioneslealta",
+				"promociones/lealtad.html"
+			],
+			[
+				"planes/intern",
+				"negocios/planes/att-internet-con-todo.html"
+			],
+			[
+				"att-internet",
+				"att-internet-con-todo.html"
+			],
+			[
+				"planes-att-prepago.html",
+				"planes-att-prepago.html"
+			],
+			[
+				"soluciones/busqueda",
+				"negocios/soluciones/busqueda-localizacion/index.html"
+			],
+			[
+				"app",
+				"negocios/css/app.css"
+			],
+			[
+				"desempeno-de-ventas",
+				"negocios/soluciones/desempeno-de-ventas/index.html"
+			],
+			[
+				"negocioscontact",
+				"negocios/contacto/index.html"
+			],
+			[
+				"att-a-t",
+				"att-a-tu-manera.html"
+			],
+			[
+				"promocioneslelat",
+				"promociones/lealtad.html"
+			],
+			[
+				"",
+				"css/main-blue.css"
+			],
+			[
+				"codigo",
+				"servicios/codigos-emergencia.html"
+			],
+			[
+				"planes-att-prepago",
+				"planes-att-prepago.html"
+			],
+			[
+				"flex",
+				"js/vendor/flexslider.js~"
+			],
+			[
+				"flexsli",
+				"css/vendor/flexslider.css"
+			],
+			[
+				"jsvendor",
+				"js/vendor/jquery.flexslider-min.js"
+			],
+			[
+				"headre",
+				"header.html"
+			],
+			[
+				"politica",
+				"politica-de-uso.html"
+			],
+			[
+				"style-equipos",
+				"css/style-equipos.css"
+			],
+			[
+				"body",
+				"celulares-att/views/partials/body_single.php"
+			],
+			[
+				"headr",
+				"header.html"
+			],
+			[
+				"333",
+				"atencion-a-clientes/pago-333.html"
+			],
+			[
+				"terminos",
+				"atencion-a-clientes/terminos-facturacion.html"
+			],
+			[
+				"swiper.min.js",
+				"js/swiper.min.js"
+			],
+			[
+				"termino",
+				"atencion-a-clientes/terminos-facturacion.html"
+			],
+			[
+				"responsa",
+				"acerca-de-att/responsabilidad-social.html"
+			],
+			[
+				"codigos",
+				"servicios/codigos-emergencia.html"
+			],
+			[
+				"serviciosroam",
+				"servicios/roaming.html"
+			],
+			[
+				"roaming",
+				"roaming.html"
+			],
+			[
+				"qustodio",
+				"servicios/qustodio.html"
+			],
+			[
+				"proteccion",
+				"servicios/proteccion-de-equipo-att.html"
+			],
+			[
+				"codigos-emergencia",
+				"servicios/codigos-emergencia.html"
+			],
+			[
+				"4g-",
+				"servicios/4g-lte.html"
+			],
+			[
+				"css/vendor/slicknav.min.css",
+				"css/vendor/slicknav.min.css"
+			],
+			[
+				"css/vendor/blue.css",
+				"css/vendor/blue.css"
+			],
+			[
+				"js/jquery.js",
+				"js/jquery.js"
+			],
+			[
+				"filtrado",
+				"filtrador-tablets.html"
+			],
+			[
+				"tablets",
+				"tablets-att.html"
+			],
+			[
+				"att-prepago",
+				"att-prepago-recarga-plus-sim-plus.html"
+			],
+			[
+				"user",
+				"js/user.js"
+			],
+			[
+				"settings.js",
+				"js/modules/settings.js"
+			],
+			[
+				"css/settings.css",
+				"js/rs-plugin/css/settings.css"
+			],
+			[
+				"modules/settings.js",
+				"js/modules/settings.js"
+			],
+			[
+				"404.html",
+				"404.html"
+			],
+			[
+				"negociosjsapp",
+				"negocios/js/app.js"
+			],
+			[
+				"solucionesdesmpeno",
+				"negocios/soluciones/desempeno-de-ventas/index.html"
+			],
+			[
+				"solucionesindex",
+				"negocios/soluciones/index.html"
+			],
+			[
+				"att-internet-con-todo.html",
+				"negocios/planes/att-internet-con-todo.html"
+			],
+			[
+				"negocios/planes/att-internet-con-todo.html",
+				"negocios/planes/att-internet-con-todo.html"
+			],
+			[
+				"negociosinde",
+				"negocios/index.html"
+			],
+			[
+				"heder",
+				"header.html"
+			],
+			[
+				"j.placeholder.js",
+				"Copia de j.placeholder.js"
+			],
+			[
+				"retina.js",
+				"js/modules/retina.js"
+			],
+			[
+				"apple",
+				"promociones/apple-att.html"
+			],
+			[
+				"ind",
+				"index.html"
+			],
+			[
+				"huawei",
+				"promociones/huawei-att.html"
+			],
+			[
+				"negocios/inde",
+				"negocios/index.html"
+			],
+			[
+				"dia-de-las",
+				"promociones/dia-de-las-madres.html"
+			],
+			[
+				"dia-de-",
+				"promociones/dia-de-las-madres.html"
+			],
+			[
+				"config.php",
+				"php/config.php"
+			],
+			[
+				"egistro-promodiamadres.php",
+				"registro-promodiamadres.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 300.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
