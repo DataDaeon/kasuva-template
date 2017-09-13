@@ -2131,7 +2131,7 @@ a {
   text-transform: uppercase;
   font-family: 'Raleway';
   padding: 5px 25px;
-  background: #bbbbbb;
+  background: #202020;
   color: #fff;
 }
 #owl-main .item .caption .big-text .highlight {
@@ -2150,10 +2150,10 @@ a {
 }
 #owl-main .item .caption .excerpt span,
 #owl-main .item .caption .small span {
-  background: none repeat scroll 0 0 #bbbbbb;
-  -moz-box-shadow: -1.4em 0 0 #bbbbbb, 1.4em 0 0 #bbbbbb;
-  -webkit-box-shadow: -1.4em 0 0 #bbbbbb, 1.4em 0 0 #bbbbbb;
-  box-shadow: -1.4em 0 0 #bbbbbb, 1.4em 0 0 #bbbbbb;
+  background: none repeat scroll 0 0 #202020;
+  -moz-box-shadow: -1.4em 0 0 #202020, 1.4em 0 0 #202020;
+  -webkit-box-shadow: -1.4em 0 0 #202020, 1.4em 0 0 #202020;
+  box-shadow: -1.4em 0 0 #202020, 1.4em 0 0 #202020;
   line-height: 336%;
   padding: 0.6em 0;
   display: inline;
