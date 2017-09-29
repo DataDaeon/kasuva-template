@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+	<config>
+		<menu>
+			<pefectus module="mainslider">
+				<title>daeon</title>
+				<sort_order>80</sort_order>
+				<children>
+					<daeon_mainslider module="mainslider">
+						<title>Main Slider</title>
+						<sort_order>1</sort_order>
+						<action>mainslider/adminhtml_mainslider</action>
+					</daeon_mainslider>
+				</children>
+			</pefectus>
+		</menu>
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<daeon_mainslider translate="title" module="mainslider">
+											<title>Mainslider Settings</title>
+											<sort_order>0</sort_order>
+										</daeon_mainslider>
+									</children>
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+	</config>

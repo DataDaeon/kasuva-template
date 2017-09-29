@@ -1,0 +1,90 @@
+<?php
+echo "template";exit;
+/**
+ * aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This software is designed to work with Magento community edition and
+ * its use on an edition other than specified is prohibited. aheadWorks does not
+ * provide extension support in case of incorrect edition use.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Blog
+ * @version    1.3.18
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?><?php $posts = $this->getPosts(); 
+$blank_gif = $this->getSkinUrl('images/blank.gif');
+?>
+<div id="messages_product_view">
+    <?php Mage::app()->getLayout()->getMessagesBlock()->setMessages(Mage::getSingleton('customer/session')->getMessages(true)); ?>
+    <?php echo Mage::app()->getLayout()->getMessagesBlock()->getGroupedHtml(); ?>
+</div>
+	<?php $tag = $this->getRequest()->getParam('tag');
+	if($tag){ ?>
+		<div class="category-content blog-page">
+			<div class="blog-post">
+				<h1><?php echo Mage::helper('blog')->__('Tag :'); ?>&nbsp; <?php echo $tag; ?></h1>
+			</div>
+		</div>
+	<?php } ?>
+<div class="blog-page blog-list">
+<?php echo $this->getChildHtml('aw_blog_comments_toolbar'); ?>
+<div class="blog-listing">
+<?php foreach ($posts as $post): ?>
+    <div class="postWrapper blog-post">
+		<?php if($post->getImage()){ ?>
+			<div class="product_img_inner">
+				<div class="img_cont">
+					<a href="<?php echo $post->getAddress(); ?>" ><img class="lazyOwl" src="<?php echo Mage::getModel('blog/post')->resizeImg($post->getImage(),870,400); ?>" alt="<?php echo $post->getTitle(); ?>" title="<?php echo $post->getTitle(); ?>" height="400" width="870" /></a>
+				</div>
+			</div>
+		<?php } ?>
+        <div class="postTitle">
+            <h1><a href="<?php echo $post->getAddress(); ?>" ><?php echo $post->getTitle(); ?></a></h1>
+			<div class="etc-info">
+				<span class="author">&nbsp;<?php echo $post->getUser(); ?></span>
+				<?php if ($this->getCommentsEnabled()): ?>
+				<span class="review"><?php echo ($post->getCommentCount())? $post->getCommentCount() : '0'; ?>&nbsp;<?php echo Mage::helper('blog')->__('Comments'); ?></span>
+				<?php endif; ?>
+				<span class="date-time">&nbsp;<?php echo $post->getCreatedTime(); ?></span>
+			</div>
+        </div>
+        <div class="postContent std"><?php echo $post->getPostContent(); ?></div>
+        <?php echo $this->getBookmarkHtml($post) ?>
+		<?php if(Mage::getStoreConfig('blog/blog/tagslist')){?>
+        <div class="tags"><?php echo $this->getTagsHtml($post) ?></div>
+		<?php } ?>
+		<?php /*
+        <div class="postDetails">
+            <?php if ($this->getCommentsEnabled()): ?>
+                <?php echo $post->getCommentCount(); ?> <a href="<?php echo $post->getAddress(); ?>#commentBox" > <?php echo Mage::helper('blog')->__('Comments'); ?></a> |
+            <?php endif; ?>
+            <?php $postCats = $post->getCats(); ?>
+            <?php if (!empty($postCats)): ?>
+                <?php echo Mage::helper('blog')->__('Posted in'); ?>
+                <?php foreach ($postCats as $data): ?>
+                    <a href="<?php echo $data['url']; ?>"><?php echo $data['title']; ?></a>
+                <?php endforeach; ?>
+            <?php else: ?>
+                <?php echo Mage::helper('blog')->__('Posted'); ?>
+            <?php endif; ?><?php echo $this->__("By"); ?> <?php echo $post->getUser(); ?></div>
+			*/ ?>
+    </div>
+<?php endforeach; ?>
+</div>
+<div class="toolbar-bottom">
+<?php echo $this->getChildHtml('aw_blog_comments_toolbar'); ?>
+</div>
+</div>

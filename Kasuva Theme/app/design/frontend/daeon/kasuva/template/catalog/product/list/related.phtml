@@ -1,0 +1,128 @@
+<?php 
+	$tmpCfg = Mage::registry('tmpCfg');
+	$theme=$this->helper('kasuva'); 
+	$setingsCfg=$tmpCfg['set']['product_related'];
+	if($this->getItems()->getSize() && $setingsCfg['relatedprod_enable']):
+		$relatedCount=$this->getItems()->getSize();
+		$maxprod=$setingsCfg['relatedprod_max'];
+		$secTitle=$setingsCfg['relatedprod_title'];
+		$size=($relatedCount>$maxprod)? $maxprod : $relatedCount;
+		$slideitems=4;
+		$data_lg=3;
+		$data_md=3;
+		$data_sm=2;
+		$data_xs=1;
+		$layout=$theme->getTemplateLayout($this);
+		if($layout=='1column'){
+			$slideitems=$setingsCfg['relatedprod_1c_item'];
+			$data_lg=4;
+			$data_md=3;
+		}else if($layout=='2columns-left'){
+			$slideitems=$setingsCfg['relatedprod_2c_item'];
+		}else if($layout=='3columns'){
+			$slideitems=$setingsCfg['relatedprod_3c_item'];
+			$data_lg=2;
+		}
+		$price=$setingsCfg['relatedprod_price_enable'];
+		$rating=$setingsCfg['relatedprod_rating_enable'];
+		$sku=$setingsCfg['relatedprod_sku_enable'];
+		$wishlist=$setingsCfg['relatedprod_wishlist_enable'];
+		$quickview=$setingsCfg['relatedprod_quickview_enable'];
+?>
+<section class="section related-section">
+	<div class="row">
+		<div class="col-sm-12">
+			<h3 class="section-title"><?php echo $secTitle; ?></h3>
+			<div class="product-slider owl-center-cont">
+				<div class="home-owl-carousel custom-carousel outer-top-xs" data-item="<?php echo $slideitems; ?>" data-lg="<?php echo $data_lg; ?>" data-md="<?php echo $data_md; ?>" data-sm="<?php echo $data_sm; ?>" data-xs="<?php echo $data_xs; ?>">
+					<?php $i=1;foreach($this->getItems() as $_item){ ?>
+						<?php $htm_badge=$theme->getProductLabel($_item); ?>
+						<?php $htm_badge.=($quickview)? $this->helper('ajaxpkt')->getQuickViewLink($_product)  : '' ; ?>
+						<div class="item item-carousel">
+							<div class="products">
+								<div class="product">
+									<div class="product-image">
+										<div class="image">
+											<a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_item, 'small_image'), null, true) ?>" class="product-image">
+												 <img id="product-collection-image-<?php echo $_item->getId(); ?>" src="<?php echo $this->helper('catalog/image')->init($_item, 'small_image')->constrainOnly(true)->keepAspectRatio(TRUE)->keepFrame(FALSE)->resize(211,273); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_item, 'small_image'), null, true) ?>" width="211" height="273" />
+											</a>
+										</div>
+										<?php echo $htm_badge; ?>
+									</div>
+									<div class="product-info text-left">
+										<h3 class="name product-name"><a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->stripTags($_item->getName(), null, true) ?>"><?php echo $this->escapeHtml($_item->getName()) ?></a></h3>
+										<?php if($sku): ?><p class="sku"><span class="label"><?php echo $this->__('SKU') ?>:</span><span class="value"><?php echo Mage::getModel('catalog/product')->load($_item->getId())->getSku();?></span></p><?php endif; ?>
+										<?php if($rating):?>
+										<?php $reviews=$this->getReviewsSummaryHtml($_item,'short') ?>
+										<?php if($reviews): ?>
+											<?php echo $reviews; ?>
+										<?php else: ?>
+										<div class="ratings">
+											<div class="rating-box">&nbsp;</div>
+										</div>
+										<?php endif; ?>
+										<?php endif; ?>
+										<?php if($price): ?>
+										<div class="product-price">	
+											<?php echo $this->getPriceHtml($_item, true, '-related') ?>
+										</div>
+										<?php endif; ?>
+									</div>
+									<?php if($wishlist): ?>
+									<div class="cart clearfix animate-effect">
+										<div class="action">
+											<ul class="list-unstyled">
+												<?php if ($this->helper('wishlist')->isAllow()) : ?>
+													<li><button onclick='ajaxWishlist(this,"<?php echo $this->helper('wishlist')->getAddUrl($_item) ?>","<?php echo $_item->getId()?>");return false;' class="link-wishlist button wishlist"><i class="icon fa fa-heart"></i><span class="title"><?php echo $this->__('Add to Wishlist') ?></span></button></li>
+												<?php endif; ?>
+											</ul>
+										</div>
+									</div>
+									<?php endif; ?>
+								</div>
+							</div>
+						</div>
+						<?php if($i>=$size){break;} ?>
+					<?php $i++; } ?>
+				</div>
+			</div>
+			<script type="text/javascript">
+			//<![CDATA[
+			$$('.related-checkbox').each(function(elem){
+				Event.observe(elem, 'click', addRelatedToProduct)
+			});
+
+			var relatedProductsCheckFlag = false;
+			function selectAllRelated(txt){
+				if (relatedProductsCheckFlag == false) {
+					$$('.related-checkbox').each(function(elem){
+						elem.checked = true;
+					});
+					relatedProductsCheckFlag = true;
+					txt.innerHTML="<?php echo Mage::helper('core')->jsQuoteEscape($this->__('unselect all')) ?>";
+				} else {
+					$$('.related-checkbox').each(function(elem){
+						elem.checked = false;
+					});
+					relatedProductsCheckFlag = false;
+					txt.innerHTML="<?php echo Mage::helper('core')->jsQuoteEscape($this->__('select all')) ?>";
+				}
+				addRelatedToProduct();
+			}
+
+			function addRelatedToProduct(){
+				var checkboxes = $$('.related-checkbox');
+				var values = [];
+				for(var i=0;i<checkboxes.length;i++){
+					if(checkboxes[i].checked) values.push(checkboxes[i].value);
+				}
+				if($('related-products-field')){
+					$('related-products-field').value = values.join(',');
+				}
+			}
+			//]]>
+			</script>
+		</div>
+	</div>
+</section>
+<?php endif ?>

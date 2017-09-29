@@ -1,0 +1,2740 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <kasuvatheme translate="label" module="kasuva">
+            <label>kasuva Theme(1.0)</label>
+            <sort_order>300</sort_order>
+        </kasuvatheme>
+    </tabs>
+    <sections>
+        <kasuva_design translate="label comment" module="kasuva">
+            <tab>kasuvatheme</tab>
+            <label>kasuva Design</label>
+            <frontend_type>text</frontend_type>
+            <sort_order>102</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <basic>
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<general_color_themesettings translate="label">
+                            <label>General Color Settings</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_themesettings</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </general_color_themesettings>
+                        <theme_color>
+                            <label>Theme Colors</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<general_color_themesettings>1</general_color_themesettings>
+							</depends>
+                        </theme_color>
+						<basiccolor_heading translate="label">
+                            <label>Basic Colors</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<general_color_themesettings>1</general_color_themesettings>
+							</depends>
+                        </basiccolor_heading>
+						<text_color>
+                            <label>Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<general_color_themesettings>1</general_color_themesettings>
+							</depends>
+                        </text_color>
+						<link_color>
+                            <label>Link Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<general_color_themesettings>1</general_color_themesettings>
+							</depends>
+                        </link_color>
+						<link_hover_color>
+                            <label>Link Hover Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<general_color_themesettings>1</general_color_themesettings>
+							</depends>
+                        </link_hover_color>
+						<buttonstyle_heading translate="label">
+                            <label>Buttons</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>14</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<general_color_themesettings>1</general_color_themesettings>
+							</depends>
+                        </buttonstyle_heading>
+						<btn_bg_color>
+                            <label>Button Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<general_color_themesettings>1</general_color_themesettings>
+							</depends>
+                        </btn_bg_color>
+						<btn_text_color>
+                            <label>Button Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>16</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<general_color_themesettings>1</general_color_themesettings>
+							</depends>
+                        </btn_text_color>
+						<btn_hbg_color>
+                            <label>Button Hover Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>17</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<general_color_themesettings>1</general_color_themesettings>
+							</depends>
+                        </btn_hbg_color>
+						<btn_htext_color>
+                            <label>Button Hover Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>18</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<general_color_themesettings>1</general_color_themesettings>
+							</depends>
+                        </btn_htext_color>
+						<btn_border_color>
+                            <label>Button Border Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>19</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<general_color_themesettings>1</general_color_themesettings>
+							</depends>
+                        </btn_border_color>
+						<btn_hborder_color>
+                            <label>Button Hover Border Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<general_color_themesettings>1</general_color_themesettings>
+							</depends>
+                        </btn_hborder_color>
+						<btn_style translate="label">
+                            <label>Buttons Style</label>
+                            <frontend_type>select</frontend_type>
+							<source_model>kasuva/system_config_source_design_buttons_btnstyles</source_model>
+							<frontend_model>kasuva/adminhtml_system_config_form_field_btnstyles</frontend_model>
+                            <sort_order>21</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<general_color_themesettings>1</general_color_themesettings>
+							</depends>
+                        </btn_style>
+						<heading_productlabel translate="label">
+                            <label>Products Label</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<general_color_themesettings>1</general_color_themesettings>
+							</depends>
+                        </heading_productlabel>
+						<newlabel_color translate="label">
+                            <label>New Label Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<general_color_themesettings>1</general_color_themesettings>
+							</depends>
+                        </newlabel_color>
+						<salelabel_color translate="label">
+                            <label>Sale Label Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<general_color_themesettings>1</general_color_themesettings>
+							</depends>
+                        </salelabel_color>
+                    </fields>
+                </basic>
+				<header>
+                    <label>header</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>65</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<header_color_themesettings translate="label">
+                            <label>Header Color Settings</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_themesettings</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </header_color_themesettings>
+						<topbar_heading translate="label">
+                            <label>Topbar</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<header_color_themesettings>1</header_color_themesettings>
+							</depends>
+                        </topbar_heading>
+						<topbar_bg translate="label">
+							<label>Topbar BgColor</label>
+							<frontend_type>text</frontend_type>
+							<frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<header_color_themesettings>1</header_color_themesettings>
+							</depends>
+						</topbar_bg>
+						<topbar_link_color translate="label">
+							<label>Topbar Link Color</label>
+							<frontend_type>text</frontend_type>
+							<frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<header_color_themesettings>1</header_color_themesettings>
+							</depends>
+						</topbar_link_color>
+						<topbar_link_hcolor translate="label">
+							<label>Topbar Link Hover Color</label>
+							<frontend_type>text</frontend_type>
+							<frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<header_color_themesettings>1</header_color_themesettings>
+							</depends>
+						</topbar_link_hcolor>
+						<topbar_link_border_color translate="label">
+							<label>Topbar Link Border Color</label>
+							<frontend_type>text</frontend_type>
+							<frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<header_color_themesettings>1</header_color_themesettings>
+							</depends>
+						</topbar_link_border_color>
+						<topbar_welcomtext_color translate="label">
+							<label>Welcome text Color</label>
+							<frontend_type>text</frontend_type>
+							<frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<header_color_themesettings>1</header_color_themesettings>
+							</depends>
+						</topbar_welcomtext_color>
+						<header_heading translate="label">
+                            <label>Header</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>300</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<header_color_themesettings>1</header_color_themesettings>
+							</depends>
+                        </header_heading>
+						<header_bg translate="label">
+							<label>Header BgColor</label>
+							<frontend_type>text</frontend_type>
+							<frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>310</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<header_color_themesettings>1</header_color_themesettings>
+							</depends>
+						</header_bg>
+						<header_text_color translate="label">
+							<label>Header Text Color</label>
+							<frontend_type>text</frontend_type>
+							<frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>320</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<header_color_themesettings>1</header_color_themesettings>
+							</depends>
+						</header_text_color>
+						<header_search_bg translate="label">
+							<label>Header Search BgColor</label>
+							<frontend_type>text</frontend_type>
+							<frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>330</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<header_color_themesettings>1</header_color_themesettings>
+							</depends>
+						</header_search_bg>
+						<header_search_color translate="label">
+							<label>Header Search Text Color</label>
+							<frontend_type>text</frontend_type>
+							<frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>340</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<header_color_themesettings>1</header_color_themesettings>
+							</depends>
+						</header_search_color>
+					</fields>
+				</header>
+				<footer>
+                    <label>Footer</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>75</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<footer_color_themesettings translate="label">
+                            <label>Footer Color Settings</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_themesettings</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_color_themesettings>
+						<heading_footertop translate="label">
+                            <label>Footer Top</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<footer_color_themesettings>1</footer_color_themesettings>
+							</depends>
+                        </heading_footertop>
+                        <ftop_bg>
+                            <label>Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<footer_color_themesettings>1</footer_color_themesettings>
+							</depends>
+                        </ftop_bg>
+						<ftop_text>
+                            <label>Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<footer_color_themesettings>1</footer_color_themesettings>
+							</depends>
+                        </ftop_text>
+						<ftop_bhead_text>
+                            <label>Block Heading Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>115</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<footer_color_themesettings>1</footer_color_themesettings>
+							</depends>
+                        </ftop_bhead_text>
+						<ftop_link>
+                            <label>Link Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<footer_color_themesettings>1</footer_color_themesettings>
+							</depends>
+                        </ftop_link>
+						<ftop_hlink>
+                            <label>Link Hover Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>125</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<footer_color_themesettings>1</footer_color_themesettings>
+							</depends>
+                        </ftop_hlink>
+						<ftop_icon_bg>
+                            <label>Icon Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>130</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<footer_color_themesettings>1</footer_color_themesettings>
+							</depends>
+                        </ftop_icon_bg>
+						<ftop_icon_text>
+                            <label>Icon Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>135</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<footer_color_themesettings>1</footer_color_themesettings>
+							</depends>
+                        </ftop_icon_text>
+						<heading_footerbot translate="label">
+                            <label>Footer Bottom</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>500</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<footer_color_themesettings>1</footer_color_themesettings>
+							</depends>
+                        </heading_footerbot>
+                        <fbot_bg>
+                            <label>Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>510</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<footer_color_themesettings>1</footer_color_themesettings>
+							</depends>
+                        </fbot_bg>
+						<fbot_text>
+                            <label>Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>520</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<footer_color_themesettings>1</footer_color_themesettings>
+							</depends>
+                        </fbot_text>
+						<fbot_bhead_text>
+                            <label>Block Heading Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>530</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<footer_color_themesettings>1</footer_color_themesettings>
+							</depends>
+                        </fbot_bhead_text>
+						<fbot_link>
+                            <label>Link Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>540</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<footer_color_themesettings>1</footer_color_themesettings>
+							</depends>
+                        </fbot_link>
+						<fbot_hlink>
+                            <label>Link Hover Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>550</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<footer_color_themesettings>1</footer_color_themesettings>
+							</depends>
+                        </fbot_hlink>
+						<fbot_list_dot>
+                            <label>Block List Dot Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>560</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<footer_color_themesettings>1</footer_color_themesettings>
+							</depends>
+                        </fbot_list_dot>
+						<fbot_list_botborder>
+                            <label>Block List Bottom Border Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>570</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<footer_color_themesettings>1</footer_color_themesettings>
+							</depends>
+                        </fbot_list_botborder>
+						<heading_copyrightsbar translate="label">
+                            <label>CopyRights Bar</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>900</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<footer_color_themesettings>1</footer_color_themesettings>
+							</depends>
+                        </heading_copyrightsbar>
+                        <fcopyrights_bg>
+                            <label>Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>910</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<footer_color_themesettings>1</footer_color_themesettings>
+							</depends>
+                        </fcopyrights_bg>
+						<fcopyrights_text>
+                            <label>Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>920</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<footer_color_themesettings>1</footer_color_themesettings>
+							</depends>
+                        </fcopyrights_text>
+					</fields>
+				</footer>
+				<megamenu>
+                    <label>Megamenu</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>80</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<megamenu_color_themesettings translate="label">
+                            <label>Megamenu Color Settings</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_themesettings</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </megamenu_color_themesettings>
+                        <nav_bg>
+                            <label>NavBar Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                                <megamenu_color_themesettings>1</megamenu_color_themesettings>
+                            </depends>
+                        </nav_bg>
+						<nav_item_hbg>
+                            <label>NavBar Menu Hover Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                                <megamenu_color_themesettings>1</megamenu_color_themesettings>
+                            </depends>
+                        </nav_item_hbg>
+						<nav_fontsize>
+                            <label>NavBar Text Fontsize</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_design_font_fontsize</source_model>
+                            <sort_order>115</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>
+                                <![CDATA[Set NavBar Text Font Size. default = 21px]]>
+                            </comment>
+							<depends>
+                                <megamenu_color_themesettings>1</megamenu_color_themesettings>
+                            </depends>
+                        </nav_fontsize>
+						<nav_text>
+                            <label>NavBar Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                                <megamenu_color_themesettings>1</megamenu_color_themesettings>
+                            </depends>
+                        </nav_text>
+						<nav_item_htext>
+                            <label>NavBar Menu Hover Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>130</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                                <megamenu_color_themesettings>1</megamenu_color_themesettings>
+                            </depends>
+                        </nav_item_htext>
+						<megamenu_bg>
+                            <label>Megamenu Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>140</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                                <megamenu_color_themesettings>1</megamenu_color_themesettings>
+                            </depends>
+                        </megamenu_bg>
+						<megamenu_text>
+                            <label>Megamenu Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>150</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                                <megamenu_color_themesettings>1</megamenu_color_themesettings>
+                            </depends>
+                        </megamenu_text>
+						<megamenu_col_headtext>
+                            <label>Megamenu Cols Heading Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>160</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                                <megamenu_color_themesettings>1</megamenu_color_themesettings>
+                            </depends>
+                        </megamenu_col_headtext>
+						<megamenu_col_headb>
+                            <label>Megamenu Cols Heading Border Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>170</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                                <megamenu_color_themesettings>1</megamenu_color_themesettings>
+                            </depends>
+                        </megamenu_col_headb>
+						<megamenu_link>
+                            <label>Megamenu Link Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>180</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                                <megamenu_color_themesettings>1</megamenu_color_themesettings>
+                            </depends>
+                        </megamenu_link>
+						<megamenu_hlink>
+                            <label>Megamenu Link Hover Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>190</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                                <megamenu_color_themesettings>1</megamenu_color_themesettings>
+                            </depends>
+                        </megamenu_hlink>
+					</fields>
+				</megamenu>
+				<fonts>
+                    <label>Fonts</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>85</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<general_fontfamily translate="label">
+                            <label>General <![CDATA[<p style="background: yellow none repeat scroll 0% 0%; width: auto; display: inline; padding: 1px 10px;"><span style="color:red;">fntuc-gen</span> use class for set this font.</p>]]></label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </general_fontfamily>
+						<font_family translate="label">
+							<label>Font Family</label>
+							<frontend_type>select</frontend_type>
+							<source_model>kasuva/system_config_source_design_font_fontfamilylist</source_model>
+							<sort_order>5</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>
+                                <![CDATA[Set General Font Family. if set default = Roboto]]>
+                            </comment>
+						</font_family>
+						<google_fontfamily translate="label">
+                            <label>Google Font Family</label>
+                            <comment>
+                                <![CDATA[Font preview is available on <a href="http://www.google.com/webfonts">Google Web Fonts</a>]]>
+                            </comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_design_font_googlefontfamily</source_model>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <font_family>googlefont</font_family>
+                            </depends>
+                        </google_fontfamily>
+						<googleprimary_char_latin_ext translate="label">
+                            <label>Character Set: Latin Extended</label>
+                            <comment>
+                                <![CDATA[Only selected fonts support extended character sets. For a complete list of available fonts and font subsets please refer to <a href="http://www.google.com/webfonts">Google Web Fonts</a>.]]>
+                            </comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                               <font_family>googlefont</font_family>
+                            </depends>
+                        </googleprimary_char_latin_ext>
+						<general_fontsize>
+                            <label>Fontsize</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_design_font_fontsize</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>
+                                <![CDATA[Set Theme Text Font Size. default = 13px]]>
+                            </comment>
+                        </general_fontsize>
+						<heading_fontfamily translate="label">
+                            <label>Heading (Title, Shopping Cart etc.) <![CDATA[<p style="background: yellow none repeat scroll 0% 0%; width: auto; display: inline; padding: 1px 10px;"><span style="color:red;">fntuc-head</span> use class for set this font.</p>]]></label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_fontfamily>
+						<head_font_family translate="label">
+							<label>Font Family</label>
+							<frontend_type>select</frontend_type>
+							<source_model>kasuva/system_config_source_design_font_fontfamilylist</source_model>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>
+                                <![CDATA[Set Heading Font Family. if set default = Fjalla One]]>
+                            </comment>
+						</head_font_family>
+						<head_google_fontfamily translate="label">
+                            <label>Google Font Family</label>
+                            <comment>
+                                <![CDATA[Font preview is available on <a href="http://www.google.com/webfonts">Google Web Fonts</a>]]>
+                            </comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_design_font_googlefontfamily</source_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <head_font_family>googlefont</head_font_family>
+                            </depends>
+                        </head_google_fontfamily>
+						<head_googleprimary_char_latin_ext translate="label">
+                            <label>Character Set: Latin Extended</label>
+                            <comment>
+                                <![CDATA[Only selected fonts support extended character sets. For a complete list of available fonts and font subsets please refer to <a href="http://www.google.com/webfonts">Google Web Fonts</a>.]]>
+                            </comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                               <head_font_family>googlefont</head_font_family>
+                            </depends>
+                        </head_googleprimary_char_latin_ext>
+						<head_fontweight translate="label">
+                            <label>Font Weight</label>
+                            <comment>
+                                <![CDATA[Set Heading Font Weight. default = 500]]>
+                            </comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_design_font_fontweight</source_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </head_fontweight>
+						<heading_imported_font translate="label">
+                            <label>Default Imported Fonts (Title, Shopping Cart etc.) <![CDATA[<div style="font-weight:normal;"><hr style="border:1px solid #ccc;"><br>
+							<p>Use below list type of fonts class for display own style.</p>
+							<ul>
+								<li><strong><span style="color:red;">fntuc-style1</span> &gt;</strong> class for display "FjallaOneRegular" font.</li>
+								<li><strong><span style="color:red;">fntuc-style2</span> &gt;</strong> class for display "BebasNeueRegular" font.</li>
+								<li><strong><span style="color:red;">fntuc-style3</span> &gt;</strong> class for display "LatoBold" font.</li>
+								<li><strong><span style="color:red;">fntuc-style4</span> &gt;</strong> class for display "BebasNeueBold" font.</li>
+							</ul>
+							</div>]]></label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_imported_font>
+                    </fields>
+                </fonts>
+				<category>
+                    <label>Category</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>90</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<category_color_themesettings translate="label">
+                            <label>Category Color Settings</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_themesettings</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </category_color_themesettings>
+                        <category_title_color>
+                            <label>Category Title Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                                <category_color_themesettings>1</category_color_themesettings>
+                            </depends>
+                        </category_title_color>
+						<category_desc_color>
+                            <label>Category Description Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                                <category_color_themesettings>1</category_color_themesettings>
+                            </depends>
+                        </category_desc_color>
+					</fields>
+				</category>
+				<product_info>
+                    <label>Product Info</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<productinfo_color_themesettings translate="label">
+                            <label>Product Info Color Settings</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_themesettings</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </productinfo_color_themesettings>
+						<heading_tabs translate="label">
+                            <label>Tabs</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                                <productinfo_color_themesettings>1</productinfo_color_themesettings>
+                            </depends>
+                        </heading_tabs>
+                        <product_tabs_bg>
+                            <label>Tabs Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                                <productinfo_color_themesettings>1</productinfo_color_themesettings>
+                            </depends>
+                        </product_tabs_bg>
+						<product_tabs_text>
+                            <label>Tabs Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                                <productinfo_color_themesettings>1</productinfo_color_themesettings>
+                            </depends>
+                        </product_tabs_text>
+						<product_tabs_hbg>
+                            <label>Tabs Hover Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                                <productinfo_color_themesettings>1</productinfo_color_themesettings>
+                            </depends>
+                        </product_tabs_hbg>
+						<product_tabs_htext>
+                            <label>Tabs Hover Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                                <productinfo_color_themesettings>1</productinfo_color_themesettings>
+                            </depends>
+                        </product_tabs_htext>
+						<product_tabs_abg>
+                            <label>Tabs Active Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                                <productinfo_color_themesettings>1</productinfo_color_themesettings>
+                            </depends>
+                        </product_tabs_abg>
+						<product_tabs_atext>
+                            <label>Tabs Active Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                                <productinfo_color_themesettings>1</productinfo_color_themesettings>
+                            </depends>
+                        </product_tabs_atext>
+					</fields>
+				</product_info>
+            </groups>
+        </kasuva_design>
+        <kasuva_settings translate="label comment" module="kasuva">
+            <tab>kasuvatheme</tab>
+            <label>kasuva Settings</label>
+            <frontend_type>text</frontend_type>
+            <sort_order>103</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label comment" module="kasuva">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <layout>
+                            <label>Boxed / Wide</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_design_theme_boxed</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </layout>
+						<boxed_bgimg>
+                            <label>Boxed Background Image</label>
+                            <comment>JPG,PNG</comment>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+							<comment>
+                                <![CDATA[Set out of box background image for boxed version.]]>
+                            </comment>
+                            <upload_dir>media/wysiwyg/kasuva/boxed</upload_dir>
+                            <base_url type="media" scope_info="1">wysiwyg/kasuva/boxed</base_url>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                                <layout>1</layout>
+                            </depends>
+                        </boxed_bgimg>
+						<boxed_bgcolor>
+                            <label>Boxed Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+							<comment>
+                                <![CDATA[Set out of box background color for boxed version.]]>
+                            </comment>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                                <layout>boxed</layout>
+                            </depends>
+                        </boxed_bgcolor>
+						<heading_prodstyle translate="label">
+                            <label>Product</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_prodstyle>
+						<product_btn_style translate="label">
+                            <label>Products Buttons Style</label>
+                            <frontend_type>select</frontend_type>
+							<source_model>kasuva/system_config_source_design_buttons_prodbtnstyles</source_model>
+							<frontend_model>kasuva/adminhtml_system_config_form_field_prodbtnstyles</frontend_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>
+                                <![CDATA[Set product display button style. default = Style1 (Medium Size)(default)]]>
+                            </comment>
+                        </product_btn_style>
+                    </fields>
+                </general>
+                <header translate="label comment" module="kasuva">
+                    <label>Header</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>30</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<theme_logo>
+                            <label>Logo</label>
+                            <comment>JPG,PNG,GIF</comment>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir>media/wysiwyg/kasuva/logo</upload_dir>
+                            <base_url type="media" scope_info="1">wysiwyg/kasuva/logo</base_url>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </theme_logo>
+						<logo_alt>
+                            <label>Logo Alt</label>
+                            <frontend_type>text</frontend_type>
+                            <value>kasuva</value>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </logo_alt>
+						<header_contact>
+                            <label>Contact No</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </header_contact>
+						<header_email>
+                            <label>Email</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </header_email>
+						<heading_style translate="label">
+                            <label></label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_style>
+						<!--
+                        <style>
+                            <label>Header Style</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_header_type</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </style>
+						-->
+						<compare_link>
+                            <label>Show Compare Dropdown</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>
+                                <![CDATA[Set yes to display Compare link in top bar.]]>
+                            </comment>
+                        </compare_link>
+						<sticky_nav>
+                            <label>Show Sticky Menu</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>
+                                <![CDATA[Set yes to display Sticky Navigation Menu.]]>
+                            </comment>
+                        </sticky_nav>
+                    </fields>
+                </header>
+				<footer translate="label comment" module="kasuva">
+                    <label>Footer</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>31</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<active_footer_top>
+                            <label>Show Footer Top </label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+                        </active_footer_top>
+						<active_footer_bottom>
+                            <label>Show Footer Bottom </label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+                        </active_footer_bottom>
+						<copyright_style translate="label">
+                            <label>Copyrights</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </copyright_style>
+						<copyrights_text>
+                            <label>Copyrights Text</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>36</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </copyrights_text>
+                    </fields>
+                </footer>
+				<category translate="label">
+                    <label>Category</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>40</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<heading_categorylayout translate="label">
+                            <label>Layouts</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_categorylayout>
+						<category_layout translate="label">
+                            <label>Category Layout</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_category_categorylayouts</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </category_layout>
+						<categoryinfo_layout translate="label">
+                            <label>Category Info Styles</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_category_catinfostyles</source_model>
+							<!--<frontend_model>kasuva/adminhtml_system_config_form_field_catinfostyles</frontend_model>-->
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </categoryinfo_layout>
+						<heading_categoryinfo translate="label">
+                            <label>Category Info</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_categoryinfo>
+						<categoryinfo_image translate="label">
+                            <label>Category Image Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </categoryinfo_image>
+						<categoryinfo_title translate="label">
+                            <label>Category Title</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_category_cattitlestyles</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </categoryinfo_title>
+						<categoryinfo_desc translate="label">
+                            <label>Category Description</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_category_catdescstyles</source_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </categoryinfo_desc>
+					</fields>
+				</category>
+				<category_products translate="label">
+                    <label>Category Products</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<heading_catgridlayout translate="label">
+                            <label>1 Column (Columns of Products Grid Layout)</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_catgridlayout>
+						<catgrid_1col_lg translate="label">
+                            <label>Number of Columns Above 1200px</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catgrid_1col_lg>
+						<catgrid_1col_md translate="label">
+                            <label>Number of Columns within (992px - 1999px)</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catgrid_1col_md>
+						<catgrid_1col_sm translate="label">
+                            <label>Number of Columns within (768px - 991px)</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catgrid_1col_sm>
+						<catgrid_1col_xs translate="label">
+                            <label>Number of Columns within (480px - 767px)</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catgrid_1col_xs>
+						<catgrid_1col_xxs translate="label">
+                            <label>Number of Columns Below 480px</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catgrid_1col_xxs>
+						<heading_2col_catgridlayout translate="label">
+                            <label>2 Columns (Columns of Products Grid Layout)</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_2col_catgridlayout>
+						<catgrid_2col_lg translate="label">
+                            <label>Number of Columns Above 1200px</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catgrid_2col_lg>
+						<catgrid_2col_md translate="label">
+                            <label>Number of Columns within (992px - 1999px)</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catgrid_2col_md>
+						<catgrid_2col_sm translate="label">
+                            <label>Number of Columns within (768px - 991px)</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catgrid_2col_sm>
+						<catgrid_2col_xs translate="label">
+                            <label>Number of Columns within (480px - 767px)</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catgrid_2col_xs>
+						<catgrid_2col_xxs translate="label">
+                            <label>Number of Columns Below 480px</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catgrid_2col_xxs>
+						<heading_3col_catgridlayout translate="label">
+                            <label>3 Columns (Columns of Products Grid Layout)</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>82</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_3col_catgridlayout>
+						<catgrid_3col_lg translate="label">
+                            <label>Number of Columns Above 1200px</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <sort_order>83</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catgrid_3col_lg>
+						<catgrid_3col_md translate="label">
+                            <label>Number of Columns within (992px - 1999px)</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <sort_order>84</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catgrid_3col_md>
+						<catgrid_3col_sm translate="label">
+                            <label>Number of Columns within (768px - 991px)</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <sort_order>86</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catgrid_3col_sm>
+						<catgrid_3col_xs translate="label">
+                            <label>Number of Columns within (480px - 767px)</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <sort_order>88</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catgrid_3col_xs>
+						<catgrid_3col_xxs translate="label">
+                            <label>Number of Columns Below 480px</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catgrid_3col_xxs>
+						<heading_catitemimage translate="label">
+                            <label>Product Image</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_catitemimage>
+						<catprod_altimg_enable translate="label">
+                            <label>Alternative Image</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+							<comment>
+                                <![CDATA[Show alternative image on mouse hover over the product.]]>
+                            </comment>
+                            <sort_order>103</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catprod_altimg_enable>
+						<catprod_aspratio translate="label">
+                            <label>Product Image Aspect Ratio</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+							<comment>
+                                <![CDATA[Set auto height for product image.]]>
+                            </comment>
+                            <sort_order>104</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catprod_aspratio>
+						<catprodimg_width>
+                            <label>Image Width</label>
+                            <frontend_type>text</frontend_type>
+							<comment>
+                                <![CDATA[Set image width (ex: product image size 870x1080, you can set image width is 276)]]>
+                            </comment>
+                            <sort_order>105</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catprodimg_width>
+						<catprodimg_height>
+                            <label>Image Height</label>
+                            <frontend_type>text</frontend_type>
+							<comment>
+                                <![CDATA[Set image height (ex: product image size 870x1080, you can set image height is 342)]]>
+                            </comment>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                               <catprod_aspratio>0</catprod_aspratio>
+                            </depends>
+                        </catprodimg_height>
+						<heading_catitemlayout translate="label">
+                            <label>Product Elements (Enable/Disable)</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>200</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_catitemlayout>
+						<catprod_sku_enable translate="label">
+                            <label>SKU</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>205</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catprod_sku_enable>
+						<catprod_price_enable translate="label">
+                            <label>Price</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>210</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catprod_price_enable>
+						<catprod_rating_enable translate="label">
+                            <label>Rating</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>215</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catprod_rating_enable>
+						<catprod_wishlist_enable translate="label">
+                            <label>Wishlist</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>220</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catprod_wishlist_enable>
+						<catprod_compare_enable translate="label">
+                            <label>Compare</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>225</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catprod_compare_enable>
+						<catprod_addtocart_enable translate="label">
+                            <label>AddtoCart</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>230</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catprod_addtocart_enable>
+						<catprod_quickview_enable translate="label">
+                            <label>QuickView</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>235</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catprod_quickview_enable>
+					</fields>
+				</category_products>
+				<product_info translate="label">
+                    <label>Product Info</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>80</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<heading_productlayout translate="label">
+                            <label>Layouts</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_productlayout>
+						<product_layout translate="label">
+                            <label>Product View Layout</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_productinfo_productlayouts</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </product_layout>
+						<productinfo_sku_enable translate="label">
+                            <label>SKU</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </productinfo_sku_enable>
+						<productinfo_quickinfo_enable translate="label">
+                            <label>Quick Info</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </productinfo_quickinfo_enable>
+						<heading_productimage translate="label">
+                            <label>Product Image</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_productimage>
+						<product_aspratio translate="label">
+                            <label>Product Image Aspect Ratio</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+							<comment>
+                                <![CDATA[Set auto height for product image.]]>
+                            </comment>
+                            <sort_order>104</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </product_aspratio>
+						<product_image_width>
+                            <label>Image Width</label>
+                            <frontend_type>text</frontend_type>
+							<comment>
+                                <![CDATA[Set image width (ex: product image size 870x1080, you can set image width is 336)]]>
+                            </comment>
+                            <sort_order>105</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </product_image_width>
+						<product_image_height>
+                            <label>Image Height</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>110</sort_order>
+							<comment>
+                                <![CDATA[Set image height (ex: product image size 870x1080, you can set image height is 417)]]>
+                            </comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<product_aspratio>0</product_aspratio>
+							</depends>
+                        </product_image_height>
+						<heading_elvatezoom translate="label">
+                            <label>Elevate Zoom</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>200</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_elvatezoom>
+                        <elevate_enable translate="label">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>205</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </elevate_enable>
+						<zoom_type translate="label">
+                            <label>Zoom Type</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_elevate_zoomtype</source_model>
+                            <sort_order>210</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </zoom_type>
+						
+						<zoom_window_width translate="label">
+                            <label>zoomWindowWidth</label>
+                            <frontend_type>text</frontend_type>
+							<comment>
+                                <![CDATA[set zoom widnow width. Default: 400]]>
+                            </comment>
+                            <sort_order>215</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                               <zoom_type>window</zoom_type>
+                            </depends>
+                        </zoom_window_width>
+						<zoom_window_height translate="label">
+                            <label>zoomWindowHeight</label>
+                            <frontend_type>text</frontend_type>
+							<comment>
+                                <![CDATA[set zoom widnow height. Default: 400]]>
+                            </comment>
+                            <sort_order>220</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                               <zoom_type>window</zoom_type>
+                            </depends>
+                        </zoom_window_height>
+						<elevate_lenssize translate="label">
+                            <label>lensSize</label>
+                            <frontend_type>text</frontend_type>
+							<comment>
+                                <![CDATA[used when zoomType set to lens, when zoom type is set to window, then the lens size is auto calculated. Default: 200]]>
+                            </comment>
+                            <sort_order>225</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </elevate_lenssize>
+						<elevate_lenstype translate="label">
+                            <label>lensShape</label>
+                            <frontend_type>select</frontend_type>
+							<comment>
+                                <![CDATA[set lens type. Default: square]]>
+                            </comment>
+							<source_model>kasuva/system_config_source_setting_elevate_lenstype</source_model>
+                            <sort_order>230</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </elevate_lenstype>
+						<elevate_bordersize translate="label">
+                            <label>borderSize</label>
+                            <frontend_type>select</frontend_type>
+							<source_model>kasuva/system_config_source_setting_elevate_borderwidth</source_model>
+							<comment>
+                                <![CDATA[Border Size of the ZoomBox - Must be set here as border taken into account for plugin calculations. Default: 4px]]>
+                            </comment>
+                            <sort_order>235</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </elevate_bordersize>
+						<elevate_bordercolor translate="label">
+                            <label>borderColour</label>
+                            <frontend_type>text</frontend_type>
+							<comment>
+                                <![CDATA[set Border Colour. Default: 888]]>
+                            </comment>
+							<frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>240</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </elevate_bordercolor>
+                        <elevate_tint translate="label">
+                            <label>Tint</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+							<comment>
+                                <![CDATA[Enable a tint overlay, other Default: false]]>
+                            </comment>
+                            <sort_order>245</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                               <zoom_type>window</zoom_type>
+                            </depends>
+                        </elevate_tint>
+						<elevate_tint_color translate="label">
+                            <label>tintColour</label>
+                            <frontend_type>text</frontend_type>
+							<comment>
+                                <![CDATA[set Colour of the tint. Default: 333]]>
+                            </comment>
+							<frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>250</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                               <elevate_tint>1</elevate_tint>
+							   <zoom_type>window</zoom_type>
+                            </depends>
+                        </elevate_tint_color>
+						<elevate_tint_opacity translate="label">
+                            <label>tintOpacity</label>
+                            <frontend_type>select</frontend_type>
+							<comment>
+                                <![CDATA[set opacity of the tint. Default: 0.4]]>
+                            </comment>
+							<source_model>kasuva/system_config_source_setting_elevate_tintopacity</source_model>
+                            <sort_order>255</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                               <elevate_tint>1</elevate_tint>
+							   <zoom_type>window</zoom_type>
+                            </depends>
+                        </elevate_tint_opacity>
+						<elevate_scrollzoom translate="label">
+                            <label>scrollZoom</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+							<comment>
+                                <![CDATA[Set Yes to activate zoom on mouse scroll.Default: No]]>
+                            </comment>
+                            <sort_order>260</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </elevate_scrollzoom>
+						<!--<elevate_imagecrossfade translate="label">
+                            <label>imageCrossfade</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+							<comment>
+                                <![CDATA[Set Yes to activate simultaneous crossfade of images on gallery change. Default: Yes]]>
+                            </comment>
+                            <sort_order>265</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </elevate_imagecrossfade>-->
+						<elevate_easing translate="label">
+                            <label>easing</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+							<comment>
+                                <![CDATA[Set Yes to activate easing. Default: Yes]]>
+                            </comment>
+                            <sort_order>270</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </elevate_easing>
+						<elevate_easingduration translate="label">
+                            <label>easingDuration</label>
+                            <frontend_type>text</frontend_type>
+							<comment>
+                                <![CDATA[Set easing duration. Default: 2000]]>
+                            </comment>
+                            <sort_order>275</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                               <elevate_easing>1</elevate_easing>
+                            </depends>
+                        </elevate_easingduration>
+						<elevate_cursor translate="label">
+                            <label>cursor</label>
+                            <frontend_type>select</frontend_type>
+							<source_model>kasuva/system_config_source_setting_elevate_cursortype</source_model>
+							<comment>
+                                <![CDATA[set cursor for zoom. Default: default]]>
+                            </comment>
+                            <sort_order>280</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </elevate_cursor>
+						<elevate_lightbox translate="label">
+                            <label>Lightbox Enable</label>
+                            <frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<comment>
+                                <![CDATA[On Product Image Click to open lightbox. Default: Yes]]>
+                            </comment>
+                            <sort_order>285</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </elevate_lightbox>
+						<heading_productabstyle translate="label">
+                            <label>Product Tabs</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>400</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_productabstyle>
+						<productinfo_tabs_enable translate="label">
+                            <label>Tabs Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>410</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </productinfo_tabs_enable>
+						<product_tab_style translate="label">
+                            <label>Tab Style</label>
+                            <frontend_type>select</frontend_type>
+							<source_model>kasuva/system_config_source_setting_productinfo_tabstyles</source_model>
+							<comment>
+                                <![CDATA[set product tabs style. Default: Verticle]]>
+                            </comment>
+                            <sort_order>415</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </product_tab_style>
+                    </fields>
+                </product_info>
+				<products_slider translate="label">
+                    <label>Products Slider</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>150</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<heading_prodsliderimage translate="label">
+                            <label>Product Image</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_prodsliderimage>
+						<prodslider_altimg_enable translate="label">
+                            <label>Alternative Image</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+							<comment>
+                                <![CDATA[Show alternative image on mouse hover over the product.]]>
+                            </comment>
+                            <sort_order>103</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </prodslider_altimg_enable>
+						<prodslider_aspratio translate="label">
+                            <label>Product Image Aspect Ratio</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+							<comment>
+                                <![CDATA[Set auto height for product image.]]>
+                            </comment>
+                            <sort_order>104</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </prodslider_aspratio>
+						<prodsliderimg_width>
+                            <label>Image Width</label>
+                            <frontend_type>text</frontend_type>
+							<comment>
+                                <![CDATA[Set image width (ex: product image size 870x1080, you can set image width is 276)]]>
+                            </comment>
+                            <sort_order>105</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </prodsliderimg_width>
+						<prodsliderimg_height>
+                            <label>Image Height</label>
+                            <frontend_type>text</frontend_type>
+							<comment>
+                                <![CDATA[Set image height (ex: product image size 870x1080, you can set image height is 342)]]>
+                            </comment>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                               <prodslider_aspratio>0</prodslider_aspratio>
+                            </depends>
+                        </prodsliderimg_height>
+						<heading_prodmsliderimage translate="label">
+                            <label>Product Micro Image</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>115</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_prodmsliderimage>
+						<prodmslider_altimg_enable translate="label">
+                            <label>Alternative Image</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+							<comment>
+                                <![CDATA[Show alternative image on mouse hover over the product.]]>
+                            </comment>
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </prodmslider_altimg_enable>
+						<prodmslider_aspratio translate="label">
+                            <label>Product Image Aspect Ratio</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+							<comment>
+                                <![CDATA[Set auto height for product image.]]>
+                            </comment>
+                            <sort_order>125</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </prodmslider_aspratio>
+						<prodmsliderimg_width>
+                            <label>Image Width</label>
+                            <frontend_type>text</frontend_type>
+							<comment>
+                                <![CDATA[Set image width (ex: product image size 870x1080, you can set image width is 100)]]>
+                            </comment>
+                            <sort_order>130</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </prodmsliderimg_width>
+						<prodmsliderimg_height>
+                            <label>Image Height</label>
+                            <frontend_type>text</frontend_type>
+							<comment>
+                                <![CDATA[Set image height (ex: product image size 870x1080, you can set image height is 124)]]>
+                            </comment>
+                            <sort_order>135</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+                               <prodmslider_aspratio>0</prodmslider_aspratio>
+                            </depends>
+                        </prodmsliderimg_height>
+						<heading_prodsliderlayout translate="label">
+                            <label>Product Elements (Enable/Disable)</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>200</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_prodsliderlayout>
+						<prodslider_sku_enable translate="label">
+                            <label>SKU</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>205</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </prodslider_sku_enable>
+						<prodslider_price_enable translate="label">
+                            <label>Price</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>210</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </prodslider_price_enable>
+						<prodslider_rating_enable translate="label">
+                            <label>Rating</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>215</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </prodslider_rating_enable>
+						<prodslider_wishlist_enable translate="label">
+                            <label>Wishlist</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>220</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </prodslider_wishlist_enable>
+						<prodslider_compare_enable translate="label">
+                            <label>Compare</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>225</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </prodslider_compare_enable>
+						<prodslider_addtocart_enable translate="label">
+                            <label>AddtoCart</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>230</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </prodslider_addtocart_enable>
+						<prodslider_quickview_enable translate="label">
+                            <label>QuickView</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>235</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </prodslider_quickview_enable>
+					</fields>
+				</products_slider>
+				<product_related translate="label">
+                    <label>Product Related</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>200</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<relatedprod_enable translate="label">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>155</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </relatedprod_enable>
+						<relatedprod_title translate="label">
+                            <label>Title</label>
+                            <frontend_type>text</frontend_type>
+							<comment>
+                                <![CDATA[set related products title.]]>
+                            </comment>
+                            <sort_order>160</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </relatedprod_title>
+						<relatedprod_max translate="label">
+                            <label>Max Products</label>
+                            <frontend_type>text</frontend_type>
+							<comment>
+                                <![CDATA[set number of products want to display in related products.]]>
+                            </comment>
+                            <sort_order>165</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </relatedprod_max>
+						<relatedprod_1c_item translate="label">
+                            <label>1 Column item</label>
+                            <frontend_type>select</frontend_type>
+							<source_model>kasuva/system_config_source_setting_general_numberten</source_model>
+							<comment>
+                                <![CDATA[set number of products for display related products in 1 Column. Default: Verticle]]>
+                            </comment>
+                            <sort_order>170</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </relatedprod_1c_item>
+						<relatedprod_2c_item translate="label">
+                            <label>2 Columns item</label>
+                            <frontend_type>select</frontend_type>
+							<source_model>kasuva/system_config_source_setting_general_numberten</source_model>
+							<comment>
+                                <![CDATA[set number of products for display related products in 2 Columns. Default: Verticle]]>
+                            </comment>
+                            <sort_order>175</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </relatedprod_2c_item>
+						<relatedprod_3c_item translate="label">
+                            <label>3 Columns item</label>
+                            <frontend_type>select</frontend_type>
+							<source_model>kasuva/system_config_source_setting_general_numberten</source_model>
+							<comment>
+                                <![CDATA[set number of products for display related products in 3 Columns. Default: Verticle]]>
+                            </comment>
+                            <sort_order>180</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </relatedprod_3c_item>
+						<heading_relateditemlayout translate="label">
+                            <label>Product Layout</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>200</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_relateditemlayout>
+						<relatedprod_sku_enable translate="label">
+                            <label>SKU</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>205</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </relatedprod_sku_enable>
+						<relatedprod_price_enable translate="label">
+                            <label>Price</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>210</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </relatedprod_price_enable>
+						<relatedprod_rating_enable translate="label">
+                            <label>Rating</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>215</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </relatedprod_rating_enable>
+						<relatedprod_wishlist_enable translate="label">
+                            <label>Wishlist</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>220</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </relatedprod_wishlist_enable>
+						<relatedprod_quickview_enable translate="label">
+                            <label>QuickView</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>235</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </relatedprod_quickview_enable>
+					</fields>
+				</product_related>
+				<product_upsell translate="label">
+                    <label>Product Upsell</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>300</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<upsellprod_enable translate="label">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>155</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </upsellprod_enable>
+						<upsellprod_title translate="label">
+                            <label>Title</label>
+                            <frontend_type>text</frontend_type>
+							<comment>
+                                <![CDATA[set upsell products title.]]>
+                            </comment>
+                            <sort_order>160</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </upsellprod_title>
+						<upsellprod_max translate="label">
+                            <label>Max Products</label>
+                            <frontend_type>text</frontend_type>
+							<comment>
+                                <![CDATA[set number of products want to display in upsell products.]]>
+                            </comment>
+                            <sort_order>165</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </upsellprod_max>
+						<upsellprod_1c_item translate="label">
+                            <label>1 Column item</label>
+                            <frontend_type>select</frontend_type>
+							<source_model>kasuva/system_config_source_setting_general_numberten</source_model>
+							<comment>
+                                <![CDATA[set number of products for display upsell products in 1 Column. Default: Verticle]]>
+                            </comment>
+                            <sort_order>170</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </upsellprod_1c_item>
+						<upsellprod_2c_item translate="label">
+                            <label>2 Columns item</label>
+                            <frontend_type>select</frontend_type>
+							<source_model>kasuva/system_config_source_setting_general_numberten</source_model>
+							<comment>
+                                <![CDATA[set number of products for display upsell products in 2 Columns. Default: Verticle]]>
+                            </comment>
+                            <sort_order>175</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </upsellprod_2c_item>
+						<upsellprod_3c_item translate="label">
+                            <label>3 Columns item</label>
+                            <frontend_type>select</frontend_type>
+							<source_model>kasuva/system_config_source_setting_general_numberten</source_model>
+							<comment>
+                                <![CDATA[set number of products for display upsell products in 3 Columns. Default: Verticle]]>
+                            </comment>
+                            <sort_order>180</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </upsellprod_3c_item>
+						<heading_upsellitemlayout translate="label">
+                            <label>Product Layout</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>200</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_upsellitemlayout>
+						<upsellprod_sku_enable translate="label">
+                            <label>SKU</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>205</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </upsellprod_sku_enable>
+						<upsellprod_price_enable translate="label">
+                            <label>Price</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>210</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </upsellprod_price_enable>
+						<upsellprod_rating_enable translate="label">
+                            <label>Rating</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>215</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </upsellprod_rating_enable>
+						<upsellprod_wishlist_enable translate="label">
+                            <label>Wishlist</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>220</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </upsellprod_wishlist_enable>
+						<upsellprod_quickview_enable translate="label">
+                            <label>QuickView</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>235</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </upsellprod_quickview_enable>
+					</fields>
+				</product_upsell>
+				<product_labels translate="label">
+                    <label>Product Labels</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>800</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <new translate="label">
+                            <label>Display New Label</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_productlabel_new</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </new>
+                        <sale translate="label">
+                            <label>Display Sale Label</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>kasuva/system_config_source_setting_productlabel_sale</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sale>
+                    </fields>
+                </product_labels>
+				<newsletter_popup translate="label">
+                    <label>Newsletter Popup</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>850</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<enabled translate="label">
+                            <label>Enable newsletter popup</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+						<!--<showon translate="label">
+                            <label>Show Page</label>
+                            <frontend_type>select</frontend_type>
+							<source_model>kasuva/system_config_source_setting_newsletter_showon</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </showon>-->
+						<newsletter_pop_logo translate="label">
+                            <label>Logo Image</label>
+                            <frontend_type>text</frontend_type>
+							<comment>
+                                <![CDATA[Default: images/logo.png]]>
+                            </comment>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </newsletter_pop_logo>
+						<newsletter_pop_cont translate="label">
+                            <label>Popup Content</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </newsletter_pop_cont>
+						<newsletter_pop_dtime translate="label">
+                            <label>Popup Delay Time</label>
+                            <frontend_type>text</frontend_type>
+							<comment>
+                                <![CDATA[Default: 2000]]>
+                            </comment>
+                            <sort_order>45</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </newsletter_pop_dtime>
+						<newsletter_pop_width translate="label">
+                            <label>Popup Width</label>
+                            <frontend_type>text</frontend_type>
+							<comment>
+                                <![CDATA[Default: 700px]]>
+                            </comment>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </newsletter_pop_width>
+						<newsletter_pop_height translate="label">
+                            <label>Popup Height</label>
+                            <frontend_type>text</frontend_type>
+							<comment>
+                                <![CDATA[Default: 324px]]>
+                            </comment>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </newsletter_pop_height>
+						<newsletter_pop_bgcolor>
+                            <label>Popup Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </newsletter_pop_bgcolor>
+						<newsletter_pop_bgimage>
+                            <label>Popup Background Image</label>
+                            <comment>JPG,PNG,GIF</comment>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir>media/wysiwyg/kasuva</upload_dir>
+                            <base_url type="media" scope_info="1">wysiwyg/kasuva</base_url>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </newsletter_pop_bgimage>
+                    </fields>
+                </newsletter_popup>
+				<contacts translate="label">
+                    <label>Contact Us</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>900</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<gmap_enabled translate="label">
+                            <label>Enable Google Map</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </gmap_enabled>
+						<custom_gmap translate="label">
+                            <label>Google Map Block</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+							<comment>
+                                <![CDATA[In order to display Google Map Block, use the Static Block ID (CMS->Static Blocks section) e.g. contacts_google_map]]>
+                            </comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								<gmap_enabled>1</gmap_enabled>
+							</depends>
+                        </custom_gmap>
+						<custom_store_info translate="label">
+                            <label>Store Information Block</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+							<comment>
+                                <![CDATA[In order to display Store Information Block, use the Static Block ID (CMS->Static Blocks section) e.g. contacts_store_information]]>
+                            </comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </custom_store_info>
+                    </fields>
+                </contacts>
+				<theme_install translate="label comment">
+                    <label>Theme Installation</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>9100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <heading_import_blocks>
+                            <label>Import Static Blocks</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>200</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_import_blocks>
+						<overwrite_blocks>
+                            <label>Overwrite Existing Blocks</label>
+                            <comment>If the identifiers of the static blocks are already exist, you can set to "Yes" then save the configuration, then click the "Import Static Blocks" button.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>210</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </overwrite_blocks>
+                        <import_blocks>
+                            <label>Static Blocks</label>
+                            <comment>
+                                <![CDATA[Click this button to create all static blocks provided with this theme.]]>
+                            </comment>
+                            <frontend_type>button</frontend_type>
+                            <frontend_model>kasuva/adminhtml_button_import_cms</frontend_model>
+                            <process>blocks</process>
+                            <sort_order>240</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </import_blocks>
+						<heading_import_pages>
+                            <label>Import CMS Pages</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>400</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_import_pages>
+						<overwrite_pages>
+                            <label>Overwrite Existing Pages</label>
+                            <comment>If the identifiers of the cms pages are already exist, you can set to "Yes" then save the configuration, then click the "Import CMS Pages" button.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>420</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </overwrite_pages>
+						<import_pages>
+                            <label>CMS Pages</label>
+                            <comment>
+                                <![CDATA[Click this button to create all CMS Pages provided with this theme.]]>
+                            </comment>
+                            <frontend_type>button</frontend_type>
+                            <frontend_model>kasuva/adminhtml_button_import_cms</frontend_model>
+                            <process>pages</process>
+                            <sort_order>430</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </import_pages>
+						<heading_import_pages>
+                            <label>Import Demo</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>450</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_import_pages>
+						<import_demos>
+                            <label>Demo 1</label>
+                            <comment></comment>
+                            <frontend_type>button</frontend_type>
+                            <frontend_model>kasuva/adminhtml_button_import_demos</frontend_model>
+                            <process>import</process>
+							<demo>demo1</demo>
+                            <sort_order>470</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </import_demos>
+						<import_demos_2>
+                            <label>Demo 2</label>
+                            <comment></comment>
+                            <frontend_type>button</frontend_type>
+                            <frontend_model>kasuva/adminhtml_button_import_demos</frontend_model>
+							<comment>
+                                <![CDATA[Furniture Demo]]>
+                            </comment>
+                            <process>import</process>
+							<demo>demo2</demo>
+                            <sort_order>480</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </import_demos_2>
+					</fields>
+				</theme_install>
+            </groups>
+        </kasuva_settings>
+    </sections>
+</config>

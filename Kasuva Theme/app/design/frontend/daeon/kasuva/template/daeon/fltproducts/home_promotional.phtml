@@ -1,0 +1,16 @@
+<?php 
+$store = Mage::app()->getStore();
+$code  = $store->getCode();
+$enable = Mage::getStoreConfig('fltproducts/promotional/active',$code);
+?>
+<?php if($enable == 1) { ?>
+	<?php 
+	$column_count =(Mage::getStoreConfig('fltproducts/promotional/column_count',$code)) ? Mage::getStoreConfig('fltproducts/promotional/column_count',$code) : 4;
+	$styles=(Mage::getStoreConfig('fltproducts/promotional/products_styles',$code)) ? Mage::getStoreConfig('fltproducts/promotional/products_styles',$code) : 'slider';
+	$row_count=(Mage::getStoreConfig('fltproducts/promotional/row_count',$code)) ? Mage::getStoreConfig('fltproducts/promotional/row_count',$code) : '2';
+	?>
+	<section class="section promotional-product wow fadeInUp">
+		<h3 class="section-title"><?php echo Mage::getStoreConfig('fltproducts/promotional/title',$code); ?></h3>
+	<?php echo $this->getLayout()->createBlock('fltproducts/promotional_home_list')->setData(array('column_count'=>$column_count,'row_count'=>$row_count))->setTemplate('daeon/fltproducts/'.$styles.'.phtml')->toHtml(); ?>
+	</section>
+<?php }  ?>

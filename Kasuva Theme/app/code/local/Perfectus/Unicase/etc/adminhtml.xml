@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<layout>
+		<updates>
+			<daeon_kasuva>
+				<file>kasuva.xml</file>
+			</daeon_kasuva>
+		</updates>
+	</layout>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <kasuva_design translate="title" module="kasuva">
+                                        <title>Theme Design</title>
+                                    </kasuva_design>
+                                    <kasuva_settings translate="title" module="kasuva">
+                                        <title>Theme Settings</title>
+                                    </kasuva_settings>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

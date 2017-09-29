@@ -1,0 +1,26 @@
+/**
+ * WARNING: Do not change this file. Your changes will be lost.
+ * kasuva v1 
+ */
+.main .ajaxpkt-block {display: none;height: 100%;left: 0;position: fixed;top: 0;width: 100%;z-index: 999;}
+.ajaxpkt-block .error-msg,
+.ajaxpkt-block .success-msg,
+.ajaxpkt-block .note-msg,
+.ajaxpkt-block .notice-msg {border: medium none;width: 100%;}
+.ajaxpkt-block .ajaxpkt-content {background: #fff none repeat scroll 0 0;border-radius: 5px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);box-sizing: border-box;margin: -150px auto 0;max-width: 330px;overflow: hidden;position: fixed;top: 50%;width: 100%;left: 50%;z-index: 99;transform: translatex(-50%);-webkit-transform: translatex(-50%);-moz-transform: translatex(-50%);-ms-transform: translatex(-50%);}
+.ajaxpkt-block .image .product-image {max-width: 160px;margin: 10px auto;}
+.ajaxpkt-block .content {margin: 0 0 15px;text-align: center;}
+.ajaxpkt-block .actions {display: inline-block;margin: 10px 0 20px;text-align: center;width: 100%;}
+.ajaxpkt-block .actions .btn {margin: 0 5px;}
+.ajaxpkt-block .actions .btn:first-child {margin-left: 0px;}
+.ajaxpkt-block .actions .btn:last-child {margin-right: 0px;}
+.ajaxpkt-content .messages {margin: 0 !important;}
+.product.ajaxpkt-loader::before,
+.product.ajaxpkt-qckloader::before {background: #fff none repeat scroll 0 0;clear: both;content: " ";display: inline-block;float: left;height: 100%;opacity: 0.6;position: absolute;width: 100%;z-index: 11;}
+.product.ajaxpkt-loader::after, .product.ajaxpkt-qckloader::after {animation: 1s steps(8) 0s normal none infinite running fa-spin;border-radius: 50%;clear: both;content: "";font-family: fontawesome;font-size: 26px;left: 50%;margin-top: -10px;position: absolute;top: 50%;z-index: 999989;line-height:10px;}
+.ajaxpkt-block .ajaxpkt-close::after {color: #999;content: "\f104\f105";font-family: fontawesome;font-size: 20px;padding: 0 5px;letter-spacing: -12px;}
+.ajaxpkt-block .ajaxpkt-close {cursor: pointer;font-size: 18px;height: auto;position: absolute;right: 10px;top: -3px;z-index: 1;}
+#fancybox-loading {display: none !important;}
+@media(max-width:360px){
+	.ajaxpkt-block .ajaxpkt-content{max-width:95%;}
+}

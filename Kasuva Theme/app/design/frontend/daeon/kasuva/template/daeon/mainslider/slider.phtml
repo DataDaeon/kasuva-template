@@ -1,0 +1,71 @@
+<?php
+$cfg=Mage::helper('mainslider')->getSliderTpcfg('daeon_mainslider');
+if($cfg['settings']['mainslider_enable']){
+	$store = Mage::app()->getStore();
+	$collection = Mage::getModel("mainslider/mainslider")->getCollection(); 
+	$collection->addFieldToFilter('pslide_status', "1");
+	$collection->setOrder('pslide_order','ASC');
+	$collection->addStoreFilter(Mage::app()->getStore(true)->getId());
+	/*$collection->getSelect()->join(array('store_table' => $this->getTable('mainslider_store')),
+            'main_table.pslide_id = store_table.pslide_id',
+            array()
+        )->where('store_table.pslide_store_id in (?)', array(0, $store));*/
+	$cfgoptions=Mage::helper('mainslider')->getSliderTpcfg('daeon_mainslider/options');
+	$options=Mage::helper('mainslider')->getSliderOptions();
+	$sh=($cfgoptions['slider_height'])? filter_var($cfgoptions['slider_height'], FILTER_SANITIZE_NUMBER_INT) : '400';
+	$msmclass=$slideHeight='';
+	if(!empty($options)){
+		$msmclass .= (isset($options['autoHeight']) && $options['autoHeight'] )? ' autoHeight ' : '';
+		$msmclass .= (isset($options['fullWidth']) && $options['fullWidth'] )? 'full' : 'boxed';
+		$slideHeight = (isset($options['slideHeight']) && $options['slideHeight'])? $options['slideHeight'] : '';
+		$slideWidth = (isset($options['slideWidth']) && $options['slideWidth'])? $options['slideWidth'] : '';
+	}
+	//$blank_gif = $this->getSkinUrl('images/blank.gif');
+	?>
+	<?php if($collection->count()){ ?>
+	<div class="mainslider-wrapper ">
+		<div id="main-slider" class="main-slider owl-carousel <?php echo $msmclass;  ?>">
+		<?php foreach($collection as $slide){ ?>
+			<?php
+			$slide_image=Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'daeon/mainslider/'.$slide->getPslideImage(); 
+			if($slide_image)$slideimg_info=getimagesize($slide_image);
+			$slide_link=$slide->getPslideLink();
+			$slide_cptop=$slide->getPslideCptop();
+			$slide_cpleft=$slide->getPslideCpleft();
+			$slide_cp=$slide->getPslideCp();
+			$cp_class=$cp_styles='';
+			if($slide_cp=='cp-custom'){
+				$cp_styles=($slide_cpleft)? 'left:'.$slide_cpleft.'%;' : '';
+				$cp_styles.=($slide_cptop)? ' top:'.$slide_cptop.'%;' : '';
+			}else{
+				$cp_class=$slide_cp;
+			}
+			?>
+			<?php if($slide->getPslideType()==1){?>
+				<div class="item"><?php
+					if($slide_link){ echo '<a href="'.$slide_link.'">'; }
+						echo '<img class="slide-image lazyOwl" src="'.$slide_image.'" title="'.$slide->getPslideName().'" alt="'.$slide->getPslideName().'" '.$slideimg_info.' />';
+					if($slide_link){ echo '</a>'; }
+					?>
+				</div>
+			<?php }else if($slide->getPslideType()==2){ ?>
+				<div class="item" style="<?php echo ($slide_image!='')? 'background-image: url('.$slide_image.'); ' : '' ; ?>">
+					<div class="container-fluid">
+						<div class="caption-main-content">
+							<div class="caption-content <?php echo ($cp_class)? $cp_class : ''; ?>" style="<?php echo($cp_styles)? $cp_styles: ''; ?>">
+								<?php echo $slide->getPslideContent(); ?>
+							</div>
+						</div>
+					</div>
+				</div>
+			<?php } ?>
+		<?php } ?>
+		</div>
+	</div>
+	<style type="text/css"><?php if($slideHeight!=''){?>#main-slider .item{height:<?php echo $slideHeight.'px'; ?>}<?php } ?><?php if($slideWidth!=''){?>#main-slider{width:<?php echo $slideWidth.'px'; ?>}<?php } ?>
+	</style>
+	<script type="text/javascript">
+		var MNSliderOptions=JSON.parse('<?php echo Mage::helper('core')->jsonEncode($options); ?>');
+	</script>
+	<?php } ?>
+<?php } ?>

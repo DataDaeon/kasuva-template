@@ -1,0 +1,452 @@
+<root><blocks><cms_block>
+<title><![CDATA[Our Brands]]></title>
+<content><![CDATA[<div class="product-slider row outer-top-xs logo-slider">
+	<div id="brands-carousel" class="logo-slider wow fadeInUp col-sm-12">
+		<h3 class="section-title">Our Brands</h3>
+		<div class="logo-slider-inner owl-center-cont">	
+			<div id="brand-slider" class="owl-carousel home-owl-carousel custom-carousel" data-item="6">
+				<div class="item">
+					<a href="#" class="image">
+						<img class="lazyOwl" data-src="{{media url="wysiwyg/kasuva/brands/brand1.png"}}" src="{{media url="wysiwyg/kasuva/blank.gif"}}" alt="Brand" title="Brand" width="auto" height="auto">
+					</a>
+				</div><!--/.item-->
+				<div class="item">
+					<a href="#" class="image">
+						  <img  class="lazyOwl" data-src="{{media url="wysiwyg/kasuva/brands/brand2.png"}}" src="{{media url="wysiwyg/kasuva/blank.gif"}}" alt="Brand" title="Brand" width="auto" height="auto">
+					</a>	
+				</div><!--/.item-->
+				<div class="item">
+					<a href="#" class="image">
+						<img  class="lazyOwl" data-src="{{media url="wysiwyg/kasuva/brands/brand3.png"}}" src="{{media url="wysiwyg/kasuva/blank.gif"}}" alt="Brand" title="Brand" width="auto" height="auto">
+					</a>	
+				</div><!--/.item-->
+				<div class="item">
+					<a href="#" class="image">
+						<img  class="lazyOwl" data-src="{{media url="wysiwyg/kasuva/brands/brand4.png"}}" src="{{media url="wysiwyg/kasuva/blank.gif"}}" alt="Brand" title="Brand" width="auto" height="auto">
+					</a>	
+				</div><!--/.item-->
+				<div class="item">
+					<a href="#" class="image">
+						<img  class="lazyOwl" data-src="{{media url="wysiwyg/kasuva/brands/brand5.png"}}" src="{{media url="wysiwyg/kasuva/blank.gif"}}" alt="Brand" title="Brand" width="auto" height="auto">
+					</a>	
+				</div><!--/.item-->
+				<div class="item">
+					<a href="#" class="image">
+						<img  class="lazyOwl" data-src="{{media url="wysiwyg/kasuva/brands/brand6.png"}}" src="{{media url="wysiwyg/kasuva/blank.gif"}}" alt="Brand" title="Brand" width="auto" height="auto">
+					</a>	
+				</div><!--/.item-->
+				 <div class="item">
+					<a href="#" class="image">
+						<img  class="lazyOwl" data-src="{{media url="wysiwyg/kasuva/brands/brand1.png"}}" src="{{media url="wysiwyg/kasuva/blank.gif"}}" alt="Brand" title="Brand" width="auto" height="auto">
+					</a>
+				</div><!--/.item-->
+				<div class="item ">
+					<a href="#" class="image">
+						<img  class="lazyOwl" data-src="{{media url="wysiwyg/kasuva/brands/brand2.png"}}" src="{{media url="wysiwyg/kasuva/blank.gif"}}" alt="Brand" title="Brand" width="auto" height="auto">
+					</a>	
+				</div><!--/.item-->
+			</div><!-- /.owl-carousel #logo-slider -->
+		</div><!-- /.logo-slider-inner -->
+	</div><!-- /.logo-slider -->
+</div>]]></content>
+<identifier><![CDATA[our_brands]]></identifier>
+<is_active><![CDATA[1]]></is_active>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[Footer Top Column1]]></title>
+<content><![CDATA[<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="contact-info">
+<div class="footer-logo">
+<div class="logo"><a href="{{config path="web/secure/base_url"}}"> <img alt="kasuva" height="68" src="{{media url="wysiwyg/kasuva/logo/logo_1.png"}}" title="kasuva" width="181" /> </a></div>
+</div>
+<div class="module-body m-t-20">
+<p class="about-us">Nam libero tempore, cum soluta nobis est ses eligendi optio cumque cum soluta nobis est ses eligendi optio cumque.</p>
+<div class="social-icons">
+			<a href="#"><i class="icon fa fa-facebook"></i></a>
+			<a href="#"><i class="icon fa fa-twitter"></i></a>
+			<a href="#"><i class="icon fa fa-linkedin"></i></a>
+			<a href="#"><i class="icon fa fa-rss"></i></a>
+			<a href="#"><i class="icon fa fa-pinterest"></i></a>
+			</div>
+</div>
+</div>
+</div>]]></content>
+<identifier><![CDATA[footer_top_column1]]></identifier>
+<is_active><![CDATA[1]]></is_active>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[Footer Top Column2]]></title>
+<content><![CDATA[<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="contact-timing mobile-collapse">
+<div class="module-heading mobile-collapse__title">
+<h4 class="module-title">opening time</h4>
+</div>
+<!-- /.module-heading -->
+<div class="module-body outer-top-xs mobile-collapse__content">
+<div class="table-responsive">
+<table class="table">
+<tbody>
+<tr>
+<td>Monday-Friday:</td>
+<td class="pull-right">08.00 To 18.00</td>
+</tr>
+<tr>
+<td>Saturday:</td>
+<td class="pull-right">09.00 To 20.00</td>
+</tr>
+<tr>
+<td>Sunday:</td>
+<td class="pull-right">10.00 To 20.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- /.table-responsive -->
+<p class="contact-number">Hot Line:(400)888 868 848</p>
+</div>
+<!-- /.module-body --></div>
+<!-- /.contact-timing --></div>]]></content>
+<identifier><![CDATA[footer_top_column2]]></identifier>
+<is_active><![CDATA[1]]></is_active>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[Footer Top Column3]]></title>
+<content><![CDATA[<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="contact-timing mobile-collapse">
+	<div class="module-heading mobile-collapse__title">
+		<h4 class="module-title">Payment Methods</h4>
+	</div>
+	<div class="module-body outer-top-xs mobile-collapse__content">
+		<p>Every country and shopper has their prefered method to pay online. Offering your buyers safe and convenient payment choices can help your sale go smoothly, earn you positive Feedback, and bring them back for more.</p>
+	</div>
+</div>
+</div>]]></content>
+<identifier><![CDATA[footer_top_column3]]></identifier>
+<is_active><![CDATA[1]]></is_active>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[Footer Top Column4]]></title>
+<content><![CDATA[<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="contact-information mobile-collapse">
+<div class="module-heading mobile-collapse__title">
+<h4 class="module-title">information</h4>
+</div>
+<!-- /.module-heading -->
+<div class="module-body outer-top-xs mobile-collapse__content">
+<ul class="toggle-footer">
+<li class="media">
+<div class="pull-left"><span class="icon fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                    </span></div>
+<div class="media-body">
+<p>868 Any Stress,Burala Casi,Picasa USA.</p>
+</div>
+</li>
+<li class="media">
+<div class="pull-left">  <span class="icon fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
+                    </span></div>
+<div class="media-body">
+<p>(400) 0888 888 888<br />(400) 888 888 888</p>
+</div>
+</li>
+<li class="media">
+<div class="pull-left"> <span class="icon fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                    </span></div>
+<div class="media-body"><span><a href="#">Contact @kasuva.com</a></span><br /> <span><a href="#">Sale @kasuva.com</a></span></div>
+</li>
+</ul>
+</div>
+<!-- /.module-body --></div>
+<!-- /.contact-timing --></div>]]></content>
+<identifier><![CDATA[footer_top_column4]]></identifier>
+<is_active><![CDATA[1]]></is_active>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[Footer Bottom Column1]]></title>
+<content><![CDATA[<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="mobile-collapse">
+<div class="module-heading outer-bottom-xs mobile-collapse__title">
+<h4 class="module-title">Pre-Built Pages</h4>
+</div>
+<div class="module-body mobile-collapse__content">
+<ul class="list-unstyled">
+<li ><a  href="{{store direct_url="contacts"}}"><span>Contact Us</span></a></li>
+<li ><a  href="{{store direct_url="faq"}}"><span>FAQ</span></a></li>
+<li ><a  href="{{store direct_url="terms-conditions"}}"><span>Terms & Conditions</span></a></li>
+<li ><a  href="{{store direct_url="reward-points"}}"><span>Reward Points</span></a></li>
+<li ><a  href="{{store direct_url="404"}}"><span>404</span></a></li>
+</ul>
+</div>
+</div>
+</div>]]></content>
+<identifier><![CDATA[footer_bottom_column1]]></identifier>
+<is_active><![CDATA[1]]></is_active>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[Footer Bottom Column2]]></title>
+<content><![CDATA[<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="mobile-collapse">
+<div class="module-heading outer-bottom-xs mobile-collapse__title">
+<h4 class="module-title">my account</h4>
+</div>
+<!-- /.module-heading -->
+<div class="module-body mobile-collapse__content">
+<ul class="list-unstyled">
+<li><a href="#">My Account</a></li>
+<li><a href="#">Customer Service</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Site Map</a></li>
+<li><a href="#">Search Terms</a></li>
+</ul>
+</div>
+</div>
+<!-- /.module-body --></div>
+<!-- /.col -->]]></content>
+<identifier><![CDATA[footer_bottom_column2]]></identifier>
+<is_active><![CDATA[1]]></is_active>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[Footer Bottom Column4]]></title>
+<content><![CDATA[<div class="col-xs-12 col-sm-6 col-md-3">
+{{block type="newsletter/subscribe" name="newsletter" template="newsletter/footer_subscribe.phtml"}}
+</div>]]></content>
+<identifier><![CDATA[footer_bottom_column4]]></identifier>
+<is_active><![CDATA[1]]></is_active>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[Footer Bottom Column3]]></title>
+<content><![CDATA[<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="mobile-collapse">
+<div class="module-heading outer-bottom-xs mobile-collapse__title">
+<h4 class="module-title">help &amp; support</h4>
+</div>
+<!-- /.module-heading -->
+<div class="module-body mobile-collapse__content">
+<ul class="list-unstyled">
+<li><a href="#">Knowledgebase</a></li>
+<li><a href="#">Terms of Use</a></li>
+<li><a href="#">Contact Support</a></li>
+<li><a href="#">Marketplace Blog</a></li>
+<li><a href="#">About kasuva</a></li>
+</ul>
+</div>
+</div>
+<!-- /.module-body --></div>]]></content>
+<identifier><![CDATA[footer_bottom_column3]]></identifier>
+<is_active><![CDATA[1]]></is_active>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[Footer Payments]]></title>
+<content><![CDATA[<ul>
+	<li><img src="{{media url="wysiwyg/kasuva/payments/1.jpg"}}" alt="Paypal" title="Paypal" width="45" height="28" /></li>
+	<li><img src="{{media url="wysiwyg/kasuva/payments/2.jpg"}}" alt="Discover" title="Discover" width="45" height="28" /></li>
+	<li><img src="{{media url="wysiwyg/kasuva/payments/3.jpg"}}" alt="Visa" title="Visa" width="45" height="28" /></li>
+	<li><img src="{{media url="wysiwyg/kasuva/payments/4.jpg"}}" alt="Maestro" title="Maestro" width="45" height="28" /></li>
+	<li><img src="{{media url="wysiwyg/kasuva/payments/5.jpg"}}" alt="Discover" title="Discover" width="45" height="28" /></li>
+</ul>]]></content>
+<identifier><![CDATA[footer_payments]]></identifier>
+<is_active><![CDATA[1]]></is_active>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[Navigation Before Links]]></title>
+<content><![CDATA[&nbsp;]]></content>
+<identifier><![CDATA[pu_before_navmenu_links]]></identifier>
+<is_active><![CDATA[1]]></is_active>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[Navigation After Links]]></title>
+<content><![CDATA[<li>
+    <a class="level0" href="{{store direct_url="blog"}}"><span>Blog</span></a>
+</li>
+<li id="menu_custom" class="level0 menu pu-custom pu-fc ">
+	<a class="level0" href="javascript:void(0)"><span>Pages</span></a>
+	<div class="nav-dropdown" style="width: 500px; display: none;">
+		<div class="container">
+			<div id="popup45" class="pu-main-content">
+				<div class="block1 col-sm-12">
+					<div class="row">
+						<ul>
+							<li class="menu-item has-children parent pu-sm-2">
+								<a class="level1" href="javascript:void(0);"><span>Category Page</span></a>
+								<div class="nav-child-dropdown level1">
+									<ul>
+										<li class="menu-item "><a class="level2" href="http://kasuva.daeoninc.com/demo1-boxed/men.html"><span>1 Column</span></a></li>
+										<li class="menu-item "><a class="level2" href="http://kasuva.daeoninc.com/woman.html"><span>2 Columns Left Sidebar</span></a></li>
+										<li class="menu-item "><a class="level2" href="http://kasuva.daeoninc.com/demo1-sidebar/woman.html"><span>2 Columns Right Sidebar</span></a></li>
+										<li class="menu-item "><a class="level2" href="http://kasuva.daeoninc.com/demo2-furniture/chairs.html"><span>3 Columns</span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="menu-item has-children parent pu-sm-2">
+								<a class="level1" href="javascript:void(0);"><span>Product Info</span></a>
+								<div class="nav-child-dropdown level1">
+									<ul>
+										<li class="menu-item "><a class="level2" href="http://kasuva.daeoninc.com/demo1-boxed/elizabeth-pu-swing-dress-7.html"><span>1 Column</span></a></li>
+										<li class="menu-item "><a class="level2" href="http://kasuva.daeoninc.com/demo1-sidebar/woman/lorem-set-sint-occaecat-24.html"><span>2 Columns Left Sidebar</span></a></li>
+										<li class="menu-item "><a class="level2" href="http://kasuva.daeoninc.com/fashion-dress.html"><span>2 Columns Right Sidebar</span></a></li>
+										<li class="menu-item "><a class="level2" href="http://kasuva.daeoninc.com/demo2-furniture/barcelona-solid-wood-arm-chair-3.html"><span>3 Columns</span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="menu-item has-children parent pu-sm-2">
+								<a class="level1" href="javascript:void(0);"><span>Product Type</span></a>
+								<div class="nav-child-dropdown level1">
+									<ul>
+										<li class="menu-item "><a class="level2" href="{{store direct_url="elizabeth-pu-swing-dress.html"}}"><span>Simple Product</span></a></li>
+										<li class="menu-item "><a class="level2" href="{{store direct_url="configurable-products.html"}}"><span>Configure Product</span></a></li>
+										<li class="menu-item "><a class="level2" href="{{store direct_url="pillow-and-throw-set.html"}}"><span>Bundle Product</span></a></li>
+										<li class="menu-item "><a class="level2" href="{{store direct_url="group-product.html"}}"><span>Group Product</span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="menu-item has-children parent pu-sm-2">
+								<a class="level1" href="javascript:void(0);"><span>Pre-Built Pages</span></a>
+								<div class="nav-child-dropdown level1">
+									<ul>
+										<li class="menu-item "><a class="level2" href="{{store direct_url="contacts"}}"><span>Contact Us</span></a></li>
+										<li class="menu-item "><a class="level2" href="{{store direct_url="faq"}}"><span>FAQ</span></a></li>
+										<li class="menu-item "><a class="level2" href="{{store direct_url="terms-conditions"}}"><span>Terms & Conditions</span></a></li>
+										<li class="menu-item "><a class="level2" href="{{store direct_url="reward-points"}}"><span>Reward Points</span></a></li>
+										<li class="menu-item "><a class="level2" href="{{store direct_url="404"}}"><span>404</span></a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<ul class="mobile-menu">
+		<li class="menu-item has-children parent pu-sm-3">
+			<a class="level1" href="javascript:void(0);"><span>Category Page</span></a>
+				<ul>
+					<li class="menu-item "><a class="level2" href="http://kasuva.daeoninc.com/demo1-boxed/men.html"><span>1 Column</span></a></li>
+					<li class="menu-item "><a class="level2" href="http://kasuva.daeoninc.com/woman.html"><span>2 Columns Left Sidebar</span></a></li>
+					<li class="menu-item "><a class="level2" href="http://kasuva.daeoninc.com/demo1-sidebar/woman.html"><span>2 Columns Right Sidebar</span></a></li>
+					<li class="menu-item "><a class="level2" href="http://kasuva.daeoninc.com/demo2-furniture/chairs.html"><span>3 Columns</span></a></li>
+				</ul>
+		</li>
+		<li class="menu-item has-children parent pu-sm-3">
+			<a class="level1" href="javascript:void(0);"><span>Product Page</span></a>
+				<ul>
+					<li class="menu-item "><a class="level2" href="http://kasuva.daeoninc.com/demo1-boxed/elizabeth-pu-swing-dress-7.html"><span>1 Column</span></a></li>
+					<li class="menu-item "><a class="level2" href="http://kasuva.daeoninc.com/demo1-sidebar/woman/lorem-set-sint-occaecat-24.html"><span>2 Columns Left Sidebar</span></a></li>
+					<li class="menu-item "><a class="level2" href="http://kasuva.daeoninc.com/fashion-dress.html"><span>2 Columns Right Sidebar</span></a></li>
+					<li class="menu-item "><a class="level2" href="http://kasuva.daeoninc.com/demo2-furniture/barcelona-solid-wood-arm-chair-3.html"><span>3 Columns</span></a></li>
+				</ul>
+		</li>
+		<li class="menu-item has-children parent pu-sm-3">
+			<a class="level1" href="javascript:void(0);"><span>Product Type</span></a>
+				<ul>
+					<li class="menu-item "><a class="level2" href="{{store direct_url="elizabeth-pu-swing-dress.html"}}"><span>Simple Product</span></a></li>
+					<li class="menu-item "><a class="level2" href="{{store direct_url="configurable-products.html"}}"><span>Configure Product</span></a></li>
+					<li class="menu-item "><a class="level2" href="{{store direct_url="pillow-and-throw-set.html"}}"><span>Bundle Product</span></a></li>
+					<li class="menu-item "><a class="level2" href="{{store direct_url="group-product.html"}}"><span>Group Product</span></a></li>
+				</ul>
+		</li>
+		<li class="menu-item has-children parent pu-sm-3">
+			<a class="level1" href="javascript:void(0);"><span>Pre-Built Pages</span></a>
+				<ul>
+					<li class="menu-item "><a class="level2" href="{{store direct_url="contacts"}}"><span>Contact Us</span></a></li>
+					<li class="menu-item "><a class="level2" href="{{store direct_url="faq"}}"><span>FAQ</span></a></li>
+					<li class="menu-item "><a class="level2" href="{{store direct_url="terms-conditions"}}"><span>Terms & Conditions</span></a></li>
+					<li class="menu-item "><a class="level2" href="{{store direct_url="reward-points"}}"><span>Reward Points</span></a></li>
+					<li class="menu-item "><a class="level2" href="{{store direct_url="404"}}"><span>404</span></a></li>
+				</ul>
+		</li>
+	</ul>
+</li>]]></content>
+<identifier><![CDATA[pu_after_navmenu_links]]></identifier>
+<is_active><![CDATA[1]]></is_active>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[Sidebar Banners]]></title>
+<content><![CDATA[<div class="sidebar-widget  wow fadeInUp outer-top-vs">
+				<div id="advertisement-slider" class="advertisement-slider owl-carousel">
+					<div class="item"><img class="img-responsive" data-echo="{{media url="wysiwyg/kasuva/sidebar/b1.jpg"}}" src="{{media url="wysiwyg/kasuva/blank.gif"}}" title="banner" width="263" height="352" /></div>
+                                         <div class="item"><img class="img-responsive" data-echo="{{media url="wysiwyg/kasuva/sidebar/b2.jpg"}}" src="{{media url="wysiwyg/kasuva/blank.gif"}}" title="banner" width="263" height="352" /></div>
+				</div>
+			</div>]]></content>
+<identifier><![CDATA[sidebar_banners]]></identifier>
+<is_active><![CDATA[1]]></is_active>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[kasuva Category Custom Left Sidebar]]></title>
+<content><![CDATA[{{block type="fltproducts/bestsellers_home_list" block-title="Best Seller" column_count="2" limit="4" name="bestseller-sidebar" template="daeon/fltproducts/sidebar_block.phtml"}}
+{{block type="fltproducts/newproduct_home_list" block-title="New Products" column_count="3" limit="4"  name="newsprod-sidebar" template="daeon/fltproducts/sidebar_block.phtml"}}
+{{block type="cms/block" block_id="sidebar_banners"}}]]></content>
+<identifier><![CDATA[kasuva_category_custom_left_sidebar]]></identifier>
+<is_active><![CDATA[1]]></is_active>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[kasuva Category Custom Right Sidebar]]></title>
+<content><![CDATA[{{block type="fltproducts/featured_home_list" block-title="Featured Products" column_count="3" limit="6"  name="featured-sidebar" template="daeon/fltproducts/sidebar_block.phtml"}}]]></content>
+<identifier><![CDATA[kasuva_category_custom_right_sidebar]]></identifier>
+<is_active><![CDATA[1]]></is_active>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[Google Map]]></title>
+<content><![CDATA[<iframe src="https://maps.google.co.in/maps?f=q&source=s_q&hl=en&geocode=&q=Auburn+Grove,+Hawthorn,+Victoria,+Australia&aq=0&oq=Auburn+Groove,+Hawthorn&sll=23.223279,72.657137&sspn=0.07651,0.169086&ie=UTF8&hq=&hnear=Auburn+Grove,+Hawthorn+East+Victoria+3123,+Australia&t=m&z=14&ll=-37.825499,145.04689&output=embed" width="100%" height="450"  style="border:0"><br /><small><a href="https://maps.google.co.in/maps?f=q&source=embed&hl=en&geocode=&q=Auburn+Grove,+Hawthorn,+Victoria,+Australia&aq=0&oq=Auburn+Groove,+Hawthorn&sll=23.223279,72.657137&sspn=0.07651,0.169086&ie=UTF8&hq=&hnear=Auburn+Grove,+Hawthorn+East+Victoria+3123,+Australia&t=m&z=14&ll=-37.825499,145.04689" style="color:#0000FF;text-align:left">View Larger Map</a></small></iframe>]]></content>
+<identifier><![CDATA[contacts_google_map]]></identifier>
+<is_active><![CDATA[1]]></is_active>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[Contacts Store Information]]></title>
+<content><![CDATA[<div class="contact-title">
+	<h4 class="fntuc-head">INFORMATION</h4>
+</div>
+<div class="clearfix address">
+	<span class="contact-i theme--bgcolor"><i class="fa fa-map-marker"></i></span>
+	<span class="contact-span">868 Any Stress, Burala Casi, Picasa USA.</span>
+</div>
+<div class="clearfix phone-no">
+	<span class="contact-i theme--bgcolor"><i class="fa fa-mobile"></i></span>
+	<span class="contact-span">(400) 0888 888 888 <br>(400) 888 848 868</span>
+</div>
+<div class="clearfix email">
+	<span class="contact-i theme--bgcolor"><i class="fa fa-envelope"></i></span>
+	<span class="contact-span">Contact@kasuva.com <br>Sale@kasuva.com</span>
+</div>
+]]></content>
+<identifier><![CDATA[contacts_store_information]]></identifier>
+<is_active><![CDATA[1]]></is_active>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[kasuva Product Info Custom Left Sidebar]]></title>
+<content><![CDATA[{{block type="fltproducts/bestsellers_home_list" block-title="Best Seller" column_count="1" column_lg="1" column_md="1" column_sm="2" column_xs="1" row_count="2"  limit="4" name="bestseller-sidebar" template="daeon/fltproducts/sidebar_block.phtml"}}
+{{block type="cms/block" block_id="sidebar_banners"}}]]></content>
+<identifier><![CDATA[kasuva_prodinfo_custom_left_sidebar]]></identifier>
+<is_active><![CDATA[1]]></is_active>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[kasuva Product Info Custom Right Sidebar]]></title>
+<content><![CDATA[{{block type="cms/block" block_id="sidebar_banners"}}]]></content>
+<identifier><![CDATA[kasuva_prodinfo_custom_right_sidebar]]></identifier>
+<is_active><![CDATA[1]]></is_active>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+</blocks></root>

@@ -1,0 +1,64 @@
+<?php echo $this->getMessagesBlock()->toHtml() ?>
+<?php 
+	$tmpCfg = Mage::registry('tmpCfg');
+	$Cfg = $tmpCfg['set']['category'];
+	$catLayout=$Cfg['categoryinfo_layout'];
+	$catTitle=$Cfg['categoryinfo_title'];
+	$catDesc=$Cfg['categoryinfo_desc'];
+	if(in_array($catLayout,array('inside'))):
+		$_helper    = $this->helper('catalog/output');
+		$_category  = $this->getCurrentCategory();
+		$_imgHtml   = '';
+		$_abovehtml=$_belowhtml=$_insedehtml=$desc='';
+		if($Cfg['categoryinfo_image']):
+			if (($_imgUrl = $_category->getImageUrl())) {
+				$_imgHtml = '<div class="category-image"><img src="'.$_imgUrl.'" alt="'.$this->escapeHtml($_category->getName()).'" title="'.$this->escapeHtml($_category->getName()).'" /></div>';
+				$_imgHtml = $_helper->categoryAttribute($_category, $_imgHtml, 'image');
+			}
+		endif;
+		$title='<h1 class="category-title">'.$_helper->categoryAttribute($_category, $_category->getName(), 'name').'</h1>';
+		if($_description=$_category->getDescription()):
+		$desc='<div class="category-description std">'.$_helper->categoryAttribute($_category, $_description, 'description').'</div>';
+		endif;
+		//above
+		if($catTitle=='above'): $_abovehtml.=$title; endif;
+		if($catDesc=='above'): $_abovehtml.=$desc; endif;
+		//inside
+		if($catTitle=='inside'): $_insedehtml.=$title; endif;
+		if($catTitle!='inside' && $catDesc!='inside' && $_imgHtml!='' ){
+			$_abovehtml.=$_imgHtml; 
+		}else if(($catTitle=='0' || $catTitle!='inside') && ($catDesc=='0' || $catDesc!='inside') && $_imgHtml!='' ){
+			 $_insedehtml.=$_imgHtml; 
+		}
+		if($catDesc=='inside'): $_insedehtml.=$desc; endif;
+		//below
+		if($catTitle=='below'): $_belowhtml.=$title; endif;
+		if($catDesc=='below'): $_belowhtml.=$desc; endif;
+		
+		if($catTitle!='inside' && $catDesc!='inside'){
+			$_imgUrl='';
+		}
+	?>
+	<?php if($_abovehtml!='' || $_insedehtml!='' || $_belowhtml!=''): ?>
+	<div class="catinfo-content <?php echo "l-".$catLayout; ?>">
+		<?php echo ($_abovehtml)? '<div class="above-con">'.$_abovehtml.'</div>' : '' ?>
+		<?php if($catTitle=='inside' || $catDesc=='inside'): ?>
+		<div class="catinfo <?php echo (($catTitle=='inside' || $catDesc=='inside') && $_imgUrl )? 'inside-all' : ''; ?>" <?php echo ($_imgUrl)? 'style="background-image:url('.$_imgUrl.');"' : ''; ?>>
+		<?php if($_insedehtml): echo '<div class="content"><div class="inner-content">'.$_insedehtml.'</div></div>'; endif; ?>
+		</div>
+		<?php endif; ?>
+		<?php echo ($_belowhtml)? '<div class="below-con">'.$_belowhtml.'</div>' : '' ?>
+	</div>
+	<?php endif; ?>
+	<?php endif; ?>
+
+<?php if($this->isContentMode()): ?>
+    <?php echo $this->getCmsBlockHtml() ?>
+
+<?php elseif($this->isMixedMode()): ?>
+    <?php echo $this->getCmsBlockHtml() ?>
+    <?php echo $this->getProductListHtml() ?>
+
+<?php else: ?>
+    <?php echo $this->getProductListHtml() ?>
+<?php endif; ?>

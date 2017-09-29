@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+    <adminhtml>
+		<acl>
+			<resources>
+				<all>
+					<title>FilterProducts</title>
+				</all>
+				<admin>
+					<children>
+						<system>
+      					<children>
+      						<config>
+      							<children>
+      								<fltproducts translate="title" module="fltproducts">
+      									<title>FilterProducts</title>
+      								</fltproducts>
+      							</children>
+      						</config>
+      					</children>
+      				</system>
+						<daeon_Fltproducts>
+							<title>FilterProducts Module</title>
+							<sort_order>10</sort_order>
+						</daeon_Fltproducts>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+	</adminhtml>

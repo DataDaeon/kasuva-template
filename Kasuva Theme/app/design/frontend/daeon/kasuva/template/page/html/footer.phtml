@@ -1,0 +1,47 @@
+<?php 
+	$tmpCfg = Mage::registry('tmpCfg');
+	$store = Mage::app()->getStore();
+	$code  = $store->getCode();
+    $Cfg = $tmpCfg['set']['footer'];
+	$cms_block = $this->getLayout()->createBlock('cms/block');
+?>
+<footer id="footer" class="footer color-bg">
+<?php if($Cfg['active_footer_top']){ ?>
+	<div class="footer-top links-social inner-top-sm inner-bottom-sm">
+        <div class="container">
+            <div class="row">
+				<?php echo $cms_block->setBlockId('footer_top_column1')->toHtml(); ?>
+				<?php echo $cms_block->setBlockId('footer_top_column2')->toHtml(); ?>
+				<?php echo $cms_block->setBlockId('footer_top_column3')->toHtml(); ?>
+				<?php echo $cms_block->setBlockId('footer_top_column4')->toHtml(); ?>
+			</div>
+		</div>
+	</div>
+<?php } ?>
+<?php if($Cfg['active_footer_bottom']){ ?>
+	<div class="footer-bottom inner-top-sm inner-bottom-sm">
+        <div class="container">
+            <div class="row">
+				<?php echo $cms_block->setBlockId('footer_bottom_column1')->toHtml(); ?>
+				<?php echo $cms_block->setBlockId('footer_bottom_column2')->toHtml(); ?>
+				<?php echo $cms_block->setBlockId('footer_bottom_column3')->toHtml(); ?>
+				<?php echo $cms_block->setBlockId('footer_bottom_column4')->toHtml(); ?>
+			</div>
+		</div>
+	</div>
+<?php } ?>
+	<div class="copyright-bar">
+        <div class="container">
+            <div class="col-xs-12 col-sm-6 no-padding">
+                <div class="copyright"><?php echo $Cfg['copyrights_text']; ?></div>
+            </div>
+            <div class="col-xs-12 col-sm-6 no-padding">
+                <div class="clearfix payment-methods">
+					<?php echo $cms_block->setBlockId('footer_payments')->toHtml(); ?>
+                    
+                </div><!-- /.payment-methods -->
+            </div>
+        </div>
+    </div>
+	 <?php echo $this->getChildHtml() ?>
+</footer>

@@ -1,0 +1,18 @@
+<?php
+$_mgHelper = Mage::helper('megamenu');
+if($_mgHelper->getCfg('general/sidebar_enabled')){
+    //Mage::helper('megamenu')->saveCurrentCategoryIdToSession();
+    $menuData = $_mgHelper->getMenuData();
+    extract($menuData);
+	$tmpCfg = Mage::registry('tmpCfg');
+?>
+<?php $mgclass=($tmpCfg['deg']['megamenu']['megamenu_color_themesettings'])? 'custom' : 'default'; ?>
+<div class="sidebar-widget sidebar-nav <?php echo $mgclass; ?>">
+	<div class="menu-wrapper">
+		<div class="head fntuc-head"><i class="icon fa fa-align-justify fa-fw"></i> <?php echo $this->__('Categories'); ?></div>
+		<ul id="sidebarnav" class="nav side-menu pumgmenu">
+			<?php echo $_mgHelper->getSideMenuContent(); ?>
+		</ul>
+	</div>
+</div>
+<?php } ?>

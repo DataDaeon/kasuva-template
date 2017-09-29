@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <daeon_Fltproducts>
+            <active>true</active>
+            <codePool>local</codePool>
+        </daeon_Fltproducts>
+    </modules>
+</config> 

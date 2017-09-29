@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <fltproducts_index_bestsellers>
+        <reference name="content">
+            <block type="fltproducts/bestsellers_list" name="bestsellers_list" template="catalog/product/list.phtml" >
+				<block type="catalog/product_list_toolbar" name="product_list_toolbar" template="catalog/product/list/toolbar.phtml">
+                	<block type="page/html_pager" name="product_list_toolbar_pager" />
+                </block>
+                <action method="setToolbarBlockName"><name>product_list_toolbar</name></action>
+            </block>
+        </reference>
+    </fltproducts_index_bestsellers>
+	
+	<fltproducts_index_featured>
+        <reference name="content">
+			<block type="fltproducts/featured_list" name="featured_list" template="catalog/product/list.phtml" >
+				<block type="catalog/product_list_toolbar" name="product_list_toolbar" template="catalog/product/list/toolbar.phtml">
+                	<block type="page/html_pager" name="product_list_toolbar_pager" />
+                </block>
+                <action method="setToolbarBlockName"><name>product_list_toolbar</name></action>
+            </block>
+		</reference>
+    </fltproducts_index_featured>
+	
+	<fltproducts_index_specials>
+        <reference name="content">
+			<block type="fltproducts/specials_list" name="specials_list" template="catalog/product/list.phtml" >
+				<block type="catalog/product_list_toolbar" name="product_list_toolbar" template="catalog/product/list/toolbar.phtml">
+                	<block type="page/html_pager" name="product_list_toolbar_pager" />
+                </block>
+                <action method="setToolbarBlockName"><name>product_list_toolbar</name></action>
+            </block>
+		</reference>
+    </fltproducts_index_specials>
+	
+	<fltproducts_index_mostviewed>
+        <reference name="content">
+			<block type="fltproducts/mostviewed_list" name="mostviewed_list" template="catalog/product/list.phtml" >
+				<block type="catalog/product_list_toolbar" name="product_list_toolbar" template="catalog/product/list/toolbar.phtml">
+                	<block type="page/html_pager" name="product_list_toolbar_pager" />
+                </block>
+                <action method="setToolbarBlockName"><name>product_list_toolbar</name></action>
+            </block>
+		</reference>
+    </fltproducts_index_mostviewed>
+	
+	<fltproducts_index_newproduct>
+        <reference name="content">
+			<block type="fltproducts/newproduct_list" name="newrecent_list" template="catalog/product/list.phtml" >
+				<block type="catalog/product_list_toolbar" name="product_list_toolbar" template="catalog/product/list/toolbar.phtml">
+                	<block type="page/html_pager" name="product_list_toolbar_pager" />
+                </block>
+                <action method="setToolbarBlockName"><name>product_list_toolbar</name></action>
+            </block>
+		</reference>
+    </fltproducts_index_newproduct>
+	
+	<fltproducts_index_allproduct>
+		<reference name="content">
+        	<block type="fltproducts/allproducts_list" name="product_all_list" template="catalog/product/list.phtml">
+            	<block type="catalog/product_list_toolbar" name="product_list_toolbar" template="catalog/product/list/toolbar.phtml">
+                	<block type="page/html_pager" name="product_list_toolbar_pager"/>
+                </block>
+                <action method="setToolbarBlockName"><name>product_list_toolbar</name></action>
+            </block>
+        </reference>
+    </fltproducts_index_allproduct>
+	
+	<fltproducts_index_promotional>
+		<reference name="content">
+        	<block type="fltproducts/promotional_list" name="promotional_list" template="catalog/product/list.phtml">
+            	<block type="catalog/product_list_toolbar" name="product_list_toolbar" template="catalog/product/list/toolbar.phtml">
+                	<block type="page/html_pager" name="product_list_toolbar_pager"/>
+                </block>
+                <action method="setToolbarBlockName"><name>product_list_toolbar</name></action>
+            </block>
+        </reference>
+    </fltproducts_index_promotional>
+
+	<fltproducts_index_recentlyordered>
+		<reference name="content">
+        	<block type="fltproducts/lastordered_list" name="lastordered_list" template="catalog/product/list.phtml">
+            	<block type="catalog/product_list_toolbar" name="product_list_toolbar" template="catalog/product/list/toolbar.phtml">
+                	<block type="page/html_pager" name="product_list_toolbar_pager"/>
+                </block>
+                <action method="setToolbarBlockName"><name>product_list_toolbar</name></action>
+            </block>
+        </reference>
+    </fltproducts_index_recentlyordered>
+</layout> 

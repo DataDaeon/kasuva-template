@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <daeon_AjaxPkt>
+            <version>1.0.0</version>
+        </daeon_AjaxPkt>
+    </modules>
+    <frontend>
+        <routers>
+            <ajaxpkt>
+                <use>standard</use>
+                <args>
+                    <module>daeon_AjaxPkt</module>
+                    <frontName>ajaxpkt</frontName>
+                </args>
+            </ajaxpkt>
+        </routers>
+        <layout>
+            <updates>
+                <ajaxpkt>
+                    <file>daeon_ajaxpkt.xml</file>
+                </ajaxpkt>
+            </updates>
+        </layout>
+    </frontend>   
+    <global>
+		<rewrite>
+            <ajaxpkt_cart> <!--This can be any unique id -->
+                <from><![CDATA[#^/checkout/cart/#]]></from>  <!-- the URL which u want to override-->
+                <to>/ajaxpkt/index/</to>  <!-- destination url -->
+            </ajaxpkt_cart>
+        </rewrite>
+		<helpers>
+            <ajaxpkt>
+                <class>daeon_AjaxPkt_Helper</class>
+            </ajaxpkt>
+        </helpers>
+        <resources>
+            <ajax_setup>
+                <setup>
+                    <module>daeon_AjaxPkt</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </ajax_setup>
+            <ajax_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </ajax_write>
+            <ajax_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </ajax_read>
+        </resources>
+    </global>
+</config>

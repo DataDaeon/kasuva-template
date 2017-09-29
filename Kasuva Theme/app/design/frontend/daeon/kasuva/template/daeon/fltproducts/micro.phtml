@@ -1,0 +1,120 @@
+<?php
+	$tmpCfg = Mage::registry('tmpCfg');
+	$theme=$this->helper('kasuva');
+    $_productCollection=$this->getFltLoadedProductCollection();
+    $_helper = $this->helper('catalog/output');
+	$getData = $this->getData();
+	$slideitems=($getData["column_count"])? $getData["column_count"] : 3;
+	$data_lg=($getData["column_lg"])? $getData["column_lg"] : 4;
+	$data_md=($getData["column_md"])? $getData["column_md"] : 3;
+	$data_sm=($getData["column_sm"])? $getData["column_sm"] : 2;
+	$data_xs=($getData["column_xs"])? $getData["column_xs"] : 1;
+	$row_count=($getData["row_count"]) ? $getData["row_count"] : 2;
+	$CfgDesign=$tmpCfg['deg'];
+	$CfgSettings=$tmpCfg['set'];
+	$_imgWidth=($CfgSettings['products_slider']['prodmsliderimg_width'])? $CfgSettings['products_slider']['prodmsliderimg_width'] : 170;
+	$_imgHeight=($CfgSettings['products_slider']['prodmsliderimg_height']) ? $CfgSettings['products_slider']['prodmsliderimg_height'] : 217;
+	$sku=$CfgSettings['products_slider']['prodslider_sku_enable'];
+	$rating=$CfgSettings['products_slider']['prodslider_rating_enable'];
+	$wishlist=$CfgSettings['products_slider']['prodslider_wishlist_enable'];
+	$compare=$CfgSettings['products_slider']['prodslider_compare_enable'];
+	$addtocart=$CfgSettings['products_slider']['prodslider_addtocart_enable'];
+	$price=$CfgSettings['products_slider']['prodslider_price_enable'];
+	$quickview=$CfgSettings['products_slider']['prodslider_quickview_enable'];
+	if($CfgSettings['products_slider']['prodmslider_aspratio']){
+		$_imgHeight=0;
+	}
+	$altImg=$CfgSettings['products_slider']['prodmslider_altimg_enable'];
+	$AjakpktCfg=Mage::helper('kasuva/config')->getTpcfg('ajaxpkt/ajaxpkt_conf/ajaxpkt_active');
+	$blank_gif = $this->getSkinUrl('images/blank.gif');
+	$prodbtn_style = ($CfgSettings['general']['product_btn_style']!='')? $CfgSettings['general']['product_btn_style'] : 'ucbs1-m';
+	$mage_core = Mage::helper('core');
+	$_columnCount = $_productCollection->count();
+?>
+<?php if(!$_columnCount): ?>
+<p class="note-msg"><?php echo $this->__('There are no products matching the selection.') ?></p>
+<?php else: ?>
+	<div class="product-slider owl-center-cont">
+		<div class="owl-carousel home-owl-carousel custom-carousel owl-theme outer-top-xs <?php echo $prodbtn_style; ?>" data-stype="micro" data-item="<?php echo $slideitems; ?>" data-lg="<?php echo $data_lg; ?>" data-md="<?php echo $data_md; ?>" data-sm="<?php echo $data_sm; ?>" data-xs="<?php echo $data_xs; ?>">
+			<?php $i=0; foreach ($_productCollection as $_product){ ?>
+				<?php $htm_badge=$this->helper('kasuva')->getProductLabel($_product); ?>
+				<?php if ($i%$row_count==0): ?>
+				<div class="item item-carousel">
+					<div class="products">
+				<?php endif ?>
+						<div class="product">
+							<div class="product-micro">
+								<div class="product-micro-row">
+									<div class="col col-xs-4">
+										<div class="product-image">
+											<div class="image">
+												<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image">
+													 <img class="lazyOwl" id="product-collection-image-<?php echo $_product->getId(); ?>" src="<?php echo $theme->getProdImg($_product, $_imgWidth, $_imgHeight, 'small_image'); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" width="<?php echo $_imgWidth; ?>" height="<?php echo $_imgHeight; ?>" />
+													<?php if($altImg): ?>
+													<?php echo $theme->getProdAltImg($_product,$_imgWidth,$_imgHeight,'small_image'); ?>
+													<?php endif; ?>
+												</a>
+											</div>
+											<?php echo $htm_badge; ?>
+										</div>
+									</div>
+									<div class="col col-xs-8">
+										<div class="product-info">
+											<h3 class="name product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></a></h3>
+											<?php if($sku): ?><p class="sku"><span class="label"><?php echo $this->__('SKU') ?>:</span><span class="value"><?php echo $_product->getSku();?></span></p><?php endif; ?>
+											<?php if($rating): ?>
+											<?php $reviews=$this->getReviewsSummaryHtml($_product,'short') ?>
+											<?php if($reviews): ?>
+												<?php echo $reviews; ?>
+											<?php else: ?>
+											<div class="ratings">
+												<div class="rating-box">&nbsp;</div>
+											</div>
+											<?php endif; ?>
+											<?php endif; ?>
+											<?php if($price): ?>
+											<div class="product-price">	
+												<?php echo $this->getPriceHtml($_product, true) ?>
+											</div>
+											<?php endif; ?>
+											<div class="cart clearfix animate-effect">
+												<div class="action">
+													<ul class="list-unstyled">
+														<?php if($addtocart): ?>
+														 <?php if(!$_product->canConfigure() && $_product->isSaleable()): ?>
+															<li class="add-cart-button btn-group">
+																<?php if($CfgDesign['basic']['btn_style']=='ucbtns2'){?>
+																<button class="button btn-cart icon" title="<?php echo $mage_core->quoteEscape($this->__('Add to Cart')); ?>" data-toggle="dropdown" type="button"  onclick="<?php echo ($AjakpktCfg) ? "setLocationAjax(this,'".$this->getAddToCartUrl($_product)."','".$_product->getId()."')" : "setLocation('".$this->getAddToCartUrl($_product)."')"; ?>"><i class="fa fa-shopping-cart"></i></button>
+																<?php } ?>
+																<button type="button" title="<?php echo $mage_core->quoteEscape($this->__('Add to Cart')); ?>" class="button btn-cart" onclick="<?php echo ($AjakpktCfg) ? "setLocationAjax(this,'".$this->getAddToCartUrl($_product)."','".$_product->getId()."')" : "setLocation('".$this->getAddToCartUrl($_product)."')"; ?>"><span><?php echo $this->__('Add to Cart') ?></span></button>
+															</li>
+														<?php elseif($_product->getStockItem() && $_product->getStockItem()->getIsInStock()): ?>
+															<li class="add-cart-button btn-group">
+																<?php if($CfgDesign['basic']['btn_style']=='ucbtns2'){?>
+																<button class="button btn-cart icon" title="<?php echo $mage_core->quoteEscape($this->__('Add to Cart')); ?>" onclick="<?php echo ($AjakpktCfg) ? "showOptions(this,'".$_product->getId()."')" : "setLocation('".$_product->getProductUrl()."')"; ?>"><i class="fa fa-file-text-o"></i></button>
+																<?php } ?>
+																<button class="button btn-cart" title="<?php echo $mage_core->quoteEscape($this->__('Add to Cart')); ?>" onclick="<?php echo ($AjakpktCfg) ? "showOptions(this,'".$_product->getId()."')" : "setLocation('".$_product->getProductUrl()."')"; ?>"><?php echo $this->__('Add to Cart'); ?></button>
+																<?php if($AjakpktCfg): ?>
+																<a href='<?php echo $this->getUrl('ajaxpkt/index/options',array('product_id'=>$_product->getId()));?>' class='ajaxpkt-qckview' id='ajaxpkt<?php echo $_product->getId()?>' style='display:none'><?php echo $this->__('Ajaxpkt') ?></a>
+																<?php endif; ?>
+															</li>
+														<?php else: ?>
+															<li><p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p></li>
+														<?php endif; ?>
+														<?php endif;?>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				<?php if ($i%$row_count==($row_count-1) || ($_columnCount==($i+1)) ): ?>
+					</div>
+				</div>
+				<?php endif; ?>
+			<?php $i++; } ?>
+		</div>
+	</div>
+<?php endif; ?>

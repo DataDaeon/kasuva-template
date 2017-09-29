@@ -1,0 +1,47 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     rwd_default
+ * @copyright   Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+
+<?php $_product = $this->getProduct(); ?>
+<?php $buttonTitle = $this->__('Update Cart'); ?>
+<?php if ($_product->isSaleable()): ?>
+    <div class="add-to-cart">
+			<div class="cart-quantity">
+				<?php if (!$_product->isGrouped()): ?>
+				<div class="qty-wrapper quant-input">
+					<div class="arrows">
+					  <div class="arrow plus gradient"><span class="ir"><i class="icon fa fa-sort-asc"></i></span></div>
+					  <div class="arrow minus gradient"><span class="ir"><i class="icon fa fa-sort-desc"></i></span></div>
+					</div>
+					<input type="text" pattern="\d*" name="qty" id="qty" maxlength="12" value="<?php echo $this->getProductDefaultQty() * 1 ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Qty')) ?>" class="input-text qty" />
+				</div>
+				<?php endif; ?>
+			</div>
+			<button type="button" title="<?php echo Mage::helper('core')->quoteEscape($buttonTitle) ?>" class="button btn-cart" onclick="productAddToCartForm.submit(this)"><span><i class="fa fa-shopping-cart fa-rotate-360"></i><span class="title"><?php echo $buttonTitle ?></span></span></button>
+			<span id='ajaxpkt-loader' class="product ajaxpkt-loader" style="display:none;">&nbsp;</span>
+			<?php echo $this->getChildHtml('', true, true) ?>
+    </div>
+<?php endif; ?>

@@ -1,0 +1,47 @@
+<?php if($this->isEnabled() && $twitterfeeds = $this->getLatestTweets()): ?>
+<?php $username = $this->twitConfig['twittersettings']['twitterid']; ?>
+<?php $avatar_image = $this->twitConfig['displaysettings']['circular_image']; ?>
+<?php $block_title = $this->twitConfig['displaysettings']['block_title']; ?>
+<div class="block block-twitterfeeds">
+	<div class="block-title">
+		<span><?php echo $block_title; ?></span>
+	</div>
+	<div class="block-content twitterfeeds-block">
+		<?php if(!empty($twitterfeeds)):?>
+			<ol id="twitterfeeds-items" class="mini-products-list">
+			<?php  foreach($twitterfeeds as $tweet){ ?>
+				<li class="item re-twitter">
+					<div class="comment media">
+						<div class="image">
+							<span class="product-image">
+							<?php if($this->twitConfig['displaysettings']['show_image']) { ?>
+							<img src="<?php echo $tweet['user_image']; ?>" class="user-avatar <?php if($avatar_image){ echo 'circular'; } ?>" alt="<?php echo $tweet['user_name']; ?>" height="40" width="40" align="left">
+							<?php }else{?>
+								<span class="icon fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+								</span>
+							<?php } ?>
+							</span>
+						</div>
+						<div class="product-details">
+							<?php if($this->twitConfig['displaysettings']['show_name']) { ?>
+								<?php echo (string) trim($tweet["user_name"]); ?>- <?php echo $tweet["screen_name"]; ?><br/>
+								<span class="tweets"><?php echo (string) trim($tweet["tweet"]); ?></span>
+							<?php } ?>
+							<span class="time"><?php echo date('H:i \o\n d/m/Y', strtotime($tweet["time"]));//echo (string) trim($tweet["time"]); ?></span>
+						</div>
+					</div>
+				</li>
+			<?php } ?>
+			</ol>
+			<?php if($this->showFollowButton()): ?>
+				<div class="actions footerVivatweets">		
+					<a href="https://twitter.com/<?php echo $this->getTwitterId() ?>" class="twitter-follow-button" data-show-count="false">Follow @<?php echo $this->getTwitterId() ?></a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				</div>
+			<?php endif; ?>
+		<?php endif; ?>
+	</div>
+</div>
+<?php endif; ?>

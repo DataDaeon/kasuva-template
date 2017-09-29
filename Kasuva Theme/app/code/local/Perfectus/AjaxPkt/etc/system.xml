@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config>
+	<tabs>
+		<kasuvaexnsions translate="label" module="ajaxpkt">
+			<label>kasuva Extensions</label>
+			<sort_order>300</sort_order>
+		</kasuvaexnsions>
+	</tabs>
+	<sections>
+		<ajaxpkt  translate="label" module="ajaxpkt">
+			<label>AjaxPkt</label>
+			<tab>kasuvaexnsions</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>40</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<ajaxpkt_conf translate="label">
+					<label>AjaxPkt Configuration</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>9</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<ajaxpkt_active>
+							<label>Enable AjaxPkt?</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>Set it to Yes for applying AJAX on Ajax Add to Cart, Wishlist, Compare, Quickview and Minicart</comment>
+						</ajaxpkt_active>
+					</fields>
+				</ajaxpkt_conf>
+			</groups>
+		</ajaxpkt>
+	</sections>
+</config>

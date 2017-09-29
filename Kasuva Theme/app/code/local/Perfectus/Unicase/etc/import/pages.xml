@@ -1,0 +1,1125 @@
+<root><pages><cms_block>
+<title><![CDATA[404 Not Found]]></title>
+<identifier><![CDATA[no-route]]></identifier>
+<root_template><![CDATA[one_column]]></root_template>
+<content><![CDATA[<div class="page-nofound">
+	<div class="x-page inner-bottom-sm">
+		<div class="row">
+			<div class="col-md-12 x-text text-center">
+				<h1 class="theme--color">404</h1>
+				<p>We are sorry, the page you've requested is not available. </p>
+				<br>
+				<a href="{{config path="web/unsecure/base_url"}}"><i class="fa fa-home"></i> Go To Homepage</a>
+			</div>
+		</div>
+	</div>
+</div>]]></content>
+<is_active><![CDATA[1]]></is_active>
+<layout_update_xml><![CDATA[]]></layout_update_xml>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[kasuva - Homepage 1]]></title>
+<identifier><![CDATA[kasuva-style-1]]></identifier>
+<root_template><![CDATA[one_column]]></root_template>
+<content><![CDATA[{{block type="mainslider/mainslider" name="mainslider" template="daeon/mainslider/slider.phtml"}}
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<!-- ============================================== WIDE PRODUCTS ============================================== -->
+			<div class="wide-banners wow fadeInUp homepage-banner outer-top-xs">
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<div class="wide-banner cnt-strip">
+							<a href="#" class="banner-wrapper zoom-effect">
+								<div class="image">
+									<img class="img-responsive" src="{{media url="wysiwyg/kasuva/f1.jpg"}}" alt="Banner 1" title="Banner1" width="360" height="161">
+								</div>	
+								<div class="strip">
+									<div class="strip-inner">
+										<h4 class="white fntuc-head">Woman's</h4>
+										<h3 class="white fntuc-head">collection</h3>
+									</div>
+								</div>
+							</a>
+						</div><!-- /.wide-banner -->
+					</div><!-- /.col -->
+					<div class="col-md-4 col-sm-4">
+						<div class="wide-banner cnt-strip">
+							<a href="#" class="banner-wrapper zoom-effect">
+								<div class="image">
+									<img class="img-responsive" src="{{media url="wysiwyg/kasuva/f2.jpg"}}" alt="Banner 2" title="Banner 2" width="360" height="161">
+								</div>	
+								<div class="strip">
+									<div class="strip-inner text-center">
+										<h4 class="white fntuc-head">Hot Summer</h4>
+										<h3 class="white fntuc-head">save up to 20% off</h3>
+									</div>	
+								</div>
+							</a>
+						</div><!-- /.wide-banner -->
+					</div><!-- /.col -->
+					<div class="col-md-4 col-sm-4">
+						<div class="wide-banner cnt-strip">
+							<a href="#" class="banner-wrapper zoom-effect">
+								<div class="image">
+									<img class="img-responsive" src="{{media url="wysiwyg/kasuva/f3.jpg"}}" alt="Banner 3" title="Banner 3" width="360" height="161">
+								</div>	
+								<div class="strip">
+									<div class="strip-inner text-right">
+										<h4 class="white fntuc-head">Men's</h4>
+										<h3 class="white fntuc-head">collection</h3>
+									</div>
+								</div>
+							</a>
+						</div><!-- /.wide-banner -->
+					</div><!-- /.col -->
+				</div><!-- /.row -->
+			</div><!-- /.wide-banners -->
+			<div id="product-tabs-slider" class="scroll-tabs wow fadeInUp animated">
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<section class="section">
+							<h3 class="section-title">New Arrivals</h3>
+							{{block type="fltproducts/newproduct_home_list" name="newproducts" column_count="4" column_lg="4" column_md="3" column_sm="2" column_xs="1" limit="6" template="daeon/fltproducts/slider.phtml"}}
+						</section>
+					</div>
+				</div>
+			</div>
+			<div class="wide-banners wow fadeInUp outer-top-xs wide-banner-4">
+				<div class="row">
+					<div class="col-md-8 col-sm-8">
+						<div class="wide-banner cnt-strip banimg-8">
+							<a href="#" class="banner-wrapper border-effect">
+								<div class="image">
+									<img class="img-responsive" src="{{media url="wysiwyg/kasuva/f4.jpg"}}" alt="Banner" title="" width="750" height="161">
+								</div>	
+								<div class="strip">
+									<div class="strip-inner">
+										<h3 class="red fntuc-head">Fashion's women summer</h3>
+										<h1 class="black fntuc-head">biggest sale of 2014</h1>
+										<p class="green fntuc-head">Fee Shipping On Order Over $500.00</p>
+									</div>
+								</div>
+							</a>
+						</div><!-- /.wide-banner -->
+					</div><!-- /.col -->
+					<div class="col-md-4 col-sm-4">
+						<div class="wide-banner cnt-strip">
+							<a href="#" class="banner-wrapper border-effect">
+								<div class="image">
+									<img class="img-responsive" src="{{media url="wysiwyg/kasuva/f5.jpg"}}" alt="Banner" title="" width="360" height="161">
+								</div>	
+								<div class="strip">
+									<div class="strip-inner text-center">
+										<h4 class="fntuc-head">women's</h4>
+										<h2 class="black fntuc-head">collection</h2>
+										<h4 class="red fntuc-head">new fashion</h4>
+									</div>
+								</div>
+							</a>
+						</div><!-- /.wide-banner -->
+					</div><!-- /.col -->
+				</div><!-- /.row -->
+			</div><!-- /.wide-banners -->
+			  <!-- ============================================== WIDE PRODUCTS : END ============================================== -->
+			<div class="prod-slider-small wow fadeInUp">
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<section class="section">
+							<h3 class="section-title">New Arrivals</h3>
+							{{block type="fltproducts/bestsellers_home_list" column_count="2" column_lg="2" column_md="3" column_sm="2" column_xs="1" limit="4" template="daeon/fltproducts/slider.phtml"}}
+						</section>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<section class="section">
+							<h3 class="section-title">Special Deals</h3>
+							{{block type="fltproducts/specials_home_list" column_count="2" column_lg="2" column_md="3" column_sm="2" column_xs="1" limit="4" template="daeon/fltproducts/slider.phtml"}}
+						</section>
+					</div>
+				</div>
+			</div>
+			<section class="section outer-top-xs wow fadeInUp">
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="section-title">Featured Products</h3>
+						{{block type="fltproducts/featured_home_list" name="featuredproducts" column_count="3" column_lg="3" column_md="3" column_sm="2" column_xs="1" row_count="2" limit="8" template="daeon/fltproducts/micro.phtml"}} 
+					</div>
+				</div>
+			</section>
+            {{widget type="blog/slider" blocks_count="6"}}
+			{{block type="cms/block" block_id="our_brands"}}
+		</div>
+	</div>
+</div>]]></content>
+<is_active><![CDATA[1]]></is_active>
+<layout_update_xml><![CDATA[]]></layout_update_xml>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[Customer Service]]></title>
+<identifier><![CDATA[customer-service]]></identifier>
+<root_template><![CDATA[two_columns_left]]></root_template>
+<content><![CDATA[<div class="page-title">
+<h1>Customer Service</h1>
+</div>
+<!-- p style="border-bottom: 1px solid #E6E6E6; margin-bottom: 20px; *margin-bottom: 90px; padding-bottom: 43px;"><br></p -->
+<ul id="accordion" style="padding-left: 0;">
+<li class="plusimage" style="font-style: normal; margin-bottom: 6px; line-height: 16px !important;">
+<h2>SHIPPING &amp; DELIVERY</h2>
+<div class="customerservice_content" style="border-bottom: 1px solid #e6e6e6; margin-bottom:18px; *padding-bottom:18px">
+<p style="padding-bottom: 18px; padding-top: 10px;">
+    Shipping and Delivery is the charge for Internet order processing, item selection, packaging, transport and handling. Delivery times are not guaranteed, but are our best approximation and will vary with specific requests. Shipments and deliveries only occur on weekdays. Shipping and Delivery is subject to change and will be determined at the time of order.
+    <br><br>Estimated delivery time assumes orders are placed before 12:00 noon (PST).  Orders placed late on Friday or on Saturday will not be processed until Monday.  Additional charges may accrue on Priority, Overnight and International shipping if multiple attempts are made for delivery.
+    <br><br>Shipping addresses in Alaska, Hawaii, Puerto Rico, and Guam should add an additional $5.00 charge for standard Shipping &amp; Delivery. Orders arrive in 7 to 9 business days when ordered before 12:00 noon (PST).
+</p>
+ <table cellpadding="0" cellspacing="0" border="0" width="100%" style=" font:14px Georgia,Times New Roman,Times,serif italic " class="data-table">
+ 	<tr>
+    	<th width="156" style="text-align:center">&nbsp;</th>
+        <th width="156" style="text-align:center">Standard</th>
+        <th width="156" style="text-align:center">Priority</th>
+        <th width="156" style="text-align:center">Overnight</th>
+        <th width="156" style="text-align:center">International</th>
+    </tr>
+    <tr>
+    	<td style="text-align:center">&nbsp;</td>
+        <td>Package arrives 5 to 7 business days after processing if ordered by 12:00 noon (PST). </td>
+        <td>Package arrives 2 to 3 business days after processing if ordered by 12:00 noon (PST).</td>
+        <td>Package arrives the next business day if ordered before 12:00 noon (PST). </td>
+        <td>Order should arrive 3-9 business days after processing.  Flat rate does not include duties and taxes.</td>
+    </tr>
+   
+    <tr>
+    	<th colspan="5">Merchandise Total *</th>
+        
+    </tr>
+    <tr>
+    	<td>Up to $200</td>
+        <td style="text-align:center">$16 </td>
+        <td style="text-align:center">$26</td>
+        <td style="text-align:center">$33</td>
+        <td style="text-align:center">$80 (flat rate) excludes duties and taxes</td>
+    </tr>
+    <tr>
+    	<td>$200.01—500.00</td>
+        <td style="text-align:center">$21 </td>
+        <td style="text-align:center">$31</td>
+        <td style="text-align:center">$38</td>
+        <td style="text-align:center">&nbsp;</td>
+    </tr>
+    <tr>
+    	<td>$500.01—1000.00</td>
+        <td style="text-align:center">$29 </td>
+        <td style="text-align:center">$39</td>
+        <td style="text-align:center">$46</td>
+        <td style="text-align:center">&nbsp;</td>
+    </tr>
+    <tr>
+    	<td>Over $1000.00</td>
+        <td style="text-align:center">$34 </td>
+        <td style="text-align:center">$44</td>
+        <td style="text-align:center">$51</td>
+        <td style="text-align:center">&nbsp;</td>
+    </tr>
+    <tr><td colspan="5" style="text-align:center">*before tax and additional charges</td></tr>
+ </table>
+</div>
+</li>
+
+<li class="plusimage" style="font-style: normal; margin-bottom: 6px; line-height: 16px !important;">
+<h2>RETURNS &amp; REPLACEMENTS</h2>
+<div class="customerservice_content">
+<p style="border-bottom: 1px solid #e6e6e6; padding-bottom: 18px; padding-top: 10px;"><b>We want you to be completely happy with your order. </b> If for any reason you are not satisfied, we will gladly accept your timely return of unworn, unwashed, or defective merchandise. Used merchandise cannot be returned unless defective. Returned merchandise should include the vendor packaging and tags and be in the same condition as when it was received. A pickup and/or restock fee may apply.
+Merchandise must be returned within 30 days of receipt of merchandise.
+<br><br>
+
+<b>GIFTS</b><br>
+When returning a gift, a Madison Island Anytime Anyplace Gift Card will be issued to the gift recipient for the amount of the returned merchandise. The card can be used for purchases from any Madison Island or affiliate store, and online. In compliance with Federal law, for gifts valued at more than $2,000.00, the recipient will receive a check rather than an Anytime Anyplace Gift Card.<br><br>
+
+<b>RETURNING MERCHANDISE BY MAIL</b><br>
+On the back of the packing slip enclosed with your order, please note the reason(s) for return and whether you wish to exchange the item(s) or receive a credit/refund (depending on the original form of payment). Enclose the return section of the packing slip with your item(s). Please use one of the return labels provided on the front of your packing slip to ensure proper return address and credit information.<br><br>
+
+<b>OTHER ITEMS</b><br>
+All cosmetic and bath items must be unused, unopened, and in original packaging for a credit/refund or exchange to be issued. Restricted items must be returned using ground transportation.<br><br>
+
+<b>Please allow 10 to 14 days for the processing of your return.</b>
+
+</p>
+</div>
+</li>
+</ul>
+]]></content>
+<is_active><![CDATA[1]]></is_active>
+<layout_update_xml><![CDATA[]]></layout_update_xml>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[Enable Cookies]]></title>
+<identifier><![CDATA[enable-cookies]]></identifier>
+<root_template><![CDATA[one_column]]></root_template>
+<content><![CDATA[<div class="std">
+    <ul class="messages">
+        <li class="notice-msg">
+            <ul>
+                <li>Please enable cookies in your web browser to continue.</li>
+            </ul>
+        </li>
+    </ul>
+    <div class="page-title">
+        <h1><a name="top"></a>What are Cookies?</h1>
+    </div>
+    <p>Cookies are short pieces of data that are sent to your computer when you visit a website. On later visits, this data is then returned to that website. Cookies allow us to recognize you automatically whenever you visit our site so that we can personalize your experience and provide you with better service. We also use cookies (and similar browser data, such as Flash cookies) for fraud prevention and other purposes. If your web browser is set to refuse cookies from our website, you will not be able to complete a purchase or take advantage of certain features of our website, such as storing items in your Shopping Cart or receiving personalized recommendations. As a result, we strongly encourage you to configure your web browser to accept cookies from our website.</p>
+    <h2 class="subtitle">Enabling Cookies</h2>
+    <ul class="disc">
+        <li><a href="#ie7">Internet Explorer 7.x</a></li>
+        <li><a href="#ie6">Internet Explorer 6.x</a></li>
+        <li><a href="#firefox">Mozilla/Firefox</a></li>
+        <li><a href="#opera">Opera 7.x</a></li>
+    </ul>
+    <h3><a name="ie7"></a>Internet Explorer 7.x</h3>
+    <ol>
+        <li>
+            <p>Start Internet Explorer</p>
+        </li>
+        <li>
+            <p>Under the <strong>Tools</strong> menu, click <strong>Internet Options</strong></p>
+            <p><img src="{{skin url="images/cookies/ie7-1.gif"}}" alt="" /></p>
+        </li>
+        <li>
+            <p>Click the <strong>Privacy</strong> tab</p>
+            <p><img src="{{skin url="images/cookies/ie7-2.gif"}}" alt="" /></p>
+        </li>
+        <li>
+            <p>Click the <strong>Advanced</strong> button</p>
+            <p><img src="{{skin url="images/cookies/ie7-3.gif"}}" alt="" /></p>
+        </li>
+        <li>
+            <p>Put a check mark in the box for <strong>Override Automatic Cookie Handling</strong>, put another check mark in the <strong>Always accept session cookies </strong>box</p>
+            <p><img src="{{skin url="images/cookies/ie7-4.gif"}}" alt="" /></p>
+        </li>
+        <li>
+            <p>Click <strong>OK</strong></p>
+            <p><img src="{{skin url="images/cookies/ie7-5.gif"}}" alt="" /></p>
+        </li>
+        <li>
+            <p>Click <strong>OK</strong></p>
+            <p><img src="{{skin url="images/cookies/ie7-6.gif"}}" alt="" /></p>
+        </li>
+        <li>
+            <p>Restart Internet Explore</p>
+        </li>
+    </ol>
+    <p class="a-top"><a href="#top">Back to Top</a></p>
+    <h3><a name="ie6"></a>Internet Explorer 6.x</h3>
+    <ol>
+        <li>
+            <p>Select <strong>Internet Options</strong> from the Tools menu</p>
+            <p><img src="{{skin url="images/cookies/ie6-1.gif"}}" alt="" /></p>
+        </li>
+        <li>
+            <p>Click on the <strong>Privacy</strong> tab</p>
+        </li>
+        <li>
+            <p>Click the <strong>Default</strong> button (or manually slide the bar down to <strong>Medium</strong>) under <strong>Settings</strong>. Click <strong>OK</strong></p>
+            <p><img src="{{skin url="images/cookies/ie6-2.gif"}}" alt="" /></p>
+        </li>
+    </ol>
+    <p class="a-top"><a href="#top">Back to Top</a></p>
+    <h3><a name="firefox"></a>Mozilla/Firefox</h3>
+    <ol>
+        <li>
+            <p>Click on the <strong>Tools</strong>-menu in Mozilla</p>
+        </li>
+        <li>
+            <p>Click on the <strong>Options...</strong> item in the menu - a new window open</p>
+        </li>
+        <li>
+            <p>Click on the <strong>Privacy</strong> selection in the left part of the window. (See image below)</p>
+            <p><img src="{{skin url="images/cookies/firefox.png"}}" alt="" /></p>
+        </li>
+        <li>
+            <p>Expand the <strong>Cookies</strong> section</p>
+        </li>
+        <li>
+            <p>Check the <strong>Enable cookies</strong> and <strong>Accept cookies normally</strong> checkboxes</p>
+        </li>
+        <li>
+            <p>Save changes by clicking <strong>Ok</strong>.</p>
+        </li>
+    </ol>
+    <p class="a-top"><a href="#top">Back to Top</a></p>
+    <h3><a name="opera"></a>Opera 7.x</h3>
+    <ol>
+        <li>
+            <p>Click on the <strong>Tools</strong> menu in Opera</p>
+        </li>
+        <li>
+            <p>Click on the <strong>Preferences...</strong> item in the menu - a new window open</p>
+        </li>
+        <li>
+            <p>Click on the <strong>Privacy</strong> selection near the bottom left of the window. (See image below)</p>
+            <p><img src="{{skin url="images/cookies/opera.png"}}" alt="" /></p>
+        </li>
+        <li>
+            <p>The <strong>Enable cookies</strong> checkbox must be checked, and <strong>Accept all cookies</strong> should be selected in the &quot;<strong>Normal cookies</strong>&quot; drop-down</p>
+        </li>
+        <li>
+            <p>Save changes by clicking <strong>Ok</strong></p>
+        </li>
+    </ol>
+    <p class="a-top"><a href="#top">Back to Top</a></p>
+</div>
+]]></content>
+<is_active><![CDATA[1]]></is_active>
+<layout_update_xml><![CDATA[]]></layout_update_xml>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[Cookie Privacy Policy ]]></title>
+<identifier><![CDATA[privacy-policy-cookie-restriction-mode]]></identifier>
+<root_template><![CDATA[one_column]]></root_template>
+<content><![CDATA[<p style="border-bottom: 1px solid #e6e6e6; padding-bottom: 18px; padding-top: 10px;">This website ("website") is operated by Madison Island Inc., which includes Madison Island stores, and Madison Island Private Sales. This privacy policy only covers information collected at this website, and does not cover any information collected offline by Madison Island. All Madison Island websites are currently covered by this privacy policy.</p><h2>SECURITY</h2><p>Personal information provided on the website and online credit card transactions are transmitted through a secure server.  We are committed to handling your personal information with high standards of information security. We take appropriate physical, electronic, and administrative steps to maintain the security and accuracy of personally identifiable information we collect, including limiting the number of people who have physical access to our database servers, as well as employing electronic security systems and password protections that guard against unauthorized access. Our website uses encryption technology, like Secure Sockets Layer (SSL), to protect your personal information during data transport. SSL encrypts ordering information such as your name, address, and credit card number. Our Customer Care center and stores also operate over a private, secure network. Please note that email is not encrypted and is not considered to be a secure means of transmitting credit card information.</p><h2>PRIVACY POLICY</h2><p>To help us achieve our goal of providing the highest quality products and services, we use information from our interactions with you and other customers, as well as from other parties. Because we respect your privacy, we have implemented procedures to ensure that your personal information is handled in a safe, secure, and responsible manner.<br>We have posted this privacy policy in order to explain our information collection practices and the choices you have about the way information is collected and used.</p><p>As we continue to develop our website and take advantage of advances in technology to improve the services we offer, this privacy policy likely will change. We therefore encourage you to refer to this policy on an ongoing basis so that you understand our current privacy policy.</p><h2>THE INFORMATION WE COLLECT</h2><p>Generally, you may browse the website without providing any personally identifiable information. However, we may ask you to provide personally identifiable information at various times and places on this website. In some cases, if you choose not to provide us with the requested information, you may not be able to access all parts of this website or participate in all of its features.
+</p><p>We receive and store any personally identifiable information you enter on the website, whenever you shop with Madison Island—online, through our catalogs, or in our stores, or information you give us in any other way, such as by subscribing to our catalogs, email, or mobile messaging. For example, we may collect the following personally identifiable information: your name, address, telephone number, mobile telephone number, driver's license number, birth date, and email address. If you use a credit or debit card or pay by check, we will also include your account number.</p><p>If you use one of our services, or participate in one of our surveys, promotions, or sweepstakes, we may ask for additional information, such as your age, interests, or product preferences.</p><p>From your purchases and other interactions with us, we obtain information concerning the specific products or services you purchase or use.<br><br>When you visit this website, our web server automatically collects anonymous information such as log data and IP addresses, and may collect general information concerning your location. We may use the automatically collected information for a number of purposes, such as improving our site design, product assortments, customer service, and special promotions.</p>
+<h2>HOW WE USE THE INFORMATION WE COLLECT</h2><p>We use the information we collect for various purposes, including:<ul><li>To complete your purchase transactions</li><li>To provide the services you request</li><li>To send you our catalogs and other offerings by mail</li><li>To identify your product and service preferences, so we can notify you of new or additional products, services, and promotions that might be of interest to you.</li><li>To notify you of product recalls or provide other information concerning products you have purchased</li><li>To improve our merchandise selections, customer service, and overall shopping experience</li></ul></p><h2>OTHERS WITH WHOM WE SHARE YOUR INFORMATION</h2><p><b>The Madison Island Group</b>: All of the above information that we collect, as described above, may be shared among all Madison Island entities, including Madison Island stores, website and Private Sales.</p>
+<p><b>Service Providers</b>: We also may disclose information to outside companies that help us bring you the products and services we offer. For example, we may work with an outside company to: (a) manage a database of customer information; (b) assist us in distributing emails; (c) assist us with direct marketing and data collection; (d) provide us storage and analysis; (d) provide fraud prevention; and (e) provide other services designed to assist us in maximizing our business potential. We require that these outside companies agree to keep confidential all information we share with them and to use the information only to perform their obligations in our agreements with them.</p>
+<p><b>Other Companies</b>: We may provide information to carefully selected outside companies when we believe their products or services may be of interest to you.</p><p><b>Business Transitions</b>: We may transfer or share a copy of personal information about you in the event that Madison Island or one of its properties, affiliates, or subsidiaries goes through a business transition, such as a merger, being acquired by another company, or selling a portion of its assets. You will be notified via email or prominent notice on our website prior to a change of ownership or control of your personal information, if your personal information will be used contrary to this policy. However, nothing in this Privacy Policy is intended to interfere with the ability of Madison Island to transfer all or part of its business and/or assets to an affiliate or independent third party at any time, for any purpose, without any limitation whatsoever. Madison Island specifically reserves the right to transfer or share a copy of personally identifiable information collected from its websites to the buyer of that portion of its business relating to that information.
+</p><p><b>Compliance with Law:</b> We may provide access to information when legally required to do so, to cooperate with police investigations or other legal proceedings, to protect against misuse or unauthorized use of our website, to limit our legal liability, and to protect our rights or to protect the rights, property, or safety of visitors of this website or the public.<br><br>Madison Island partners with advertising companies to place our advertising on publisher websites on the Internet. These advertising companies collect anonymous information about your visits to our web site. This technology involves the use of third party cookies which allow them to develop personalized advertising so that it directly relates to offers that may be of interest to you. You may choose to opt-out of this service we have with our third-party advertising partner. We may also use Madison Island cookies to provide similar enhanced online marketing to you based on your interests and preferences. You may also choose to opt out of these enhanced online marketing ads. </p><h2>YOUR CHOICES REGARDING USE OF THE INFORMATION WE COLLECT</h2><p>We provide you with a number of choices regarding our handling of your nonpublic personally identifiable information.<br><br><b>Direct Mail or Telephone Marketing</b>: If you shop at the Madison Island or Private Sales stores and wish to be removed from the list of customers that receive direct mail or telemarketing calls, please either <b>write</b> to Madison Island Customer Care at 112 West 34th Street, 18th Flr. New York, NY 10120 <b>or call</b> +1 212 268-4500. If you choose to write to us, please include your name, address, and credit card account number (if you have one), and state one of the following:<br>
+"NO MAIL OFFERS" (if you don't want to receive offers by mail);<br>
+"NO PHONE OFFERS" (if you don't want to receive offers by phone); or<br>
+"NO PHONE OR MAIL OFFERS" (if you don't want to receive either).</p>
+
+<p>
+Because customer lists often are prepared well in advance of an offering (sometimes a few months before the offer is made), you may continue to receive some offers after you send us a request not to use your information for specified marketing purposes. We appreciate your patience and understanding in giving us time to carry out your request.
+</p>
+<h2>YOUR CALIFORNIA PRIVACY RIGHTS</h2><p>
+Under California Civil Code sections 1798.83-1798.84, California residents are entitled to ask us for a notice describing what categories of personal customer information we share with third parties or corporate affiliates for those third parties or corporate affiliates' direct marketing purposes. That notice will identify the categories of information shared and will include a list of the third parties and affiliates with which it was shared, along with their names and addresses. If you are a California resident and would like a copy of this notice, please submit a written request to the following address: Madison Island Customer Care, 112 West 34th Street, 18th Floor, New York, NY 10120. Please allow 30 days for a response.
+</p>
+<h2>COOKIES, WEB BEACONS, AND HOW WE USE THEM</h2><p>
+A "cookie" is a small data file stored by your Web browser on your computer or mobile device [hard drive]. It allows us to recognize your computer (but not specifically who is using it) upon entering our site by associating the identification numbers in the cookie with other customer information you have provided us. That customer information is stored on our secured database. A "web beacon" or "pixel tag" or "clear gif" is typically a one-pixel image, used to pass information from your computer or mobile device to a website.<br><br>
+We use cookies and web beacons to keep track of what you have in your shopping cart and to remember you when you return to the website as well as to identify the pages you click on during your visit to our site and the name of the website you visited immediately before clicking to the Madison Island website. We use this information to improve our site design, product assortments, customer service, and special promotions. You can, of course, disable cookies and web beacons on your computer by indicating this in the preferences or options menus in your browser. However, it is possible that some parts of our website will not operate correctly if you disable cookies. We may also use web beacons, and other technologies, to help track whether our communications are reaching you, to measure their effectiveness, or to collect certain non-personal information about your computer, device, or browser in order to allow us to better design future communications to you.</p><p>
+
+We may contract with third parties who may use cookies and web beacons and collect information on our behalf or provide services such as credit card processing, shipping, promotional services, or data management. We call them our Customer Care Partners. These third parties are prohibited by our contract with them from sharing that information with anyone other than us or our other Customer Care Partners.</p>
+
+<h2>ONLINE ACCOUNT REGISTRATION</h2><p>
+To make online shopping faster and easier, you may register on the Madison Island website. As a registered customer, you only have to enter your shipping addresses and billing information once; they will be securely stored with us for your future use. Using your name and a password of your choice, you may access your account online at any time to add, delete, or change information.</p><p>
+If you are using a public computer, we strongly encourage you to LOG OUT at the conclusion of your session. Your information will still be stored with us but it will not be accessible to anyone else from that computer.</p>
+
+<h2>EMAILS</h2><p>
+You will receive promotional emails from us only if you have asked to receive them. If you do not want to receive email from Madison Island or its affiliates you can click on the "Unsubscribe" link at the bottom of any email communication sent by us. Please allow us 3 business days from when the request was received to complete the removal, as some of our promotions may already have been in process before you submitted your request.
+</p>
+<h2>ACCEPTANCE</h2><p>
+By using this website, you accept the policies set forth in this Privacy Policy.
+</p>
+<h2>ANY QUESTIONS?</h2><p>
+We'll be happy to provide additional information or answer any questions. Please:<br>
+<b>Call</b> 1.212.268.4500<br>
+<b>Write</b>:<br>
+Customer Care<br>
+112 West 34th Street, 18th Flr<br>
+New York, NY 10120<br>
+</p>]]></content>
+<is_active><![CDATA[1]]></is_active>
+<layout_update_xml><![CDATA[]]></layout_update_xml>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[503 Service Unavailable]]></title>
+<identifier><![CDATA[service-unavailable]]></identifier>
+<root_template><![CDATA[one_column]]></root_template>
+<content><![CDATA[<div class="page-title"><h1>We're Offline...</h1></div>
+<p>...but only for just a bit. We're working to make the Magento Demo a better place for you!</p>]]></content>
+<is_active><![CDATA[1]]></is_active>
+<layout_update_xml><![CDATA[]]></layout_update_xml>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[Reward Points]]></title>
+<identifier><![CDATA[reward-points]]></identifier>
+<root_template><![CDATA[one_column]]></root_template>
+<content><![CDATA[<div class="page-content">
+	<h2 class="page-title">Reward Points</h2>
+	<span class="page-title-tag">Rewards can currently be earned for the following actions:</span>
+	<div class="page-inner-content">
+	<p>The Reward Points Program allows you to earn points for certain actions you take on the site. Points are awarded based on making purchases and customer actions such as submitting reviews.</p>
+	<p>&nbsp;</p>
+	<h3 class="fntuc-head">Benefits of Reward Points for Registered Customers</h3>
+	<p>Once you register you will be able to earn and accrue reward points, which are then redeemable at time of purchase towards the cost of your order. Rewards are an added bonus to your shopping experience on the site and just one of the ways we thank you for being a loyal customer.</p>
+	<ul>
+	<li>Making purchases — every time you make a purchase you earn points based on the price of products purchased and these points are added to your Reward Points balance.</li>
+	<li>Registering on the site.</li>
+	<li>Subscribing to a newsletter for the first time.</li>
+	<li>Sending Invitations — Earn points by inviting your friends to join the site.</li>
+	<li>Converting Invitations to Customer — Earn points for every invitation you send out which leads to your friends registering on the site.</li>
+	<li>Converting Invitations to Order — Earn points for every invitation you send out which leads to a sale.</li>
+	<li>Review Submission — Earn points for submitting product reviews.</li>
+	<li>New Tag Submission — Earn points for adding tags to products.</li>
+	</ul>
+	<p>&nbsp;</p>
+	<h3 class="fntuc-head">Reward Points Exchange Rates</h3>
+	<p>The value of reward points is determined by an exchange rate of both currency spent on products to points, and an exchange rate of points earned to currency for spending on future purchases.</p>
+	<p>&nbsp;</p>
+	<h3 class="fntuc-head">Redeeming Reward Points</h3>
+	<p>You can redeem your reward points at checkout. If you have accumulated enough points to redeem them you will have the option of using points as one of the payment methods.  The option to use reward points, as well as your balance and the monetary equivalent this balance, will be shown to you in the Payment Method area of the checkout.  Redeemable reward points can be used in conjunction with other payment methods such as credit cards, gift cards and more.</p>
+	<p>&nbsp;</p>
+	<h3 class="fntuc-head">Reward Points Minimums and Maximums</h3>
+	<p>Reward points may be capped at a minimum value required for redemption.  If this option is selected you will not be able to use your reward points until you accrue a minimum number of points, at which point they will become available for redemption.</p>
+	<p>Reward points may also be capped at the maximum value of points which can be accrued. If this option is selected you will need to redeem your accrued points before you are able to earn more points.</p>
+	<p>&nbsp;</p>
+	<h3 class="fntuc-head">Managing My Reward Points</h3>
+	<p>You have the ability to view and manage your points through your <a href="{{store url="customer/account"}}">Customer Account</a>. From your account you will be able to view your total points (and currency equivalent), minimum needed to redeem, whether you have reached the maximum points limit and a cumulative history of points acquired, redeemed and lost. The history record will retain and display historical rates and currency for informational purposes. The history will also show you comprehensive informational messages regarding points, including expiration notifications.</p>
+	<p>&nbsp;</p>
+	<h3 class="fntuc-head">Reward Points Expiration</h3>
+	<p>Reward points can be set to expire. Points will expire in the order form which they were first earned.</p>
+	<p><strong>Note</strong>: You can sign up to receive email notifications each time your balance changes when you either earn, redeem or lose points, as well as point expiration notifications. This option is found in the <a href="{{store url="reward/customer/info"}}">Reward Points section</a> of the My Account area.</p>
+	</div>
+</div>]]></content>
+<is_active><![CDATA[1]]></is_active>
+<layout_update_xml><![CDATA[]]></layout_update_xml>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[kasuva - Homepage 2]]></title>
+<identifier><![CDATA[kasuva-style-2]]></identifier>
+<root_template><![CDATA[one_column]]></root_template>
+<content><![CDATA[<div class="container">
+<div class="outer-top-vs home-2columns-left">
+	<div class="row">
+		<div class="col-md-9 col-sm-12 col-xs-12 pull-right main col-main">
+			<div class="row">
+				<div class="mainslider-wrapper">
+					<div id="main-slider2" class="main-slider owl-carousel">
+						<div class="item">
+							<div class="container-fluid">
+								<div class="caption-main-content">
+									<div class="caption-content">
+										<a href="#"><img src="{{media url="wysiwyg/kasuva/mainslider-2/slide-1.jpg"}}" alt="slider" width="" height="" /></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="container-fluid">
+								<div class="caption-main-content">
+									<div class="caption-content">
+										<a href="#"><img src="{{media url="wysiwyg/kasuva/mainslider-2/slide-2.jpg"}}" alt="slider" width="" height="" /></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="container-fluid">
+								<div class="caption-main-content">
+									<div class="caption-content">
+										<a href="#"><img src="{{media url="wysiwyg/kasuva/mainslider-2/slide-3.jpg"}}" alt="slider" width="" height="" /></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script type="text/javascript">
+					jQuery(document).ready(function(){
+						jQuery("#main-slider2").owlCarousel({
+							singleItem : true,
+							items : 1,
+							navigation : true,
+							lazyLoad : true,
+							slideSpeed : 300,
+							pagination: false,
+						});
+					});
+				</script>
+			</div>
+			<div class="info-boxes outer-top-xs wow fadeInUp">
+				<div class="info-boxes-inner">
+					<div class="row">
+						<div class="col-md-4 col-sm-4 col-lg-4">
+							<div class="info-box">
+								<div class="row">
+									<div class="col-xs-2">
+										 <i class="icon fa fa-dollar"></i>
+									</div>
+									<div class="col-xs-10">
+										<h4 class="info-box-heading green fntuc-head">money back</h4>
+									</div>
+								</div>	
+								<h6 class="text">30 Day Money Back Guarantee.</h6>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 col-lg-4">
+							<div class="info-box">
+								<div class="row">
+									<div class="col-xs-2">
+										<i class="icon fa fa-truck"></i>
+									</div>
+									<div class="col-xs-10">
+										<h4 class="info-box-heading orange fntuc-head">free shipping</h4>
+									</div>
+								</div>
+								<h6 class="text">free ship-on oder over $600.00</h6>	
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 col-lg-4">
+							<div class="info-box">
+								<div class="row">
+									<div class="col-xs-2">
+										<i class="icon fa fa-gift"></i>
+									</div>
+									<div class="col-xs-10">
+										<h4 class="info-box-heading red fntuc-head">Special Sale</h4>
+									</div>
+								</div>
+								<h6 class="text">All items-sale up to 20% off </h6>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="section wow fadeInUp">
+				<div class="row">
+					<div class="col-md-12 col-xs-12">
+						<h3 class="section-title">New Arrival</h3>
+						{{block type="fltproducts/newproduct_home_list" column_count='4' column_lg="3" column_md="3" column_sm="3" column_xs="2" limit="7" template="daeon/fltproducts/slider.phtml"}}
+					</div>
+				</div>
+			</section>
+			<div class="wide-banners wow fadeInUp outer-top-xs">
+				<div class="row">
+					<div class="col-md-7">
+						<div class="wide-banner cnt-strip">
+							<a href="#" class="banner-wrapper border-effect">
+								<div class="image">
+									<img class="img-responsive" src="{{media url="wysiwyg/kasuva/b1.jpg"}}" alt="banner" title="banner" width="470" height="146" >
+								</div>	
+								<div class="strip">
+									<div class="strip-inner">
+										<h3 class="hidden-xs">samsung</h3>
+										<h2>galaxy</h2>
+									</div>	
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="wide-banner cnt-strip">
+							<a href="#" class="banner-wrapper border-effect">
+								<div class="image">
+									<img class="img-responsive" src="{{media url="wysiwyg/kasuva/b2.jpg"}}" alt="banner" title="banner" width="370" height="163">
+								</div>	
+								<div class="strip">
+									<div class="strip-inner">
+										<h3 class="hidden-xs">new trend</h3>
+										<h2>watch phone</h2>
+									</div>	
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="section wow fadeInUp">
+				<div class="row">
+					<div class="col-md-12 col-xs-12">
+						<h3 class="section-title">Best Seller</h3>
+						{{block type="fltproducts/bestsellers_home_list" column_count='3' column_lg="2" column_md="2" column_sm="2" column_xs="2" name="bestsellers" template="daeon/fltproducts/micro.phtml"}}
+					</div>
+				</div>
+			</section>
+			<div class="wide-banners wow fadeInUp outer-top-xs">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="wide-banner cnt-strip">
+							<a href="#" class="banner-wrapper zoom-effect">
+								<div class="image">
+									<img class="img-responsive" src="{{media url="wysiwyg/kasuva/b3.jpg"}}" alt="banner" title="banner" width="870" height="146" style="min-height:146px;">
+								</div>
+								<div class="strip">
+									<div class="strip-inner strip-left strip-long-text">
+										<h3 class="red fntuc-head">one stop place for</h3>
+										<h1 class="black fntuc-head">all your shopping needs</h1>
+									</div>
+								</div>
+								<div class="new-label">
+									<div class="text">NEW</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+            {{widget type="blog/slider" blocks_count="6"}}
+		</div>
+		<div class="col-md-3 col-sm-12 col-xs-12 pull-left sidebar sidebar-home col-left">
+			{{block type="megamenu/sidebarnav" name="sidebarnav" template="daeon/megamenu/sidebar.phtml"}}
+			{{block type="fltproducts/specials_home_list" block-title="Special Offer" column_count="3" name="newproducts-sidebar" template="daeon/fltproducts/sidebar_block.phtml"}}
+			{{block type="cms/block" block_id="sidebar_banners"}}
+			{{block type="newsletter/subscribe" name="newsletter" template="newsletter/homesidebar_subscribe.phtml"}}
+		</div>
+		<div class="col-md-12 col-sm-12 col-xs-12">
+			{{block type="cms/block" block_id="our_brands"}}
+		</div>
+	</div>
+</div>
+</div>]]></content>
+<is_active><![CDATA[1]]></is_active>
+<layout_update_xml><![CDATA[]]></layout_update_xml>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[FAQ]]></title>
+<identifier><![CDATA[faq]]></identifier>
+<root_template><![CDATA[one_column]]></root_template>
+<content><![CDATA[<div class="page-content">
+	<h2 class="page-title">Frequently Asked Questions</h2>
+	<span class="page-title-tag">Last Updated on November 02, 2014</span>
+	<div class="panel-group accordian-wrap" id="accordion">
+		<!-- accordian-step-01  -->
+		<div class="panel panel-default accordian-step accordian-step-01">
+			<!-- panel-heading -->
+			<div class="panel-heading">
+				<h4 class="accordian-title">
+					<a data-toggle="collapse" class="" data-parent="#accordion" href="#collapseOne">
+					  <span>1</span>Do you Ship Internationally ?
+					</a>
+				 </h4>
+			</div>
+			<!-- panel-heading -->
+			<div id="collapseOne" class="panel-collapse collapse in">
+				<!-- panel-body  -->
+				<div class="panel-body">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis diam erat. Duis velit lectus, posuere a blandit sit amet, tempor at lorem. Donec ultricies, lorem sed ultrices interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis diam erat. Duis velit lectus, posuere a blandit sit amet, tempor at lorem. Donec ultricies, lorem sed ultrices interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis diam erat. Duis velit lectus, posuere a blandit sit amet, tempor at lorem. Donec ultricies, lorem sed ultrices interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis diam erat. Duis velit lectus, posuere a blandit sit amet, tempor at lorem.			
+				</div>
+				<!-- panel-body  -->
+			</div><!-- row -->
+		</div>
+		<!-- accordian-step-01  -->
+		<!-- accordian-step-02  -->
+		<div class="panel panel-default accordian-step accordian-step-02">
+			<div class="panel-heading">
+			  <h4 class="accordian-title">
+				<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseTwo">
+				  <span>2</span>Who should I to contact if I have any queries?	
+				</a>
+			  </h4>
+			</div>
+			<div id="collapseTwo" class="panel-collapse collapse">
+			  <div class="panel-body">
+				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			  </div>
+			</div>
+		</div>
+		<!-- accordian-step-02  -->
+
+		<!-- accordian-step-03  -->
+		<div class="panel panel-default accordian-step accordian-step-03">
+			<div class="panel-heading">
+			  <h4 class="accordian-title">
+				<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseThree">
+					<span>3</span>How do I track my order ?
+				</a>
+			  </h4>
+			</div>
+			<div id="collapseThree" class="panel-collapse collapse">
+			  <div class="panel-body">
+				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			  </div>
+			</div>
+		</div>
+		<!-- accordian-step-03  -->
+
+		<!-- accordian-step-04  -->
+		<div class="panel panel-default accordian-step accordian-step-04">
+			<div class="panel-heading">
+			  <h4 class="accordian-title">
+				<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseFour">
+					<span>4</span>How can I cancel or change my order ?
+				</a>
+			  </h4>
+			</div>
+			<div id="collapseFour" class="panel-collapse collapse">
+				<div class="panel-body">
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				</div>
+			</div>
+		</div>
+		<!-- accordian-step-04  -->
+
+		<!-- accordian-step-05  -->
+		<div class="panel panel-default accordian-step accordian-step-05">
+			<div class="panel-heading">
+			  <h4 class="accordian-title">
+				<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseFive">
+					<span>5</span>How can I return a product
+				</a>
+			  </h4>
+			</div>
+			<div id="collapseFive" class="panel-collapse collapse">
+			  <div class="panel-body">
+				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			  </div>
+			</div>
+		</div>
+		<!-- accordian-step-05  -->
+
+		<!-- accordian-step-06  -->
+		<div class="panel panel-default accordian-step accordian-step-06">
+			<div class="panel-heading">
+			  <h4 class="accordian-title">
+				<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseSix">
+					<span>6</span>How long will it take to get my package ?
+				</a>
+			  </h4>
+			</div>
+			<div id="collapseSix" class="panel-collapse collapse">
+				<div class="panel-body">
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				</div>
+			</div>
+		</div>
+		<!-- accordian-step-06  -->
+
+		<!-- accordian-step-07  -->
+		<div class="panel panel-default accordian-step accordian-step-07">
+			<div class="panel-heading">
+			  <h4 class="accordian-title">
+				<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseSeven">
+					<span>7</span>What Shipping methods are available ?
+				</a>
+			  </h4>
+			</div>
+			<div id="collapseSeven" class="panel-collapse collapse">
+				<div class="panel-body">
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				</div>
+			</div>
+		</div>
+		<!-- accordian-step-07  -->
+
+		<!-- accordian-step-08  -->
+		<div class="panel panel-default accordian-step accordian-step-08">
+			<div class="panel-heading">
+			  <h4 class="accordian-title">
+				<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseEight">
+					<span>8</span>Do you provide any warranty ?
+				</a>
+			  </h4>
+			</div>
+			<div id="collapseEight" class="panel-collapse collapse">
+				<div class="panel-body">
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				</div>
+			</div>
+		</div>
+		<!-- accordian-step-08  -->
+
+		<!-- accordian-step-09  -->
+		<div class="panel panel-default accordian-step accordian-step-09">
+			<div class="panel-heading">
+			  <h4 class="accordian-title">
+				<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseNine">
+					<span>9</span>Do you have replacement guarantee ?
+				</a>
+			  </h4>
+			</div>
+			<div id="collapseNine" class="panel-collapse collapse">
+				<div class="panel-body">
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				</div>
+			</div>
+		</div>
+		<!-- accordian-step-09  -->
+		
+	</div><!-- /.accordian-steps -->
+</div>
+<div class="col-md-12">
+	{{block type="cms/block" block_id="our_brands"}}
+</div>]]></content>
+<is_active><![CDATA[1]]></is_active>
+<layout_update_xml><![CDATA[]]></layout_update_xml>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[Terms Conditions]]></title>
+<identifier><![CDATA[terms-conditions]]></identifier>
+<root_template><![CDATA[one_column]]></root_template>
+<content><![CDATA[<div class="page-content">
+	<h2 class="page-title">Terms And Conditions</h2>
+	<span class="page-title-tag">This Agreement was last modified on July 20, 2014.</span>
+	<div class="page-inner-content">
+		<h3 class="fntuc-head">Intellectual Propertly</h3>
+		<ol>
+			<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis diam erat. Duis velit lectus, posuere a blandit sit amet, tempor at lorem. Donec ultricies, lorem sed ultrices interdum. </li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis diam erat. Duis velit lectus, posuere a blandit sit amet, tempor at lorem. Donec ultricies, lorem sed ultrices interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis diam erat. Duis velit lectus, posuere a blandit sit amet, tempor at lorem. Donec ultricies, lorem sed ultrices interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis diam erat. Duis velit lectus, posuere a blandit sit amet, tempor at lorem. Donec ultricies, lorem sed ultrices interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis diam erat. Duis velit lectus, posuere a blandit sit amet, tempor at lorem. Donec ultricies, lorem sed ultrices interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis diam erat. Duis velit lectus, posuere a blandit sit amet, tempor at lorem. Donec ultricies, lorem sed ultrices interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+		</ol>
+		<h3 class="fntuc-head">Termination</h3>
+		<ol>
+			<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis diam erat. Duis velit lectus, posuere a blandit sit amet, tempor at lorem. Donec ultricies, lorem sed ultrices interdum. </li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis diam erat. Duis velit lectus, posuere a blandit sit amet, tempor at lorem. Donec ultricies, lorem sed ultrices interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis diam erat. Duis velit lectus, posuere a blandit sit amet, tempor at lorem. Donec ultricies, lorem sed ultrices interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis diam erat. Duis velit lectus, posuere a blandit sit amet, tempor at lorem. Donec ultricies, lorem sed ultrices interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+		</ol>
+		<h3 class="fntuc-head">Changes to this agreement</h3>
+		<p>We reserve the right, at our sole discretion, to modify or replace these Terms and Conditions by posting the updated terms on the Site. Your continued use of the Site after any such changes constitutes your acceptance of the new Terms and Conditions. </p>
+		<br><br>
+		<h3 class="fntuc-head">Contact Us</h3>
+		<p>If you have any questions about this Agreement, please contact us filling this <a href="{{config path="web/secure/base_url"}}contact" class='contact-form'>contact form</a></p>
+	</div>
+</div>
+{{block type="cms/block" block_id="our_brands"}}
+]]></content>
+<is_active><![CDATA[1]]></is_active>
+<layout_update_xml><![CDATA[]]></layout_update_xml>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[kasuva - Homepage 4]]></title>
+<identifier><![CDATA[kasuva-style-4]]></identifier>
+<root_template><![CDATA[one_column]]></root_template>
+<content><![CDATA[<div class="outer-top-vs column-1">
+	{{block type="mainslider/mainslider" name="mainslider" template="daeon/mainslider/slider.phtml"}}
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div id="product-tabs-slider" class="scroll-tabs outer-top-xs wow fadeInUp animated">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<section class="section">
+								<h3 class="section-title">New Arrivals</h3>
+								{{block type="fltproducts/newproduct_home_list" name="newproducts" column_count="6" column_lg="5" column_md="4" column_sm="3" column_xs="2" limit="6" template="daeon/fltproducts/slider.phtml"}}
+							</section>
+						</div>
+					</div>
+				</div>
+				<!-- ============================================== WIDE PRODUCTS ============================================== -->
+				<div class="wide-banners wow fadeInUp outer-top-xs wide-banner-4">
+					<div class="row">
+						<div class="col-md-8 col-sm-8">
+							<div class="wide-banner cnt-strip banimg-8">
+								<a href="#" class="banner-wrapper zoom-effect">
+									<div class="image">
+										<img class="img-responsive" src="{{media url="wysiwyg/kasuva/furniture/banner-fur.jpg"}}" alt="Banner" title="" width="750" height="161">
+									</div>	
+									<div class="strip">
+										<div class="strip-inner">
+											<h3 class="red fntuc-style2">One stop place for</h3>
+											<h1 class="black fntuc-style4">All your shopping needs</h1>
+											<p class="green fntuc-style1">FREE SHIPPING ON ORDER OVER $500.00</p>
+										</div>
+									</div>
+								</a>
+							</div><!-- /.wide-banner -->
+						</div><!-- /.col -->
+						<div class="col-md-4 col-sm-4">
+							<div class="wide-banner cnt-strip">
+								<a href="#" class="banner-wrapper zoom-effect">
+									<div class="image">
+										<img class="img-responsive" src="{{media url="wysiwyg/kasuva/furniture/banner-fur1.jpg"}}" alt="Banner" title="" width="360" height="161">
+									</div>	
+									<div class="strip">
+										<div class="strip-inner text-center col-md-6 text-xs-left">
+											<h4 class="fntuc-style2">Chairs</h4>
+											<h2 class="black fntuc-style4">collection</h2>
+											<h4 class="red fntuc-style2">New Design</h4>
+										</div>
+									</div>
+								</a>
+							</div><!-- /.wide-banner -->
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+				</div><!-- /.wide-banners -->
+				  <!-- ============================================== WIDE PRODUCTS : END ============================================== -->
+				<div class="sections prod-slider-small wow fadeInUp outer-top-xs">
+					<div class="row">
+						<div class="col-sm-6 col-xs-12">
+							<section class="section">
+								<h3 class="section-title">New Arrivals</h3>
+								{{block type="fltproducts/newproduct_home_list" column_count="3" column_lg="2" column_md="2" column_sm="3" column_xs="2" limit="4" template="daeon/fltproducts/slider.phtml"}}
+							</section>
+						</div>
+						<div class="col-sm-6 col-xs-12">
+							<section class="section">
+								<h3 class="section-title">Special Deals</h3>
+								{{block type="fltproducts/specials_home_list" column_count="3" column_lg="2" column_md="2" column_sm="3" column_xs="2" limit="4" template="daeon/fltproducts/slider.phtml"}}
+							</section>
+						</div>
+					</div>
+				</div>
+				<section class="section outer-top-xs wow fadeInUp">
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="section-title">Weekly Featured</h3>
+							{{block type="fltproducts/featured_home_list" name="featuredproducts" column_count="4" column_lg="3" column_md="2" column_sm="2" column_xs="1" row_count="2" limit="8" template="daeon/fltproducts/micro.phtml"}} 
+						</div>
+					</div>
+				</section>
+				{{widget type="blog/slider" blocks_count="6"}}
+				{{block type="cms/block" block_id="our_brands"}}
+			</div>
+		</div>
+	</div>
+</div>]]></content>
+<is_active><![CDATA[1]]></is_active>
+<layout_update_xml><![CDATA[]]></layout_update_xml>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+<cms_block>
+<title><![CDATA[kasuva - Homepage 3]]></title>
+<identifier><![CDATA[kasuva-style-3]]></identifier>
+<root_template><![CDATA[one_column]]></root_template>
+<content><![CDATA[<div class="container">
+<div class="outer-top-vs  home-1column">
+	<div class="row">
+		<div class="col-md-9 col-sm-12 col-xs-12 pull-right main col-main">
+			{{block type="mainslider/mainslider" name="mainslider" template="daeon/mainslider/slider.phtml"}}
+			<div class="info-boxes outer-top-xs wow fadeInUp">
+				<div class="info-boxes-inner">
+					<div class="row">
+						<div class="col-md-4 col-sm-4 col-lg-4">
+							<div class="info-box">
+								<div class="row">
+									<div class="col-xs-2">
+										 <i class="icon fa fa-money"></i>
+									</div>
+									<div class="col-xs-10">
+										<h4 class="info-box-heading theme--color fntuc-head">money back</h4>
+									</div>
+								</div>	
+								<h6 class="text fntuc-gen">30 Day Money Back Guarantee.</h6>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 col-lg-4">
+							<div class="info-box">
+								<div class="row">
+									<div class="col-xs-2">
+										<i class="icon fa fa-truck"></i>
+									</div>
+									<div class="col-xs-10">
+										<h4 class="info-box-heading orange fntuc-head">free shipping</h4>
+									</div>
+								</div>
+								<h6 class="text fntuc-gen">free ship-on oder over $600.00</h6>	
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 col-lg-4">
+							<div class="info-box">
+								<div class="row">
+									<div class="col-xs-2">
+										<i class="icon fa fa-gift"></i>
+									</div>
+									<div class="col-xs-10">
+										<h4 class="info-box-heading red fntuc-head">Special Sale</h4>
+									</div>
+								</div>
+								<h6 class="text fntuc-gen">All items-sale up to 20% off </h6>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-12 col-xs-12 pull-left sidebar sidebar-home col-left">
+			{{block type="megamenu/sidebarnav" name="sidebarnav" template="daeon/megamenu/sidebar.phtml"}}
+		</div>
+		<div class="col-md-12 col-sm-12 col-xs-12">
+			<div id="product-tabs-slider" class="scroll-tabs wow fadeInUp animated">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="more-info-tab clearfix ">
+							<h3 class="new-product-title pull-left">New Products</h3>
+							<ul class="nav nav-tabs nav-tab-line pull-right" id="new-products-tabs">
+								<li class="active"><a data-transition-type="backSlide" href="#tbnp-0" data-toggle="tab">All</a></li>
+								<li class=""><a data-transition-type="backSlide" href="#tbnp-1" data-toggle="tab">Woman</a></li>
+								<li class=""><a data-transition-type="backSlide" href="#tbnp-2" data-toggle="tab">Men</a></li>
+								<li class=""><a data-transition-type="backSlide" href="#tbnp-3" data-toggle="tab">Kids</a></li>
+								<li class=""><a data-transition-type="backSlide" href="#tbnp-4" data-toggle="tab">Gifts</a></li>
+							</ul>
+						</div>
+						<div class="tab-content outer-top-xs">
+							<div class="tab-pane active" id="tbnp-0">
+								{{block type="fltproducts/newproductcattabs_home_list" column_count="5" column_lg="4" column_md="3" column_sm="3" column_xs="1" category_ids="3,29,45,59" template="daeon/fltproducts/slider.phtml"}}
+							</div>
+							<div class="tab-pane" id="tbnp-1">
+								{{block type="fltproducts/newproductcattabs_home_list" column_count="5" column_lg="4" column_md="3" column_sm="3" column_xs="1" category_ids="3" template="daeon/fltproducts/slider.phtml"}}
+							</div>
+							<div class="tab-pane" id="tbnp-2">
+								{{block type="fltproducts/newproductcattabs_home_list" column_count="5" column_lg="4" column_md="3" column_sm="3" column_xs="1" category_ids="29" template="daeon/fltproducts/slider.phtml"}}
+							</div>
+							<div class="tab-pane" id="tbnp-3">
+								{{block type="fltproducts/newproductcattabs_home_list" column_count="5" column_lg="4" column_md="3" column_sm="3" column_xs="1" category_ids="45" template="daeon/fltproducts/slider.phtml"}}
+							</div>
+							<div class="tab-pane" id="tbnp-4">
+								{{block type="fltproducts/newproductcattabs_home_list" column_count="5" column_lg="4" column_md="3" column_sm="3" column_xs="1" category_ids="59" template="daeon/fltproducts/slider.phtml"}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ============================================== Banners ============================================== -->
+			<div class="wide-banners wow fadeInUp outer-top-xs wide-banner-4">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="wide-banner cnt-strip banimg-8">
+							<a href="#" class="banner-wrapper border-effect">
+								<div class="image border-effect">
+									<img class="img-responsive" src="{{media url="wysiwyg/kasuva/furniture/banner-fur.jpg"}}" alt="Banner" title="" width="750" height="161">
+								</div>	
+								<div class="strip">
+									<div class="strip-inner">
+										<h3 class="red fntuc-style2">One stop place for</h3>
+										<h1 class="black fntuc-style4">All your shopping needs</h1>
+										<p class="green fntuc-style1">FREE SHIPPING ON ORDER OVER $500.00</p>
+									</div>
+								</div>
+							</a>
+						</div><!-- /.wide-banner -->
+					</div><!-- /.col -->
+					<div class="col-md-4">
+						<div class="wide-banner cnt-strip">
+							<a href="#" class="banner-wrapper border-effect">
+								<div class="image">
+									<img class="img-responsive" src="{{media url="wysiwyg/kasuva/furniture/banner-fur1.jpg"}}" alt="Banner" title="" width="360" height="161">
+								</div>	
+								<div class="strip">
+									<div class="strip-inner text-center col-md-6 text-xs-left">
+										<h4 class="fntuc-style2">Chairs</h4>
+										<h2 class="black fntuc-style4">collection</h2>
+										<h4 class="red fntuc-style2">New Design</h4>
+									</div>
+								</div>
+							</a>
+						</div><!-- /.wide-banner -->
+					</div><!-- /.col -->
+				</div><!-- /.row -->
+			</div><!-- /.wide-banners -->
+			<!-- ============================================== Banners : END ============================================== -->
+			<section class="section wow fadeInUp">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<h3 class="section-title">TRENDING</h3>
+						{{block type="fltproducts/allproducts_home_list" product_ids="23,9" column_count='1' row_count='2' limit="2" template="daeon/fltproducts/micro.phtml"}}
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<h3 class="section-title">ON SALE</h3>						
+						{{block type="fltproducts/bestsellers_home_list" column_count='1' row_count='2' name="bestsellers" template="daeon/fltproducts/micro.phtml"}}
+					</div>
+					<div class="col-lg-4 col-md-4 hidden-sm col-xs-12">
+						<h3 class="section-title">TOP RATE</h3>
+						{{block type="fltproducts/allproducts_home_list" product_ids="10,2" column_count='1' row_count='2' limit="2" template="daeon/fltproducts/micro.phtml"}}
+					</div>
+				</div>
+			</section>
+            {{widget type="blog/slider" blocks_count="6"}}
+			{{block type="cms/block" block_id="our_brands"}}
+		</div>
+	</div>
+</div>
+</div>]]></content>
+<is_active><![CDATA[1]]></is_active>
+<layout_update_xml><![CDATA[]]></layout_update_xml>
+<stores><![CDATA[0]]></stores>
+</cms_block>
+</pages></root>

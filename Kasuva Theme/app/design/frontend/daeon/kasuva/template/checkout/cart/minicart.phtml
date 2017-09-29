@@ -1,0 +1,29 @@
+<?php
+    $_cartQty = $this->getSummaryCount();
+	$subtotal=Mage::helper('checkout/cart')->getQuote()->getSubtotal();
+    if(empty($_cartQty)) {
+        $_cartQty = 0;
+    }
+?>
+<div  class="minicart-block miniCartBlock">
+	<div class="dropdown dropdown-cart main-top-dropdown animate-dropdown">
+		<a href="javascript:void(0);" class="minicart-action dropdown-toggle main-top-toggle" >
+			<div class="items-cart-inner">
+				<div class="total-price-basket">
+					<span class="cart-icon">
+						<i class="icon fa fa-shopping-cart"></i>
+						<span class="item-count"><?php echo $_cartQty; ?></span>
+					</span>
+					<span class="cart-info">
+						<span class="label-name"><?php echo $this->__('Shopping Cart') ?></span>
+						<span class="cart-count">
+							<?php echo $_cartQty; ?> <?php echo $this->__('Item(s)') ?> - <span class="amount"><?php echo $this->__('%s', $this->helper('core')->formatPrice($subtotal, false)); ?></span></span> 
+					</span>
+				</div>
+			</div>
+		</a>
+		<div id="header-cart" class="minicart-content dropdown-menu dropdown-main-menu">
+			<?php echo $this->getChildHtml('minicart_content');?>
+		</div>
+	</div>
+</div>

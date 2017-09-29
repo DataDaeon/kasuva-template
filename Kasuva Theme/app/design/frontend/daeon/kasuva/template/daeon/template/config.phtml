@@ -1,0 +1,213 @@
+<?php
+$theme=Mage::helper('kasuva');
+$tmpCfg = Mage::registry('tmpCfg');
+$design_cfg=$tmpCfg['deg'];
+$settings_cfg=$tmpCfg['set'];
+$fonts=$design_cfg['fonts'];
+$genfontfam=($design_cfg['fonts']['font_family']=='googlefont')? $design_cfg['fonts']['google_fontfamily'] : (($design_cfg['fonts']['font_family']=='default') ? 'Roboto' : $design_cfg['fonts']['font_family']);
+$heafontfam=($design_cfg['fonts']['head_font_family']=='googlefont')? $design_cfg['fonts']['head_google_fontfamily'] : (($design_cfg['fonts']['head_font_family'] == 'default') ? 'FjallaOneRegular' : $design_cfg['fonts']['head_font_family']);
+$heafontweight=($design_cfg['fonts']['head_fontweight']=='default')? 500 : $design_cfg['fonts']['head_fontweight'];
+$pageIdentifier = Mage::app()->getFrontController()->getAction()->getFullActionName();
+$gdef=($design_cfg['basic']['general_color_themesettings']) ? $design_cfg['basic']['general_color_themesettings'] : 0;
+//add Button Class
+if($btn_style = $design_cfg['basic']['btn_style']){
+	if ($root = $this->getLayout()->getBlock('root')) {
+		if($heafontfam == 'FjallaOneRegular'){
+			$root->addBodyClass('uct-def');
+		}
+		$root->addBodyClass($btn_style);
+	}
+}
+?>
+<style type="text/css">
+	<?php //fonts ?>
+	<?php if($design_cfg['fonts']['general_fontsize']!='default'){ 
+		$gen_fontsize = ($design_cfg['fonts']['general_fontsize']=='default')? '13px' : ($design_cfg['fonts']['general_fontsize'].'px');
+	?>
+	body, html {font-size: <?php echo $gen_fontsize; ?> !important;}
+	<?php } ?>
+	<?php if($design_cfg['fonts']['font_family']!='default'){ ?>
+	body, .fntuc-gen, .pumgmenu a > span.menu-label{font-family: '<?php echo $genfontfam; ?>', Arial, serif !important;}
+	<?php } ?>
+	<?php if($design_cfg['fonts']['head_font_family']!='default'){ ?>
+	<?php //homepage ?>
+	<?php if($theme->getIsHomePage()){ ?>
+	#main-slider .item .caption.style1 .big-text, #main-slider .item .caption.style2 .big-text, #main-slider .item .caption.style1 .excerpt{font-family: '<?php echo $heafontfam; ?>', Arial, serif !important;font-weight: <?php echo $heafontweight; ?> !important;}
+	<?php } ?>
+	
+	.header-nav .pumgmenu > li > a, .pumgmenu .pu-fc .nav-dropdown .menu-item >  a.level1{font-family: '<?php echo $heafontfam; ?>', Arial, serif !important;font-weight: <?php echo $heafontweight; ?> !important;}
+	
+	.minicart-block .cart-info, .minicart-block .cart-info .label-name, .minicart-block .cart_list .item > a, .minicart-block .total > strong, .section-title, .sidebar .block .block-title, .footer .module-heading, .scroll-tabs .more-info-tab .new-product-title, .fntuc-head, .blog-page .blog-post h1, .blog-page .blog-review .title-review-comments, .blog-page .blog-review h4, .blog-page .blog-write-comment h4, .contact-page .contact-title h4, .page-title > h1, .cart-table thead th, .product-info .product-name, .cart-price .price, .cart-forms .discount > h2, .shipping > h2, #shopping-cart-totals-table td, .new-users .content > h2, .registered-users .content > h2, .fieldset h2.legend, .compare-table tr > th, .opc li.section .step-title h2, .opc li.section .step-title .number, .opc .gift-messages > h3, .linearize-table .product-name, .linearize-table tfoot td, .order-details .table-caption, .box-account .box-head h2, .blog-slider .blog-post-info .name, .tag, .page-content .page-title, .product-shop .ps-lst .label, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{font-family: '<?php echo $heafontfam; ?>', Arial, serif !important;font-weight: <?php echo $heafontweight; ?> !important;}
+	<?php } ?>
+	<?php if($settings_cfg['general']['layout']=='1'){ 
+		$boxed_bgimg = ($settings_cfg['general']['boxed_bgimg']) ? $settings_cfg['general']['boxed_bgimg'] : 'pattern1.png';
+		$boxed_bgcolor = ($settings_cfg['general']['boxed_bgcolor']) ? $settings_cfg['general']['boxed_bgcolor'] : 'fff';
+	?>
+	body.boxed{background-image: url("<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . "wysiwyg/kasuva/boxed/" .$boxed_bgimg; ?>");}
+	body.boxed{background-color: #<?php echo $boxed_bgcolor; ?>;}
+	<?php } ?>
+	<?php //megamenu ?>
+	<?php if($design_cfg['megamenu']['megamenu_color_themesettings']){ ?>
+	<?php $nav_fontsize = ($design_cfg['megamenu']['nav_fontsize']=='default')? '21px' : ($design_cfg['megamenu']['nav_fontsize'].'px'); ?>
+	header .header-nav{background-color: #<?php echo $design_cfg['megamenu']['nav_bg']; ?>;}
+	.header-nav .pumgmenu > li > a{color:#<?php echo $design_cfg['megamenu']['nav_text']; ?>; font-size: <?php echo $nav_fontsize;?> !important;}
+	.header-nav .pumgmenu > li > a:hover, .header-nav .pumgmenu > li > a:focus, .header-nav .pumgmenu > li.act > a{background:#<?php echo $design_cfg['megamenu']['nav_item_hbg']; ?>;color:#<?php echo $design_cfg['megamenu']['nav_item_htext']; ?>;}
+	.pumgmenu div.wp-custom-menu-popup{background:#<?php echo $design_cfg['megamenu']['megamenu_bg']; ?>;, color:#<?php echo $design_cfg['megamenu']['megamenu_text']; ?>;}
+	.pumgmenu div.wp-custom-menu-popup a{color:#<?php echo $design_cfg['megamenu']['megamenu_link']; ?>;}
+	.pumgmenu div.wp-custom-menu-popup a:hover, .header-nav .pumgmenu div.wp-custom-menu-popup a:focus, .sidebar-nav .side-menu > li > a:hover, .sidebar-nav .side-menu > li > a:focus, .sidebar-nav .side-menu > li:hover > a::after, .sidebar-nav .side-menu > li:hover > a .icon{color:#<?php echo $design_cfg['megamenu']['megamenu_hlink']; ?>;}
+	.pumgmenu .pu-fc .nav-dropdown .menu-item > a.level1{color:#<?php echo $design_cfg['megamenu']['megamenu_col_headtext']; ?>;}
+	ul.pumgmenu .nav-dropdown, .pumgmenu .nav-dropdown .nav-child-dropdown, .sidebar-nav .side-menu > li > a:hover, .sidebar-nav .side-menu > li > a:focus{border-color:#<?php echo $design_cfg['megamenu']['megamenu_col_headb']; ?>;}
+	<?php } ?>
+	<?php if($gdef){?>
+	<?php // Text color ?>
+	body, .label{color:#<?php echo $design_cfg['basic']['text_color']; ?>; }
+	
+	<?php // Link color ?>
+	a{color:#<?php echo $design_cfg['basic']['link_color']; ?>;}
+	
+	a:hover, a:focus, .product .cart .action ul li.lnk a:hover, .product .cart .action ul li.lnk a:focus, .product .product-info .name a:hover, .product .product-info .name a:focus, .scroll-tabs .nav-tab-line li a:hover, .scroll-tabs .nav-tab-line li a:focus, .sidebar .side-menu nav .nav > li a:hover:after, .sidebar .side-menu nav .nav > li a:focus:after, .cart .action ul .lnk .add-to-cart:hover, .cart .action ul .lnk .add-to-cart:focus, .top-bar .quick-links .dropdown-menu > li.active > a, .top-bar .quick-links .dropdown-menu > li > a:hover, .top-bar .quick-links .dropdown-menu > li > a:focus{color:#<?php echo $design_cfg['basic']['link_hover_color']; ?>;}
+	
+	<?php // Theme color ?>
+	.main-header .top-search-holder .contact-row .icon, .minicart-block .cart-info .amount, .item .amount .price, .minicart-block .total .price, .theme--color, .availability.in-stock .value, .product-info .cart-quantity .arrows .arrow:hover, .product-info .cart-quantity .arrows .arrow:focus, .ajaxpkt-block .ajaxpkt-close:hover::after, .fancybox-close:hover::after, .product.ajaxpkt-qckloader::after, .top-bar .quick-links > li.wc-msg, .cart-totals > table tfoot td, #checkout-review-table tfoot tr.last td, .product-view .product-options .swatch-attr .select-label, .page-content a, .breadcrumbs ul > li:last-child{color:#<?php echo $design_cfg['basic']['theme_color']; ?>;}
+	
+	.bg-color, .minicart-block .cart-icon .item-count, .minicart-block .dropdown-cart .dropdown-trigger-cart:hover .cart-icon, .toolbar .pager .current, .block-blog-tags .tagcloud li > a:hover, .block-blog-tags .tagcloud li > a:focus, .block-blog-tags .tagcloud li.active > a, .sidebar .advertisement .owl-pagination .owl-page.active span, .theme--bgcolor, .scrollToTop, .availability.in-stock .value{background:#<?php echo $design_cfg['basic']['theme_color']; ?> !important; }
+	
+	.toolbar .pager .current, input[type=text]:focus, textarea:focus, select:focus, .minicart-block .minicart-content{border-color:#<?php echo $design_cfg['basic']['theme_color']; ?>; }
+	
+	a:hover, .price-box .price, .scroll-tabs .nav-tab-line li.active a, .product.ajaxpkt-loader::after, .product .sku .value{color: #<?php echo $design_cfg['basic']['theme_color']; ?>;}
+	
+	.top-bar .quick-links .dropdown-menu {border-top-color: #<?php echo $design_cfg['basic']['theme_color']; ?>;}
+	
+	.configurable-swatch-list .hover .swatch-link, .configurable-swatch-list .selected .swatch-link, .swatch-link:hover{border-color: #<?php echo $design_cfg['basic']['theme_color']; ?>;}
+	
+	<?php // Button Color ?>
+	.btn-cart, .btn-primary, .button, .btn-remove2{
+		<?php if(in_array($btn_style, array('ucbtns2', 'ucbtns2-flat'))){ ?>
+			background-color: #<?php echo $design_cfg['basic']['btn_bg_color']; ?>;
+		<?php } ?>
+		color: #<?php echo $design_cfg['basic']['btn_text_color']; ?>;
+		border-color: #<?php echo $design_cfg['basic']['btn_border_color']; ?>;		
+		<?php echo ((in_array($btn_style, array('ucbtns1-flat', 'ucbtns2-flat')))? 'border-radius:0;' : ''); ?>
+	}
+	
+	.minicart-content .buttons a.wc-forward:hover, .btn-cart:hover, .btn-black:hover, .btn-cart:focus, .btn-black:focus, .custom-carousel .owl-controls .owl-prev:hover,.custom-carousel .owl-controls .owl-next:hover, .custom-carousel .owl-controls .owl-prev:focus, .custom-carousel .owl-controls.owl-next:focus, .btn-primary:hover, .btn-primary:focus, .button:hover, .button:focus, .btn-remove2:hover, .btn-remove2:focus, .price-box .map-link:hover, .price-box .map-link:focus, .my-account .order-info dd > ul > li.current, .btn-hover, .minicart-content .buttons a.checkout.wc-forward{
+		background-color: #<?php echo $design_cfg['basic']['btn_hbg_color']; ?>;
+		border-color:#<?php echo $design_cfg['basic']['btn_hborder_color']; ?>;
+	}
+	.btn-cart:hover, .btn-black:hover, .btn-black:focus, .btn-cart:focus, .custom-carousel .owl-controls .owl-prev:hover::before, .custom-carousel .owl-controls .owl-next:hover::before, .btn-primary:hover, .button:hover, .product .price-box .map-link:hover, button:hover, button:focus, a.button:hover .fa, a.button:focus .fa, .btn-remove2:hover:before, .btn-remove2:focus:before, .price-box .map-link:hover, .price-box .map-link:focus, .my-account .order-info dd > ul > li.current, .btn-hover{
+		color: #<?php echo $design_cfg['basic']['btn_htext_color']; ?>;
+	}
+	.ucbs2-l .product .action ul li.lnk .button, .ucbs2-m .product .action ul li.lnk .button, .ucbs2-s .product .action ul li.lnk .button{
+		<?php if(in_array($btn_style, array('ucbtns2', 'ucbtns2-flat'))){ ?>
+			color: #<?php echo $design_cfg['basic']['btn_bg_color']; ?>;
+		<?php } ?>
+	}
+	.ucbs2-l .product .action ul li.lnk .button:hover, .ucbs2-m .product .action ul li.lnk .button:hover, .ucbs2-s .product .action ul li.lnk .button:hover{color:#<?php echo $design_cfg['basic']['btn_hbg_color']; ?>;}
+	
+	<?php /* products label */ ?>
+	.tag.sale{background: #<?php echo $design_cfg['basic']['salelabel_color']; ?>}
+	.tag.new{background: #<?php echo $design_cfg['basic']['newlabel_color']; ?>}
+	
+	<?php } ?>
+	<?php /* image setting */ ?>
+	<?php 
+	$_imgWidth=($settings_cfg['products_slider']['prodsliderimg_width'])? $settings_cfg['products_slider']['prodsliderimg_width'] : 276;
+	$_mimgWidth=($settings_cfg['products_slider']['prodmsliderimg_width'])? $settings_cfg['products_slider']['prodmsliderimg_width'] : 170;
+	?>
+	.home-owl-carousel .owl-item.loading .lazyOwl{width: <?php echo $_imgWidth; ?>px;}
+	.home-owl-carousel .owl-item.loading .product-micro-row .lazyOwl{width: <?php echo $_mimgWidth; ?>px;}
+	
+	<?php /*header*/?>
+	<?php if($design_cfg['header']['header_color_themesettings']){ ?>
+	.top-bar{background : #<?php echo $design_cfg['header']['topbar_bg']; ?>;}
+	.top-bar .quick-links > li a{color : #<?php echo $design_cfg['header']['topbar_link_color']; ?>;}
+	.top-bar .quick-links > li a:hover, .top-bar .quick-links > li a:focus{color : #<?php echo $design_cfg['header']['topbar_link_hcolor']; ?>;}
+	.top-bar .quick-links > li{border-color : #<?php echo $design_cfg['header']['topbar_link_border_color']; ?>;}
+	.top-bar .quick-links > li.wc-msg{color : #<?php echo $design_cfg['header']['topbar_welcomtext_color']; ?>;}
+	.main-header{color:#<?php echo $design_cfg['header']['header_text_color']; ?>;}
+	header{background : #<?php echo $design_cfg['header']['header_bg']; ?>;}
+	.search-area form .input-group-addon, .search-area form .input-group-addon{background : #<?php echo $design_cfg['header']['header_search_bg']; ?>;}
+	.main-header .search-area, .search-categories .sel_cat, .search-categories .caret, .search-area form select, .search-area form button, .search-area form input{color : #<?php echo $design_cfg['header']['header_search_color']; ?>;}
+	<?php } ?>
+	<?php /*footertop*/?>
+
+	<?php if($design_cfg['footer']['footer_color_themesettings']){ ?>
+	<?php if($settings_cfg['footer']['active_footer_top']){?>
+	.footer .footer-top{background : #<?php echo $design_cfg['footer']['ftop_bg']; ?>}
+	.footer .footer-top{color : #<?php echo $design_cfg['footer']['ftop_text']; ?>}
+	.footer .footer-top .module-title{color : #<?php echo $design_cfg['footer']['ftop_bhead_text']; ?>}
+	.footer .footer-top a{color : #<?php echo $design_cfg['footer']['ftop_link']; ?>}
+	.footer .footer-top a:hover, .footer .footer-top a:focus{color : #<?php echo $design_cfg['footer']['ftop_hlink']; ?>}
+	.footer .footer-top .social-icons a:hover{background : #<?php echo $design_cfg['footer']['ftop_icon_bg']; ?>;color:<?php echo $design_cfg['footer']['ftop_icon_text']; ?>;}
+	.footer .contact-information .media .icon .fa-stack-2x{color:#<?php echo $design_cfg['footer']['ftop_icon_bg']; ?>;}
+	.footer .contact-information .media .icon .fa-inverse{color:#<?php echo $design_cfg['footer']['ftop_icon_text']; ?>;}
+	<?php } ?>
+	<?php /*footerbottom*/?>
+	.footer .footer-bottom{background : #<?php echo $design_cfg['footer']['fbot_bg']; ?>; color : #<?php echo $design_cfg['footer']['fbot_text']; ?>}
+	.footer .footer-bottom .module-title{color : #<?php echo $design_cfg['footer']['fbot_bhead_text']; ?>}
+	.footer .footer-bottom a{color : #<?php echo $design_cfg['footer']['fbot_link']; ?>}
+	.footer .footer-bottom a:hover, .footer .footer-bottom a:focus{color : #<?php echo $design_cfg['footer']['fbot_hlink']; ?>}
+	.footer .footer-bottom ul li a::before{color:#<?php echo $design_cfg['footer']['fbot_list_dot']; ?>;}
+	.footer .footer-bottom ul li, .footer-bottom .mobile-collapse{border-color:#<?php echo $design_cfg['footer']['fbot_list_botborder']; ?>;}
+	.copyright-bar{background : #<?php echo $design_cfg['footer']['fcopyrights_bg']; ?>;}
+	.copyright-bar .copyright{color : #<?php echo $design_cfg['footer']['fcopyrights_text']; ?>}
+	<?php } ?>
+	<?php /* category page */ ?>
+	<?php if (Mage::registry('current_category') || $pageIdentifier=='catalogsearch_result_index'): ?>
+	<?php if($design_cfg['fonts']['head_font_family']!='default'){ ?>
+	.catinfo-content .category-title, .block-layered-nav dl#narrow-by-list > dt, .block-layered-nav .currently .block-subtitle{font-family: '<?php echo $heafontfam; ?>', Arial, serif !important;font-weight: <?php echo $heafontweight; ?> !important;}
+	<?php } ?>
+	<?php if($design_cfg['category']['category_color_themesettings']){ ?>
+	.catinfo-content .category-title{color:#<?php echo $design_cfg['category']['category_title_color']; ?>}
+	.catinfo-content .category-description{color:#<?php echo $design_cfg['category']['category_desc_color']; ?>}
+	<?php } ?>
+	<?php if($gdef){ ?>
+	.view-mode .active-mode, .block-layered-nav .btn-remove:hover::before{
+		color:#<?php echo $design_cfg['basic']['theme_color']; ?>;
+	}
+	<?php } ?>
+	<?php /* image settings */ ?>
+	<?php 
+	$_catProdimgWidth=($settings_cfg['category_products']['catprodimg_width'])? $settings_cfg['category_products']['catprodimg_width'] : 276;
+	//$_catProdimgHeight=($settings_cfg['category_products']['catprodimg_height']) ? $settings_cfg['category_products']['catprodimg_height'] : 335;
+	?>
+	.product .product-image .lazyImg.loading{width: <?php echo $_catProdimgWidth; ?>px;}
+	
+	<?php endif; ?>
+	<?php /*product info */?>
+	<?php if(Mage::registry('current_product')): ?>
+		<?php if($design_cfg['fonts']['head_font_family']!='default'){ ?>
+		.product-tabs .nav-tabs > li > a, .product-shop .qty-lbl, .product-options .qty-holder > label, .product-view .product-name, .product-tabs .tab-content h2, .product-tabs .title, .product-tabs .product-collateral > dl > dt, .review-summary-table tr > th, .box-reviews > h2, .product-shop .price-box .price, .prod-type-data .availability{font-family: '<?php echo $heafontfam; ?>', Arial, serif !important;font-weight: <?php echo $heafontweight; ?> !important;}
+		<?php } ?>
+		<?php if($gdef){ ?>
+		.related-section .s-all:hover{background:<?php echo "#".$design_cfg['basic']['theme_color']; ?>;color:#fff;}
+		.product-img-box::after, .prod-type-data .availability.in-stock > span{color:#<?php echo $design_cfg['basic']['theme_color']; ?>;}
+		#review-form > h3 > span{color:#<?php echo $design_cfg['basic']['btn_hbg_color']; ?>;}
+		@media (min-width: 768px) and (max-width: 990px){.product-shop .add-to-links .button:hover{color:#<?php echo $design_cfg['basic']['btn_hbg_color']; ?>;}}
+		<?php } ?>
+		<?php /*tabs*/ ?>
+		<?php if($design_cfg['product_info']['productinfo_color_themesettings']){ ?>
+		.product-tabs .nav-tabs li a{background:#<?php echo $design_cfg['product_info']['product_tabs_bg']; ?>;}
+		.product-tabs .nav-tabs li a{color:#<?php echo $design_cfg['product_info']['product_tabs_text']; ?>;}
+		
+		.product-tabs .nav-tabs li a:hover::after, .product-tabs .nav-tabs li a:focus::after{
+			color:#<?php echo $design_cfg['product_info']['product_tabs_htext']; ?>;
+			border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) <?php echo "#".$design_cfg['product_info']['product_tabs_htext']; ?>;
+		}
+		.product-tabs .nav-tabs li a:hover, .product-tabs .nav-tabs li a:focus{background:#<?php echo $design_cfg['product_info']['product_tabs_hbg']; ?>;}
+		.product-tabs .nav-tabs li a:hover::after{
+			border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) <?php echo "#".$design_cfg['product_info']['product_tabs_hbg']; ?>;
+		}
+		.product-tabs .nav-tabs li a:hover{color:#<?php echo $design_cfg['product_info']['product_tabs_htext']; ?>;}
+		
+		.product-tabs .nav-tabs li.active a, .product-tabs .product-collateral > dl > dt.active a, .product-tabs .product-collateral > dl > dt.active:after{color:#<?php echo $design_cfg['product_info']['product_tabs_atext']; ?>;}
+		.product-tabs .nav-tabs li.active a, .product-tabs .product-collateral > dl > dt.active a{
+			background:#<?php echo $design_cfg['product_info']['product_tabs_abg']; ?>;
+			
+		}
+		.product-tabs .nav-tabs li.active a::after{
+			border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) <?php echo "#".$design_cfg['product_info']['product_tabs_abg']; ?>;
+		}
+		<?php } ?>
+	<?php endif; ?>	
+</style>

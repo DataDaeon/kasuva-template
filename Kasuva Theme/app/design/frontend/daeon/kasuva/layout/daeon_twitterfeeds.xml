@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout version="2.0.1">
+	<default>
+		<!--<reference name="left">
+			<block type="twitterfeeds/tweets" name="left.tweets" after="catalog.leftnav" template="daeon/twitterfeeds/twitterfeeds.phtml">
+				<action method="setData"><name>position</name><value>left</value></action>
+			</block>
+		</reference>
+		<reference name="right">
+			<block type="twitterfeeds/tweets" name="right.tweets" after="catalog.leftnav" template="daeon/twitterfeeds/twitterfeeds.phtml">
+				<action method="setData"><name>position</name><value>right</value></action>
+			</block>
+		</reference>-->
+	</default>
+</layout>

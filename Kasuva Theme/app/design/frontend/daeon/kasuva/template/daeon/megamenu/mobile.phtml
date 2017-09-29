@@ -1,0 +1,24 @@
+<?php
+	$tmpCfg = Mage::registry('tmpCfg');
+    //Mage::helper('megamenu')->saveCurrentCategoryIdToSession();
+?>
+<?php $mgclass=($tmpCfg['deg']['megamenu']['megamenu_color_themesettings'])? 'custom' : 'default'; ?>
+<div class="menu link-inline">	
+	<div class="dropdown main-top-dropdown text-right">
+		<a class="dropdown-toggle pumenu-toggle main-top-toggle" data-effect="pumenu-block">
+			<span class="fa fa-reorder"></span>
+		</a>
+		<div id="pumenu-container" class="pumenu-container">
+			<div class="pumenu-content pumenu-block <?php echo $mgclass; ?>">
+				<div class="close-pumenu close-block mobile-nav-heading"><span><?php echo $this->__('Navigation'); ?>&nbsp;&nbsp;</span><i class="fa fa-bars"></i></div>
+				<ul class="mobile-nav mobile-pumenu">
+					<?php echo Mage::helper('megamenu')->getMobileMenuContent(); ?>
+				</ul>
+			</div>
+			<div class="pumenu-overlay close-pumenu"></div>
+		</div>
+	</div>
+</div>
+
+
+

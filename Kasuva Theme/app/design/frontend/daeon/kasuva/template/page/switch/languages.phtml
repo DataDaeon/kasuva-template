@@ -1,0 +1,15 @@
+<?php if(count($this->getStores())>1): ?>
+	<li class="dropdown dropdown-small menu-item-has-children">
+		<a class="dropdown-toggle" href="#" data-hover="dropdown" data-toggle="dropdown">
+			<span class="key"><img src="<?php echo $this->getSkinUrl('images/flags/'.$this->getCurrentStoreCode().'.png'); ?>" /></span>
+			<span class="value"><?php echo Mage::app()->getStore()->getName(); ?></span>
+			<span class="caret"></span>
+		</a>
+		<ul id="select-language" class="dropdown-menu sub-dropdown lang-dropdown animated fadeInUp" title="<?php echo $this->__('Language') ?>">
+			<?php foreach ($this->getStores() as $_lang): ?>
+			<?php $_selected = ($_lang->getId() == $this->getCurrentStoreId()) ? 'active' : '' ?>
+			<li class="<?php echo $_selected ?>"><a href="<?php echo $_lang->getCurrentUrl() ?>"><img src="<?php echo $this->getSkinUrl('images/flags/'.$_lang->getCode().'.png'); ?>" /><span><?php echo $this->htmlEscape($_lang->getName()) ?></span></a></li>
+			<?php endforeach; ?>
+		</ul>
+	</li>
+<?php endif; ?>

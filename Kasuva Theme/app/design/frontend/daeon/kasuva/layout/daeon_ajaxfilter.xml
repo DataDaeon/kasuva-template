@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<catalog_category_view>
+		<reference name="head">
+			<action method="addItem"><type>skin_css</type><name>ajaxfilter/css/ajaxfilter.css</name><params/></action>
+		</reference>
+		<reference name="footer_extra">
+			<action method="addItem" ifconfig="price_ajaxfilter/price_ajaxfilter_settings/include_jquery"><type>skin_js</type><name>ajaxfilter/js/jquery.min.js</name></action>
+			<action method="addItem" ifconfig="price_ajaxfilter/price_ajaxfilter_settings/include_jquery_ui"><type>skin_js</type><name>ajaxfilter/js/jquery-ui.min.js</name></action>
+		</reference>
+		<reference name="content">
+			<block type="ajaxfilter/ajax" name="ajaxfiler" template="daeon/ajaxfilter/ajax.phtml" before="-" />
+		</reference>
+	</catalog_category_view>
+	<catalogsearch_result_index>
+		<reference name="head">
+			<action method="addItem"><type>skin_css</type><name>ajaxfilter/css/ajaxfilter.css</name><params/></action>
+		</reference>
+		<reference name="footer_extra">
+			<action method="addItem" ifconfig="price_ajaxfilter/price_ajaxfilter_settings/include_jquery"><type>skin_js</type><name>ajaxfilter/js/jquery.min.js</name></action>
+			<action method="addItem" ifconfig="price_ajaxfilter/price_ajaxfilter_settings/include_jquery_ui"><type>skin_js</type><name>ajaxfilter/js/jquery-ui.min.js</name></action>
+		</reference>
+		<reference name="footer">
+			<block type="ajaxfilter/ajax" name="ajaxfiler" template="daeon/ajaxfilter/ajax.phtml"/>
+		</reference>
+	</catalogsearch_result_index>
+</layout>

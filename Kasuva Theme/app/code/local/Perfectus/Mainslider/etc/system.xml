@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<config>
+	<tabs>
+		<kasuvaexnsions translate="label" module="mainslider">
+			<label>kasuva Extensions</label>
+			<sort_order>300</sort_order>
+		</kasuvaexnsions>
+	</tabs>
+	<sections>
+		<daeon_mainslider  translate="label" module="mainslider">                    
+			<label>Mainslider</label>
+			<tab>kasuvaexnsions</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>0</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>            
+				<groups>
+				    <settings translate="label"> 
+					  <label>Mainslider Settings</label>
+					  <frontend_type>text</frontend_type>
+					  <sort_order>10000</sort_order>
+					  <show_in_default>1</show_in_default>
+					  <show_in_website>1</show_in_website>
+					  <show_in_store>1</show_in_store>
+						<fields>
+							<mainslider_enable translate="label">
+								<label>Enabled</label>
+								<comment>Make extension enabled Yes/No</comment>
+								<frontend_type>select</frontend_type>
+								<sort_order>1</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<source_model>adminhtml/system_config_source_yesno</source_model>
+							</mainslider_enable>
+						</fields>
+					</settings>
+					<options translate="label"> 
+					  <label>Options</label>
+					  <frontend_type>text</frontend_type>
+					  <sort_order>10001</sort_order>
+					  <show_in_default>1</show_in_default>
+					  <show_in_website>1</show_in_website>
+					  <show_in_store>1</show_in_store>
+						<fields>
+							<heading_general translate="label">
+								<label>Layout Settings</label>
+								<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+								<sort_order>2</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+							</heading_general>
+							<full_width translate="label">
+								<label>Full Width</label>
+								<comment>Set Full Width Slider.</comment>
+								<frontend_type>select</frontend_type>
+								<sort_order>3</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<source_model>adminhtml/system_config_source_yesno</source_model>
+							</full_width>
+							<slider_width translate="label">
+								<label>Slider Width</label>
+								<comment>Set Slider Width in Pixel. Defulat:1140</comment>
+								<frontend_type>text</frontend_type>
+								<sort_order>4</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<depends>
+									<full_width>0</full_width>
+								</depends>
+							</slider_width>
+							<auto_height translate="label">
+								<label>Auto Height</label>
+								<comment>Display slider Auto Height.</comment>
+								<frontend_type>select</frontend_type>
+								<sort_order>4.2</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<source_model>adminhtml/system_config_source_yesno</source_model>
+							</auto_height>
+							<slider_height translate="label">
+								<label>Slider Height</label>
+								<comment>Set Slider Height in Pixel. Defulat:400</comment>
+								<frontend_type>text</frontend_type>
+								<sort_order>5</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<depends>
+									<auto_height>0</auto_height>
+								</depends>
+							</slider_height>
+							<heading_navigation translate="label">
+								<label>Navigation Settings</label>
+								<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+								<sort_order>8</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+							</heading_navigation>
+							<slider_onhoverpause translate="label">
+								<label>OnHover Stop</label>
+								<comment>Pauses slider on hover (current step will still be completed)</comment>
+								<frontend_type>select</frontend_type>
+								<sort_order>9</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<source_model>adminhtml/system_config_source_yesno</source_model>
+							</slider_onhoverpause>
+							<slider_controls translate="label">
+								<label>Controls</label>
+								<comment>Display Slider Controls.</comment>
+								<frontend_type>select</frontend_type>
+								<sort_order>10</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<source_model>adminhtml/system_config_source_yesno</source_model>
+							</slider_controls>
+							<slider_pager translate="label">
+								<label>Pager</label>
+								<comment>Display Slider Pagination.</comment>
+								<frontend_type>select</frontend_type>
+								<sort_order>11</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<source_model>adminhtml/system_config_source_yesno</source_model>
+							</slider_pager>
+							<heading_transition translate="label">
+								<label>Options</label>
+								<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+								<sort_order>12</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+							</heading_transition>
+							<slider_autoplay translate="label">
+								<label>Auto Play</label>
+								<comment>Auto Play slider.</comment>
+								<frontend_type>select</frontend_type>
+								<sort_order>13</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<source_model>adminhtml/system_config_source_yesno</source_model>
+							</slider_autoplay>
+							<slider_slidetransspeed translate="label">
+								<label>Slide Speed</label>
+								<comment>Set Slide/Fade animation speed in miliseconds. Default:6000</comment>
+								<frontend_type>text</frontend_type>
+								<sort_order>14</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+							</slider_slidetransspeed>
+							<slider_effecttype translate="label">
+								<label>Slide Effect</label>
+								<comment>Select slide effect.</comment>
+								<frontend_type>select</frontend_type>
+								<sort_order>15</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<source_model>mainslider/system_config_source_setting_slideeffects</source_model>
+							</slider_effecttype>
+							<slider_infinite translate="label">
+								<label>Infinite</label>
+								<comment>Infinite loop sliding.</comment>
+								<frontend_type>select</frontend_type>
+								<sort_order>16</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<source_model>adminhtml/system_config_source_yesno</source_model>
+							</slider_infinite>
+						</fields>
+					</options>
+				</groups>
+		</daeon_mainslider>
+	  </sections>
+</config>

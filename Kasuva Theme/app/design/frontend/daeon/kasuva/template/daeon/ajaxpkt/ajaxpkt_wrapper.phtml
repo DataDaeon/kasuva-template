@@ -1,0 +1,17 @@
+<div class="ajaxpkt-block">
+	<div class="overlay">&nbsp;</div>
+	<div class="ajaxpkt-content">
+		<span class="ajaxpkt-close"></span>
+		<div class="inner-content"></div>
+	</div>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		jQuery("body").on("click","#continue_shopping, .ajaxpkt-close",function(){
+			closeAjaxpktPopup();
+		});
+		jQuery("body").on("click", "#go_to_cart",function(){
+			parent.location.href="<?php echo $this->getUrl('checkout/cart') ?>";
+		});
+	});
+</script>

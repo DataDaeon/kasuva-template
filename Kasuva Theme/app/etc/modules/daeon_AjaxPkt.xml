@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <daeon_AjaxPkt>
+            <active>true</active>
+            <codePool>local</codePool>
+        </daeon_AjaxPkt>
+    </modules>
+</config> 

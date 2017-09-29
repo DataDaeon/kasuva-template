@@ -1,0 +1,74 @@
+ <?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<meta http-equiv="Content-Type" content="<?php echo $this->getContentType() ?>" />
+<title><?php echo $this->getTitle() ?></title>
+<meta name="description" content="<?php echo htmlspecialchars($this->getDescription()) ?>" />
+<meta name="keywords" content="<?php echo htmlspecialchars($this->getKeywords()) ?>" />
+<meta name="robots" content="<?php echo htmlspecialchars($this->getRobots()) ?>" />
+<link rel="icon" href="<?php echo $this->getFaviconFile(); ?>" type="image/x-icon" />
+<link rel="shortcut icon" href="<?php echo $this->getFaviconFile(); ?>" type="image/x-icon" />
+<?php $hel_corejs = $this->helper('core/js'); ?>
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = '<?php echo $hel_corejs->getJsUrl('blank.html') ?>';
+    var BLANK_IMG = '<?php echo $hel_corejs->getJsUrl('spacer.gif') ?>';
+//]]>
+</script>
+<![endif]-->
+<?php echo $this->getCssJsHtml() ?>
+<?php echo $this->getChildHtml() ?>
+<?php echo $hel_corejs->getTranslatorScript() ?>
+<?php echo $this->getIncludes() ?>
+<?php
+$genfonts=$heafonts='';
+$tmpCfg = Mage::registry('tmpCfg');
+$design_cfg=$tmpCfg['deg'];
+//Include Google fonts character subsets (such as extended latin, cyrillic)
+$gencharSubset=$heacharSubset= '&amp;subset=latin';
+if($design_cfg['fonts']['font_family']!='default'):
+if ($design_cfg['fonts']['googleprimary_char_latin_ext'])
+    $gencharSubset .= ',latin-ext';
+if(isset($design_cfg['fonts']['font_family']) && $design_cfg['fonts']['font_family']==''){ $design_cfg['fonts']['font_family'] = 'Roboto'; }
+$genfonts=($design_cfg['fonts']['font_family']=='googlefont')? $design_cfg['fonts']['google_fontfamily'] : $design_cfg['fonts']['font_family'];
+endif;
+if($design_cfg['fonts']['head_font_family']!='default'):
+if ($design_cfg['fonts']['head_googleprimary_char_latin_ext'])
+    $heacharSubset .= ',latin-ext';
+if(isset($design_cfg['fonts']['head_font_family']) && $design_cfg['fonts']['head_font_family']==''){ $design_cfg['fonts']['head_font_family'] = 'Fjalla One'; }
+$heafonts=($design_cfg['fonts']['head_font_family']=='googlefont')? $design_cfg['fonts']['head_google_fontfamily'] : $design_cfg['fonts']['head_font_family'];
+endif;
+if($genfonts!='' && $heafonts!='' && $genfonts==$heafonts): ?>
+<link href='//fonts.googleapis.com/css?family=<?php echo str_replace(' ', '+', $genfonts); echo ':300,400,500,600,700,900,300italic,400italic,700italic,900italic';  echo $gencharSubset; ?>' rel='stylesheet' type='text/css' />
+<?php else: ?>
+	<?php if($genfonts!=''): ?>
+<link href='//fonts.googleapis.com/css?family=<?php echo str_replace(' ', '+', $genfonts); echo ':300,400,500,600,700,900,300italic,400italic,700italic,900italic';  echo $gencharSubset; ?>' rel='stylesheet' type='text/css' />
+	<?php endif; ?>
+	<?php if($heafonts!=''): ?>
+<link href='//fonts.googleapis.com/css?family=<?php echo str_replace(' ', '+', $heafonts); echo ':300,400,500,600,700,900,300italic,400italic,700italic,900italic';  echo $heacharSubset; ?>' rel='stylesheet' type='text/css' />
+	<?php endif; ?>
+<?php endif; ?>

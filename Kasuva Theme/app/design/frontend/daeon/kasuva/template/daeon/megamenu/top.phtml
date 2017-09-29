@@ -1,0 +1,19 @@
+<?php
+    //Mage::helper('megamenu')->saveCurrentCategoryIdToSession();
+	$_mgHelper = Mage::helper('megamenu');
+    $menuData = $_mgHelper->getMenuData();
+    extract($menuData);
+?>
+<?php if($_webMenuEnabled){ ?>
+<?php $tmpCfg = Mage::registry('tmpCfg'); ?>
+<?php $mgclass=( $tmpCfg['deg']['megamenu']['megamenu_color_themesettings'])? 'custom' : 'default'; ?>
+<div class="header-nav <?php echo $mgclass; ?>">
+	<div class="container">
+		<div class="menu-wrapper">
+			<ul id="ucmgmenu" class="nav main-menu pumgmenu">
+				<?php echo $_mgHelper->getMenuContent(); ?>
+			</ul>
+		</div>
+	</div>
+</div>
+<?php } ?>

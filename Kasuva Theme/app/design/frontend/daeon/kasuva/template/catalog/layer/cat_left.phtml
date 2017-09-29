@@ -1,0 +1,47 @@
+<?php $_categories = $this->getCurrentChildCategories() ?>
+<?php $_count = is_array($_categories)?count($_categories):$_categories->count(); ?>
+<?php
+    function getChildCategoriesHtml($_category){
+        $child = explode( ",", $_category->getChildren() );
+        $content = '';
+        $content .= '<li class="';
+        if(!$child[0])
+            $content .= 'has-no-child';
+        else
+            $content .= 'has-child';
+        $content .= '">';
+        $content .= '<div class="accordion-heading"><a href="'.$_category->getUrl().'" ';
+        $content .= '>'.$_category->getName().'</a><a href="#cat_'.$_category->getId().'" data-toggle="collapse" class="accordion-toggle collapsed">&nbsp;</a></div>';
+        if($child[0]){
+            $content .= '';
+            $content .= '<div class="accordion-body collapse" id="cat_'.$_category->getId().'" style="height: 0px;"><ul>';
+            foreach($child as $child){
+                $_subcat = Mage::getModel( 'catalog/category' )->load( $child );
+				if($_subcat){
+					$content .= getChildCategoriesHtml($_subcat);
+				}
+            }
+            $content .= '</ul></div>';
+        }
+        $content .= '</li>';
+        return $content;
+    }
+?>
+<?php if($_count): ?>
+<div class="block block-cat-nav">
+    <div class="block-title">
+        <strong><span><?php echo Mage::registry('current_category')->getName(); ?></span></strong>
+    </div>
+    <div class="block-content">
+        <ul class="category-list accordion">
+        <?php foreach ($_categories as $_category): ?>
+            <?php
+            if($_category->getIsActive()){
+                echo getChildCategoriesHtml($_category);
+            }
+            ?>
+        <?php endforeach ?>
+        </ul>
+    </div>
+</div>
+<?php endif; ?>
