@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <config>
 	<tabs>
-		<kasuvaexnsions translate="label" module="ajaxpkt">
-			<label>kasuva Extensions</label>
+		<unicaseexnsions translate="label" module="ajaxpkt">
+			<label>Unicase Extensions</label>
 			<sort_order>300</sort_order>
-		</kasuvaexnsions>
+		</unicaseexnsions>
 	</tabs>
 	<sections>
 		<ajaxpkt  translate="label" module="ajaxpkt">
 			<label>AjaxPkt</label>
-			<tab>kasuvaexnsions</tab>
+			<tab>unicaseexnsions</tab>
 			<frontend_type>text</frontend_type>
 			<sort_order>40</sort_order>
 			<show_in_default>1</show_in_default>

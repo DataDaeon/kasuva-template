@@ -1,5 +1,5 @@
 <?php
-class daeon_kasuva_Helper_Config extends Mage_Core_Helper_Abstract
+class Perfectus_Unicase_Helper_Config extends Mage_Core_Helper_Abstract
 {
 	public function getTpcfg($name = null)
 	{

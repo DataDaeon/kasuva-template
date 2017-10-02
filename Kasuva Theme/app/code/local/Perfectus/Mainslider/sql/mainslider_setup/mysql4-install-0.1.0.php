@@ -2,7 +2,7 @@
 $installer = $this;
 $installer->startSetup();
 $installer->run("
-CREATE TABLE IF NOT EXISTS {$this->getTable('daeon_mainslider')} (
+CREATE TABLE IF NOT EXISTS {$this->getTable('perfectus_mainslider')} (
 	`pslide_id` int(11) unsigned NOT NULL auto_increment,
 	`pslide_name` varchar(255),
 	`pslide_image` varchar(255),
@@ -21,8 +21,8 @@ CREATE TABLE IF NOT EXISTS {$this->getTable('daeon_mainslider')} (
 ");
 
 $installer->run("
-DROP TABLE IF EXISTS {$this->getTable('daeon_mainslider_store')};
-CREATE TABLE {$this->getTable('daeon_mainslider_store')} (                                
+DROP TABLE IF EXISTS {$this->getTable('perfectus_mainslider_store')};
+CREATE TABLE {$this->getTable('perfectus_mainslider_store')} (                                
  `pslide_id` int(11) NOT NULL,                               
  `pslide_store_id` smallint(5) unsigned NOT NULL,                    
  PRIMARY KEY  (`pslide_id`,`pslide_store_id`),                      
@@ -32,7 +32,7 @@ CREATE TABLE {$this->getTable('daeon_mainslider_store')} (
 
 try {
 $installer->run("
-	INSERT INTO `daeon_mainslider` (`pslide_name`, `pslide_image`, `pslide_type`, `pslide_cp`, `pslide_cptop`, `pslide_cpleft`, `pslide_content`, `pslide_link`, `pslide_order`, `pslide_status`, `created_at`, `updated_at`, `pslide_store_id`) VALUES
+	INSERT INTO `perfectus_mainslider` (`pslide_name`, `pslide_image`, `pslide_type`, `pslide_cp`, `pslide_cptop`, `pslide_cpleft`, `pslide_content`, `pslide_link`, `pslide_order`, `pslide_status`, `created_at`, `updated_at`, `pslide_store_id`) VALUES
 ('Fashion Slide 1', 'mf1.jpg', '2', 'cp-center', 0, 0, '<div class=\"caption vertical-center text-center style1\">\r\n<div class=\"big-text animate\" data-animation=\"fadeInDown\">Sale!</div>\r\n<div class=\"excerpt animate\" data-animation=\"fadeInDown\" data-delay=\"0.2s\" >Save up to <span class=\"theme--color\">25%</span> off</div>\r\n<div class=\"button-holder  animate\" data-animation=\"fadeInDown\" data-delay=\"0.5s\">\r\n<a href=\"#\" class=\"big btn btn-primary btn-black btn-flat\">check now</a>\r\n</div>\r\n</div>', NULL, 1, 1, '2017-07-28 12:42:18', '2017-07-28 12:42:18', 0),
 ('Fashion Slide 2', 'mf2.jpg', '2', 'cp-left', 0, 0, '<div class=\"caption vertical-center text-left style2 animate\" data-animation=\"lightSpeedIn\">\r\n					<div class=\"big-text\">\r\n						The new <span class=\"highlight theme--color\">imac</span> for you\r\n					</div>\r\n\r\n					<div class=\"excerpt\">\r\n					\r\n					<span>21.5-Inch Now Starting At $1099 </span>\r\n					<span>27-Inch Starting At $1799</span>\r\n					</div>\r\n					<div class=\"button-holder\">\r\n						<a href=\"#\" class=\"btn-lg btn btn-uppercase btn-primary shop-now-button\">Shop Now</a>\r\n					</div>\r\n				</div>', NULL, 2, 1, '2017-07-28 12:43:40', '2017-07-29 03:51:38', 0),
 ('Fashion Slide 3', 'mf3.jpg', '2', 'cp-right', 0, 0, '<div class=\"caption vertical-center text-right style3 animate\" data-animation=\"slideInRight\">\r\n	<div class=\"mid-text text-white\"><em>A great selection of superb brands </em></div>\r\n	<div class=\"big-text-bold text-white fntuc-head\">50% off</div>\r\n	<div class=\"excerpt\">\r\n		<span class=\"tp-caption3 text-white\">ON ALL CLOTHES</span>\r\n	</div>\r\n	<div class=\"button-holder\">\r\n		<a href=\"#\" class=\"btn-lg btn btn-uppercase btn-primary btn-white shop-now-button\">Shop Now</a>\r\n	</div>\r\n</div>', NULL, 3, 1, '2017-07-28 12:44:36', '2017-07-29 03:51:24', 0),

@@ -1,5 +1,5 @@
 <?php
-class daeon_Ajaxfilter_Model_Catalog_Layer extends Mage_Catalog_Model_Layer
+class Perfectus_Ajaxfilter_Model_Catalog_Layer extends Mage_Catalog_Model_Layer
 {
 	/*
 	* Add Filter in product Collection for new price

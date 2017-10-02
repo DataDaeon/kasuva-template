@@ -1,5 +1,5 @@
 <?php
-class daeon_kasuva_Block_Adminhtml_System_Config_Form_Field_Color extends Mage_Adminhtml_Block_System_Config_Form_Field
+class Perfectus_Unicase_Block_Adminhtml_System_Config_Form_Field_Color extends Mage_Adminhtml_Block_System_Config_Form_Field
 {
     protected function _getElementHtml(Varien_Data_Form_Element_Abstract $element)
     {
@@ -15,7 +15,7 @@ class daeon_kasuva_Block_Adminhtml_System_Config_Form_Field_Color extends Mage_A
 		$color->addClass( 'color ' . $element->getClass() );
 		
 		$html=$color->getElementHtml();
-		$html.='<button type="button" style="border:none;background:none;padding:0;margin:2px 0 0;float:right;" class="jscolor {valueElement:\''.$element->getId().'\',styleElement:\''.$element->getId().'\'}"><img src="'.$this->getJsUrl('daeon/kasuva/jscolor/').'color.png" /></button>';
+		$html.='<button type="button" style="border:none;background:none;padding:0;margin:2px 0 0;float:right;" class="jscolor {valueElement:\''.$element->getId().'\',styleElement:\''.$element->getId().'\'}"><img src="'.$this->getJsUrl('perfectus/unicase/jscolor/').'color.png" /></button>';
 		return $html;
     }
 }

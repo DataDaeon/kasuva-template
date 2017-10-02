@@ -1,5 +1,5 @@
 <?php
-class daeon_Fltproducts_Block_Fltproducts extends Mage_Core_Block_Template
+class Perfectus_Fltproducts_Block_Fltproducts extends Mage_Core_Block_Template
 {
 	public function _prepareLayout()
     {

@@ -1,5 +1,5 @@
 <?php
-class daeon_Mainslider_Model_Mysql4_Mainslider_Collection extends Mage_Core_Model_Mysql4_Collection_Abstract
+class Perfectus_Mainslider_Model_Mysql4_Mainslider_Collection extends Mage_Core_Model_Mysql4_Collection_Abstract
 {
 	public function _construct(){
 		parent::_construct();

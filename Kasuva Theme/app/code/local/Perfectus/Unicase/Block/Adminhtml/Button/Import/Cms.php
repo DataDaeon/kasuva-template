@@ -1,5 +1,5 @@
 <?php
-class daeon_kasuva_Block_Adminhtml_Button_Import_Cms extends Mage_Adminhtml_Block_System_Config_Form_Field
+class Perfectus_Unicase_Block_Adminhtml_Button_Import_Cms extends Mage_Adminhtml_Block_System_Config_Form_Field
 {
     protected function _getElementHtml(Varien_Data_Form_Element_Abstract $el)
     {
@@ -13,7 +13,7 @@ class daeon_kasuva_Block_Adminhtml_Button_Import_Cms extends Mage_Adminhtml_Bloc
 		if (isset($data['label']))
 			$buttonSuffix = ' ' . $data['label'];
 
-		$url = $this->getUrl('adminhtml/kasuva_import/' . $process);
+		$url = $this->getUrl('adminhtml/unicase_import/' . $process);
 		
 		$html = $this->getLayout()->createBlock('adminhtml/widget_button')
 			->setType('button')

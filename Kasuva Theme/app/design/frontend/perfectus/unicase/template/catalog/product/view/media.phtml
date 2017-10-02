@@ -1,0 +1,90 @@
+<?php
+$tmpCfg = Mage::registry('tmpCfg');
+$theme=$this->helper('unicase');
+$_product = $this->getProduct();
+//$_helper = $this->helper('catalog/output');
+$settingsCfg=$tmpCfg['set']['product_info'];
+$elevatCfg=$theme->getElevateCfg();
+$_imgWidth=$settingsCfg['product_image_width'];
+$_imgHeight=$settingsCfg['product_image_height'];
+if(!$_imgWidth) $_imgWidth=334;
+if(!$_imgHeight) $_imgHeight=426;
+if($pro_aspratio=$settingsCfg['product_aspratio']){
+	$_imgHeight=0;
+}
+$helper_catimg = $this->helper('catalog/image');
+$getGalleryImages = $this->getGalleryImages()
+?>
+<div class="product-image product-image-zoom">
+	<div class="res-gl-slider custom-nav owl-carousel">
+		<div class="item">
+			<img class="gallery-image visible" src="<?php echo $theme->getProdImg($_product, $_imgWidth, $_imgHeight, 'image'); ?>" alt="<?php echo $this->escapeHtml($this->getImageLabel()) ?>" title="<?php echo $this->escapeHtml($this->getImageLabel()); ?>" />
+		</div>
+		<?php $i=0; foreach ($getGalleryImages as $_image): ?>
+			<?php if ($this->isGalleryImageVisible($_image)): ?>
+			<div class="item">
+				<img id="image-<?php echo $i; ?>" class="gallery-image" src="<?php echo $theme->getProdImg($_product, $_imgWidth, $_imgHeight, 'image', $_image->getFile()); ?>" />
+			</div>
+			<?php endif; ?>
+		<?php $i++; endforeach; ?>
+	</div>
+	<div class="product-image-gallery">
+        <img id="image-main" class="gallery-image visible" src="<?php echo $theme->getProdImg($_product, $_imgWidth, $_imgHeight, 'image'); ?>" data-zoom-image="<?php echo $helper_catimg->init($_product, 'image'); ?>" alt="<?php echo $this->escapeHtml($this->getImageLabel()) ?>" title="<?php echo $this->escapeHtml($this->getImageLabel()); ?>" />
+        <?php $i=0; foreach ($getGalleryImages as $_image): ?>
+            <?php if ($this->isGalleryImageVisible($_image)): ?>
+            <img id="image-<?php echo $i; ?>" class="gallery-image" src="<?php echo $this->getGalleryImageUrl($_image); ?>" data-zoom-image="<?php echo  $this->getGalleryImageUrl($_image); ?>" />
+            <?php endif; ?>
+        <?php $i++; endforeach; ?>
+    </div>
+</div>
+<?php if (count($getGalleryImages) > 0): ?>
+<div class="product-thumbs custom-nav custom-carousel">
+	<div class="more-views">
+		<h2 class="hide"><?php echo $this->__('More Views') ?></h2>
+		<ul id="product-image-thumbs" class="product-image-thumbs owl-carousel">
+		<?php $i=0; foreach ($getGalleryImages as $_image): ?>
+			<?php if ($this->isGalleryImageVisible($_image)): ?>
+			<li class="item">
+				<?php $getFile = $_image->getFile(); ?>
+				<a class="thumb-link product-gallery" rel="image-gallery" href="<?php echo $theme->getProdImg($_product, $_imgWidth, $_imgHeight, 'image', $getFile); ?>"  data-image="<?php echo $theme->getProdImg($_product, $_imgWidth, $_imgHeight, 'image', $getFile); ?>" data-zoom-image="<?php echo $helper_catimg->init($this->getProduct(), 'image', $getFile); ?>" title="<?php echo $this->escapeHtml($_image->getLabel()) ?>" data-image-index="<?php echo $i; ?>">
+					<img src="<?php echo $theme->getProdImg($_product, 84, 0, 'thumbnail', $getFile); ?>" width="54" height="auto" alt="<?php echo $this->escapeHtml($_image->getLabel()) ?>" />
+				</a>
+			</li>
+			<?php endif; ?>
+		<?php $i++; endforeach; ?>
+		</ul>
+	</div>
+</div>
+<?php endif; ?>
+<script type="text/javascript">
+		var flagElevateZoom = false;
+		var flagElevateLightBox = false;
+		<?php if($settingsCfg['elevate_enable']){ ?>
+			var elevateZoomDATA = <?php echo Mage::helper('core')->jsonEncode($elevatCfg); ?>;
+			flagElevateZoom = true;
+			<?php if($settingsCfg['elevate_lightbox']){?>
+				flagElevateLightBox = true;
+			<?php } ?>
+		<?php } ?>
+		
+		jQuery(window).load(function(){
+			jQuery(".product-img-box").addClass("loaded");
+			if(flagElevateZoom){
+				//jQuery("#image-main").elevateZoom(elevateZoomDATA); 
+				
+			}else{
+				jQuery('a[rel="image-gallery"]').fancybox({
+					'titleShow'     : false,
+					'transitionIn'	: 'elastic',
+					'transitionOut'	: 'elastic',
+					'easingIn'      : 'easeOutBack',
+					'easingOut'     : 'easeInBack'
+				});
+			}
+			resProdGallery(jQuery(".res-gl-slider"));
+		});
+		jQuery(window).resize(function () {
+			resProdGallery(jQuery(".res-gl-slider"));
+		});
+</script>
+<?php echo $this->getChildHtml('after'); ?>

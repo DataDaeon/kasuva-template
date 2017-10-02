@@ -2,9 +2,9 @@
 <config>
 	<layout>
 		<updates>
-			<daeon_kasuva>
-				<file>kasuva.xml</file>
-			</daeon_kasuva>
+			<perfectus_unicase>
+				<file>unicase.xml</file>
+			</perfectus_unicase>
 		</updates>
 	</layout>
     <acl>
@@ -15,12 +15,12 @@
                         <children>
                             <config>
                                 <children>
-                                    <kasuva_design translate="title" module="kasuva">
+                                    <unicase_design translate="title" module="unicase">
                                         <title>Theme Design</title>
-                                    </kasuva_design>
-                                    <kasuva_settings translate="title" module="kasuva">
+                                    </unicase_design>
+                                    <unicase_settings translate="title" module="unicase">
                                         <title>Theme Settings</title>
-                                    </kasuva_settings>
+                                    </unicase_settings>
                                 </children>
                             </config>
                         </children>

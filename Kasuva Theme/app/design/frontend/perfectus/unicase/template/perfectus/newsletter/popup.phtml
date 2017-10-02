@@ -1,0 +1,108 @@
+<?php
+$tmpCfg = Mage::registry('tmpCfg');
+$theme = Mage::helper('unicase');
+$popCfg = $tmpCfg['set']['newsletter_popup'];
+$newPopupFlag = 0;
+$newPopupFlag = ($popCfg['enabled']) ? $popCfg['enabled'] : 1;
+$dtime = ($popCfg['newsletter_pop_dtime']) ? $popCfg['newsletter_pop_dtime'] : 2000;
+if($theme->getIsHomePage() && $newPopupFlag){
+$corHelper = Mage::helper('core');
+?>
+<script type="text/javascript">
+    jQuery(function($){
+        var check_cookie = $.cookie('newsletter_pop');
+        if (check_cookie == null || check_cookie == 'shown') {
+            setTimeout("NewsletterPOPForm()",<?php echo $dtime; ?>);
+        }
+        $('#discheck').on('change', function () {
+            if ($(this).length) {
+                var check_cookie = $.cookie('newsletter_pop');
+                if (check_cookie == null || check_cookie == 'shown') {
+                    $.cookie('newsletter_pop', 'hide');
+                }
+                else
+                {
+                    $.cookie('newsletter_pop', 'shown');
+                    setTimeout("NewsletterPOPForm()",<?php echo $dtime; ?>);
+                }
+            } else {
+                $.cookie('newsletter_pop', 'shown');
+            }
+        });
+    });
+
+    function NewsletterPOPForm() {
+        jQuery.fancybox({
+            'padding': '0px',
+            'autoScale': true,
+            'transitionIn': 'elastic',
+            'transitionOut': 'elastic',
+            'type': 'inline',
+            'href': '#newsletter_pop',
+            'onComplete': function () {
+                $.cookie('newsletter_pop', 'shown');
+            },
+            'tpl': {
+                closeBtn: '<a title="Close" class="fancybox-item fancybox-close fancybox-newsletter-close" href="javascript:;"></a>'
+            }
+        });
+        jQuery('.newsletter_pop').trigger('click');
+    }
+
+</script>
+<style type="text/css">
+.newsletter_pop{
+<?php
+if ($popCfg["newsletter_pop_width"]) {
+    echo "width:" . $popCfg["newsletter_pop_width"] . ";";
+}
+if ($popCfg["newsletter_pop_height"]) {
+    echo "height:" . $popCfg["newsletter_pop_height"] . ";";
+}
+if ($popCfg["newsletter_pop_bgcolor"]) {
+    echo "background-color:#" . $popCfg["newsletter_pop_bgcolor"] . ";";
+}
+if (isset($popCfg["newsletter_pop_bgimage"]) && $popCfg["newsletter_pop_bgimage"]) {
+    ?>
+	background-image:url(<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . "wysiwyg/unicase/" . $popCfg['newsletter_pop_bgimage']; ?>);
+    <?php
+}
+?>
+}
+</style>
+<div id="newsletter_pop" class="block block-subscribe newsletter_pop" style="display:none;">
+    <div class="nwspop_cont">
+		<div class="nwsp_incont">
+			<?php echo ($popCfg["newsletter_pop_logo"]!='')? '<div class="logo"><img src="'.$this->getSkinUrl($popCfg["newsletter_pop_logo"]).'" alt="" /></div>' : ''; ?>
+			<?php echo ($popCfg["newsletter_pop_cont"]!='')? '<div class="popcont">'.$popCfg["newsletter_pop_cont"].'</div>' : ''; ?>
+			<form action="<?php echo $this->getFormActionUrl() ?>" method="post" id="newsletter-popup-validate-detail">
+				<div class="block-content">
+					<div class="form-subscribe-header">
+						<label for="newsletter"><?php echo $this->__('Sign Up for Our Newsletter:') ?></label>
+					</div>
+					<div class="nwsinput_group">
+						<div class="input-box">
+						   <input type="email" autocapitalize="off" autocorrect="off" spellcheck="false" name="email" id="newsletter" title="<?php echo $corHelper->quoteEscape($this->__('Sign up for our newsletter')) ?>" class="input-text required-entry validate-email" />
+						</div>
+						<div class="actions">
+							<button type="submit" title="<?php echo $corHelper->quoteEscape($this->__('Subscribe')) ?>" class="button"><span><span><?php echo $this->__('Subscribe') ?></span></span></button>
+						</div>
+					</div>
+					<div class="newsletter_hide">
+						<input type="checkbox" id="discheck"/>
+						<label class="subcriber_label" for="discheck"><span><?php echo $this->__('Don’t show this popup again'); ?></span></label>
+					</div>
+				</div>
+			</form>
+			<script type="text/javascript">
+			//<![CDATA[
+				var newsletterSubscriberFormDetail = new VarienForm('newsletter-popup-validate-detail');
+				document.getElementById("newsletter-popup-validate-detail").onsubmit=function(){
+					jQuery.cookie('newsletter_pop','hide');
+				}
+			//]]>
+			</script>
+		</div>
+	</div>
+</div>
+<?php } ?>

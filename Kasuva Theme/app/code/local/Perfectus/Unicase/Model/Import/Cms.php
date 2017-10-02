@@ -1,12 +1,12 @@
 <?php
-class daeon_kasuva_Model_Import_Cms extends Mage_Core_Model_Abstract
+class Perfectus_Unicase_Model_Import_Cms extends Mage_Core_Model_Abstract
 {
 	private $_importPath;
 	
 	public function __construct()
     {
         parent::__construct();
-		$this->_importPath = Mage::getBaseDir() . '/app/code/local/daeon/kasuva/etc/import/';
+		$this->_importPath = Mage::getBaseDir() . '/app/code/local/Perfectus/Unicase/etc/import/';
     }
 	
 	public function importCms($modelString, $itemContainerNodeString, $overwrite = false)
@@ -17,7 +17,7 @@ class daeon_kasuva_Model_Import_Cms extends Mage_Core_Model_Abstract
 			if (!is_readable($xmlPath))
 			{
 				throw new Exception(
-					Mage::helper('kasuva')->__("Can't get the data file: %s", $xmlPath)
+					Mage::helper('unicase')->__("Can't get the data file: %s", $xmlPath)
                 );
 			}
 			$xmlObj = new Varien_Simplexml_Config($xmlPath);
@@ -71,13 +71,13 @@ class daeon_kasuva_Model_Import_Cms extends Mage_Core_Model_Abstract
 			if ($i)
 			{
 				Mage::getSingleton('adminhtml/session')->addSuccess(
-					Mage::helper('kasuva')->__('%s item(s) was(were) imported.', $i)
+					Mage::helper('unicase')->__('%s item(s) was(were) imported.', $i)
 				);
 			}
 			else
 			{
 				Mage::getSingleton('adminhtml/session')->addNotice(
-					Mage::helper('kasuva')->__('No items were imported')
+					Mage::helper('unicase')->__('No items were imported')
 				);
 			}
 			
@@ -85,7 +85,7 @@ class daeon_kasuva_Model_Import_Cms extends Mage_Core_Model_Abstract
 			{
 				if ($conflictingOldItems)
 					Mage::getSingleton('adminhtml/session')->addSuccess(
-						Mage::helper('kasuva')
+						Mage::helper('unicase')
 						->__('Items (%s) with the following identifiers were overwritten:<br />%s', count($conflictingOldItems), implode(', ', $conflictingOldItems))
 					);
 			}
@@ -93,7 +93,7 @@ class daeon_kasuva_Model_Import_Cms extends Mage_Core_Model_Abstract
 			{
 				if ($conflictingOldItems)
 					Mage::getSingleton('adminhtml/session')->addNotice(
-						Mage::helper('kasuva')
+						Mage::helper('unicase')
 						->__('Unable to import items (%s) with the following identifiers (they already exist in the database):<br />%s', count($conflictingOldItems), implode(', ', $conflictingOldItems))
 					);
 			}

@@ -1,5 +1,5 @@
 <?php
-class daeon_kasuva_Helper_Data extends Mage_Core_Helper_Abstract{
+class Perfectus_Unicase_Helper_Data extends Mage_Core_Helper_Abstract{
 	
     // Category Search
     public function getSearchByCategories($parent, $curId){
@@ -89,7 +89,7 @@ class daeon_kasuva_Helper_Data extends Mage_Core_Helper_Abstract{
 	}
 	public function getElevateCfg()
 	{
-		$cfgoptions=Mage::helper('kasuva/config')->getTpcfg('kasuva_settings/product_info');
+		$cfgoptions=Mage::helper('unicase/config')->getTpcfg('unicase_settings/product_info');
 		$elevatecfg=array();
 		$elevatecfg['gallery']='product-image-thumbs';
 		$elevatecfg['cursor']=($cfgoptions['elevate_cursor'])? $cfgoptions['elevate_cursor'] : 'default';
@@ -104,7 +104,7 @@ class daeon_kasuva_Helper_Data extends Mage_Core_Helper_Abstract{
 		}
 		$elevatecfg['borderSize']=($cfgoptions['elevate_bordersize'])? $cfgoptions['elevate_bordersize'] : '4';
 		$elevatecfg['borderColour']=($cfgoptions['elevate_bordercolor'])? "#".$cfgoptions['elevate_bordercolor'] : '#888';
-		//$elevatecfg['loadingIcon']= Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN).'frontend/daeon/kasuva/images/elevate-spinner.gif';
+		//$elevatecfg['loadingIcon']= Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN).'frontend/perfectus/unicase/images/elevate-spinner.gif';
 		$elevatecfg['scrollZoom']=($cfgoptions['elevate_scrollzoom'])? $cfgoptions['elevate_scrollzoom'] : false;
 		//$elevatecfg['imageCrossfade']=($cfgoptions['elevate_imagecrossfade'])? $cfgoptions['elevate_imagecrossfade'] : false;
 		$elevatecfg['imageCrossfade']=false;
@@ -139,7 +139,7 @@ class daeon_kasuva_Helper_Data extends Mage_Core_Helper_Abstract{
 	public function getColsClass($d,$num){
 		$numcol=12/$num;
 		$class='';
-		$layout=Mage::helper('kasuva')->getTemplateLayout($this);
+		$layout=Mage::helper('unicase')->getTemplateLayout($this);
 
 		if(in_array($num,array(1,2,3,4,6))){
 			$class='col-'.$d.'-'.$numcol;

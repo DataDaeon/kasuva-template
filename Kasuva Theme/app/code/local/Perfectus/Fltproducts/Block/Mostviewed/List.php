@@ -10,7 +10,7 @@
  *
  * @author om
  */
-class daeon_Fltproducts_Block_Mostviewed_List extends Mage_Catalog_Block_Product_List
+class Perfectus_Fltproducts_Block_Mostviewed_List extends Mage_Catalog_Block_Product_List
 {
     protected function _getProductCollection()
     {

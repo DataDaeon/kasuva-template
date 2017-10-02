@@ -1,5 +1,5 @@
 <?php
-class daeon_Fltproducts_Model_System_Config_Source_Setting_Displaystyles
+class Perfectus_Fltproducts_Model_System_Config_Source_Setting_Displaystyles
 {
     public function toOptionArray()
     {

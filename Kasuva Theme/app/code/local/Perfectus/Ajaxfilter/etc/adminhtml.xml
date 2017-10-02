@@ -9,7 +9,7 @@
 								<config>
 									<children>
 										<price_ajaxfilter translate="title" module="ajaxfilter">
-											<title>daeon Price Ajaxfilter</title>
+											<title>Perfectus Price Ajaxfilter</title>
 											<sort_order>0</sort_order>
 										</price_ajaxfilter>
 									</children>

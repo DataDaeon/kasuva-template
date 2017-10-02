@@ -1,5 +1,5 @@
 <?php
-class daeon_Fltproducts_Block_Mostviewed_Home_List extends daeon_Fltproducts_Block_Mostviewed_List
+class Perfectus_Fltproducts_Block_Mostviewed_Home_List extends Perfectus_Fltproducts_Block_Mostviewed_List
 {
 	protected $_productFltCollection;
 	

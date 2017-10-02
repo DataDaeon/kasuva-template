@@ -1,6 +1,6 @@
 <?php
 require_once 'Mage/Checkout/controllers/CartController.php';
-class daeon_AjaxPkt_IndexController extends Mage_Checkout_CartController {
+class Perfectus_AjaxPkt_IndexController extends Mage_Checkout_CartController {
     public function addAction()
     {
         $cart   = $this->_getCart();

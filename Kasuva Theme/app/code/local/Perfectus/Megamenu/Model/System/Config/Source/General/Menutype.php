@@ -1,5 +1,5 @@
 <?php
-class daeon_Megamenu_Model_System_Config_Source_General_Menutype
+class Perfectus_Megamenu_Model_System_Config_Source_General_Menutype
 {
     public function toOptionArray()
     {

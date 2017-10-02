@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <config>
 	<tabs>
-		<kasuvaexnsions translate="label" module="ajaxfilter">
-			<label>kasuva Extensions</label>
+		<unicaseexnsions translate="label" module="ajaxfilter">
+			<label>Unicase Extensions</label>
 			<sort_order>300</sort_order>
-		</kasuvaexnsions>
+		</unicaseexnsions>
 	</tabs>
 	<sections>
 		<price_ajaxfilter  translate="label" module="ajaxfilter">
 			<label>Ajax Filter</label>
-			<tab>kasuvaexnsions</tab>
+			<tab>unicaseexnsions</tab>
 			<frontend_type>text</frontend_type>
 			<sort_order>30</sort_order>
 			<show_in_default>1</show_in_default>
@@ -77,9 +77,9 @@
 							<label>Loading Image</label>
 							<frontend_type>image</frontend_type>
 							<backend_model>adminhtml/system_config_backend_image</backend_model>
-							<upload_dir config="system/filesystem/media" scope_info="1">daeon/ajaxfilter</upload_dir>
+							<upload_dir config="system/filesystem/media" scope_info="1">perfectus/ajaxfilter</upload_dir>
 							<!-- would upload into media/uploaddir -->
-							<base_url type="media" scope_info="1">daeon/ajaxfilter</base_url>
+							<base_url type="media" scope_info="1">perfectus/ajaxfilter</base_url>
 							<!-- same as previous line -->
 							<sort_order>30</sort_order>
 							<show_in_default>1</show_in_default>
@@ -191,9 +191,9 @@
 							<label>Handle Image</label>
 							<frontend_type>image</frontend_type>
 							<backend_model>adminhtml/system_config_backend_image</backend_model>
-							<upload_dir config="system/filesystem/media" scope_info="1">daeon/ajaxfilter</upload_dir>
+							<upload_dir config="system/filesystem/media" scope_info="1">perfectus/ajaxfilter</upload_dir>
 							<!-- would upload into media/uploaddir -->
-							<base_url type="media" scope_info="1">daeon/ajaxfilter</base_url>
+							<base_url type="media" scope_info="1">perfectus/ajaxfilter</base_url>
 							<!-- same as previous line -->
 							<sort_order>20</sort_order>
 							<show_in_default>1</show_in_default>
@@ -206,9 +206,9 @@
 							<label>Background Image</label>
 							<frontend_type>image</frontend_type>
 							<backend_model>adminhtml/system_config_backend_image</backend_model>
-							<upload_dir config="system/filesystem/media" scope_info="1">daeon/ajaxfilter</upload_dir>
+							<upload_dir config="system/filesystem/media" scope_info="1">perfectus/ajaxfilter</upload_dir>
 							<!-- would upload into media/uploaddir -->
-							<base_url type="media" scope_info="1">daeon/ajaxfilter</base_url>
+							<base_url type="media" scope_info="1">perfectus/ajaxfilter</base_url>
 							<!-- same as previous line -->
 							<sort_order>30</sort_order>
 							<show_in_default>1</show_in_default>
@@ -220,9 +220,9 @@
 							<label>Active Range Image</label>
 							<frontend_type>image</frontend_type>
 							<backend_model>adminhtml/system_config_backend_image</backend_model>
-							<upload_dir config="system/filesystem/media" scope_info="1">daeon/ajaxfilter</upload_dir>
+							<upload_dir config="system/filesystem/media" scope_info="1">perfectus/ajaxfilter</upload_dir>
 							<!-- would upload into media/uploaddir -->
-							<base_url type="media" scope_info="1">daeon/ajaxfilter</base_url>
+							<base_url type="media" scope_info="1">perfectus/ajaxfilter</base_url>
 							<!-- same as previous line -->
 							<sort_order>40</sort_order>
 							<show_in_default>1</show_in_default>

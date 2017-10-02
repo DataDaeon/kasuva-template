@@ -1,9 +1,9 @@
 <?php
-class daeon_kasuva_Block_Adminhtml_System_Config_Form_Field_Btnstyles extends Mage_Adminhtml_Block_System_Config_Form_Field
+class Perfectus_Unicase_Block_Adminhtml_System_Config_Form_Field_Btnstyles extends Mage_Adminhtml_Block_System_Config_Form_Field
 {
     protected function _getElementHtml(Varien_Data_Form_Element_Abstract $element){ 
        	$html = parent::_getElementHtml($element);
-		$design_cfg=Mage::helper('kasuva/config')->getTpcfg('kasuva_design');
+		$design_cfg=Mage::helper('unicase/config')->getTpcfg('unicase_design');
        	$html .= '<br/><div id="font_'.$element->getHtmlId().'" class="" style="font-size: 13px; padding: 10px; 0">
 		<style>
 			.ucbtns2 {

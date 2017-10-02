@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <config>
 	<tabs>
-        <kasuvaexnsions translate="label" module="megamenu">
-            <label>kasuva Extensions</label>
+        <unicaseexnsions translate="label" module="megamenu">
+            <label>Unicase Extensions</label>
             <sort_order>300</sort_order>
-        </kasuvaexnsions>
+        </unicaseexnsions>
     </tabs>
     <sections>
-        <daeon_megamenu translate="label" module="megamenu">
+        <perfectus_megamenu translate="label" module="megamenu">
             <label>Megamenu</label>
-            <tab>kasuvaexnsions</tab>
+            <tab>unicaseexnsions</tab>
             <frontend_type>text</frontend_type>
             <sort_order>200</sort_order>
             <show_in_default>1</show_in_default>
@@ -146,7 +146,7 @@
                             <show_in_store>1</show_in_store>
                         </showsidebar_home_link>
 						<sidebar_heading_code translate="label">
-                            <label><![CDATA[<span style="padding:7px 10px ;background:#ccc;margin:0 0 10px;">{{block type="megamenu/sidebarnav" name="sidebarnav" template="daeon/megamenu/sidebar.phtml"}}</span>]]></label>
+                            <label><![CDATA[<span style="padding:7px 10px ;background:#ccc;margin:0 0 10px;">{{block type="megamenu/sidebarnav" name="sidebarnav" template="perfectus/megamenu/sidebar.phtml"}}</span>]]></label>
                             <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
                             <sort_order>130</sort_order>
                             <show_in_default>1</show_in_default>
@@ -184,6 +184,6 @@
                     </fields>
                 </category_labels>
             </groups>
-        </daeon_megamenu>
+        </perfectus_megamenu>
     </sections>
 </config>

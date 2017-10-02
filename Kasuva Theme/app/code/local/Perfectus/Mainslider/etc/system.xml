@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <config>
 	<tabs>
-		<kasuvaexnsions translate="label" module="mainslider">
-			<label>kasuva Extensions</label>
+		<unicaseexnsions translate="label" module="mainslider">
+			<label>Unicase Extensions</label>
 			<sort_order>300</sort_order>
-		</kasuvaexnsions>
+		</unicaseexnsions>
 	</tabs>
 	<sections>
-		<daeon_mainslider  translate="label" module="mainslider">                    
+		<perfectus_mainslider  translate="label" module="mainslider">                    
 			<label>Mainslider</label>
-			<tab>kasuvaexnsions</tab>
+			<tab>unicaseexnsions</tab>
 			<frontend_type>text</frontend_type>
 			<sort_order>0</sort_order>
 			<show_in_default>1</show_in_default>
@@ -184,6 +184,6 @@
 						</fields>
 					</options>
 				</groups>
-		</daeon_mainslider>
+		</perfectus_mainslider>
 	  </sections>
 </config>

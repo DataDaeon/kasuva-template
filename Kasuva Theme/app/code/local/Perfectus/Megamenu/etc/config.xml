@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
     <modules>
-        <daeon_Megamenu>
+        <Perfectus_Megamenu>
             <version>0.1.0</version>
-        </daeon_Megamenu>
+        </Perfectus_Megamenu>
     </modules>
 
     <global>
         <helpers>
             <megamenu>
-                <class>daeon_Megamenu_Helper</class>
+                <class>Perfectus_Megamenu_Helper</class>
             </megamenu>
         </helpers>
         <blocks>
             <megamenu>
-                <class>daeon_Megamenu_Block</class>
+                <class>Perfectus_Megamenu_Block</class>
             </megamenu>
         </blocks>
         <models>
             <megamenu>
-                <class>daeon_Megamenu_Model</class>
+                <class>Perfectus_Megamenu_Model</class>
             </megamenu>
         </models>
         <resources>
             <megamenu_setup>
                 <setup>
-                    <module>daeon_Megamenu</module>
+                    <module>Perfectus_Megamenu</module>
                     <class>Mage_Eav_Model_Entity_Setup</class>
                 </setup>
                 <connection>
@@ -39,7 +39,7 @@
         <layout>
             <updates>
                 <megamenu module="megamenu">
-                    <file>daeon_megamenu.xml</file>
+                    <file>perfectus_megamenu.xml</file>
                 </megamenu>
             </updates>
         </layout>

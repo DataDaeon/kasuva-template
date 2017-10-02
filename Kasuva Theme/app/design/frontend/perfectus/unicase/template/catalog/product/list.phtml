@@ -1,0 +1,275 @@
+<?php
+	$tmpCfg = Mage::registry('tmpCfg');
+	$theme=$this->helper('unicase');
+    $_productCollection=$this->getLoadedProductCollection();
+    $_helper = $this->helper('catalog/output');
+	$Cfg=$tmpCfg['set']['category_products'];
+	$CfgDesign = $tmpCfg['deg'];
+	$CfgSettings = $tmpCfg['set'];
+	$_imgWidth=($Cfg['catprodimg_width'])? $Cfg['catprodimg_width'] : 276;
+	$_imgHeight=($Cfg['catprodimg_height']) ? $Cfg['catprodimg_height'] : 342;
+	$sku=$Cfg['catprod_sku_enable'];
+	$rating=$Cfg['catprod_rating_enable'];
+	$wishlist=$Cfg['catprod_wishlist_enable'];
+	$compare=$Cfg['catprod_compare_enable'];
+	$addtocart=$Cfg['catprod_addtocart_enable'];
+	$price=$Cfg['catprod_price_enable'];
+	$quickview=$Cfg['catprod_quickview_enable'];
+	if($Cfg['catprod_aspratio']){
+		$_imgHeight=0;
+	}
+	$altImg=$Cfg['catprod_altimg_enable'];
+	$AjakpktCfg=Mage::helper('unicase/config')->getTpcfg('ajaxpkt/ajaxpkt_conf/ajaxpkt_active');
+	$blank_gif = $this->getSkinUrl('images/blank.gif');
+	$prodbtn_style = ($CfgSettings['general']['product_btn_style']!='')? $CfgSettings['general']['product_btn_style'] : 'ucbs1-m';
+?>
+<div class="category-products <?php echo $prodbtn_style; ?>">
+<?php if(!$_productCollection->count()): ?>
+<p class="note-msg"><?php echo $this->__('There are no products matching the selection.') ?></p>
+<?php else: ?>
+    <?php echo $this->getToolbarHtml() ?>
+    <?php // List mode ?>
+    <?php if($this->getMode()!='grid'): ?>
+    <?php $_iterator = 0; ?>
+    <ol class="products-list" id="products-list">
+    <?php foreach ($_productCollection as $_product): ?>
+		<?php $htm_badge=$this->helper('unicase')->getProductLabel($_product); ?>
+		<?php $htm_badge.=($quickview)? $this->helper('ajaxpkt')->getQuickViewLink($_product)  : '' ; ?>
+				<li class="item">
+					<div class="products">
+						<div class="product ">
+							<div class="row product-list-row">
+								<div class="col col-sm-4 col-lg-4 product-list-left">
+									<div class="product-image">
+										<div class="image">
+											<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image">
+												 <img class="lazyImg loading" id="product-collection-image-<?php echo $_product->getId(); ?>" src="<?php echo $blank_gif; ?>" data-echo="<?php echo $theme->getProdImg($_product, $_imgWidth, $_imgHeight, 'small_image'); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" width="<?php echo $_imgWidth; ?>" height="<?php echo $_imgHeight; ?>" />
+												<?php if($altImg): ?>
+												<?php echo $theme->getProdAltImg($_product,$_imgWidth,$_imgHeight,'small_image', 'list'); ?>
+												<?php endif; ?>
+												
+											</a>
+										</div>
+										<?php echo $htm_badge; ?>
+									</div>
+								</div>
+								<div class="col col-sm-8 col-lg-8 product-list-right">
+									<div class="product-info text-left">
+										<h3 class="name product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></a></h3>
+										<?php
+										// Provides extra blocks on which to hang some features for products in the list
+										// Features providing UI elements targeting this block will display directly below the product name
+										if ($this->getChild('name.after')) {
+											$_nameAfterChildren = $this->getChild('name.after')->getSortedChildren();
+											foreach ($_nameAfterChildren as $_nameAfterChildName) {
+												$_nameAfterChild = $this->getChild('name.after')->getChild($_nameAfterChildName);
+												$_nameAfterChild->setProduct($_product);
+												echo $_nameAfterChild->toHtml();
+											}
+										}
+										?>
+										<?php if($sku): ?><p class="sku"><span class="label"><?php echo $this->__('SKU') ?>:</span><span class="value"><?php echo $_product->getSku();?></span></p><?php endif; ?>
+										<?php if($rating): ?>
+										<?php $reviews=$this->getReviewsSummaryHtml($_product,'short') ?>
+										<?php if($reviews): ?>
+											<?php echo $reviews; ?>
+										<?php else: ?>
+										<div class="ratings">
+											<div class="rating-box">&nbsp;</div>
+										</div>
+										<?php endif; ?>
+										<?php endif; ?>
+										<?php if($price): ?>
+										<div class="product-price">	
+											<?php echo $this->getPriceHtml($_product, true) ?>
+										</div>
+										<?php endif; ?>
+									</div>
+									<div class="desc std">
+										<?php echo $_helper->productAttribute($_product, $_product->getShortDescription(), 'short_description') ?>
+										<?php $_productNameStripped = $this->stripTags($_product->getName(), null, true); ?>
+										<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $_productNameStripped ?>" class="link-learn"><?php echo $this->__('Learn More') ?></a>
+									</div>
+									<div class="cart clearfix animate-effect">
+										<div class="action">
+											<ul class="list-unstyled">
+												<?php if($addtocart): ?>
+												 <?php if(!$_product->canConfigure() && $_product->isSaleable()): ?>
+													<li class="add-cart-button btn-group">
+														<?php if($CfgDesign['basic']['btn_style']=='ucbtns2'){?>
+														<button class="button btn-cart icon" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Add to Cart')); ?>" data-toggle="dropdown" type="button" onclick="setLocationAjax(this,'<?php echo $this->getAddToCartUrl($_product) ?>','<?php echo $_product->getId()?>')"><i class="fa fa-shopping-cart"></i></button>
+														<?php } ?>
+														<button type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Add to Cart')); ?>" class="button btn-cart" onclick="setLocationAjax(this,'<?php echo $this->getAddToCartUrl($_product) ?>','<?php echo $_product->getId()?>')"><span><?php echo $this->__('Add to Cart') ?></span></button>
+													</li>
+												<?php elseif($_product->getStockItem() && $_product->getStockItem()->getIsInStock()): ?>
+													<li class="add-cart-button btn-group">
+														<?php if($CfgDesign['basic']['btn_style']=='ucbtns2'){?>
+														<button class="button btn-cart icon" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Add to Cart')); ?>" onclick="showOptions(this,'<?php echo $_product->getId()?>')"><i class="fa fa-file-text-o"></i></button>
+														<?php } ?>
+														<button class="button btn-cart" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Add to Cart')); ?>" onclick="showOptions(this,'<?php echo $_product->getId()?>')"><?php echo $this->__('Add to Cart'); ?></button>
+														<a href='<?php echo $this->getUrl('ajaxpkt/index/options',array('product_id'=>$_product->getId()));?>' class='ajaxpkt-qckview' id='ajaxpkt<?php echo $_product->getId()?>' style='display:none'><?php echo $this->__('Ajaxpkt') ?></a>
+													</li>
+												<?php else: ?>
+													<li><p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p></li>
+												<?php endif; ?>
+												<?php endif;?>
+												<?php if ($this->helper('wishlist')->isAllow() && ($wishlist)) : ?>
+													<li class="lnk wishlist"><button onclick='ajaxWishlist(this,"<?php echo $this->helper('wishlist')->getAddUrl($_product) ?>","<?php echo $_product->getId()?>");return false;' class="link-wishlist button wishlist"><i class="icon fa fa-heart"></i><span class="hidden"><?php echo $this->__('Add to Wishlist') ?></span></button></li>
+												<?php endif; ?>
+												<?php if($_compareUrl=$this->getAddToCompareUrl($_product) && ($compare) ): ?>
+													<li  class="lnk"><button onclick='ajaxCompare(this,"<?php echo $_compareUrl ?>","<?php echo $_product->getId()?>");return false;' class="link-compare button compare"><i class="fa fa-retweet"></i><span class="hidden"><?php echo $this->__('Add to Compare') ?></span></button></li>
+												<?php endif; ?>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+    <?php endforeach; ?>
+    </ol>
+    <script type="text/javascript">decorateList('products-list', 'none-recursive')</script>
+
+    <?php else: ?>
+    <?php // Grid Mode ?>
+    <?php $_collectionSize = $_productCollection->count() ?>
+    <?php $_columnCount = $this->getColumnCount(); ?>
+	<?php 
+	$layout=Mage::helper('unicase')->getTemplateLayout($this);
+	$itmClass=$Griddata=$etcclass='';
+	if($layout=='1column'){
+		$lg=($Cfg['catgrid_1col_lg'])? $Cfg['catgrid_1col_lg'] : 5;
+		$md=($Cfg['catgrid_1col_md'])? $Cfg['catgrid_1col_md'] : 4;
+		$sm=($Cfg['catgrid_1col_sm'])? $Cfg['catgrid_1col_sm'] : 4;
+		$xs=($Cfg['catgrid_1col_xs'])? $Cfg['catgrid_1col_xs'] : 2;
+		$xxs=($Cfg['catgrid_1col_xxs'])? $Cfg['catgrid_1col_xxs'] : 1;
+	}else if($layout=='2columns-left' || $layout=='2columns-right'){
+		$lg=($Cfg['catgrid_2col_lg'])? $Cfg['catgrid_2col_lg'] : 4;
+		$md=($Cfg['catgrid_2col_md'])? $Cfg['catgrid_2col_md'] : 4;
+		$sm=($Cfg['catgrid_2col_sm'])? $Cfg['catgrid_2col_sm'] : 3;
+		$xs=($Cfg['catgrid_2col_xs'])? $Cfg['catgrid_2col_xs'] : 2;
+		$xxs=($Cfg['catgrid_2col_xxs'])? $Cfg['catgrid_2col_xxs'] : 1;
+	}else if($layout=='3columns'){
+		$lg=($Cfg['catgrid_3col_lg'])? $Cfg['catgrid_3col_lg'] : 2;
+		$md=($Cfg['catgrid_3col_md'])? $Cfg['catgrid_3col_md'] : 2;
+		$sm=($Cfg['catgrid_3col_sm'])? $Cfg['catgrid_3col_sm'] : 3;
+		$xs=($Cfg['catgrid_3col_xs'])? $Cfg['catgrid_3col_xs'] : 2;
+		$xxs=($Cfg['catgrid_3col_xxs'])? $Cfg['catgrid_3col_xxs'] : 1;
+		if($layout=='3columns' && $Cfg['catgrid_3col_md'] > 2){
+			$etcclass=' tcol-itm';
+		}
+	}
+	$Griddata='data-lg="'.$lg.'" data-md="'.$md.'" data-sm="'.$sm.'" data-xs="'.$xs.'" data-xxs="'.$xxs.'"';
+	$itmClass=$theme->getColsClass('lg',$lg).' '.$theme->getColsClass('md',$md).' '.$theme->getColsClass('sm',$sm).' '.$theme->getColsClass('xs',$xs).' '.$theme->getColsClass('xxs',$xxs).' '.$etcclass;
+	?>
+	<div class="prodgl-rows">
+		<div class="products-grid products-grid-list" <?php echo $Griddata; ?>>
+        <?php $i=0; foreach ($_productCollection as $_product): ?>
+			<?php $htm_badge=$this->helper('unicase')->getProductLabel($_product); ?>
+			<?php $htm_badge.=($quickview)? $this->helper('ajaxpkt')->getQuickViewLink($_product)  : '' ; ?>
+				<div class="item <?php echo $itmClass; ?>">
+					<div class="products">
+						<div class="product">
+							<div class="product-image">
+								<div class="image">
+									<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image">
+										 <img class="lazyImg loading" id="product-collection-image-<?php echo $_product->getId(); ?>" src="<?php echo $blank_gif; ?>" data-echo="<?php echo $theme->getProdImg($_product, $_imgWidth, $_imgHeight, 'small_image'); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" width="<?php echo $_imgWidth; ?>" height="<?php echo $_imgHeight; ?>" />
+										<?php if($altImg): ?>
+										<?php echo $theme->getProdAltImg($_product,$_imgWidth,$_imgHeight,'small_image', 'list'); ?>
+										<?php endif; ?>
+										
+									</a>
+								</div>
+								<?php echo $htm_badge; ?>
+								
+							</div>
+							<div class="product-info text-left">
+								<h3 class="name product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></a></h3>
+								<?php
+								// Provides extra blocks on which to hang some features for products in the list
+								// Features providing UI elements targeting this block will display directly below the product name
+								if ($this->getChild('name.after')) {
+									$_nameAfterChildren = $this->getChild('name.after')->getSortedChildren();
+									foreach ($_nameAfterChildren as $_nameAfterChildName) {
+										$_nameAfterChild = $this->getChild('name.after')->getChild($_nameAfterChildName);
+										$_nameAfterChild->setProduct($_product);
+										echo $_nameAfterChild->toHtml();
+									}
+								}
+								?>
+								<?php if($sku): ?><p class="sku"><span class="label"><?php echo $this->__('SKU') ?>:</span><span class="value"><?php echo $_product->getSku();?></span></p><?php endif; ?>
+								<?php if($rating): ?>
+								<?php $reviews=$this->getReviewsSummaryHtml($_product,'short') ?>
+								<?php if($reviews): ?>
+									<?php echo $reviews; ?>
+								<?php else: ?>
+								<div class="ratings">
+									<div class="rating-box">&nbsp;</div>
+								</div>
+								<?php endif; ?>
+								<?php endif; ?>
+								<?php if($price): ?>
+								<div class="product-price">	
+									<?php echo $this->getPriceHtml($_product, true) ?>
+								</div>
+								<?php endif; ?>
+							</div>
+							<div class="cart clearfix animate-effect">
+								<div class="action">
+									<ul class="list-unstyled">
+										<?php if($addtocart): ?>
+										 <?php if(!$_product->canConfigure() && $_product->isSaleable()): ?>
+											<li class="add-cart-button btn-group">
+											<?php if($CfgDesign['basic']['btn_style']=='ucbtns2'){?>
+												<button class="button btn-cart icon" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Add to Cart')); ?>" data-toggle="dropdown" type="button" onclick="setLocationAjax(this,'<?php echo $this->getAddToCartUrl($_product) ?>','<?php echo $_product->getId()?>')"><i class="fa fa-shopping-cart"></i></button>
+											<?php } ?>
+												<button type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Add to Cart')); ?>" class="button btn-cart" onclick="setLocationAjax(this,'<?php echo $this->getAddToCartUrl($_product) ?>','<?php echo $_product->getId()?>')"><span><?php echo $this->__('Add to Cart') ?></span></button>
+											</li>
+										<?php elseif($_product->getStockItem() && $_product->getStockItem()->getIsInStock()): ?>
+											<li class="add-cart-button btn-group">
+												<?php if($CfgDesign['basic']['btn_style']=='ucbtns2'){?>
+												<button class="button btn-cart icon" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Add to Cart')); ?>" onclick="showOptions(this,'<?php echo $_product->getId()?>')"><i class="fa fa-file-text-o"></i></button>
+												<?php } ?>
+												<button class="button btn-cart" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Add to Cart')); ?>" onclick="showOptions(this,'<?php echo $_product->getId()?>')"><?php echo $this->__('Add to Cart'); ?></button>
+												<a href='<?php echo $this->getUrl('ajaxpkt/index/options',array('product_id'=>$_product->getId()));?>' class='ajaxpkt-qckview' id='ajaxpkt<?php echo $_product->getId()?>' style='display:none'><?php echo $this->__('Ajaxpkt') ?></a>
+											</li>
+										<?php else: ?>
+											<li><p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p></li>
+										<?php endif; ?>
+										<?php endif;?>
+										<?php if ($this->helper('wishlist')->isAllow() && $wishlist) : ?>
+											<li class="lnk wishlist"><button onclick='ajaxWishlist(this,"<?php echo $this->helper('wishlist')->getAddUrl($_product) ?>","<?php echo $_product->getId()?>");return false;' class="link-wishlist button wishlist"><i class="icon fa fa-heart"></i><span class="hidden"><?php echo $this->__('Add to Wishlist') ?></span></button></li>
+										<?php endif; ?>
+										<?php if(($_compareUrl=$this->getAddToCompareUrl($_product)) && $compare): ?>
+											<li  class="lnk"><button onclick='ajaxCompare(this,"<?php echo $_compareUrl ?>","<?php echo $_product->getId()?>");return false;' class="link-compare button compare"><i class="fa fa-retweet"></i><span class="hidden"><?php echo $this->__('Add to Compare') ?></span></button></li>
+										<?php endif; ?>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+        <?php endforeach ?>
+		</div>
+    </div>
+    <?php endif; ?>
+    <div class="toolbar-bottom">
+        <?php echo $this->getToolbarHtml() ?>
+    </div>
+<?php endif; ?>
+</div>
+<div class="prodlist-after">
+<?php
+// Provides a block where additional page components may be attached, primarily good for in-page JavaScript
+if ($this->getChild('after')) {
+    $_afterChildren = $this->getChild('after')->getSortedChildren();
+    foreach ($_afterChildren as $_afterChildName) {
+        $_afterChild = $this->getChild('after')->getChild($_afterChildName);
+        //set product collection on after blocks
+        $_afterChild->setProductCollection($_productCollection);
+        echo $_afterChild->toHtml();
+    }
+}
+?>
+</div>

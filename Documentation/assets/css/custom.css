@@ -1,0 +1,17 @@
+.nav-list>.active>a,
+.nav-list>.active>a:hover,
+.nav-list>.active>a:focus{
+	background-color: #abd07e;
+}
+a {
+  color: #333;
+}
+a:hover, a:focus {
+  color: #5f8530;
+}
+pre code {
+  color: #3b531e;
+}
+.theme--color{
+	color:#56782c;
+}

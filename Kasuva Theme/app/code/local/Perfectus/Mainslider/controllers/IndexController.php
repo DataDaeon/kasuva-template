@@ -1,5 +1,5 @@
 <?php
-class daeon_Mainslider_IndexController extends Mage_Core_Controller_Front_Action{
+class Perfectus_Mainslider_IndexController extends Mage_Core_Controller_Front_Action{
 	 public function indexAction()
     {
     	if(!Mage::getStoreConfig('tab1/general/enable')){
@@ -49,7 +49,7 @@ class daeon_Mainslider_IndexController extends Mage_Core_Controller_Front_Action
 		$this->renderLayout();
     }
     public function IndexAction() {
-      $_module_enabaled = Mage::getStoreConfig('daeon_mainslider/settings/mainslider_enable');
+      $_module_enabaled = Mage::getStoreConfig('perfectus_mainslider/settings/mainslider_enable');
       
       if($_module_enabaled==1){
 		
@@ -59,7 +59,7 @@ class daeon_Mainslider_IndexController extends Mage_Core_Controller_Front_Action
 		
 		$this->loadLayout();   
 		$this->getLayout()->getBlock("head")->setTitle($this->__("Mainslider Category"));
-		$block = $this->getLayout()->createBlock('mainslider/mainslider')->setTemplate('daeon/mainslider/slider.phtml'))->renderLayout();
+		$block = $this->getLayout()->createBlock('mainslider/mainslider')->setTemplate('perfectus/mainslider/slider.phtml'))->renderLayout();
 		$this->getLayout()->getBlock('content')->append($block);
 		$this->renderLayout(); 
       }else{

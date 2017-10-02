@@ -1,5 +1,5 @@
 <?php
-class daeon_Fltproducts_Block_Allproducts_List extends Mage_Catalog_Block_Product_List {
+class Perfectus_Fltproducts_Block_Allproducts_List extends Mage_Catalog_Block_Product_List {
 
     protected function _getProductCollection() 
 	{

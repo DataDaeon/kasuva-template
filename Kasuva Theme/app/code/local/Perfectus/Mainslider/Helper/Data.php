@@ -1,9 +1,9 @@
 <?php
-class daeon_Mainslider_Helper_Data extends Mage_Core_Helper_Abstract
+class Perfectus_Mainslider_Helper_Data extends Mage_Core_Helper_Abstract
 {
-	const XML_CONFIG_URL_PREFIX = 'daeon_mainslider/mainslidergroup/page_url';
+	const XML_CONFIG_URL_PREFIX = 'perfectus_mainslider/mainslidergroup/page_url';
 	const DEFAULT_ROOT = 'mainslider';
-	const XML_ROOT = 'daeon_mainslider/mainslidergroup/page_url';
+	const XML_ROOT = 'perfectus_mainslider/mainslidergroup/page_url';
 	public function toUrlKey($string)
     {
         $urlKey = preg_replace(array('/[^a-z0-9-_]/i', '/[ ]{2,}/', '/[ ]/'), array(' ', ' ', '-'), $string);
@@ -79,7 +79,7 @@ class daeon_Mainslider_Helper_Data extends Mage_Core_Helper_Abstract
 	}
 	public function getSliderOptions()
 	{
-		$cfgoptions=Mage::helper('mainslider')->getSliderTpcfg('daeon_mainslider/options');
+		$cfgoptions=Mage::helper('mainslider')->getSliderTpcfg('perfectus_mainslider/options');
 		$mainslider=array();
 		$sldspeed=($cfgoptions['slider_slidetransspeed'])? filter_var($cfgoptions['slider_slidetransspeed'], FILTER_SANITIZE_NUMBER_INT) : 200;
 		$sw=($cfgoptions['slider_width'])? filter_var($cfgoptions['slider_width'], FILTER_SANITIZE_NUMBER_INT) : 1140;

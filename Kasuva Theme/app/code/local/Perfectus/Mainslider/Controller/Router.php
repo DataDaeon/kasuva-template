@@ -1,14 +1,14 @@
 <?php
-class daeon_Mainslider_Controller_Router extends Mage_Core_Controller_Varien_Router_Standard
+class Perfectus_Mainslider_Controller_Router extends Mage_Core_Controller_Varien_Router_Standard
 {
-    const MODULE     = 'daeon_Mainslider';
+    const MODULE     = 'Perfectus_Mainslider';
     const CONTROLLER = 'index';
      
     public function initControllerRouters($observer)
     {
         $front = $observer->getEvent()->getFront();
 
-        $router = new daeon_Mainslider_Controller_Router();
+        $router = new Perfectus_Mainslider_Controller_Router();
         $front->addRouter('mainslider', $router);
     }
 

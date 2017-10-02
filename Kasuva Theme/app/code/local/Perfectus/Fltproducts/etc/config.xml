@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <daeon_Fltproducts>
+        <Perfectus_Fltproducts>
             <version>0.1.0</version>
-        </daeon_Fltproducts>
+        </Perfectus_Fltproducts>
     </modules>
     <frontend>
         <routers>
             <fltproducts>
                 <use>standard</use>
                 <args>
-                    <module>daeon_Fltproducts</module>
+                    <module>Perfectus_Fltproducts</module>
                     <frontName>fltproducts</frontName>
                 </args>
             </fltproducts>
@@ -18,7 +18,7 @@
         <layout>
             <updates>
                 <fltproducts>
-                    <file>daeon_fltproducts.xml</file>
+                    <file>perfectus_fltproducts.xml</file>
                 </fltproducts>
             </updates>
         </layout>
@@ -28,7 +28,7 @@
 			<fltproducts>
 				<use>admin</use>
 				<args>
-					<module>daeon_Fltproducts</module>
+					<module>Perfectus_Fltproducts</module>
 					<frontName>fltproducts</frontName>
 				</args>
 			</fltproducts>
@@ -53,10 +53,10 @@
 								</config>
 							</children>
 						</system>
-						<daeon_Fltproducts>
+						<Perfectus_Fltproducts>
 							<title>FilterProducts Module</title>
 							<sort_order>10</sort_order>
-						</daeon_Fltproducts>
+						</Perfectus_Fltproducts>
 					</children>
 				</admin>
 			</resources>
@@ -64,7 +64,7 @@
 		<layout>
 			<updates>
 				<fltproducts>
-					<file>daeon_fltproducts.xml</file>
+					<file>perfectus_fltproducts.xml</file>
 				</fltproducts>
 			</updates>
 		</layout>
@@ -72,14 +72,14 @@
     <global>
         <models>
             <fltproducts>
-                <class>daeon_Fltproducts_Model</class>
+                <class>Perfectus_Fltproducts_Model</class>
                 <resourceModel>fltproducts_mysql4</resourceModel>
             </fltproducts>
             <fltproducts_mysql4>
-                <class>daeon_Fltproducts_Model_Mysql4</class>
+                <class>Perfectus_Fltproducts_Model_Mysql4</class>
                 <entities>
                     <fltproducts>
-                        <table>daeon_fltproducts</table>
+                        <table>perfectus_fltproducts</table>
                     </fltproducts>
                 </entities>
             </fltproducts_mysql4>
@@ -87,7 +87,7 @@
         <resources>
             <fltproducts_setup>
                 <setup>
-                    <module>daeon_Fltproducts</module>
+                    <module>Perfectus_Fltproducts</module>
                 </setup>
                 <connection>
                     <use>core_setup</use>
@@ -106,21 +106,21 @@
         </resources>
         <blocks>
             <fltproducts>
-                <class>daeon_Fltproducts_Block</class>
+                <class>Perfectus_Fltproducts_Block</class>
             </fltproducts>
         </blocks>
         <helpers>
             <fltproducts>
-                <class>daeon_Fltproducts_Helper</class>
+                <class>Perfectus_Fltproducts_Helper</class>
             </fltproducts>
         </helpers>
 		<!--<events>
 			<controller_action_layout_load_before>
 				<observers>
-					<daeon_Fltproducts_Model_Observer>
-						<class>daeon_Fltproducts_Model_Observer</class>
+					<Perfectus_Fltproducts_Model_Observer>
+						<class>Perfectus_Fltproducts_Model_Observer</class>
 						<method>setTemplateVariables</method>
-					</daeon_Fltproducts_Model_Observer>
+					</Perfectus_Fltproducts_Model_Observer>
 				</observers>
 			</controller_action_layout_load_before>
 		</events>-->

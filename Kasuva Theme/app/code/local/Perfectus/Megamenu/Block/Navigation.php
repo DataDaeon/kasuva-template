@@ -1,5 +1,5 @@
 <?php
-class daeon_Megamenu_Block_Navigation extends Mage_Catalog_Block_Navigation
+class Perfectus_Megamenu_Block_Navigation extends Mage_Catalog_Block_Navigation
 {
     protected static $_productsCount  = null;
     protected static $_popupMenu      = array();

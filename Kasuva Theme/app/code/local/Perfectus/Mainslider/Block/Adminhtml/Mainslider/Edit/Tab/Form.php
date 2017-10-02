@@ -1,5 +1,5 @@
 <?php
-class daeon_Mainslider_Block_Adminhtml_Mainslider_Edit_Tab_Form extends Mage_Adminhtml_Block_Widget_Form
+class Perfectus_Mainslider_Block_Adminhtml_Mainslider_Edit_Tab_Form extends Mage_Adminhtml_Block_Widget_Form
 {
 		protected function _prepareForm()
 		{

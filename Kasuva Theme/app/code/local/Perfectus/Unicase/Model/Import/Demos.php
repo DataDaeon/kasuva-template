@@ -1,11 +1,11 @@
 <?php
-class daeon_kasuva_Model_Import_Demos extends Mage_Core_Model_Abstract{
+class Perfectus_Unicase_Model_Import_Demos extends Mage_Core_Model_Abstract{
 	private $_importPath;
 	
 	public function __construct()
     {
         parent::__construct();
-		$this->_importPath = Mage::getBaseDir() . '/app/code/local/daeon/kasuva/etc/import/';
+		$this->_importPath = Mage::getBaseDir() . '/app/code/local/Perfectus/Unicase/etc/import/';
     }
 	
 	public function importDemos($demos,$store=NULL,$website = NULL)
@@ -16,7 +16,7 @@ class daeon_kasuva_Model_Import_Demos extends Mage_Core_Model_Abstract{
 			
 			if (!is_readable($xmlPath)){
 				throw new Exception(
-					Mage::helper('kasuva')->__("Can't get the data file for import demos: %s", $xmlPath)
+					Mage::helper('unicase')->__("Can't get the data file for import demos: %s", $xmlPath)
                 );
 			}
 			$xmlObj = new Varien_Simplexml_Config($xmlPath);
@@ -51,7 +51,7 @@ class daeon_kasuva_Model_Import_Demos extends Mage_Core_Model_Abstract{
 			$config->cleanCache();
 
 			Mage::getSingleton('adminhtml/session')->addSuccess(
-                Mage::helper('kasuva')
+                Mage::helper('unicase')
 					->__('%s was imported',$demos)
             );
 		}

@@ -1,5 +1,5 @@
 <?php
-class daeon_Mainslider_Block_Adminhtml_Mainslider_Grid extends Mage_Adminhtml_Block_Widget_Grid
+class Perfectus_Mainslider_Block_Adminhtml_Mainslider_Grid extends Mage_Adminhtml_Block_Widget_Grid
 {
 		public function __construct()
 		{
@@ -151,7 +151,7 @@ class daeon_Mainslider_Block_Adminhtml_Mainslider_Grid extends Mage_Adminhtml_Bl
 		static public function getValueArray6()
 		{
             $data_array=array();
-			foreach(daeon_Mainslider_Block_Adminhtml_Mainslider_Grid::getOptionArray6() as $k=>$v){
+			foreach(Perfectus_Mainslider_Block_Adminhtml_Mainslider_Grid::getOptionArray6() as $k=>$v){
                $data_array[]=array('value'=>$k,'label'=>$v);		
 			}
             return($data_array);

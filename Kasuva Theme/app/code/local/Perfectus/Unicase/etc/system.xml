@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <config>
     <tabs>
-        <kasuvatheme translate="label" module="kasuva">
-            <label>kasuva Theme(1.0)</label>
+        <unicasetheme translate="label" module="unicase">
+            <label>Unicase Theme(1.0)</label>
             <sort_order>300</sort_order>
-        </kasuvatheme>
+        </unicasetheme>
     </tabs>
     <sections>
-        <kasuva_design translate="label comment" module="kasuva">
-            <tab>kasuvatheme</tab>
-            <label>kasuva Design</label>
+        <unicase_design translate="label comment" module="unicase">
+            <tab>unicasetheme</tab>
+            <label>Unicase Design</label>
             <frontend_type>text</frontend_type>
             <sort_order>102</sort_order>
             <show_in_default>1</show_in_default>
@@ -27,7 +27,7 @@
 						<general_color_themesettings translate="label">
                             <label>General Color Settings</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_themesettings</source_model>
+                            <source_model>unicase/system_config_source_setting_themesettings</source_model>
                             <sort_order>0</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -36,7 +36,7 @@
                         <theme_color>
                             <label>Theme Colors</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>10</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -59,7 +59,7 @@
 						<text_color>
                             <label>Text Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>12</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -71,7 +71,7 @@
 						<link_color>
                             <label>Link Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>13</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -83,7 +83,7 @@
 						<link_hover_color>
                             <label>Link Hover Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>13</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -106,7 +106,7 @@
 						<btn_bg_color>
                             <label>Button Background Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>15</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -118,7 +118,7 @@
 						<btn_text_color>
                             <label>Button Text Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>16</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -130,7 +130,7 @@
 						<btn_hbg_color>
                             <label>Button Hover Background Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>17</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -142,7 +142,7 @@
 						<btn_htext_color>
                             <label>Button Hover Text Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>18</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -154,7 +154,7 @@
 						<btn_border_color>
                             <label>Button Border Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>19</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -166,7 +166,7 @@
 						<btn_hborder_color>
                             <label>Button Hover Border Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>20</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -178,8 +178,8 @@
 						<btn_style translate="label">
                             <label>Buttons Style</label>
                             <frontend_type>select</frontend_type>
-							<source_model>kasuva/system_config_source_design_buttons_btnstyles</source_model>
-							<frontend_model>kasuva/adminhtml_system_config_form_field_btnstyles</frontend_model>
+							<source_model>unicase/system_config_source_design_buttons_btnstyles</source_model>
+							<frontend_model>unicase/adminhtml_system_config_form_field_btnstyles</frontend_model>
                             <sort_order>21</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -202,7 +202,7 @@
 						<newlabel_color translate="label">
                             <label>New Label Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>50</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -214,7 +214,7 @@
 						<salelabel_color translate="label">
                             <label>Sale Label Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>60</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -236,7 +236,7 @@
 						<header_color_themesettings translate="label">
                             <label>Header Color Settings</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_themesettings</source_model>
+                            <source_model>unicase/system_config_source_setting_themesettings</source_model>
                             <sort_order>0</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -256,7 +256,7 @@
 						<topbar_bg translate="label">
 							<label>Topbar BgColor</label>
 							<frontend_type>text</frontend_type>
-							<frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+							<frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>20</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -268,7 +268,7 @@
 						<topbar_link_color translate="label">
 							<label>Topbar Link Color</label>
 							<frontend_type>text</frontend_type>
-							<frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+							<frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>30</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -280,7 +280,7 @@
 						<topbar_link_hcolor translate="label">
 							<label>Topbar Link Hover Color</label>
 							<frontend_type>text</frontend_type>
-							<frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+							<frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>40</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -292,7 +292,7 @@
 						<topbar_link_border_color translate="label">
 							<label>Topbar Link Border Color</label>
 							<frontend_type>text</frontend_type>
-							<frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+							<frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>50</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -304,7 +304,7 @@
 						<topbar_welcomtext_color translate="label">
 							<label>Welcome text Color</label>
 							<frontend_type>text</frontend_type>
-							<frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+							<frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>60</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -327,7 +327,7 @@
 						<header_bg translate="label">
 							<label>Header BgColor</label>
 							<frontend_type>text</frontend_type>
-							<frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+							<frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>310</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -339,7 +339,7 @@
 						<header_text_color translate="label">
 							<label>Header Text Color</label>
 							<frontend_type>text</frontend_type>
-							<frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+							<frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>320</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -351,7 +351,7 @@
 						<header_search_bg translate="label">
 							<label>Header Search BgColor</label>
 							<frontend_type>text</frontend_type>
-							<frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+							<frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>330</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -363,7 +363,7 @@
 						<header_search_color translate="label">
 							<label>Header Search Text Color</label>
 							<frontend_type>text</frontend_type>
-							<frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+							<frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>340</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -385,7 +385,7 @@
 						<footer_color_themesettings translate="label">
                             <label>Footer Color Settings</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_themesettings</source_model>
+                            <source_model>unicase/system_config_source_setting_themesettings</source_model>
                             <sort_order>0</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -405,7 +405,7 @@
                         <ftop_bg>
                             <label>Background Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>100</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -417,7 +417,7 @@
 						<ftop_text>
                             <label>Text Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>110</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -429,7 +429,7 @@
 						<ftop_bhead_text>
                             <label>Block Heading Text Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>115</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -441,7 +441,7 @@
 						<ftop_link>
                             <label>Link Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>120</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -453,7 +453,7 @@
 						<ftop_hlink>
                             <label>Link Hover Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>125</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -465,7 +465,7 @@
 						<ftop_icon_bg>
                             <label>Icon Background Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>130</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -477,7 +477,7 @@
 						<ftop_icon_text>
                             <label>Icon Text Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>135</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -500,7 +500,7 @@
                         <fbot_bg>
                             <label>Background Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>510</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -512,7 +512,7 @@
 						<fbot_text>
                             <label>Text Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>520</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -524,7 +524,7 @@
 						<fbot_bhead_text>
                             <label>Block Heading Text Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>530</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -536,7 +536,7 @@
 						<fbot_link>
                             <label>Link Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>540</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -548,7 +548,7 @@
 						<fbot_hlink>
                             <label>Link Hover Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>550</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -560,7 +560,7 @@
 						<fbot_list_dot>
                             <label>Block List Dot Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>560</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -572,7 +572,7 @@
 						<fbot_list_botborder>
                             <label>Block List Bottom Border Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>570</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -595,7 +595,7 @@
                         <fcopyrights_bg>
                             <label>Background Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>910</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -607,7 +607,7 @@
 						<fcopyrights_text>
                             <label>Text Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>920</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -629,7 +629,7 @@
 						<megamenu_color_themesettings translate="label">
                             <label>Megamenu Color Settings</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_themesettings</source_model>
+                            <source_model>unicase/system_config_source_setting_themesettings</source_model>
                             <sort_order>0</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -638,7 +638,7 @@
                         <nav_bg>
                             <label>NavBar Background Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>100</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -650,7 +650,7 @@
 						<nav_item_hbg>
                             <label>NavBar Menu Hover Background Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>110</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -662,7 +662,7 @@
 						<nav_fontsize>
                             <label>NavBar Text Fontsize</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_design_font_fontsize</source_model>
+                            <source_model>unicase/system_config_source_design_font_fontsize</source_model>
                             <sort_order>115</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -677,7 +677,7 @@
 						<nav_text>
                             <label>NavBar Text Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>120</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -689,7 +689,7 @@
 						<nav_item_htext>
                             <label>NavBar Menu Hover Text Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>130</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -701,7 +701,7 @@
 						<megamenu_bg>
                             <label>Megamenu Background Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>140</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -713,7 +713,7 @@
 						<megamenu_text>
                             <label>Megamenu Text Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>150</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -725,7 +725,7 @@
 						<megamenu_col_headtext>
                             <label>Megamenu Cols Heading Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>160</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -737,7 +737,7 @@
 						<megamenu_col_headb>
                             <label>Megamenu Cols Heading Border Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>170</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -749,7 +749,7 @@
 						<megamenu_link>
                             <label>Megamenu Link Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>180</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -761,7 +761,7 @@
 						<megamenu_hlink>
                             <label>Megamenu Link Hover Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>190</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -791,7 +791,7 @@
 						<font_family translate="label">
 							<label>Font Family</label>
 							<frontend_type>select</frontend_type>
-							<source_model>kasuva/system_config_source_design_font_fontfamilylist</source_model>
+							<source_model>unicase/system_config_source_design_font_fontfamilylist</source_model>
 							<sort_order>5</sort_order>
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
@@ -806,7 +806,7 @@
                                 <![CDATA[Font preview is available on <a href="http://www.google.com/webfonts">Google Web Fonts</a>]]>
                             </comment>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_design_font_googlefontfamily</source_model>
+                            <source_model>unicase/system_config_source_design_font_googlefontfamily</source_model>
                             <sort_order>8</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -833,7 +833,7 @@
 						<general_fontsize>
                             <label>Fontsize</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_design_font_fontsize</source_model>
+                            <source_model>unicase/system_config_source_design_font_fontsize</source_model>
                             <sort_order>20</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -853,7 +853,7 @@
 						<head_font_family translate="label">
 							<label>Font Family</label>
 							<frontend_type>select</frontend_type>
-							<source_model>kasuva/system_config_source_design_font_fontfamilylist</source_model>
+							<source_model>unicase/system_config_source_design_font_fontfamilylist</source_model>
 							<sort_order>40</sort_order>
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
@@ -868,7 +868,7 @@
                                 <![CDATA[Font preview is available on <a href="http://www.google.com/webfonts">Google Web Fonts</a>]]>
                             </comment>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_design_font_googlefontfamily</source_model>
+                            <source_model>unicase/system_config_source_design_font_googlefontfamily</source_model>
                             <sort_order>50</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -898,7 +898,7 @@
                                 <![CDATA[Set Heading Font Weight. default = 500]]>
                             </comment>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_design_font_fontweight</source_model>
+                            <source_model>unicase/system_config_source_design_font_fontweight</source_model>
                             <sort_order>70</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -933,7 +933,7 @@
 						<category_color_themesettings translate="label">
                             <label>Category Color Settings</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_themesettings</source_model>
+                            <source_model>unicase/system_config_source_setting_themesettings</source_model>
                             <sort_order>0</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -942,7 +942,7 @@
                         <category_title_color>
                             <label>Category Title Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>100</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -954,7 +954,7 @@
 						<category_desc_color>
                             <label>Category Description Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>110</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -976,7 +976,7 @@
 						<productinfo_color_themesettings translate="label">
                             <label>Product Info Color Settings</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_themesettings</source_model>
+                            <source_model>unicase/system_config_source_setting_themesettings</source_model>
                             <sort_order>0</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -996,7 +996,7 @@
                         <product_tabs_bg>
                             <label>Tabs Background Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>1</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1008,7 +1008,7 @@
 						<product_tabs_text>
                             <label>Tabs Text Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>5</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1020,7 +1020,7 @@
 						<product_tabs_hbg>
                             <label>Tabs Hover Background Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>10</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1032,7 +1032,7 @@
 						<product_tabs_htext>
                             <label>Tabs Hover Text Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>15</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1044,7 +1044,7 @@
 						<product_tabs_abg>
                             <label>Tabs Active Background Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>20</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1056,7 +1056,7 @@
 						<product_tabs_atext>
                             <label>Tabs Active Text Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>25</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1068,17 +1068,17 @@
 					</fields>
 				</product_info>
             </groups>
-        </kasuva_design>
-        <kasuva_settings translate="label comment" module="kasuva">
-            <tab>kasuvatheme</tab>
-            <label>kasuva Settings</label>
+        </unicase_design>
+        <unicase_settings translate="label comment" module="unicase">
+            <tab>unicasetheme</tab>
+            <label>Unicase Settings</label>
             <frontend_type>text</frontend_type>
             <sort_order>103</sort_order>
             <show_in_default>1</show_in_default>
             <show_in_website>1</show_in_website>
             <show_in_store>1</show_in_store>
             <groups>
-                <general translate="label comment" module="kasuva">
+                <general translate="label comment" module="unicase">
                     <label>General</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>10</sort_order>
@@ -1089,7 +1089,7 @@
                         <layout>
                             <label>Boxed / Wide</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_design_theme_boxed</source_model>
+                            <source_model>unicase/system_config_source_design_theme_boxed</source_model>
                             <sort_order>30</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1103,8 +1103,8 @@
 							<comment>
                                 <![CDATA[Set out of box background image for boxed version.]]>
                             </comment>
-                            <upload_dir>media/wysiwyg/kasuva/boxed</upload_dir>
-                            <base_url type="media" scope_info="1">wysiwyg/kasuva/boxed</base_url>
+                            <upload_dir>media/wysiwyg/unicase/boxed</upload_dir>
+                            <base_url type="media" scope_info="1">wysiwyg/unicase/boxed</base_url>
                             <sort_order>40</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_default>1</show_in_default>
@@ -1117,7 +1117,7 @@
 						<boxed_bgcolor>
                             <label>Boxed Background Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
 							<comment>
                                 <![CDATA[Set out of box background color for boxed version.]]>
                             </comment>
@@ -1140,8 +1140,8 @@
 						<product_btn_style translate="label">
                             <label>Products Buttons Style</label>
                             <frontend_type>select</frontend_type>
-							<source_model>kasuva/system_config_source_design_buttons_prodbtnstyles</source_model>
-							<frontend_model>kasuva/adminhtml_system_config_form_field_prodbtnstyles</frontend_model>
+							<source_model>unicase/system_config_source_design_buttons_prodbtnstyles</source_model>
+							<frontend_model>unicase/adminhtml_system_config_form_field_prodbtnstyles</frontend_model>
                             <sort_order>70</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1152,7 +1152,7 @@
                         </product_btn_style>
                     </fields>
                 </general>
-                <header translate="label comment" module="kasuva">
+                <header translate="label comment" module="unicase">
                     <label>Header</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>30</sort_order>
@@ -1165,8 +1165,8 @@
                             <comment>JPG,PNG,GIF</comment>
                             <frontend_type>image</frontend_type>
                             <backend_model>adminhtml/system_config_backend_image</backend_model>
-                            <upload_dir>media/wysiwyg/kasuva/logo</upload_dir>
-                            <base_url type="media" scope_info="1">wysiwyg/kasuva/logo</base_url>
+                            <upload_dir>media/wysiwyg/unicase/logo</upload_dir>
+                            <base_url type="media" scope_info="1">wysiwyg/unicase/logo</base_url>
                             <sort_order>1</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_default>1</show_in_default>
@@ -1176,7 +1176,7 @@
 						<logo_alt>
                             <label>Logo Alt</label>
                             <frontend_type>text</frontend_type>
-                            <value>kasuva</value>
+                            <value>Unicase</value>
                             <sort_order>2</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1210,7 +1210,7 @@
                         <style>
                             <label>Header Style</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_header_type</source_model>
+                            <source_model>unicase/system_config_source_setting_header_type</source_model>
                             <sort_order>10</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1243,7 +1243,7 @@
                         </sticky_nav>
                     </fields>
                 </header>
-				<footer translate="label comment" module="kasuva">
+				<footer translate="label comment" module="unicase">
                     <label>Footer</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>31</sort_order>
@@ -1306,7 +1306,7 @@
 						<category_layout translate="label">
                             <label>Category Layout</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_category_categorylayouts</source_model>
+                            <source_model>unicase/system_config_source_setting_category_categorylayouts</source_model>
                             <sort_order>1</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1315,8 +1315,8 @@
 						<categoryinfo_layout translate="label">
                             <label>Category Info Styles</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_category_catinfostyles</source_model>
-							<!--<frontend_model>kasuva/adminhtml_system_config_form_field_catinfostyles</frontend_model>-->
+                            <source_model>unicase/system_config_source_setting_category_catinfostyles</source_model>
+							<!--<frontend_model>unicase/adminhtml_system_config_form_field_catinfostyles</frontend_model>-->
                             <sort_order>10</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1342,7 +1342,7 @@
 						<categoryinfo_title translate="label">
                             <label>Category Title</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_category_cattitlestyles</source_model>
+                            <source_model>unicase/system_config_source_setting_category_cattitlestyles</source_model>
                             <sort_order>40</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1351,7 +1351,7 @@
 						<categoryinfo_desc translate="label">
                             <label>Category Description</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_category_catdescstyles</source_model>
+                            <source_model>unicase/system_config_source_setting_category_catdescstyles</source_model>
                             <sort_order>50</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1378,7 +1378,7 @@
 						<catgrid_1col_lg translate="label">
                             <label>Number of Columns Above 1200px</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <source_model>unicase/system_config_source_setting_category_columns</source_model>
                             <sort_order>1</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1387,7 +1387,7 @@
 						<catgrid_1col_md translate="label">
                             <label>Number of Columns within (992px - 1999px)</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <source_model>unicase/system_config_source_setting_category_columns</source_model>
                             <sort_order>4</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1396,7 +1396,7 @@
 						<catgrid_1col_sm translate="label">
                             <label>Number of Columns within (768px - 991px)</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <source_model>unicase/system_config_source_setting_category_columns</source_model>
                             <sort_order>10</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1405,7 +1405,7 @@
 						<catgrid_1col_xs translate="label">
                             <label>Number of Columns within (480px - 767px)</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <source_model>unicase/system_config_source_setting_category_columns</source_model>
                             <sort_order>20</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1414,7 +1414,7 @@
 						<catgrid_1col_xxs translate="label">
                             <label>Number of Columns Below 480px</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <source_model>unicase/system_config_source_setting_category_columns</source_model>
                             <sort_order>30</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1431,7 +1431,7 @@
 						<catgrid_2col_lg translate="label">
                             <label>Number of Columns Above 1200px</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <source_model>unicase/system_config_source_setting_category_columns</source_model>
                             <sort_order>50</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1440,7 +1440,7 @@
 						<catgrid_2col_md translate="label">
                             <label>Number of Columns within (992px - 1999px)</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <source_model>unicase/system_config_source_setting_category_columns</source_model>
                             <sort_order>60</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1449,7 +1449,7 @@
 						<catgrid_2col_sm translate="label">
                             <label>Number of Columns within (768px - 991px)</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <source_model>unicase/system_config_source_setting_category_columns</source_model>
                             <sort_order>60</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1458,7 +1458,7 @@
 						<catgrid_2col_xs translate="label">
                             <label>Number of Columns within (480px - 767px)</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <source_model>unicase/system_config_source_setting_category_columns</source_model>
                             <sort_order>70</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1467,7 +1467,7 @@
 						<catgrid_2col_xxs translate="label">
                             <label>Number of Columns Below 480px</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <source_model>unicase/system_config_source_setting_category_columns</source_model>
                             <sort_order>80</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1484,7 +1484,7 @@
 						<catgrid_3col_lg translate="label">
                             <label>Number of Columns Above 1200px</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <source_model>unicase/system_config_source_setting_category_columns</source_model>
                             <sort_order>83</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1493,7 +1493,7 @@
 						<catgrid_3col_md translate="label">
                             <label>Number of Columns within (992px - 1999px)</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <source_model>unicase/system_config_source_setting_category_columns</source_model>
                             <sort_order>84</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1502,7 +1502,7 @@
 						<catgrid_3col_sm translate="label">
                             <label>Number of Columns within (768px - 991px)</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <source_model>unicase/system_config_source_setting_category_columns</source_model>
                             <sort_order>86</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1511,7 +1511,7 @@
 						<catgrid_3col_xs translate="label">
                             <label>Number of Columns within (480px - 767px)</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <source_model>unicase/system_config_source_setting_category_columns</source_model>
                             <sort_order>88</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1520,7 +1520,7 @@
 						<catgrid_3col_xxs translate="label">
                             <label>Number of Columns Below 480px</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_category_columns</source_model>
+                            <source_model>unicase/system_config_source_setting_category_columns</source_model>
                             <sort_order>90</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1675,7 +1675,7 @@
 						<product_layout translate="label">
                             <label>Product View Layout</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_productinfo_productlayouts</source_model>
+                            <source_model>unicase/system_config_source_setting_productinfo_productlayouts</source_model>
                             <sort_order>1</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1764,7 +1764,7 @@
 						<zoom_type translate="label">
                             <label>Zoom Type</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_elevate_zoomtype</source_model>
+                            <source_model>unicase/system_config_source_setting_elevate_zoomtype</source_model>
                             <sort_order>210</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1816,7 +1816,7 @@
 							<comment>
                                 <![CDATA[set lens type. Default: square]]>
                             </comment>
-							<source_model>kasuva/system_config_source_setting_elevate_lenstype</source_model>
+							<source_model>unicase/system_config_source_setting_elevate_lenstype</source_model>
                             <sort_order>230</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1825,7 +1825,7 @@
 						<elevate_bordersize translate="label">
                             <label>borderSize</label>
                             <frontend_type>select</frontend_type>
-							<source_model>kasuva/system_config_source_setting_elevate_borderwidth</source_model>
+							<source_model>unicase/system_config_source_setting_elevate_borderwidth</source_model>
 							<comment>
                                 <![CDATA[Border Size of the ZoomBox - Must be set here as border taken into account for plugin calculations. Default: 4px]]>
                             </comment>
@@ -1840,7 +1840,7 @@
 							<comment>
                                 <![CDATA[set Border Colour. Default: 888]]>
                             </comment>
-							<frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+							<frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>240</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1867,7 +1867,7 @@
 							<comment>
                                 <![CDATA[set Colour of the tint. Default: 333]]>
                             </comment>
-							<frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+							<frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>250</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1883,7 +1883,7 @@
 							<comment>
                                 <![CDATA[set opacity of the tint. Default: 0.4]]>
                             </comment>
-							<source_model>kasuva/system_config_source_setting_elevate_tintopacity</source_model>
+							<source_model>unicase/system_config_source_setting_elevate_tintopacity</source_model>
                             <sort_order>255</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -1946,7 +1946,7 @@
 						<elevate_cursor translate="label">
                             <label>cursor</label>
                             <frontend_type>select</frontend_type>
-							<source_model>kasuva/system_config_source_setting_elevate_cursortype</source_model>
+							<source_model>unicase/system_config_source_setting_elevate_cursortype</source_model>
 							<comment>
                                 <![CDATA[set cursor for zoom. Default: default]]>
                             </comment>
@@ -1987,7 +1987,7 @@
 						<product_tab_style translate="label">
                             <label>Tab Style</label>
                             <frontend_type>select</frontend_type>
-							<source_model>kasuva/system_config_source_setting_productinfo_tabstyles</source_model>
+							<source_model>unicase/system_config_source_setting_productinfo_tabstyles</source_model>
 							<comment>
                                 <![CDATA[set product tabs style. Default: Verticle]]>
                             </comment>
@@ -2235,7 +2235,7 @@
 						<relatedprod_1c_item translate="label">
                             <label>1 Column item</label>
                             <frontend_type>select</frontend_type>
-							<source_model>kasuva/system_config_source_setting_general_numberten</source_model>
+							<source_model>unicase/system_config_source_setting_general_numberten</source_model>
 							<comment>
                                 <![CDATA[set number of products for display related products in 1 Column. Default: Verticle]]>
                             </comment>
@@ -2247,7 +2247,7 @@
 						<relatedprod_2c_item translate="label">
                             <label>2 Columns item</label>
                             <frontend_type>select</frontend_type>
-							<source_model>kasuva/system_config_source_setting_general_numberten</source_model>
+							<source_model>unicase/system_config_source_setting_general_numberten</source_model>
 							<comment>
                                 <![CDATA[set number of products for display related products in 2 Columns. Default: Verticle]]>
                             </comment>
@@ -2259,7 +2259,7 @@
 						<relatedprod_3c_item translate="label">
                             <label>3 Columns item</label>
                             <frontend_type>select</frontend_type>
-							<source_model>kasuva/system_config_source_setting_general_numberten</source_model>
+							<source_model>unicase/system_config_source_setting_general_numberten</source_model>
 							<comment>
                                 <![CDATA[set number of products for display related products in 3 Columns. Default: Verticle]]>
                             </comment>
@@ -2365,7 +2365,7 @@
 						<upsellprod_1c_item translate="label">
                             <label>1 Column item</label>
                             <frontend_type>select</frontend_type>
-							<source_model>kasuva/system_config_source_setting_general_numberten</source_model>
+							<source_model>unicase/system_config_source_setting_general_numberten</source_model>
 							<comment>
                                 <![CDATA[set number of products for display upsell products in 1 Column. Default: Verticle]]>
                             </comment>
@@ -2377,7 +2377,7 @@
 						<upsellprod_2c_item translate="label">
                             <label>2 Columns item</label>
                             <frontend_type>select</frontend_type>
-							<source_model>kasuva/system_config_source_setting_general_numberten</source_model>
+							<source_model>unicase/system_config_source_setting_general_numberten</source_model>
 							<comment>
                                 <![CDATA[set number of products for display upsell products in 2 Columns. Default: Verticle]]>
                             </comment>
@@ -2389,7 +2389,7 @@
 						<upsellprod_3c_item translate="label">
                             <label>3 Columns item</label>
                             <frontend_type>select</frontend_type>
-							<source_model>kasuva/system_config_source_setting_general_numberten</source_model>
+							<source_model>unicase/system_config_source_setting_general_numberten</source_model>
 							<comment>
                                 <![CDATA[set number of products for display upsell products in 3 Columns. Default: Verticle]]>
                             </comment>
@@ -2464,7 +2464,7 @@
                         <new translate="label">
                             <label>Display New Label</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_productlabel_new</source_model>
+                            <source_model>unicase/system_config_source_setting_productlabel_new</source_model>
                             <sort_order>10</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -2473,7 +2473,7 @@
                         <sale translate="label">
                             <label>Display Sale Label</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>kasuva/system_config_source_setting_productlabel_sale</source_model>
+                            <source_model>unicase/system_config_source_setting_productlabel_sale</source_model>
                             <sort_order>20</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -2501,7 +2501,7 @@
 						<!--<showon translate="label">
                             <label>Show Page</label>
                             <frontend_type>select</frontend_type>
-							<source_model>kasuva/system_config_source_setting_newsletter_showon</source_model>
+							<source_model>unicase/system_config_source_setting_newsletter_showon</source_model>
                             <sort_order>20</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -2562,7 +2562,7 @@
 						<newsletter_pop_bgcolor>
                             <label>Popup Background Color</label>
                             <frontend_type>text</frontend_type>
-                            <frontend_model>kasuva/adminhtml_system_config_form_field_color</frontend_model>
+                            <frontend_model>unicase/adminhtml_system_config_form_field_color</frontend_model>
                             <sort_order>70</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -2573,8 +2573,8 @@
                             <comment>JPG,PNG,GIF</comment>
                             <frontend_type>image</frontend_type>
                             <backend_model>adminhtml/system_config_backend_image</backend_model>
-                            <upload_dir>media/wysiwyg/kasuva</upload_dir>
-                            <base_url type="media" scope_info="1">wysiwyg/kasuva</base_url>
+                            <upload_dir>media/wysiwyg/unicase</upload_dir>
+                            <base_url type="media" scope_info="1">wysiwyg/unicase</base_url>
                             <sort_order>80</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_default>1</show_in_default>
@@ -2659,7 +2659,7 @@
                                 <![CDATA[Click this button to create all static blocks provided with this theme.]]>
                             </comment>
                             <frontend_type>button</frontend_type>
-                            <frontend_model>kasuva/adminhtml_button_import_cms</frontend_model>
+                            <frontend_model>unicase/adminhtml_button_import_cms</frontend_model>
                             <process>blocks</process>
                             <sort_order>240</sort_order>
                             <show_in_default>1</show_in_default>
@@ -2690,7 +2690,7 @@
                                 <![CDATA[Click this button to create all CMS Pages provided with this theme.]]>
                             </comment>
                             <frontend_type>button</frontend_type>
-                            <frontend_model>kasuva/adminhtml_button_import_cms</frontend_model>
+                            <frontend_model>unicase/adminhtml_button_import_cms</frontend_model>
                             <process>pages</process>
                             <sort_order>430</sort_order>
                             <show_in_default>1</show_in_default>
@@ -2709,7 +2709,7 @@
                             <label>Demo 1</label>
                             <comment></comment>
                             <frontend_type>button</frontend_type>
-                            <frontend_model>kasuva/adminhtml_button_import_demos</frontend_model>
+                            <frontend_model>unicase/adminhtml_button_import_demos</frontend_model>
                             <process>import</process>
 							<demo>demo1</demo>
                             <sort_order>470</sort_order>
@@ -2721,7 +2721,7 @@
                             <label>Demo 2</label>
                             <comment></comment>
                             <frontend_type>button</frontend_type>
-                            <frontend_model>kasuva/adminhtml_button_import_demos</frontend_model>
+                            <frontend_model>unicase/adminhtml_button_import_demos</frontend_model>
 							<comment>
                                 <![CDATA[Furniture Demo]]>
                             </comment>
@@ -2735,6 +2735,6 @@
 					</fields>
 				</theme_install>
             </groups>
-        </kasuva_settings>
+        </unicase_settings>
     </sections>
 </config>

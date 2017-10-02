@@ -1,5 +1,5 @@
 <?php
-class daeon_kasuva_Model_System_Config_Source_Setting_Themesettings
+class Perfectus_Unicase_Model_System_Config_Source_Setting_Themesettings
 {
     public function toOptionArray()
     {

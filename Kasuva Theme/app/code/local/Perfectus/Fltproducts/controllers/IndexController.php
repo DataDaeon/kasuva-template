@@ -1,6 +1,6 @@
 <?php
 
-class daeon_Fltproducts_IndexController extends Mage_Core_Controller_Front_Action
+class Perfectus_Fltproducts_IndexController extends Mage_Core_Controller_Front_Action
 {
     public function indexAction()
     {

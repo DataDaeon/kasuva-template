@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <config>
 	<modules>
-		<daeon_Mainslider>
+		<Perfectus_Mainslider>
 			<version>0.2.6</version>
-		</daeon_Mainslider>
+		</Perfectus_Mainslider>
 	</modules>
 	<frontend>
 		<routers>
 			<mainslider>
 				<use>standard</use>
 				<args>
-					<module>daeon_Mainslider</module>
+					<module>Perfectus_Mainslider</module>
 					<frontName>mainslider</frontName>
 				</args>
 			</mainslider>
@@ -18,7 +18,7 @@
 		<layout>
 			<updates>
 				<mainslider>
-					<file>daeon_mainslider.xml</file>
+					<file>perfectus_mainslider.xml</file>
 				</mainslider>
 			</updates>
 		</layout>
@@ -28,7 +28,7 @@
 			<mainslider>
 				<use>admin</use>
 				<args>
-					<module>daeon_Mainslider</module>
+					<module>Perfectus_Mainslider</module>
 					<frontName>mainslider</frontName>
 				</args>
 			</mainslider>
@@ -46,10 +46,10 @@
 							<children>
 								<config>
 									<children>
-										<daeon_mainslider translate="title" module="mainslider">
+										<perfectus_mainslider translate="title" module="mainslider">
 											<title>Mainslider Configuration</title>
 											<sort_order>0</sort_order>
-										</daeon_mainslider>
+										</perfectus_mainslider>
 									</children>
 								</config>
 							</children>
@@ -61,7 +61,7 @@
 		<layout>
 			<updates>
 				<mainslider>
-					<file>daeon/daeon_mainslider.xml</file>
+					<file>perfectus/perfectus_mainslider.xml</file>
 				</mainslider>
 			</updates>
 		</layout>
@@ -69,17 +69,17 @@
 	<global>
 		<models>
 			<mainslider>
-				<class>daeon_Mainslider_Model</class>
+				<class>Perfectus_Mainslider_Model</class>
 				<resourceModel>mainslider_mysql4</resourceModel>
 			</mainslider>
 			<mainslider_mysql4>
-				<class>daeon_Mainslider_Model_Mysql4</class>
+				<class>Perfectus_Mainslider_Model_Mysql4</class>
 				<entities>		  
 					<mainslider>
-						<table>daeon_mainslider</table>
+						<table>perfectus_mainslider</table>
 					</mainslider>
 					<mainslider_store>
-						<table>daeon_mainslider_store</table>
+						<table>perfectus_mainslider_store</table>
 					</mainslider_store>
 				</entities>
 			</mainslider_mysql4>
@@ -87,7 +87,7 @@
 		<resources>
 			<mainslider_setup>
 				<setup>
-					<module>daeon_Mainslider</module>
+					<module>Perfectus_Mainslider</module>
 				</setup>
 				<connection>
 					<use>core_setup</use>
@@ -106,12 +106,12 @@
 		</resources>
 		<helpers>
 			<mainslider>
-				<class>daeon_Mainslider_Helper</class>
+				<class>Perfectus_Mainslider_Helper</class>
 			</mainslider>
 		</helpers>
 		<blocks>
 			<mainslider>
-				<class>daeon_Mainslider_Block</class>
+				<class>Perfectus_Mainslider_Block</class>
 			</mainslider>
 		</blocks>
 	</global>

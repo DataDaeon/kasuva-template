@@ -8,7 +8,7 @@
  */
 
 require_once(Mage::getBaseDir().'/app/code/core/Mage/Catalog/controllers/CategoryController.php');
-class daeon_Ajaxfilter_Catalog_CategoryController extends Mage_Catalog_CategoryController
+class Perfectus_Ajaxfilter_Catalog_CategoryController extends Mage_Catalog_CategoryController
 {
 
 	public function viewAction()

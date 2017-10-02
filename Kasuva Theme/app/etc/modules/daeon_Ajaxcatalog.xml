@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<config>
-    <modules>
-        <daeon_Ajaxcatalog>
-            <active>true</active>
-            <codePool>local</codePool>
-        </daeon_Ajaxcatalog>
-    </modules>
-</config>

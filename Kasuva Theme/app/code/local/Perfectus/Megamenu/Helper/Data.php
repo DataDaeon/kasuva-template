@@ -1,5 +1,5 @@
 <?php
-class daeon_Megamenu_Helper_Data extends Mage_Core_Helper_Abstract
+class Perfectus_Megamenu_Helper_Data extends Mage_Core_Helper_Abstract
 {
     private $_menuData = null;
 	private $_mobileContentArray = array();
@@ -13,7 +13,7 @@ class daeon_Megamenu_Helper_Data extends Mage_Core_Helper_Abstract
 	public function getCfg($name = null)
 	{
 		if($name){
-			$name='daeon_megamenu/'.$name;
+			$name='perfectus_megamenu/'.$name;
 			return Mage::getStoreConfig($name, Mage::app()->getStore()->getId());
 		}
 		return null;

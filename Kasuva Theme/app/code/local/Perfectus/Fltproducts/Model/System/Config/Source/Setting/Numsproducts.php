@@ -1,5 +1,5 @@
 <?php
-class daeon_Fltproducts_Model_System_Config_Source_Setting_Numsproducts
+class Perfectus_Fltproducts_Model_System_Config_Source_Setting_Numsproducts
 {
     public function toOptionArray()
     {

@@ -1,5 +1,5 @@
 <?php
-class daeon_Mainslider_Adminhtml_MainsliderController extends Mage_Adminhtml_Controller_Action
+class Perfectus_Mainslider_Adminhtml_MainsliderController extends Mage_Adminhtml_Controller_Action
 {
 		protected function _initAction()
 		{
@@ -27,7 +27,7 @@ class daeon_Mainslider_Adminhtml_MainsliderController extends Mage_Adminhtml_Con
 						$model->setData($data);
 					}
 					if($model->getPslideImage()!=''){
-						$img = 'daeon'. DS . 'mainslider' .DS. $model->getPslideImage();
+						$img = 'perfectus'. DS . 'mainslider' .DS. $model->getPslideImage();
 						$model->setPslideImage($img);
 					}
 					Mage::register("mainslider_data", $model);
@@ -70,7 +70,7 @@ class daeon_Mainslider_Adminhtml_MainsliderController extends Mage_Adminhtml_Con
 													$io->rm(Mage::getBaseDir('media').DS.implode(DS,explode('/',$model->getData('pslide_image'))));	
 											}
 										}
-										$path = Mage::getBaseDir('media') . DS .'daeon'. DS . 'mainslider' .DS;
+										$path = Mage::getBaseDir('media') . DS .'perfectus'. DS . 'mainslider' .DS;
 										$uploader = new Varien_File_Uploader('pslide_image');
 										$uploader->setAllowedExtensions(array('jpg','png','gif'));
 										$uploader->setAllowRenameFiles(false);
@@ -144,7 +144,7 @@ class daeon_Mainslider_Adminhtml_MainsliderController extends Mage_Adminhtml_Con
 		 */
 		public function exportCsvAction()
 		{
-			$fileName   = 'daeonMainslider.csv';
+			$fileName   = 'PerfectusMainslider.csv';
 			$grid       = $this->getLayout()->createBlock('mainslider/adminhtml_mainslider_grid');
 			$this->_prepareDownloadResponse($fileName, $grid->getCsvFile());
 		} 
@@ -153,7 +153,7 @@ class daeon_Mainslider_Adminhtml_MainsliderController extends Mage_Adminhtml_Con
 		 */
 		public function exportExcelAction()
 		{
-			$fileName   = 'daeonMainslider.xml';
+			$fileName   = 'PerfectusMainslider.xml';
 			$grid       = $this->getLayout()->createBlock('mainslider/adminhtml_mainslider_grid');
 			$this->_prepareDownloadResponse($fileName, $grid->getExcelFile($fileName));
 		}

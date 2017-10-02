@@ -19,10 +19,10 @@
 <stores><![CDATA[0]]></stores>
 </cms_block>
 <cms_block>
-<title><![CDATA[kasuva - Homepage 1]]></title>
-<identifier><![CDATA[kasuva-style-1]]></identifier>
+<title><![CDATA[Unicase - Homepage 1]]></title>
+<identifier><![CDATA[unicase-style-1]]></identifier>
 <root_template><![CDATA[one_column]]></root_template>
-<content><![CDATA[{{block type="mainslider/mainslider" name="mainslider" template="daeon/mainslider/slider.phtml"}}
+<content><![CDATA[{{block type="mainslider/mainslider" name="mainslider" template="perfectus/mainslider/slider.phtml"}}
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
@@ -33,7 +33,7 @@
 						<div class="wide-banner cnt-strip">
 							<a href="#" class="banner-wrapper zoom-effect">
 								<div class="image">
-									<img class="img-responsive" src="{{media url="wysiwyg/kasuva/f1.jpg"}}" alt="Banner 1" title="Banner1" width="360" height="161">
+									<img class="img-responsive" src="{{media url="wysiwyg/unicase/f1.jpg"}}" alt="Banner 1" title="Banner1" width="360" height="161">
 								</div>	
 								<div class="strip">
 									<div class="strip-inner">
@@ -48,7 +48,7 @@
 						<div class="wide-banner cnt-strip">
 							<a href="#" class="banner-wrapper zoom-effect">
 								<div class="image">
-									<img class="img-responsive" src="{{media url="wysiwyg/kasuva/f2.jpg"}}" alt="Banner 2" title="Banner 2" width="360" height="161">
+									<img class="img-responsive" src="{{media url="wysiwyg/unicase/f2.jpg"}}" alt="Banner 2" title="Banner 2" width="360" height="161">
 								</div>	
 								<div class="strip">
 									<div class="strip-inner text-center">
@@ -63,7 +63,7 @@
 						<div class="wide-banner cnt-strip">
 							<a href="#" class="banner-wrapper zoom-effect">
 								<div class="image">
-									<img class="img-responsive" src="{{media url="wysiwyg/kasuva/f3.jpg"}}" alt="Banner 3" title="Banner 3" width="360" height="161">
+									<img class="img-responsive" src="{{media url="wysiwyg/unicase/f3.jpg"}}" alt="Banner 3" title="Banner 3" width="360" height="161">
 								</div>	
 								<div class="strip">
 									<div class="strip-inner text-right">
@@ -81,7 +81,7 @@
 					<div class="col-md-12 col-sm-12">
 						<section class="section">
 							<h3 class="section-title">New Arrivals</h3>
-							{{block type="fltproducts/newproduct_home_list" name="newproducts" column_count="4" column_lg="4" column_md="3" column_sm="2" column_xs="1" limit="6" template="daeon/fltproducts/slider.phtml"}}
+							{{block type="fltproducts/newproduct_home_list" name="newproducts" column_count="4" column_lg="4" column_md="3" column_sm="2" column_xs="1" limit="6" template="perfectus/fltproducts/slider.phtml"}}
 						</section>
 					</div>
 				</div>
@@ -92,7 +92,7 @@
 						<div class="wide-banner cnt-strip banimg-8">
 							<a href="#" class="banner-wrapper border-effect">
 								<div class="image">
-									<img class="img-responsive" src="{{media url="wysiwyg/kasuva/f4.jpg"}}" alt="Banner" title="" width="750" height="161">
+									<img class="img-responsive" src="{{media url="wysiwyg/unicase/f4.jpg"}}" alt="Banner" title="" width="750" height="161">
 								</div>	
 								<div class="strip">
 									<div class="strip-inner">
@@ -108,7 +108,7 @@
 						<div class="wide-banner cnt-strip">
 							<a href="#" class="banner-wrapper border-effect">
 								<div class="image">
-									<img class="img-responsive" src="{{media url="wysiwyg/kasuva/f5.jpg"}}" alt="Banner" title="" width="360" height="161">
+									<img class="img-responsive" src="{{media url="wysiwyg/unicase/f5.jpg"}}" alt="Banner" title="" width="360" height="161">
 								</div>	
 								<div class="strip">
 									<div class="strip-inner text-center">
@@ -128,13 +128,13 @@
 					<div class="col-md-6 col-sm-12">
 						<section class="section">
 							<h3 class="section-title">New Arrivals</h3>
-							{{block type="fltproducts/bestsellers_home_list" column_count="2" column_lg="2" column_md="3" column_sm="2" column_xs="1" limit="4" template="daeon/fltproducts/slider.phtml"}}
+							{{block type="fltproducts/bestsellers_home_list" column_count="2" column_lg="2" column_md="3" column_sm="2" column_xs="1" limit="4" template="perfectus/fltproducts/slider.phtml"}}
 						</section>
 					</div>
 					<div class="col-md-6 col-sm-12">
 						<section class="section">
 							<h3 class="section-title">Special Deals</h3>
-							{{block type="fltproducts/specials_home_list" column_count="2" column_lg="2" column_md="3" column_sm="2" column_xs="1" limit="4" template="daeon/fltproducts/slider.phtml"}}
+							{{block type="fltproducts/specials_home_list" column_count="2" column_lg="2" column_md="3" column_sm="2" column_xs="1" limit="4" template="perfectus/fltproducts/slider.phtml"}}
 						</section>
 					</div>
 				</div>
@@ -143,7 +143,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<h3 class="section-title">Featured Products</h3>
-						{{block type="fltproducts/featured_home_list" name="featuredproducts" column_count="3" column_lg="3" column_md="3" column_sm="2" column_xs="1" row_count="2" limit="8" template="daeon/fltproducts/micro.phtml"}} 
+						{{block type="fltproducts/featured_home_list" name="featuredproducts" column_count="3" column_lg="3" column_md="3" column_sm="2" column_xs="1" row_count="2" limit="8" template="perfectus/fltproducts/micro.phtml"}} 
 					</div>
 				</div>
 			</section>
@@ -478,8 +478,8 @@ New York, NY 10120<br>
 <stores><![CDATA[0]]></stores>
 </cms_block>
 <cms_block>
-<title><![CDATA[kasuva - Homepage 2]]></title>
-<identifier><![CDATA[kasuva-style-2]]></identifier>
+<title><![CDATA[Unicase - Homepage 2]]></title>
+<identifier><![CDATA[unicase-style-2]]></identifier>
 <root_template><![CDATA[one_column]]></root_template>
 <content><![CDATA[<div class="container">
 <div class="outer-top-vs home-2columns-left">
@@ -492,7 +492,7 @@ New York, NY 10120<br>
 							<div class="container-fluid">
 								<div class="caption-main-content">
 									<div class="caption-content">
-										<a href="#"><img src="{{media url="wysiwyg/kasuva/mainslider-2/slide-1.jpg"}}" alt="slider" width="" height="" /></a>
+										<a href="#"><img src="{{media url="wysiwyg/unicase/mainslider-2/slide-1.jpg"}}" alt="slider" width="" height="" /></a>
 									</div>
 								</div>
 							</div>
@@ -501,7 +501,7 @@ New York, NY 10120<br>
 							<div class="container-fluid">
 								<div class="caption-main-content">
 									<div class="caption-content">
-										<a href="#"><img src="{{media url="wysiwyg/kasuva/mainslider-2/slide-2.jpg"}}" alt="slider" width="" height="" /></a>
+										<a href="#"><img src="{{media url="wysiwyg/unicase/mainslider-2/slide-2.jpg"}}" alt="slider" width="" height="" /></a>
 									</div>
 								</div>
 							</div>
@@ -510,7 +510,7 @@ New York, NY 10120<br>
 							<div class="container-fluid">
 								<div class="caption-main-content">
 									<div class="caption-content">
-										<a href="#"><img src="{{media url="wysiwyg/kasuva/mainslider-2/slide-3.jpg"}}" alt="slider" width="" height="" /></a>
+										<a href="#"><img src="{{media url="wysiwyg/unicase/mainslider-2/slide-3.jpg"}}" alt="slider" width="" height="" /></a>
 									</div>
 								</div>
 							</div>
@@ -579,7 +579,7 @@ New York, NY 10120<br>
 				<div class="row">
 					<div class="col-md-12 col-xs-12">
 						<h3 class="section-title">New Arrival</h3>
-						{{block type="fltproducts/newproduct_home_list" column_count='4' column_lg="3" column_md="3" column_sm="3" column_xs="2" limit="7" template="daeon/fltproducts/slider.phtml"}}
+						{{block type="fltproducts/newproduct_home_list" column_count='4' column_lg="3" column_md="3" column_sm="3" column_xs="2" limit="7" template="perfectus/fltproducts/slider.phtml"}}
 					</div>
 				</div>
 			</section>
@@ -589,7 +589,7 @@ New York, NY 10120<br>
 						<div class="wide-banner cnt-strip">
 							<a href="#" class="banner-wrapper border-effect">
 								<div class="image">
-									<img class="img-responsive" src="{{media url="wysiwyg/kasuva/b1.jpg"}}" alt="banner" title="banner" width="470" height="146" >
+									<img class="img-responsive" src="{{media url="wysiwyg/unicase/b1.jpg"}}" alt="banner" title="banner" width="470" height="146" >
 								</div>	
 								<div class="strip">
 									<div class="strip-inner">
@@ -604,7 +604,7 @@ New York, NY 10120<br>
 						<div class="wide-banner cnt-strip">
 							<a href="#" class="banner-wrapper border-effect">
 								<div class="image">
-									<img class="img-responsive" src="{{media url="wysiwyg/kasuva/b2.jpg"}}" alt="banner" title="banner" width="370" height="163">
+									<img class="img-responsive" src="{{media url="wysiwyg/unicase/b2.jpg"}}" alt="banner" title="banner" width="370" height="163">
 								</div>	
 								<div class="strip">
 									<div class="strip-inner">
@@ -621,7 +621,7 @@ New York, NY 10120<br>
 				<div class="row">
 					<div class="col-md-12 col-xs-12">
 						<h3 class="section-title">Best Seller</h3>
-						{{block type="fltproducts/bestsellers_home_list" column_count='3' column_lg="2" column_md="2" column_sm="2" column_xs="2" name="bestsellers" template="daeon/fltproducts/micro.phtml"}}
+						{{block type="fltproducts/bestsellers_home_list" column_count='3' column_lg="2" column_md="2" column_sm="2" column_xs="2" name="bestsellers" template="perfectus/fltproducts/micro.phtml"}}
 					</div>
 				</div>
 			</section>
@@ -631,7 +631,7 @@ New York, NY 10120<br>
 						<div class="wide-banner cnt-strip">
 							<a href="#" class="banner-wrapper zoom-effect">
 								<div class="image">
-									<img class="img-responsive" src="{{media url="wysiwyg/kasuva/b3.jpg"}}" alt="banner" title="banner" width="870" height="146" style="min-height:146px;">
+									<img class="img-responsive" src="{{media url="wysiwyg/unicase/b3.jpg"}}" alt="banner" title="banner" width="870" height="146" style="min-height:146px;">
 								</div>
 								<div class="strip">
 									<div class="strip-inner strip-left strip-long-text">
@@ -650,8 +650,8 @@ New York, NY 10120<br>
             {{widget type="blog/slider" blocks_count="6"}}
 		</div>
 		<div class="col-md-3 col-sm-12 col-xs-12 pull-left sidebar sidebar-home col-left">
-			{{block type="megamenu/sidebarnav" name="sidebarnav" template="daeon/megamenu/sidebar.phtml"}}
-			{{block type="fltproducts/specials_home_list" block-title="Special Offer" column_count="3" name="newproducts-sidebar" template="daeon/fltproducts/sidebar_block.phtml"}}
+			{{block type="megamenu/sidebarnav" name="sidebarnav" template="perfectus/megamenu/sidebar.phtml"}}
+			{{block type="fltproducts/specials_home_list" block-title="Special Offer" column_count="3" name="newproducts-sidebar" template="perfectus/fltproducts/sidebar_block.phtml"}}
 			{{block type="cms/block" block_id="sidebar_banners"}}
 			{{block type="newsletter/subscribe" name="newsletter" template="newsletter/homesidebar_subscribe.phtml"}}
 		</div>
@@ -876,11 +876,11 @@ New York, NY 10120<br>
 <stores><![CDATA[0]]></stores>
 </cms_block>
 <cms_block>
-<title><![CDATA[kasuva - Homepage 4]]></title>
-<identifier><![CDATA[kasuva-style-4]]></identifier>
+<title><![CDATA[Unicase - Homepage 4]]></title>
+<identifier><![CDATA[unicase-style-4]]></identifier>
 <root_template><![CDATA[one_column]]></root_template>
 <content><![CDATA[<div class="outer-top-vs column-1">
-	{{block type="mainslider/mainslider" name="mainslider" template="daeon/mainslider/slider.phtml"}}
+	{{block type="mainslider/mainslider" name="mainslider" template="perfectus/mainslider/slider.phtml"}}
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -889,7 +889,7 @@ New York, NY 10120<br>
 						<div class="col-md-12 col-sm-12">
 							<section class="section">
 								<h3 class="section-title">New Arrivals</h3>
-								{{block type="fltproducts/newproduct_home_list" name="newproducts" column_count="6" column_lg="5" column_md="4" column_sm="3" column_xs="2" limit="6" template="daeon/fltproducts/slider.phtml"}}
+								{{block type="fltproducts/newproduct_home_list" name="newproducts" column_count="6" column_lg="5" column_md="4" column_sm="3" column_xs="2" limit="6" template="perfectus/fltproducts/slider.phtml"}}
 							</section>
 						</div>
 					</div>
@@ -901,7 +901,7 @@ New York, NY 10120<br>
 							<div class="wide-banner cnt-strip banimg-8">
 								<a href="#" class="banner-wrapper zoom-effect">
 									<div class="image">
-										<img class="img-responsive" src="{{media url="wysiwyg/kasuva/furniture/banner-fur.jpg"}}" alt="Banner" title="" width="750" height="161">
+										<img class="img-responsive" src="{{media url="wysiwyg/unicase/furniture/banner-fur.jpg"}}" alt="Banner" title="" width="750" height="161">
 									</div>	
 									<div class="strip">
 										<div class="strip-inner">
@@ -917,7 +917,7 @@ New York, NY 10120<br>
 							<div class="wide-banner cnt-strip">
 								<a href="#" class="banner-wrapper zoom-effect">
 									<div class="image">
-										<img class="img-responsive" src="{{media url="wysiwyg/kasuva/furniture/banner-fur1.jpg"}}" alt="Banner" title="" width="360" height="161">
+										<img class="img-responsive" src="{{media url="wysiwyg/unicase/furniture/banner-fur1.jpg"}}" alt="Banner" title="" width="360" height="161">
 									</div>	
 									<div class="strip">
 										<div class="strip-inner text-center col-md-6 text-xs-left">
@@ -937,13 +937,13 @@ New York, NY 10120<br>
 						<div class="col-sm-6 col-xs-12">
 							<section class="section">
 								<h3 class="section-title">New Arrivals</h3>
-								{{block type="fltproducts/newproduct_home_list" column_count="3" column_lg="2" column_md="2" column_sm="3" column_xs="2" limit="4" template="daeon/fltproducts/slider.phtml"}}
+								{{block type="fltproducts/newproduct_home_list" column_count="3" column_lg="2" column_md="2" column_sm="3" column_xs="2" limit="4" template="perfectus/fltproducts/slider.phtml"}}
 							</section>
 						</div>
 						<div class="col-sm-6 col-xs-12">
 							<section class="section">
 								<h3 class="section-title">Special Deals</h3>
-								{{block type="fltproducts/specials_home_list" column_count="3" column_lg="2" column_md="2" column_sm="3" column_xs="2" limit="4" template="daeon/fltproducts/slider.phtml"}}
+								{{block type="fltproducts/specials_home_list" column_count="3" column_lg="2" column_md="2" column_sm="3" column_xs="2" limit="4" template="perfectus/fltproducts/slider.phtml"}}
 							</section>
 						</div>
 					</div>
@@ -952,7 +952,7 @@ New York, NY 10120<br>
 					<div class="row">
 						<div class="col-md-12">
 							<h3 class="section-title">Weekly Featured</h3>
-							{{block type="fltproducts/featured_home_list" name="featuredproducts" column_count="4" column_lg="3" column_md="2" column_sm="2" column_xs="1" row_count="2" limit="8" template="daeon/fltproducts/micro.phtml"}} 
+							{{block type="fltproducts/featured_home_list" name="featuredproducts" column_count="4" column_lg="3" column_md="2" column_sm="2" column_xs="1" row_count="2" limit="8" template="perfectus/fltproducts/micro.phtml"}} 
 						</div>
 					</div>
 				</section>
@@ -967,14 +967,14 @@ New York, NY 10120<br>
 <stores><![CDATA[0]]></stores>
 </cms_block>
 <cms_block>
-<title><![CDATA[kasuva - Homepage 3]]></title>
-<identifier><![CDATA[kasuva-style-3]]></identifier>
+<title><![CDATA[Unicase - Homepage 3]]></title>
+<identifier><![CDATA[unicase-style-3]]></identifier>
 <root_template><![CDATA[one_column]]></root_template>
 <content><![CDATA[<div class="container">
 <div class="outer-top-vs  home-1column">
 	<div class="row">
 		<div class="col-md-9 col-sm-12 col-xs-12 pull-right main col-main">
-			{{block type="mainslider/mainslider" name="mainslider" template="daeon/mainslider/slider.phtml"}}
+			{{block type="mainslider/mainslider" name="mainslider" template="perfectus/mainslider/slider.phtml"}}
 			<div class="info-boxes outer-top-xs wow fadeInUp">
 				<div class="info-boxes-inner">
 					<div class="row">
@@ -1022,7 +1022,7 @@ New York, NY 10120<br>
 			</div>
 		</div>
 		<div class="col-md-3 col-sm-12 col-xs-12 pull-left sidebar sidebar-home col-left">
-			{{block type="megamenu/sidebarnav" name="sidebarnav" template="daeon/megamenu/sidebar.phtml"}}
+			{{block type="megamenu/sidebarnav" name="sidebarnav" template="perfectus/megamenu/sidebar.phtml"}}
 		</div>
 		<div class="col-md-12 col-sm-12 col-xs-12">
 			<div id="product-tabs-slider" class="scroll-tabs wow fadeInUp animated">
@@ -1040,19 +1040,19 @@ New York, NY 10120<br>
 						</div>
 						<div class="tab-content outer-top-xs">
 							<div class="tab-pane active" id="tbnp-0">
-								{{block type="fltproducts/newproductcattabs_home_list" column_count="5" column_lg="4" column_md="3" column_sm="3" column_xs="1" category_ids="3,29,45,59" template="daeon/fltproducts/slider.phtml"}}
+								{{block type="fltproducts/newproductcattabs_home_list" column_count="5" column_lg="4" column_md="3" column_sm="3" column_xs="1" category_ids="3,29,45,59" template="perfectus/fltproducts/slider.phtml"}}
 							</div>
 							<div class="tab-pane" id="tbnp-1">
-								{{block type="fltproducts/newproductcattabs_home_list" column_count="5" column_lg="4" column_md="3" column_sm="3" column_xs="1" category_ids="3" template="daeon/fltproducts/slider.phtml"}}
+								{{block type="fltproducts/newproductcattabs_home_list" column_count="5" column_lg="4" column_md="3" column_sm="3" column_xs="1" category_ids="3" template="perfectus/fltproducts/slider.phtml"}}
 							</div>
 							<div class="tab-pane" id="tbnp-2">
-								{{block type="fltproducts/newproductcattabs_home_list" column_count="5" column_lg="4" column_md="3" column_sm="3" column_xs="1" category_ids="29" template="daeon/fltproducts/slider.phtml"}}
+								{{block type="fltproducts/newproductcattabs_home_list" column_count="5" column_lg="4" column_md="3" column_sm="3" column_xs="1" category_ids="29" template="perfectus/fltproducts/slider.phtml"}}
 							</div>
 							<div class="tab-pane" id="tbnp-3">
-								{{block type="fltproducts/newproductcattabs_home_list" column_count="5" column_lg="4" column_md="3" column_sm="3" column_xs="1" category_ids="45" template="daeon/fltproducts/slider.phtml"}}
+								{{block type="fltproducts/newproductcattabs_home_list" column_count="5" column_lg="4" column_md="3" column_sm="3" column_xs="1" category_ids="45" template="perfectus/fltproducts/slider.phtml"}}
 							</div>
 							<div class="tab-pane" id="tbnp-4">
-								{{block type="fltproducts/newproductcattabs_home_list" column_count="5" column_lg="4" column_md="3" column_sm="3" column_xs="1" category_ids="59" template="daeon/fltproducts/slider.phtml"}}
+								{{block type="fltproducts/newproductcattabs_home_list" column_count="5" column_lg="4" column_md="3" column_sm="3" column_xs="1" category_ids="59" template="perfectus/fltproducts/slider.phtml"}}
 							</div>
 						</div>
 					</div>
@@ -1065,7 +1065,7 @@ New York, NY 10120<br>
 						<div class="wide-banner cnt-strip banimg-8">
 							<a href="#" class="banner-wrapper border-effect">
 								<div class="image border-effect">
-									<img class="img-responsive" src="{{media url="wysiwyg/kasuva/furniture/banner-fur.jpg"}}" alt="Banner" title="" width="750" height="161">
+									<img class="img-responsive" src="{{media url="wysiwyg/unicase/furniture/banner-fur.jpg"}}" alt="Banner" title="" width="750" height="161">
 								</div>	
 								<div class="strip">
 									<div class="strip-inner">
@@ -1081,7 +1081,7 @@ New York, NY 10120<br>
 						<div class="wide-banner cnt-strip">
 							<a href="#" class="banner-wrapper border-effect">
 								<div class="image">
-									<img class="img-responsive" src="{{media url="wysiwyg/kasuva/furniture/banner-fur1.jpg"}}" alt="Banner" title="" width="360" height="161">
+									<img class="img-responsive" src="{{media url="wysiwyg/unicase/furniture/banner-fur1.jpg"}}" alt="Banner" title="" width="360" height="161">
 								</div>	
 								<div class="strip">
 									<div class="strip-inner text-center col-md-6 text-xs-left">
@@ -1100,15 +1100,15 @@ New York, NY 10120<br>
 				<div class="row">
 					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 						<h3 class="section-title">TRENDING</h3>
-						{{block type="fltproducts/allproducts_home_list" product_ids="23,9" column_count='1' row_count='2' limit="2" template="daeon/fltproducts/micro.phtml"}}
+						{{block type="fltproducts/allproducts_home_list" product_ids="23,9" column_count='1' row_count='2' limit="2" template="perfectus/fltproducts/micro.phtml"}}
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 						<h3 class="section-title">ON SALE</h3>						
-						{{block type="fltproducts/bestsellers_home_list" column_count='1' row_count='2' name="bestsellers" template="daeon/fltproducts/micro.phtml"}}
+						{{block type="fltproducts/bestsellers_home_list" column_count='1' row_count='2' name="bestsellers" template="perfectus/fltproducts/micro.phtml"}}
 					</div>
 					<div class="col-lg-4 col-md-4 hidden-sm col-xs-12">
 						<h3 class="section-title">TOP RATE</h3>
-						{{block type="fltproducts/allproducts_home_list" product_ids="10,2" column_count='1' row_count='2' limit="2" template="daeon/fltproducts/micro.phtml"}}
+						{{block type="fltproducts/allproducts_home_list" product_ids="10,2" column_count='1' row_count='2' limit="2" template="perfectus/fltproducts/micro.phtml"}}
 					</div>
 				</div>
 			</section>

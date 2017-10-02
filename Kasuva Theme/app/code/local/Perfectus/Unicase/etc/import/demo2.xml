@@ -5,7 +5,7 @@
 			<enabled>0</enabled>
 		</wysiwyg>
 	</cms_wysiwyg>
-	<kasuva_design>
+	<unicase_design>
         <basic>
             <general_color_themesettings>0</general_color_themesettings>
             <theme_color>684F39</theme_color>
@@ -91,8 +91,8 @@
             <product_tabs_abg>684F39</product_tabs_abg>
             <product_tabs_abg>FFFFFF</product_tabs_abg>
         </product_info>
-    </kasuva_design>
-	<kasuva_settings>
+    </unicase_design>
+	<unicase_settings>
         <general>
             <boxed>wide</boxed>
 			<product_btn_style>ucbs2-m</product_btn_style>
@@ -101,16 +101,16 @@
         </general>
         <header>
             <theme_logo>logo_3.png</theme_logo>
-            <logo_alt>kasuva</logo_alt>
+            <logo_alt>Unicase</logo_alt>
 			<header_contact>(400) 888 888 868 </header_contact>
-            <header_email>saler@kasuva.com </header_email>
+            <header_email>saler@unicase.com </header_email>
             <compare_link>1</compare_link>
             <sticky_nav>1</sticky_nav>
         </header>
         <footer>
             <active_footer_top>1</active_footer_top>
             <active_footer_bottom>1</active_footer_bottom>
-            <copyrights_text><![CDATA[Copyright &copy; 2016  kasuva -  All rights Reserved]]></copyrights_text>
+            <copyrights_text><![CDATA[Copyright &copy; 2016  Unicase -  All rights Reserved]]></copyrights_text>
         </footer>
         <category>
             <category_layout>0</category_layout>
@@ -239,8 +239,8 @@
 			<custom_gmap>contacts_google_map</custom_gmap>
 			<custom_store_info>contacts_store_information</custom_store_info>
 		</contacts>
-    </kasuva_settings>
-	<daeon_mainslider>
+    </unicase_settings>
+	<perfectus_mainslider>
         <settings>
             <mainslider_enable>1</mainslider_enable>
         </settings>
@@ -257,7 +257,7 @@
             <slider_effecttype>fade</slider_effecttype>
             <slider_infinite>1</slider_infinite>
         </options>
-    </daeon_mainslider>
+    </perfectus_mainslider>
     <price_ajaxfilter>
         <ajax_conf>
             <layered>1</layered>
@@ -302,7 +302,7 @@
             <ajaxpkt_active>1</ajaxpkt_active>
         </ajaxpkt_conf>
     </ajaxpkt>
-	<daeon_megamenu>
+	<perfectus_megamenu>
         <general>
             <enabled>1</enabled>
 			<web_menu>1</web_menu>
@@ -321,7 +321,7 @@
             <label_1><![CDATA[New]]></label_1>
             <label_2><![CDATA[Hot!]]></label_2>
         </category_labels>
-    </daeon_megamenu>
+    </perfectus_megamenu>
 	<fltproducts>
         <newprodcattabs>
             <active>1</active>

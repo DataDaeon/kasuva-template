@@ -1,5 +1,5 @@
 <?php
-class daeon_Megamenu_Model_Mysql4_Setup extends Mage_Eav_Model_Entity_Setup
+class Perfectus_Megamenu_Model_Mysql4_Setup extends Mage_Eav_Model_Entity_Setup
 {
     private $_category_attributes = array(
         'pu_megamenu_menu_type' => array(

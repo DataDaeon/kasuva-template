@@ -1,5 +1,5 @@
 <?php
-class daeon_Megamenu_Model_Category_Attribute_Source_Menutype  extends Mage_Eav_Model_Entity_Attribute_Source_Abstract
+class Perfectus_Megamenu_Model_Category_Attribute_Source_Menutype  extends Mage_Eav_Model_Entity_Attribute_Source_Abstract
 {    
     public function getAllOptions()
     {

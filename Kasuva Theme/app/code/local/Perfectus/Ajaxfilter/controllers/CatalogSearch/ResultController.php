@@ -3,7 +3,7 @@
  * Catalog Search Controller
  */
 include_once 'Mage/CatalogSearch/controllers/ResultController.php';
-class daeon_Ajaxfilter_CatalogSearch_ResultController extends Mage_CatalogSearch_ResultController
+class Perfectus_Ajaxfilter_CatalogSearch_ResultController extends Mage_CatalogSearch_ResultController
 {
 	public function indexAction()
 	{

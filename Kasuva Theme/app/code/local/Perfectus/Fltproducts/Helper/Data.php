@@ -1,5 +1,5 @@
 <?php
-class daeon_Fltproducts_Helper_Data extends Mage_Core_Helper_Abstract
+class Perfectus_Fltproducts_Helper_Data extends Mage_Core_Helper_Abstract
 {
 	public function getNewProdsCategories($_productCollection,$cat_limit){
 		$newcat_ar=array();

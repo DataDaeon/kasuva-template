@@ -18,10 +18,10 @@
       						</config>
       					</children>
       				</system>
-						<daeon_Fltproducts>
+						<Perfectus_Fltproducts>
 							<title>FilterProducts Module</title>
 							<sort_order>10</sort_order>
-						</daeon_Fltproducts>
+						</Perfectus_Fltproducts>
 					</children>
 				</admin>
 			</resources>

@@ -1,43 +1,43 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <daeon_Ajaxfilter>
+        <Perfectus_Ajaxfilter>
             <version>1.0.0</version>
-        </daeon_Ajaxfilter>
+        </Perfectus_Ajaxfilter>
     </modules>
     <global>
         <helpers>
             <ajaxfilter>
-                <class>daeon_Ajaxfilter_Helper</class>
+                <class>Perfectus_Ajaxfilter_Helper</class>
             </ajaxfilter>
         </helpers>
         <blocks>
             <ajaxfilter>
-                <class>daeon_Ajaxfilter_Block</class>
+                <class>Perfectus_Ajaxfilter_Block</class>
             </ajaxfilter>
             <catalog>
                 <rewrite>
-                    <layer_filter_price>daeon_Ajaxfilter_Block_Catalog_Layer_Filter_Price</layer_filter_price>
+                    <layer_filter_price>Perfectus_Ajaxfilter_Block_Catalog_Layer_Filter_Price</layer_filter_price>
                 </rewrite>
             </catalog>
         </blocks>
         <models>
             <catalog>
                 <rewrite>
-                    <layer>daeon_Ajaxfilter_Model_Catalog_Layer</layer>
+                    <layer>Perfectus_Ajaxfilter_Model_Catalog_Layer</layer>
                 </rewrite>
             </catalog>
             <catalogsearch>
                 <rewrite>
-                    <layer>daeon_Ajaxfilter_Model_Catalogsearch_Layer</layer>
+                    <layer>Perfectus_Ajaxfilter_Model_Catalogsearch_Layer</layer>
                 </rewrite>
             </catalogsearch>
         </models>
         <resources>
             <ajaxfilter_setup>
                 <setup>
-                    <module>daeon_Ajaxfilter</module>
-                    <class>daeon_Ajaxfilter_Model_Resource_Setup</class>
+                    <module>Perfectus_Ajaxfilter</module>
+                    <class>Perfectus_Ajaxfilter_Model_Resource_Setup</class>
                 </setup>
                 <connection>
                     <use>core_setup</use>
@@ -59,7 +59,7 @@
 		<layout>
 			<updates>
 				<ajaxfilter>
-					<file>daeon/daeon_ajaxfilter.xml</file>
+					<file>perfectus/perfectus_ajaxfilter.xml</file>
 				</ajaxfilter>
 			</updates>
 		</layout>
@@ -68,7 +68,7 @@
         <layout>
             <updates>
                 <ajaxfilter>
-                    <file>daeon_ajaxfilter.xml</file>
+                    <file>perfectus_ajaxfilter.xml</file>
                 </ajaxfilter>
             </updates>
         </layout>
@@ -76,21 +76,21 @@
             <ajaxfilter>
                 <use>standard</use>
                 <args>
-                    <module>daeon_Ajaxfilter</module>
+                    <module>Perfectus_Ajaxfilter</module>
                     <frontName>ajaxfilter</frontName>
                 </args>
             </ajaxfilter>
             <catalog>
                 <args>
                     <modules>
-                        <daeon_Ajaxfilter before="Mage_Catalog">daeon_Ajaxfilter_Catalog</daeon_Ajaxfilter>
+                        <Perfectus_Ajaxfilter before="Mage_Catalog">Perfectus_Ajaxfilter_Catalog</Perfectus_Ajaxfilter>
                     </modules>
                 </args>
             </catalog>
             <catalogsearch>
                 <args>
                     <modules>
-                        <daeon_Ajaxfilter before="Mage_CatalogSearch">daeon_Ajaxfilter_CatalogSearch</daeon_Ajaxfilter>
+                        <Perfectus_Ajaxfilter before="Mage_CatalogSearch">Perfectus_Ajaxfilter_CatalogSearch</Perfectus_Ajaxfilter>
                     </modules>
                 </args>
             </catalogsearch>

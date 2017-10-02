@@ -1,5 +1,5 @@
 <?php
-class daeon_Fltproducts_Block_Lastordered_Home_List extends daeon_Fltproducts_Block_Lastordered_List
+class Perfectus_Fltproducts_Block_Lastordered_Home_List extends Perfectus_Fltproducts_Block_Lastordered_List
 {
 	protected $_productFltCollection;
 	

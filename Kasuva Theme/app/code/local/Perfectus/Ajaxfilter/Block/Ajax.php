@@ -1,6 +1,6 @@
 <?php 
 
-class daeon_Ajaxfilter_Block_Ajax extends Mage_Core_Block_Template{
+class Perfectus_Ajaxfilter_Block_Ajax extends Mage_Core_Block_Template{
 	public function __construct(){
 		
 		$this->config = Mage::getStoreConfig('price_ajaxfilter');
@@ -15,9 +15,9 @@ class daeon_Ajaxfilter_Block_Ajax extends Mage_Core_Block_Template{
 		$this->loadingTextColor = $this->config['ajax_conf']['loading_text_color'];
 		$this->loadingImage = $this->config['ajax_conf']['loading_image'];
 		if($this->loadingImage == '' || $this->loadingImage == null){
-			$this->loadingImage = $this->url.'daeon/ajaxfilter/default/ajax-loader.gif';
+			$this->loadingImage = $this->url.'perfectus/ajaxfilter/default/ajax-loader.gif';
 		}else{
-			$this->loadingImage = $this->url.'daeon/ajaxfilter/'.$this->loadingImage;
+			$this->loadingImage = $this->url.'perfectus/ajaxfilter/'.$this->loadingImage;
 		}	
 	}
 	

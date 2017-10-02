@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <config>
 	<tabs>
-		<kasuvaexnsions translate="label" module="blog">
-			<label>kasuva Extensions</label>
+		<unicaseexnsions translate="label" module="blog">
+			<label>Unicase Extensions</label>
 			<sort_order>300</sort_order>
-		</kasuvaexnsions>
+		</unicaseexnsions>
 	</tabs>
     <sections>
         <blog translate="label" module="blog">
             <label>Blog</label>
-            <tab>kasuvaexnsions</tab>
+            <tab>unicaseexnsions</tab>
             <frontend_type>text</frontend_type>
             <sort_order>100</sort_order>
             <show_in_default>1</show_in_default>

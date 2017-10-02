@@ -1,5 +1,5 @@
 <?php
-class daeon_Mainslider_Model_Mainslider extends Mage_Core_Model_Abstract
+class Perfectus_Mainslider_Model_Mainslider extends Mage_Core_Model_Abstract
 {
 	protected static $_url = null;
     protected function _construct(){

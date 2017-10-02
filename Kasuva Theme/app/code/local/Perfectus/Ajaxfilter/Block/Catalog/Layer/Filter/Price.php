@@ -1,5 +1,5 @@
 <?php
-class daeon_Ajaxfilter_Block_Catalog_Layer_Filter_Price extends Mage_Catalog_Block_Layer_Filter_Price 
+class Perfectus_Ajaxfilter_Block_Catalog_Layer_Filter_Price extends Mage_Catalog_Block_Layer_Filter_Price 
 {
     	
 	public $_currentCategory;
@@ -27,7 +27,7 @@ class daeon_Ajaxfilter_Block_Catalog_Layer_Filter_Price extends Mage_Catalog_Blo
 		$this->setMinPrice();
 		$this->setMaxPrice();
 		$this->setCurrentPrices();
-		$this->_imagePath = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'daeon/ajaxfilter/';
+		$this->_imagePath = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'perfectus/ajaxfilter/';
 		
 		parent::__construct();		
 	}

@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Kasuva Magento Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <script src="assets/js/jquery.min.js"></script>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <!--[if lte IE 9]>
+			<script src="assets/js/html5shiv.min.js"></script>
+		<![endif]-->
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar" data-offset-top="0">
+        <div class="container">
+        <div class="bs-docs-sidebar">
+            <ul id="accordion" class="nav nav-list bs-docs-sidenav">
+                <li><a href="#welcome">Welcome</a></li>
+                <li><a href="#magento_theme_instruction">Magento Theme Instruction</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#homepage_demos">Home Page Demos</a></li>
+                <li><a href="#magento_installation">Magento Installation</a></li>
+                <li><a href="#theme_quickstart">Quickstart Installation</a></li>
+                <li class="panel"><a class="toggle" href="#theme_installation_dw" data-toggle="collapse" data-parent="#documenter_nav">Theme Installation <i class="fa fa-chevron-down"></i></a>
+                    <ul id="theme_installation_dw" class="collapse">
+                        <li><a href="#theme_installation" title="Upload Theme">Upload Theme Files</a></li>
+                        <li><a href="#theme_setup" title="Theme Setup">Theme Setup</a></li>
+                    </ul>
+                </li>
+                <li class="panel"><a class="toggle" href="#theme_demo_installation_dw" data-toggle="collapse" data-parent="#documenter_nav">Demo Installation <i class="fa fa-chevron-down"></i></a>
+                    <ul id="theme_demo_installation_dw" class="collapse">
+                        <li><a href="#theme_demo_installation" title="Import Static Block & Pages">Import Static Blocks & Pages</a></li>
+                        <li><a href="#theme_demo" title="Import Demo">Import Demo</a></li>
+                    </ul>
+                </li>
+                <li class="panel"><a class="toggle" href="#theme_configuration_dw" data-toggle="collapse" data-parent="#documenter_nav">Theme Configuration <i class="fa fa-chevron-down"></i></a>
+                    <ul id="theme_configuration_dw" class="collapse">
+                        <li><a href="#homepage_configuration" title="Homepage Configuration">Homepage Configuration</a></li>
+                        <li><a href="#menu_configuration" title="Menu Configuration">Menu Configuration</a></li>
+                        <li><a href="#edit_cms_block">Edit CMS Blocks</a></li>
+                        <li><a href="#edit_cms_pages">Edit CMS Pages</a></li>
+                        <li><a href="#theme_translation">Translation</a></li>
+                    </ul>
+                </li>
+                <li class="panel"><a class="toggle" href="#theme_options_dw" data-toggle="collapse" data-parent="#documenter_nav">Theme Options <i class="fa fa-chevron-down"></i></a>
+                    <ul id="theme_options_dw" class="collapse">
+                        <li class="panel"><a class="toggle" href="#theme_op_Unicase_design_dw" data-toggle="collapse" data-parent="#documenter_nav">Unicase Design <i class="fa fa-chevron-down"></i></a>
+                            <ul id="theme_op_Unicase_design_dw" class="collapse">
+                                <li><a href="#theme_dg_general" title="General">General</a></li>
+                                <li><a href="#theme_dg_header" title="Header">Header</a></li>
+                                <li><a href="#theme_dg_footer" title="Footer">Footer</a></li>
+                                <li><a href="#theme_dg_megamenu" title="Mega Menu">Mega Menu</a></li>
+                                <li><a href="#theme_dg_fonts" title="Fonts">Fonts</a></li>
+                                <li><a href="#theme_dg_category" title="Category">Category</a></li>
+                                <li><a href="#theme_dg_product_info" title="Product Info">Product Info</a></li>
+                            </ul>
+                        </li>
+                        <li class="panel"><a class="toggle" href="#theme_op_Unicase_settings_dw" data-toggle="collapse" data-parent="#documenter_nav">Unicase Settings <i class="fa fa-chevron-down"></i></a>
+                            <ul id="theme_op_Unicase_settings_dw" class="collapse">
+                                <li><a href="#theme_st_general" title="General">General</a></li>
+                                <li><a href="#theme_st_header" title="Header">Header</a></li>
+                                <li><a href="#theme_st_footer" title="Footer">Footer</a></li>
+                                <li><a href="#theme_st_category" title="Category">Category</a></li>
+                                <li><a href="#theme_st_category_products" title="Category Products">Category Products</a></li>
+                                <li><a href="#theme_st_product_info" title="Product Info">Product Info</a></li>
+                                <li><a href="#theme_st_product_slider" title="Product Slider">Product Slider</a></li>
+                                <li><a href="#theme_st_product_related" title="Product Related">Product Related</a></li>
+                                <li><a href="#theme_st_product_upsell" title="Product Upsell">Product Upsell</a></li>
+                                <li><a href="#theme_st_product_labels" title="Product Labels">Product Labels</a></li>
+                                <li><a href="#theme_st_newsletter_popup" title="Newsletter Popup">Newsletter Popup</a></li>
+                                <li><a href="#theme_st_contactus" title="Contact Us">Contact Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="panel"><a class="toggle" href="#theme_extensions_dw" data-toggle="collapse" data-parent="#documenter_nav">Extension <i class="fa fa-chevron-down"></i></a>
+                    <ul id="theme_extensions_dw" class="collapse">
+                        <li class="panel"><a class="toggle" href="#theme_ext_pu_dw" data-toggle="collapse" data-parent="#documenter_nav">Perfectus Extension <i class="fa fa-chevron-down"></i></a>
+                            <ul id="theme_ext_pu_dw" class="collapse">
+                                <li><a href="#theme_ext_pu_mainslider" title="Main Slider">Main Slider</a></li>
+                                <li><a href="#theme_ext_pu_ajaxfilter" title="Ajax Filter">Ajax Filter</a></li>
+                                <li><a href="#theme_ext_pu_ajxpkt" title="AjaxPkt">AjaxPkt</a></li>
+                                <li><a href="#theme_ext_pu_megamenu" title="Megamenu">Megamenu</a></li>
+                                <li><a href="#theme_ext_pu_filterproducts" title="Filter Products">Filter Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="panel"><a class="toggle" href="#theme_ext_com_dw" data-toggle="collapse" data-parent="#documenter_nav">Compatible Extension <i class="fa fa-chevron-down"></i></a>
+                            <ul id="theme_ext_com_dw" class="collapse">
+                                <li><a href="#theme_ext_pu_blog" title="Blog">Blog</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#theme_faq">FAQ</a></li>
+                <li><a href="#change_log">Change Log</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="span8">
+                <section id="welcome">
+                    <div class="page-header">
+                        <h1>Welcome to Magento Documentation!</h1>
+                    </div>
+                    <ul>
+                        <li>Version: 1.0.0</li>
+                        <li>By: <strong class="by">PerfectusInc</strong></li>
+                    </ul>
+                </section>
+                <section id="magento_theme_instruction">
+                    <div class="page-header">
+                        <h3>Magento Theme Instruction</h3>
+                    </div>
+                    <p>We are extremely happy to present <strong>this Magento Theme</strong> to you, it is designed and developed by highly qualified Designer &amp; Developers in a way that make it usable for any type of <strong>E-Commerce store</strong>.</p>
+                    <p>Please follow this guide carefully to get started with <strong>Unicase</strong>.</p>
+                </section>
+                <section id="features">
+                    <div class="page-header">
+                        <h3>Features</h3></div>
+                    <h4>Highlights</h4>
+                    <ul>
+                        <li>Easily Setup & Customize</li>
+                        <li>Bootstraps HTML5/CSS3</li>
+                        <li>Fully Responsive</li>
+                        <li>Multi Language</li>
+                        <li>Custom Main Slider with Animation</li>
+                        <li>AJAX Add to Cart, Wishlist, Compare and Quickview</li>
+                        <li>AJAX Layered Navigation</li>
+                        <li>Mega Menu, Verticle Mega Menu and Mobile Menu</li>
+                        <li>Products Slider(Crouasel Style, Micro Style) + Banner Slider</li>
+                        <li>Product Images Elevate Zoom(All options support) With Lightbox</li>
+                        <li>Full Width & Boxed Layouts</li>
+                        <li>Unlimited Theme color</li>
+                        <li>500+ Google Fonts support</li>
+                        <li>Custom columns of Homepage, Product Listing and Product detail page.</li>
+                        <li>Blog</li>
+                        <li>Newsletter Popup</li>
+                        <li>Various style of display category info.</li>
+                        <li>Custom Color Swatches</li>
+                        <li>Display Product Alternate Image</li>
+                        <li>Custom Blocks of Inner Pages</li>
+                    </ul>
+                    <h4 class="sub_header">General</h4>
+                    <ul>
+                        <li>Compatible with Magento 1.9.x, 1.8.x, 1.7.x</li>
+                        <li>Cross Browser Support</li>
+                    </ul>
+                </section>
+                <section id="magento_installation">
+                    <div class="page-header">
+                        <h3>Magento Installation</h3></div>
+                    <p>Thank you very much for purchasing! In this document you will find all the information about how to setup and configure this theme in your Magento Installation.</p>
+                    <h4>System Requirements</h4>
+                    <p>Unicase only supports Magento Community Edition 1.9.x, 1.8.x, 1.7.x which can be downloaded from <u><a href="http://www.magentocommerce.com/download">http://www.magentocommerce.com/download</a></u>.</p>
+                    <p>It does not support Magento Enterprise Edition and Magento GO. Before downloading Magento, make sure you meet the system requirements and test the compatibility of your server.</p>
+                    <p>For help with installing Magento, please refer to the following links:</p>
+                    <ul>
+                        <li><u><a href="http://www.magentocommerce.com/system-requirements/">Magento System Requirements</a></u></li>
+                        <li><u><a href="http://www.magentocommerce.com/knowledge-base/entry/how-do-i-know-if-my-server-is-compatible-with-magento">Server Compatibility Check</a></u></li>
+                        <li><u><a href="http://devdocs.magento.com/guides/m1x/install/installing_install.html">Magento Installation Guide</a></u></li>
+                    </ul>
+                </section>
+                <section id="theme_quickstart">
+                    <div class="page-header">
+                        <h3>Quickstart Installation</h3></div>
+                    <p>In this theme package we included sample data with settings of demo version. Follow the instructions below in order to install exactly the same store as on demo version:</p>
+                    <ul>
+                        <li>
+                            <h4>Uploading Quickstart Files</h4>
+                            <p>Log into your hosting space via a FTP software. ie, FileZilla.</p>
+                            <p>Unzip <code>Theme Package > Quickstart Package > Unicase_quickstart_v1.0.zip</code> and upload all directories and files to your root directory.
+                        </li>
+                        <li>
+                            <h4>Import Database</h4>
+                            <p>Create a new database, and import loacated <code>Theme Package > Quickstart Package > Database > Unicase_demo_v1.0.zip</code> zip file into your database.</p>
+                        </li>
+                        <li>Open browser and proceed to the folder where magento was unzipped and load default Magento setup wizard</li>
+                        <li>Follow the wizard’s instructions and finish magento installation</li>
+                        <li>After installation clear magento cache go to <code>System > Cache Management</code> and Reindex magento data go to <code>System > Index Management</code></li>
+                        </u>
+                </section>
+                <section id="theme_installation">
+                    <div class="page-header">
+                        <h3>Theme Installation</h3></div>
+                    <h4 class="sub_header" id="upload_theme">Uploading Theme Files</h4>
+                    <p>Before you begin the installation process, we recommend to <strong>backup</strong> your previous Magento installation and database.</p>
+                    <ul>
+                        <li>Unzip downloaded folder <code>Theme Package > Theme Files > Unicase Theme.zip</code></li>
+                        <li>Upload / Copy all files / folders from folder <strong>&ldquo;Magento Files&rdquo;</strong> to your Magento <strong>root</strong> directory, if you are using <strong>Mac</strong>, please make sure you are merging and not replacing Magento directory.</li>
+                        <li>Disable compilation mode in <code>System > Tools > Compilation</code></li>
+                        <li>
+                            <div class="alert alert-warning">
+                                <strong>Warning!</strong> : After upload all the files and folders please don't forgot to <strong>remove</strong> all cache and session file from <strong>' var > cache > '</strong> and <strong>' var > session > '</strong> folder and relogin to the admin after logout.
+                            </div>
+                        </li>
+                        <li>Log out from magento admin panel and log in again.</li>
+                    </ul>
+                    <h4 class="sub_header" id="theme_setup">Theme Setup</h4>
+                    <ul>
+                        <li>Login to the Magento Admin Panel.</li>
+                        <li>Go To: <code>System > Configuration</code> Click on <strong>Design </strong>on the left menu
+                            <ul>
+                                <li>Under Package Tab put <code>perfectus</code>into current package name</li>
+                                <li>Next Go to the Theme Tab and put <code>Unicase</code>into Templates, Skin, Layout, Default input boxes.
+                                    <img src="assets/images/theme_setting.png" class="img" alt="Theme Settings">
+                                </li>
+                                <li>Under Header tab put &ldquo;<strong>images/logo.png</strong>&rdquo; into &#39;Logo image Src&#39; Field</li>
+                                <li>You can also enter the <strong>Image alter text</strong> and <strong>Default Welcome Text</strong>
+                                    <img src="assets/images/design_header_logo.png" class="img" alt="Theme Logo">
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Scroll back to the top of the page and click the <strong>Save Config </strong>button</li>
+                        <li>Next, go to <code>System &gt; Cache Management</code> from the top navigation menu. You will need to clear the store <strong>cache</strong> and all cookies.</li>
+                        <li>Click the following buttons (<strong>in orange</strong>): Flush Magento Cache, Flush Cache Storage, Flush JavaScript/CSS Cache, and Flush Catalog Images Cache (optional). Now you are ready to add content to your website.</li>
+                    </ul>
+                </section>
+                <section id="theme_demo_installation">
+                    <div class="page-header">
+                        <h3>Demo Installation</h3></div>
+                    <h4 id="theme_import_block_pages">Import Theme CMS Blocks and Page</h4>
+                    <ul>
+                        <li>Go to: <code>Unicase > Theme Settings > Theme Installation</code> to import static blocks and pages.
+                            <img src="assets/images/theme_import_block_pages.png" class="img" alt="Import Static Blocks & Pages">
+                        </li>
+                    </ul>
+                    <h4 class="sub_header" id="theme_demo">Import Demo</h4>
+                    <ul>
+                        <li>Go to: <code>Unicase > Theme Settings > Theme Installation</code> to demo theme settings.
+                            <img src="assets/images/theme_import_demo.png" class="img" alt="Import demo theme settings">
+                        </li>
+                    </ul>
+                </section>
+                <section id="homepage_configuration">
+                    <div class="page-header">
+                        <h3>Homepage Configuration</h3></div>
+                    <h4>How to setup homepage!</h4>
+                    <p>for set homepage to go <code>system > configuration > Web > Default Pages</code> panel section and set <strong>CMS Home Page</strong> homepage version want to display.</p>
+                    <h4 id="show_main_slider">Show Homagepage Main Slider!</h4>
+                    <p>To show homepage main slider use below code in static page. For more main slider info go to <a href="#theme_ext_pu_mainslider">Main Slider Extension.</a></p>
+                    <pre><code>{{block type="mainslider/mainslider" name="mainslider" template="perfectus/mainslider/slider.phtml"}}</code></pre>
+                    <h4 class="sub_header" id="theme_demo">Show Products In Homepage!</h4>
+                    <p>To show Products in home page use below products type of code For more info go to <a href="#">Filter Products Extension</a></p>
+                    <p><span class="theme--color"><i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;<strong>New Products</strong></span> - It shows the products which "New from Date" or "New to Date" product attributes are inputed.</p>
+                    <pre><code>{{block type="fltproducts/newproduct_home_list" name="newproducts" column_count="4" column_lg="3" column_md="3" column_sm="2" column_xs="2" limit="6" template="perfectus/fltproducts/slider.phtml"}}</code></pre>
+                    <br/>
+                    <p><span class="theme--color"><i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;<strong>Featured Products</strong></span> - It shows the products which "Featured" attribute is "yes".</p>
+                    <pre><code>{{block type="fltproducts/featured_home_list" name="featuredprodeucts" column_count="4" limit="6" template="perfectus/fltproducts/slider.phtml"}}</code></pre>
+                    <br/>
+                    <p><span class="theme--color"><i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;<strong>Bestsellers Products</strong></span> - It shows the products by selling automatically.</p>
+                    <pre><code>{{block type="fltproducts/bestsellers_home_list" name="bestsellers" column_count="4" limit="6" template="perfectus/fltproducts/slider.phtml"}}</code></pre>
+                    <br/>
+                    <p><span class="theme--color"><i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;<strong>Specials Products</strong></span> - It shows the products which "Special Price From Date" or "Special Price To Date" product attributes are inputed.</p>
+                    <pre><code>{{block type="fltproducts/specials_home_list" name="bestsellers" column_count="4" limit="6" template="perfectus/fltproducts/slider.phtml"}}</code></pre>
+                    <br/>
+                    <p><span class="theme--color"><i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;<strong>Mostviewed Products</strong></span> - It shows the products most viewed.</p>
+                    <pre><code>{{block type="fltproducts/mostviewed_home_list" name="mostviewed" column_count="4" limit="6" template="perfectus/fltproducts/slider.phtml"}}</code></pre>
+                    <br/>
+                    <p><span class="theme--color"><i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;<strong>All Products</strong></span> - It shows all products.</p>
+                    <pre><code>{{block type="fltproducts/allproducts_home_list" name="allproducts" column_count="4" limit="6" template="perfectus/fltproducts/slider.phtml"}}</code></pre>
+                    <br/>
+                    <p><span class="theme--color"><i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;<strong>Promotional Products</strong></span></p>
+                    <pre><code>{{block type="fltproducts/promotional_home_list" name="promotionalproducts" column_count="4" limit="6" template="perfectus/fltproducts/slider.phtml"}}</code></pre>
+                    <br/>
+                    <p><span class="theme--color"><i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;<strong>Recently Ordered Products</strong></span> - It shows last ordered products.</p>
+                    <pre><code>{{block type="fltproducts/lastordered_home_list" name="recentlyordered" column_count="4" limit="6" template="perfectus/fltproducts/slider.phtml"}}</code></pre>
+                    <img class="img" src="assets/images/homepage_products.png" title="Homepage Products" />
+                </section>
+                <section id="menu_configuration">
+                    <div class="page-header">
+                        <h3>Mega Menu Configuration</h3></div>
+                    <p>Please follow below step to set Megamenu. For more Megamenu info please go to <a href="#">Megamenu Extension.</a></p>
+                    <ul>
+                        <li>Go to:<code>Catalog > Manage Categories</code> and click on your categories</li>
+                        <li>Now you can see there tab with the name <strong>"Megamenu"</strong> , Click on that tab to see options. </li>
+                        <li>Set the following option under <strong>&#39;Megamenu&#39;</strong> Tab</p>
+                            <ul>
+                                <li><strong><em>Show in Menu</em> &gt;</strong> Here you can set the category which display on frontend Navigation Megamenu.</li>
+                                <li><strong><em>Show in Verticle Menu</em> &gt;</strong> Here you can set the category which display on frontend Verticle Megamenu</li>
+                                <li><strong><em>Menu Type</em> &gt;</strong> Here you can set menu style like 'Default', 'Full Width', 'Dropdown Style' and 'Custom' for each category.
+                                    <ul>
+                                        <li><strong>Default &gt;</strong> when you set default it will affected from <code>Unicase Extension > Megamenu >  Default Menu Type</code></li>
+                                        <li><strong>Full Width &gt;</strong> Display Full Width Menu of the site.</li>
+                                        <li><strong>Dropdown Style &gt;</strong> Display Dropdown style menu.</li>
+                                        <li><strong>Custom &gt;</strong> to set custom width menu.</li>
+                                    </ul>
+                                </li>
+                                <li><strong><em>Dropdown Custom Width</em> &gt;</strong> Here you can set the Menu width like "800px", Applicable only Menu Type = Custom. </li>
+                                <li><strong><em>Show Columns</em> &gt;</strong> Here you can set number of columns display in Megamenu. Applicable only Top Level Sub Categories. </li>
+                                <li><strong><em>Category Labels</em> &gt;</strong> Here you can set label of category which display on frontend menu. </li>
+                                <li><strong><em>Icon (Font Awesome)</em> &gt;</strong> Here you can set Category Icon in Verticle Megamenu . Ex:"fa fa-blind", This fields applicable only for Top Level Categories.</li>
+                                <li><strong><em>Left Block Width</em> &gt;</strong> Here you can set width of left block in based on fluid width like 1 to 12. </br>Make sure the sum of 'Left Block Width' , 'Right Block Width' and 'Category Block Width' is '12'. </br>Exa: In our 'Woman' category we set Right Blow Width is '4' and Category Block Width is '8'. This field applicable only for Top Level Categories.</li>
+                                <li><strong><em>Left Block</em> &gt;</strong> Here you can add HTML and CMS Block which you have created by going to <code>CMS > Static Blocks</code> to display on left side of menu popup. This field applicable only for Top Level Categories.</li>
+                                <li><strong><em>Right Block Width</em> &gt;</strong> Here you can set width of right block in based on fluid width like 1 to 12. </br>Make sure the sum of 'Right Block Width' , 'Left Block Width' and 'Category Block Width' is '12'. </br>Exa: In our 'Woman' category we set Right Blow Width is '2', Left Blow Width is '2' and Category Block Width is '8'. This field applicable only for Top Level Categories.</li>
+                                <li><strong><em>Right Block</em> &gt;</strong> Here you can add HTML and CMS Block which you have created by going to <code>CMS > Static Blocks</code> to display on Rigth side of menu popup.</li>
+                                <li><strong><em>Top Block</em> &gt;</strong> Here you can add HTML and CMS Block which you have created by going to <code>CMS > Static Blocks</code> to display on Rigth side of menu popup. This field applicable only for Top Level Categories.</li>
+                                <li><strong><em>Bottom Block</em> &gt;</strong> Here you can add HTML and CMS Block which you have created by going to <code>CMS > Static Blocks</code> to display on Rigth side of menu popup., This field applicable only for Top Level Categories.</li>
+                            </ul>
+                            <img class="img" src="assets/images/megamenu_popup.png" title="Megamenu Popup" />
+                        </li>
+                    </ul>
+                </section>
+                <section id="edit_cms_block">
+                    <div class="page-header">
+                        <h3>Edit CMS Blocks</h3></div>
+                    <p>You can edit default imported blocks by Go To: <code>CMS > Static Blocks</code></p>
+                    <ul>
+                        <li>
+                            <p>List of default imported theme blocks</p>
+                            <ul>
+                                <li>Navigation Before Links</li>
+                                <li>Navigation After Links</li>
+                                <li>Sidebar Banners</li>
+                                <li>Our Brands</li>
+                                <li>Footer Top Column1</li>
+                                <li>Footer Top Column2</li>
+                                <li>Footer Top Column3</li>
+                                <li>Footer Top Column4</li>
+                                <li>Footer Bottom Column1</li>
+                                <li>Footer Bottom Column2</li>
+                                <li>Footer Bottom Column3</li>
+                                <li>Footer Bottom Column4</li>
+                                <li>Footer Payments</li>
+                                <li>Unicase Category Custom Left Sidebar</li>
+                                <li>Unicase Category Custom Right Sidebar</li>
+                                <li>Google Map</li>
+                                <li>Contacts Store Information</li>
+                                <li>Unicase Product Info Custom Left Sidebar </li>
+                                <li>Unicase Product Info Custom Right Sidebar </li>
+                            </ul>
+                            <img class="img" src="assets/images/block_diagram_1.png" title="Static Block Diagram" />
+                            <img class="img" src="assets/images/block_diagram_2.png" title="Static Block Diagram" />
+                            <img class="img" src="assets/images/block_diagram_4.png" title="Static Block Diagram" />
+                        </li>
+                    </ul>
+                </section>
+                <section id="edit_cms_pages">
+                    <div class="page-header">
+                        <h3>Edit CMS Pages</h3></div>
+                    <p>You can edit default imported pages by Go To: <code>CMS > Pages</code></p>
+                    <ul>
+                        <li>
+                            <p>List of default imported theme pages</p>
+                            <ul>
+                                <li>Unicase - Homepage 1
+                                    <img class="img" src="assets/images/homepage_v1.png" title="Home Page - 1" />
+                                </li>
+                                <li>Unicase - Homepage 2
+                                    <img class="img" src="assets/images/homepage_v2.png" title="Home Page - 2" />
+                                </li>
+                                <li>Unicase - Homepage 3
+                                    <img class="img" src="assets/images/homepage_v3.png" title="Home Page - 3" />
+                                </li>
+                                <li>Unicase - Homepage 4
+                                    <img class="img" src="assets/images/homepage_v4.png" title="Home Page - 4" />
+                                </li>
+                                <li>Terms Conditions
+                                    <img class="img" src="assets/images/pages_diagram_tc.png" title="Terms & Conditions" />
+                                </li>
+                                <li>Reward Points
+                                    <img class="img" src="assets/images/pages_diagram_rp.png" title="Reward Points" />
+                                </li>
+                                <li>404 Not Found
+                                    <img class="img" src="assets/images/pages_diagram_404.png" title="404 page" />
+                                </li>
+                                <li>FAQ
+                                    <img class="img" src="assets/images/pages_diagram_faq.png" title="FAQ" />
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section id="theme_translation">
+                    <div class="page-header">
+                        <h3>Translation</h3></div>
+                    <p>You can translate your custom text and non translated our theme text using translate file.</p>
+                    <p>Go to: <code>app > design > frontend > Unicase > default > locale > LANGUAGECOE_COUNTRYCODE > translate.csv </code></p>
+                    <ul>
+                        <li>This is an example of translate text using csv file for German store. You can create new folder for your store with the name of 'LANGUAGECOE_COUNTRYCODE' as we give for German store and put translate.csv file under that folder.</li>
+                        <li>We add some text on default file which are not translate so you can use it for your store. </li>
+                        <li>Now you can add your text to the .csv file.Make sure you have save file in UTF mode. </li>
+                        <li>For more details <a href="http://blog.belvg.com/magento-certified-developer-exam-internationalization.html">Click Here</a> and see <strong>Theme Translation</strong> part.</li>
+                    </ul>
+                </section>
+                <section id="theme_dg_general">
+                    <div class="page-header">
+                        <h3>Theme Options</h3></div>
+                    <h4>Unicase Design Panel</h4>
+                    <p>You can change design of the page.</p>
+                    <p>Go to <code>System > Configuration > Unicase > Unicase Design</code> Panel section to start your custom design configuration.</p>
+                    <ul>
+                        <li>
+                            <h4>General</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img" src="assets/images/theme_design_general.png" title="General Design Panel" />
+                                </div>
+                                <div class="col-md-6">
+                                    <br>
+                                    <p><strong><em>General Color Settings &gt;</em></strong> Here you can select default theme configuration or custom design configuration.</p>
+                                    <br>
+                                    <p><strong><em>Basic Colors &gt;</em></strong> In these options, you can set color values for general elements - text, link and link hover color..</p>
+                                    <br>
+                                    <p><strong><em>Buttons &gt;</em></strong> In these options, you can set color values for Buttons background, hover background, text, hover text color..
+                                        <br><strong>Button Style :</strong>
+                                        <ul>
+                                            <li><strong>Style1 (Trasparent with Radius Border)(default)</strong> : display buttons transparent with radius border.</li>
+                                            <li><strong>Style1 (Trasparent with Flat Border)</strong> : display buttons transparent with flat border.</li>
+                                            <li><strong>Style2 (Background with Radius Border)</strong> : display button background with radius border.</li>
+                                            <li><strong>Style2 (Background with Flat Border)</strong> : display button background with flat border.</li>
+                                        </ul>
+                                    </p>
+                                    <br>
+                                    <p><strong><em>Products Label &gt;</em></strong> In these options, you can set color values for Products Labels color..</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="theme_dg_header">
+                            <h4>Header</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img" src="assets/images/theme_design_header.png" title="Header Design Panel" />
+                                </div>
+                                <div class="col-md-6">
+                                    <br>
+                                    <p><strong><em>Header Color Settings &gt;</em></strong> Here you can select default theme configuration or custom design configuration.</p>
+                                    <br>
+                                    <p><strong><em>Topbar &gt;</em></strong> In these options, you can set color values for Topbar Background, text, link and link hover color..</p>
+                                    <br>
+                                    <p><strong><em>Header &gt;</em></strong> In these options, you can set color values for Header background, text, search box background and Search box text color..</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="theme_dg_footer">
+                            <h4>Footer</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img" src="assets/images/theme_design_footer.png" title="Footer Design Panel" />
+                                </div>
+                                <div class="col-md-6">
+                                    <br>
+                                    <p><strong><em>Footer Color Settings &gt;</em></strong> Here you can select default theme configuration or custom design configuration.</p>
+                                    <br>
+                                    <p><strong><em>Footer Top &gt;</em></strong> In these options, you can set color values for Footer Top Background, text, icon, link and link hover color..</p>
+                                    <br>
+                                    <p><strong><em>Footer Botttom &gt;</em></strong> In these options, you can set color values for Footer Bottom Background, header, text, link and link hover color..</p>
+                                    <br>
+                                    <p><strong><em>CopyRights Bar &gt;</em></strong> In these options, you can set color values for CopyRights Bar Background, text color..</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="theme_dg_megamenu">
+                            <h4>Megamenu</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img" src="assets/images/theme_design_megamenu.png" title="Megamenu Design Panel" />
+                                </div>
+                                <div class="col-md-6">
+                                    <br>
+                                    <p><strong><em>Megamenu Color Settings &gt;</em></strong> Here you can select default theme configuration or custom design configuration.</p>
+                                    <br>
+                                    <p>Here you can set color values for Navigation background, text, navbar font size, link, menu popup and link hover colors..</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="theme_dg_fonts">
+                            <h4>Fonts</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img" src="assets/images/theme_design_font.png" title="Fonts" />
+                                </div>
+                                <div class="col-md-6">
+                                    <br>
+                                    <p><strong><em>General &gt;</em></strong> Here you can set general text font family. If select <strong>Default</strong> or <strong>Google Fonts</strong> family. For apply general font family you can use <strong><span style="color:red;">fntuc-gen</span></strong> class in elements.</p>
+                                    <br>
+                                    <p><strong><em>Heading &gt;</em></strong> Here you can set slider heading, page heading, sidebar heading, box title heading etc.. font family. If select <strong>Default</strong> or <strong>Google Fonts</strong> family. For apply Heading font family you can use <strong><span style="color:red;">fntuc-head</span></strong> class in elements.</p>
+                                    <br>
+                                    <p><strong><em>Default Imported Fonts &gt;</em></strong> Here display list type of font classes for user show own style.
+                                        <ul>
+                                            <li><strong><span style="color:red;">fntuc-style1</span> &gt;</strong> class for display "FjallaOneRegular" font.</li>
+                                            <li><strong><span style="color:red;">fntuc-style2</span> &gt;</strong> class for display "BebasNeueRegular" font.</li>
+                                            <li><strong><span style="color:red;">fntuc-style3</span> &gt;</strong> class for display "LatoBold" font.</li>
+                                            <li><strong><span style="color:red;">fntuc-style4</span> &gt;</strong> class for display "BebasNeueBold" font.</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="theme_dg_category">
+                            <h4>Category</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img" src="assets/images/theme_design_category.png" title="Category Banners Panel" />
+                                </div>
+                                <div class="col-md-6">
+                                    <br>
+                                    <p><strong><em>Category Color Settings &gt;</em></strong> Here you can select default theme configuration or custom design configuration.</p>
+                                    <br>
+                                    <p>Here you can set category title and description color...</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="theme_dg_product_info">
+                            <h4>Product Info</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img" src="assets/images/theme_design_prodinfo.png" title="Product Info Panel" />
+                                </div>
+                                <div class="col-md-6">
+                                    <br>
+                                    <p><strong><em>Product Info Color Settings &gt;</em></strong> Here you can select default theme configuration or custom design configuration.</p>
+                                    <br>
+                                    <p><strong><em>Tabs &gt;</em></strong> In these options, you can set color values for Product Tab Background, text color..</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section id="theme_st_general">
+                    <h4>Unicase Settings Panel</h4>
+                    <p>Go to <code>System > Configuration > Unicase > Unicase Settings</code> Panel section to start your custom settings configuration.</p>
+                    <ul>
+                        <li>
+                            <h4>General</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img" src="assets/images/theme_settings_general.png" title="General Settings Panel" />
+                                </div>
+                                <div class="col-md-6">
+                                    <br>
+                                    <p><strong><em>General &gt;</em></strong> Here you can choose theme <strong>Wide</strong> or <strong>Boxed</strong> view. you can set <strong>Boxed Background Image</strong> whenever you select <strong>Boxed</strong> layout.</p>
+                                    <br>
+                                    <p><strong><em>Product Buttons Style &gt;</em></strong> Here you can choose to show display product button styles.
+                                        <ul>
+                                            <li><strong><em>Style1 (Large Size) &gt;</em></strong>
+                                                <div class="col-md-12"><img class="img" src="assets/images/ucbs1-l.png" title="Large size button" /></div>
+                                            </li>
+                                            <li><strong><em>Style1 (Medium Size)(default) &gt;</em></strong>
+                                                <div class="col-md-12"><img class="img" src="assets/images/ucbs1-m.png" title="Medium size button" /></div>
+                                            </li>
+                                            <li><strong><em>Style1 (Small Size) &gt;</em></strong>
+                                                <div class="col-md-12"><img class="img" src="assets/images/ucbs1-s.png" title="Small size button" /></div>
+                                            </li>
+                                            <li><strong><em>Style2 (Large Size) &gt;</em></strong>
+                                                <div class="col-md-12"><img class="img" src="assets/images/ucbs2-l.png" title="Large size button" /></div>
+                                            </li>
+                                            <li><strong><em>Style2 (Medium Size)&gt;</em></strong>
+                                                <div class="col-md-12"><img class="img" src="assets/images/ucbs2-m.png" title="Medium size button" /></div>
+                                            </li>
+                                            <li><strong><em>Style2 (Small Size) &gt;</em></strong>
+                                                <div class="col-md-12"><img class="img" src="assets/images/ucbs2-s.png" title="Small size button" /></div>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="theme_st_header">
+                            <h4>Header</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img" src="assets/images/theme_settings_header.png" title="Header Settings Panel" />
+                                </div>
+                                <div class="col-md-6">
+                                    <br>
+                                    <p>Here you can set Logo, Logo Alt text, Contact No, Email, show compare dropdown and show sticky menu.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="theme_st_footer">
+                            <h4>Footer</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img" src="assets/images/theme_settings_footer.png" title="Footer Settings Panel" />
+                                </div>
+                                <div class="col-md-6">
+                                    <br>
+                                    <p>Here you can set show footer top, show footer bottom and copyrights text.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="theme_st_category">
+                            <h4>Category</h4>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img class="img" src="assets/images/theme_settings_category.png" title="Category Settings Panel" />
+                                </div>
+                                <div class="col-md-12">
+                                    <br>
+                                    <p><strong><em>Category Layout&gt;</em></strong> Here you can set category page default, 1 column, 2 columns left, 2 columns right. if select <strong>Default</strong> then apply default category page settings.</p>
+                                    <p><strong><em>Category Info Styles &gt;</em></strong> Here you can set category info display positions.
+                                        <ul>
+                                            <li><strong><em>None &gt;</em></strong> Hide Category Info.</li>
+                                            <li><strong><em>Default &gt;</em></strong> Default theme category layout style.
+                                                <img class="img" src="assets/images/theme_settings_category_default.png" title="Category Info Default Layout" />
+                                            </li>
+                                            <li><strong><em>Boxed Layout &gt;</em></strong> to show theme container width layout style.
+                                                <img class="img" src="assets/images/theme_settings_category_boxed.png" title="Category Info Boxed Layout" />
+                                            </li>
+                                            <li><strong><em>Full Width &gt;</em></strong> to show full width layout style.
+                                                <img class="img" src="assets/images/theme_settings_category_full.png" title="Category Info Full Width Layout" />
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <br>
+                                    <p><strong><em>Category Image Enable &gt;</em></strong> Here you can set 'Yes' to display category image.</p>
+                                    <p><strong><em>Category Info &gt;</em></strong> Here you can set Category title, image and description display styles.
+                                        <ul>
+                                            <li><strong><em>None &gt;</em></strong> Hide Category Info.</li>
+                                            <li><strong><em>Above Image &gt;</em></strong> to set category title or description above image.
+                                                <img class="img" src="assets/images/theme_settings_category_info_above.png" title="Category Info Above Image" />
+                                                <p>Here set Category Title is 'Above Image' and Description is 'Below Image'.</p>
+                                            </li>
+                                            <li><strong><em>Inside Image &gt;</em></strong> to show category info inside category image.
+                                                <img class="img" src="assets/images/theme_settings_category_info_inside.png" title="Category Info Inside Image" />
+                                                <p>Here set Category Title is 'Inside Image' and Description is 'Inside Image'.</p>
+                                            </li>
+                                            <li><strong><em>Below Image &gt;</em></strong> to show category info below category image.
+                                                <img class="img" src="assets/images/theme_settings_category_info_below.png" title="Category Info Below Image" />
+                                                <p>Here set Category Title is 'Below Image' and Description is 'Below Image'.</p>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="theme_st_category_products">
+                            <h4>Category Products</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img" src="assets/images/theme_settings_catproducts.png" title="Category Products Panel" />
+                                </div>
+                                <div class="col-md-6">
+                                    <br>
+                                    <p><strong><em>1 Column &gt;</em></strong> In these options, you can set per row display number of products in 1 column category products grid view layout and set the specific size to show number of products in per row.</p>
+                                    <br>
+                                    <p><strong><em>2 Columns &gt;</em></strong> In these options, you can set per row display number of products in 2 columns category products grid view layout and set the specific size to show number of products in per row.</p>
+                                    <br>
+                                    <p><strong><em>3 Columns &gt;</em></strong> In these options, you can set per row display number of products in 3 columns category products grid view layout and set the specific size to show number of products in per row.</p>
+                                    <br>
+                                    <p><strong><em>Product Image &gt;</em></strong> In these options, you can set Category Products image height, width, display alternative image and product image aspect ratio.</p>
+                                    <br>
+                                    <p><strong><em>Product Elements &gt;</em></strong> In these options, you can set Products Elements hide and show in category products.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="theme_st_product_info">
+                            <h4>Product Info</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img" src="assets/images/theme_settings_productinfo.png" title="Product Info Panel" />
+                                </div>
+                                <div class="col-md-6">
+                                    <br>
+                                    <p><strong><em>Layouts &gt;</em></strong> Here you can set Product Info page layout to default, 1 column, 2 columns left, 2 columns right. if select Default then apply default product info page settings.</p>
+                                    <p><strong><em>SKU &gt;</em></strong> Here you can set 'Yes' to display <strong>SKU</strong> in Product Info page.</p>
+                                    <p><strong><em>Quick Info &gt;</em></strong> Here you can set 'Yes' to display <strong>Product Short Description</strong> in Product Info page.</p>
+                                    <br>
+                                    <p><strong><em>Product Image &gt;</em></strong> In these options, you can set product image width and aspect ratio.</p>
+                                    <br>
+                                    <p><strong><em>Elevate Zoom &gt;</em></strong> In these options, you can set product image <strong>Elevate Zoom</strong> plugin options. for elevate zoom example check link : <a href="http://www.elevateweb.co.uk/image-zoom" target="_blank">Elevate Zoom Plugin</a></p>
+                                    <br>
+                                    <p><strong><em>Product Tabs &gt;</em></strong> In these options, you can set product tab hide-show and display table styles.
+                                        <ul>
+                                            <li><strong><em>Horizontal &gt;</em></strong>
+                                                <img class="img" src="assets/images/theme_settings_prodinfo_tab_horizontal.png" title="Product Tab Horizontal" />
+                                            </li>
+                                            <li><strong><em>Verticle &gt;</em></strong>
+                                                <img class="img" src="assets/images/theme_settings_prodinfo_tab_verticle.png" title="Product Tab Verticle" />
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="theme_st_product_slider">
+                            <h4>Product Slider</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img" src="assets/images/theme_settings_product_slider.png" title="Product Slider Panel" />
+                                </div>
+                                <div class="col-md-6">
+                                    <br>
+                                    <p><strong><em>Product Image &gt;</em></strong> In these options, you can set product slider image width, height, show alternative image and aspect ratio.
+                                        <img class="img" src="assets/images/theme_settings_product_slider_default.png" title="Product Slider" />
+                                    </p>
+                                    <br>
+                                    <p><strong><em>Product Micro Image &gt;</em></strong> In these options, you can set micro view product slider image width, height, show alternative image and aspect ratio.
+                                        <img class="img" src="assets/images/theme_settings_product_slider_micro.png" title="Product Slider" />
+                                    </p>
+                                    <br>
+                                    <p><strong><em>Product Elements &gt;</em></strong> In these options, you can set Products Elements hide and show in products slider.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="theme_st_product_related">
+                            <h4>Products Related</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img" src="assets/images/theme_settings_related.png" title="Product Related Panel" />
+                                </div>
+                                <div class="col-md-6">
+                                    <br>
+                                    <p><strong><em>Product Related &gt;</em></strong> In these options, you can set title, show max products and display nums of products in 1 column, 2 columns and 3 columns layouts.</p>
+                                    <br>
+                                    <p><strong><em>Product Layout &gt;</em></strong> In these options, you can set Products Elements hide and show in products slider.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="theme_st_product_upsell">
+                            <h4>Products Upsell</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img" src="assets/images/theme_settings_upsell.png" title="Product Upsell Panel" />
+                                </div>
+                                <div class="col-md-6">
+                                    <br>
+                                    <p><strong><em>Product Upsell &gt;</em></strong> In these options, you can set title, show max products and display nums of products in 1 column, 2 columns and 3 columns layouts.</p>
+                                    <br>
+                                    <p><strong><em>Product Layout &gt;</em></strong> In these options, you can set Products Elements hide and show in products slider.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="theme_st_product_labels">
+                            <h4>Products Labels</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img" src="assets/images/theme_settings_product_labels.png" title="Product Labels Panel" />
+                                </div>
+                                <div class="col-md-6">
+                                    <br>
+                                    <p><strong><em>New Label &gt;</em></strong> Here you can set Hide-Show New Label in Product.</p>
+                                    <p><strong><em>Sale Label &gt;</em></strong> Here you can set Sale Label display as "Sale" title, "%" discount percent and hide sale label in Product.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="theme_st_newsletter_popup">
+                            <h4>Newsletter Popup</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img" src="assets/images/theme_settings_newsletterpopset.png" title="Newsletter Popup Panel" />
+                                </div>
+                                <div class="col-md-6">
+                                    <br>
+                                    <p><strong><em>Newsletter Popup &gt;</em></strong> In these options, Newsletter popup enable newsletter popup,background color, background image, popup height, popup width, popup content, logo, and popup delay time.
+                                        <img class="img" src="assets/images/theme_settings_newsletterpopup.png" title="Newsletter Popup" />
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="theme_st_contactus">
+                            <h4>Contact Us</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img" src="assets/images/theme_settings_contactus.png" title="Contactus Panel" />
+                                </div>
+                                <div class="col-md-6">
+                                    <br>
+                                    <p><strong><em>Enable Google Map &gt;</em></strong> You can set "Yes" to show google map in contact us page.</p>
+                                    <br>
+                                    <p><strong><em>Google Map Block &gt;</em></strong> Here you can add CMS Block Id which you have created by going to <code>CMS > Static Blocks</code> to display google map.</p>
+                                    <br>
+                                    <p><strong><em>Store Information Block &gt;</em></strong> Here you can add CMS Block Id which you have created by going to <code>CMS > Static Blocks</code> to display google map.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section id="theme_ext_pu_mainslider">
+                    <div class="page-header">
+                        <h3>Extension</h3></div>
+                    <h4>Perfectus Extension</h4>
+                    <p>You can set other settings to perfectus extensions.</p>
+                    <h4>Main Slider</h4>
+                    <p>To show homepage main slider use below code in static page. For more main slider info go to <a href="#theme_ext_pu_mainslider">Main Slider Extension.</a></p>
+                    <pre><code>{{block type="mainslider/mainslider" name="mainslider" template="perfectus/mainslider/slider.phtml"}}</code></pre>
+                    <p>To add, edit and delete the slide on required locations Go to <code>Perfectus > Main Slider</code></p>
+                    <ul>
+                        <li>
+                            <h4>Add Slide</h4>
+                            <p>Add new slide to click <strong>Add New</strong> button and fill below fields.</p>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img class="img" src="assets/images/theme_ext_mainslider_addslide.png" title="Add Slide" />
+                                </div>
+                                <div class="col-md-12">
+                                    <br>
+                                    <p><strong><em>Name &gt;</em></strong> to set name of the slide.</p>
+                                    <p><strong><em>Image &gt;</em></strong> to set slide image (jpg, png and gif) format.</p>
+                                    <p><strong><em>Slide Type &gt;</em></strong> Here you can set different slide type.
+                                        <ul>
+                                            <li><strong><em>Image with Link &gt;</em></strong> to dislay image and whole slide link.</li>
+                                            <li><strong><em>Image with Content &gt;</em></strong> to dislay image and content.</li>
+                                        </ul>
+                                    </p>
+                                    <p><strong><em>Content Postion &gt;</em></strong> option affect when you select slide type is "Image with Content" and set diffrent position to show content.
+                                        <ul>
+                                            <li><strong><em>Left &gt;</em></strong> to show left side content of the slide.
+                                                <img class="img" src="assets/images/theme_ext_mainslider_left.png" title="show left side content" />
+                                            </li>
+                                            <li><strong><em>Center &gt;</em></strong> to show center content of the slide.
+                                                <img class="img" src="assets/images/theme_ext_mainslider_center.png" title="show center content" />
+                                            </li>
+                                            <li><strong><em>Right &gt;</em></strong> to show right side content of the slide.
+                                                <img class="img" src="assets/images/theme_ext_mainslider_right.png" title="show right side content" />
+                                            </li>
+                                            <li><strong><em>Custom &gt;</em></strong> to set user own custom position content display.</li>
+                                        </ul>
+                                    </p>
+                                    <p><strong><em>Content Postion Top &gt;</em></strong> Here you can set custom top (%) position of display content. this option apply when you select content potion is <strong>custom</strong>.</p>
+                                    <p><strong><em>Content Postion Left &gt;</em></strong> Here you can set custom Left (%) position of display content. this option apply when you select content potion is <strong>custom</strong>.</p>
+                                    <p><strong><em>Content &gt;</em></strong> Here you can add html code of content. check below point for support slider functionality in content.
+                                        <ul>
+                                            <li><strong><em>Animation Effects &gt;</em></strong> for this functionality you can add animatation effects for display content. check below code of example for added animatation class <code>animate</code> and attribute <code>data-animation="fadeInDown"</code>. for more animation effects check link : <a style="color:red;" href="https://daneden.github.io/animate.css/" target="_blank">Animation</a> </li>
+                                        </ul>
+                                        <pre><code><xmp><div class="caption vertical-center text-center style1">
+		<div class="big-text animate" data-animation="fadeInDown">Sale!</div>
+		<div class="excerpt animate" data-animation="fadeInDown" data-delay="0.2s" >Save up to <span class="theme--color">25%</span> off</div>
+		<div class="button-holder  animate" data-animation="fadeInDown" data-delay="0.5s">
+			<a href="#" class="big btn btn-primary btn-black btn-flat">check now</a>
+		</div>
+		</div></xmp></code></pre>
+                                    </p>
+                                    <p><strong><em>Status &gt;</em></strong> Here you can set enable and disabled of slide.</p>
+                                    <p><strong><em>Sort Order &gt;</em></strong> Here you can set number to display order of the slide.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>Edit Slide</h4>
+                            <p>for edit slide go to slider listing <code>Perfectus > Main Slider</code> then click to <strong>Edit</strong> link of the slide want to edit.</p>
+                        </li>
+                        <li>
+                            <h4>Delete Slide</h4>
+                            <p>for remove slide go to slider listing <code>Perfectus > Main Slider</code> then select slide want to delete then go to action dropdown and choose delete options and click to <strong>Submit</strong> button.</p>
+                        </li>
+                    </ul>
+                    <h4>Mainslider Configuration</h4>
+                    <p>Go to <code>System > Configuration > Unicase Extensions > Mainslider</code></p>
+                    <div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="img" src="assets/images/theme_ext_mainslider_config.png" title="Mainslider Configuration" />
+                            </div>
+                            <div class="col-md-6">
+                                <br>
+                                <p><strong><em>Mainslider Settings &gt;</em></strong> Here you can enabled-disable main slider.</p>
+                                <p><strong><em>Layout Settings &gt;</em></strong> In these options, you can set slider full width, auto height, and fixed slider height.</p>
+                                <p><strong><em>Navigation Settings &gt;</em></strong> In these options, you can set slider on hover stop, show slider controls, and show slider pagination.</p>
+                                <p><strong><em>Options &gt;</em></strong> In these options, you can set auto play slider, slide speed, slide effect and infinite loop to show slider.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="theme_ext_pu_ajaxfilter">
+                    <h4>Ajax Filter</h4>
+                    <p>This extension provides ajax navigation filter and price slider filter features.</p>
+                    <p>Ajax Filter configuration for Go to <code>Perfectus > Ajax Filter</code></p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img" src="assets/images/theme_ext_ajaxfilter_config.png" title="Ajax Navigation" />
+                        </div>
+                        <div class="col-md-6">
+                            <br>
+                            <p><strong><em>Enable AJAX for layered navigation? &gt;</em></strong> You can Enable or Disable ajax navigation layer feature.</p>
+                            <p><strong><em>Enable AJAX only for Price Ajaxfilter? &gt;</em></strong> Set it to Yes for applying AJAX on layered navigation, NO will remove AJAX.</p>
+                            <p><strong><em>Enable AJAX for product Toolbar? &gt;</em></strong> Here you can Enable or Disable in listing toolbar.</p>
+                            <p><strong><em>Ajax Overlay opacity &gt;</em></strong> Here you set ajax loader opacity.</p>
+                            <p><strong><em>Ajax Overlay color &gt;</em></strong> Here you set background color for overlay of the ajax loader.</p>
+                            <p><strong><em>Loading Image &gt;</em></strong> You can choose any type of png, gif, jpg and jpeg file for the preloader image that appears while ajax call is working.</p>
+                            <p><strong><em>Results Loading Text &gt;</em></strong> You can set ajax loading text appears while ajax call is working.</p>
+                            <p><strong><em>Results Loading Text Color &gt;</em></strong> You can set ajax loading text color.</p>
+                            <p><strong><em>After Ajax Call Back JavaScript &gt;</em></strong> Here you can set ajax call back javascript.</p>
+                        </div>
+                    </div>
+                    <p>&nbsp;</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img" src="assets/images/theme_ext_ajaxfilter_price_config.png" title="Ajax Price Navigation" />
+                        </div>
+                        <div class="col-md-6">
+                            <br>
+                            <p><strong><em>Enable Price Ajaxfilter &gt;</em></strong> You can Enable or Disable ajax navigation price filter feature.</p>
+                            <p><strong><em>Include Jquery &gt;</em></strong> Includes jQuery with noConflict Mode, to avoid conflicts with prototype library.</p>
+                            <p><strong><em>Include Jquery UI &gt;</em></strong> Set this to yes if you have not included jQuery UI in the website.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img" src="assets/images/theme_ext_ajaxfilter_price_config1.png" title="Ajax Price Navigation" />
+                        </div>
+                        <div class="col-md-6">
+                            <br>
+                            <p><strong><em>Price Ajaxfilter Configuration &gt;</em></strong> In these options to change disign of display of ajax price navigation filter.</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="theme_ext_pu_ajxpkt">
+                    <h4>AjaxPkt</h4>
+                    <p>This extension provides ajax functions for Add to Cart, Wishlist, Compare, Quickview and Minicart.</p>
+                    <p>AjaxPkt configuration for Go to <code>Perfectus > AjaxPkt</code></p>
+                    <p><strong><em>Enable AjaxPkt? &gt;</em></strong> You can Enable or Disable ajax add to cart, wishlist, compare, quckview, minicart feature.</p>
+                </section>
+                <section id="theme_ext_pu_megamenu">
+                    <h4>Megamenu</h4>
+                    <p>This extension provides Megamenu function. You can create any type of mega menu with this extension.</p>
+                    <p>Megamenu configuration for Go to <code>Perfectus > Megamenu</code></p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img" src="assets/images/theme_ext_megamenu_config.png" title="Megamenu Configuration" />
+                        </div>
+                        <div class="col-md-6">
+                            <br>
+                            <p><strong><em>Enable &gt;</em></strong> Enable or Disable mega menu.</p>
+                            <p><strong><em>Display Navigation Menu &gt;</em></strong> You can set Hide or Show main navigation menu.</p>
+                            <p><strong><em>Display Mobile Menu &gt;</em></strong> Hide or Show mobile menu.</p>
+                            <p><strong><em>Visible menu depth &gt;</em></strong> You can set 1, 2, 3, 4 number to display category level in navigation menu. Set "0" to disable limits. For example, if you set this value to 2, only second level categories will be displayed</p>
+                            <p><strong><em>Show the "Home" Link &gt;</em></strong> Here you can choose different type of home link.
+                                <ul>
+                                    <li><strong><em>Only Link &gt;</em></strong> to show display only home text and link.</li>
+                                    <li><strong><em>Only Icon &gt;</em></strong> to show display only home icon and link.</li>
+                                    <li><strong><em>Link with Icon &gt;</em></strong> to show display home icon, text and link.</li>
+                                    <li><strong><em>No &gt;</em></strong> to hide home link.</li>
+                                </ul>
+                            </p>
+                            <p><strong><em>Display empty categories &gt;</em></strong> Set 'Yes' to display not assign products(empty category).</p>
+                            <p><strong><em>Default Menu Type &gt;</em></strong>You can set default menu popup type of "Full Width" ot "Dropdown Style".</p>
+                            <p><strong><em>Nav Menu Before Static Block ID &gt;</em></strong>Here you can set CMS Block Id which you have created by going to <code>CMS > Static Blocks</code> to display on left side of navigation menu.</p>
+                            <p><strong><em>Nav Menu After Static Block ID &gt;</em></strong> Here you can set CMS Block Id which you have created by going to <code>CMS > Static Blocks</code> to display on right side of navigation menu.</p>
+                        </div>
+                    </div>
+                    <p><strong><em>Enable Sidebar Megamenu &gt;</em></strong> You can Enable or Disable sidebar megamenu. for display sidebar menu need to put below code in cms page.
+                        <br>
+                        <code>{{block type="megamenu/sidebarnav" name="sidebarnav" template="perfectus/megamenu/sidebar.phtml"}}</code>
+                    </p>
+                    <p><strong><em>Enable AjaxPkt? &gt;</em></strong> You can Enable or Disable ajax add to cart, wishlist, compare, quckview, minicart feature.</p>
+                    <p><strong><em>Label 1 &gt;</em></strong> Define the text of the category label 1. Labels can be assigned to every category in Catalog > Manage Categories.</p>
+                    <p><strong><em>Label 2 &gt;</em></strong> Define the text of the category label 2. Labels can be assigned to every category in Catalog > Manage Categories.</p>
+                </section>
+                <section id="theme_ext_pu_filterproducts">
+                    <h4>Filter Products</h4>
+                    <p>In this extension to filter diffrent type of products such as new products, featured products, specials products..</p>
+                    <p>Filter Products configuration for Go to <code>Perfectus > Filter Products</code></p>
+                    <p>In this extension display diffrent type of products use custom code for display max display slide, display nums of slide, filter specific category products and diffrent type of slider like simple slider, micro slider view and sidebar slider view.</p>
+                    <pre><code>{{block type="PRODUCTS_TYPES" column_count="4" column_lg="4" column_md="3" column_sm="3" column_xs="2" row_count="2" limit="7" category_id="10" template="TEMPLATE_TYPES"}}</code></pre>
+                    <ul>
+                        <li><strong><em>PRODUCTS_TYPES &gt;</em></strong> use below list of products type to display products.
+                            <ul>
+                                <li><strong><em>New Products &gt;</em></strong> <code>fltproducts/newproduct_home_list</code></li>
+                                <li><strong><em>Featured Products &gt;</em></strong> <code>fltproducts/featured_home_list</code></li>
+                                <li><strong><em>Bestsellers Products &gt;</em></strong> <code>fltproducts/bestsellers_home_list</code></li>
+                                <li><strong><em>Mostviewed Products &gt;</em></strong> <code>fltproducts/mostviewed_home_list</code></li>
+                                <li><strong><em>Specials Products &gt;</em></strong> <code>fltproducts/specials_home_list</code></li>
+                                <li><strong><em>All Products &gt;</em></strong> <code>fltproducts/allproducts_home_list</code></li>
+                                <li><strong><em>Promotional Products &gt;</em></strong> <code>fltproducts/promotional_home_list</code></li>
+                                <li><strong><em>Recently Ordered Products &gt;</em></strong> <code>fltproducts/lastordered_home_list</code></li>
+                            </ul>
+                        </li>
+                        <li><strong><em>column_count &gt;</em></strong> Display number of slide in slider.</li>
+                        <li><strong><em>column_lg &gt;</em></strong> You can set number of columns Above 992px width.</li>
+                        <li><strong><em>column_md &gt;</em></strong> You can set number of columns within (768px - 991px) width.</li>
+                        <li><strong><em>column_sm &gt;</em></strong> You can set number of columns within (480px - 767px) width.</li>
+                        <li><strong><em>column_xs &gt;</em></strong> You can set number of columns Below 480px width.</li>
+                        <li><strong><em>row_count &gt;</em></strong> Display number of row in micro slider. this option applicable only TYPES_OF_SLIDER = micro.</li>
+                        <li><strong><em>limit &gt;</em></strong> Display maximum number slider.</li>
+                        <li><strong><em>category_id &gt;</em></strong> Set category id to filter perticular category products.</li>
+                        <li><strong><em>TEMPLATE_TYPES &gt;</em></strong> Use below template type to show products.
+                            <ul>
+                                <li><strong><em>Simple Slider &gt;</em></strong> <code>perfectus/fltproducts/slider.phtml</code></li>
+                                <li><strong><em>Micro Slider &gt;</em></strong> <code>perfectus/fltproducts/micro.phtml</code></li>
+                                <li><strong><em>Sidebar Slider &gt;</em></strong> <code>perfectus/fltproducts/sidebar.phtml</code></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Below diffrent products type configuration for used code options manageble by admin panel.</p>
+                    <ul>
+                        <li>
+                            <h4>New Products</h4>
+                            <p>It shows the products which "New from Date" or "New to Date" attributes are inputed.</p>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img class="img" src="assets/images/theme_ext_fltproduct_newproduct.png" title="New Products" />
+                                </div>
+                                <div class="col-md-12">
+                                    <br>
+                                    <p><strong><em>Enable &gt;</em></strong> Enable or Disable this products type.</p>
+                                    <p>for display new products slider use below code in CMS Page or CMS Blocks.
+                                        <pre><code>{{block type="fltproducts/newproduct_home_list" name="newproducts" template="perfectus/fltproducts/home_newproduct.phtml"}}</code></pre>
+                                    </p>
+                                    <p><strong><em>Title &gt;</em></strong> You can set product type title.</p>
+                                    <p><strong><em>Maximum Display Products &gt;</em></strong> Here you can set maximum number of products to show in this type of products.</p>
+                                    <p><strong><em>Product Display Styles &gt;</em></strong> Here you can choose diffrent type of products to show slider.
+                                        <ul>
+                                            <li class="col-md-6"><strong><em>Slider &gt;</em></strong> choose to display products as slider.
+                                                <img class="img" src="assets/images/theme_ext_fltproducts_slider.png" title="Slider View" />
+                                            </li>
+                                            <li class="col-md-6"><strong><em>Micro Slider &gt;</em></strong> choose to display products as micro slider.
+                                                <img class="img" src="assets/images/theme_ext_fltproducts_microslider.png" title="Micro Slider View" />
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                            <p><strong><em>Column Count &gt;</em></strong> Here you can set number of slide in slider.</p>
+                            <p><strong><em>Row Count &gt;</em></strong> Here you can set number of row in slider. this options apply only when you select product display style is <strong>Micro Slider</strong></p>
+                        </li>
+                        <li>
+                            <hr>
+                            <h4>Featured Products</h4>
+                            <p>It shows the products which "Featured" attribute is "yes".</p>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img class="img" src="assets/images/theme_ext_fltproduct_featured_config.png" title="Featured Products Configuration" />
+                                </div>
+                                <div class="col-md-12">
+                                    <br>
+                                    <p><strong><em>Enable &gt;</em></strong> Enable or Disable this products type.</p>
+                                    <p>for display featured products slider use below code in CMS Page or CMS Blocks.
+                                        <pre><code>{{block type="fltproducts/featured_home_list" name="featured" template="perfectus/fltproducts/home_featured.phtml"}}</code></pre>
+                                    </p>
+                                    <p><strong><em>Title &gt;</em></strong> You can set product type title.</p>
+                                    <p><strong><em>Maximum Display Products &gt;</em></strong> Here you can set maximum number of products to show in this type of products.</p>
+                                    <p><strong><em>Product Display Styles &gt;</em></strong> Here you can choose diffrent type of products to show slider.
+                                        <ul>
+                                            <li class="col-md-6"><strong><em>Slider &gt;</em></strong> choose to display products as slider.
+                                                <img class="img" src="assets/images/theme_ext_fltproducts_slider.png" title="Slider View" />
+                                            </li>
+                                            <li class="col-md-6"><strong><em>Micro Slider &gt;</em></strong> choose to display products as micro slider.
+                                                <img class="img" src="assets/images/theme_ext_fltproducts_microslider.png" title="Micro Slider View" />
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                            <p><strong><em>Column Count &gt;</em></strong> Here you can set number of slide in slider.</p>
+                            <p><strong><em>Row Count &gt;</em></strong> Here you can set number of row in slider. this options apply only when you select product display style is <strong>Micro Slider</strong></p>
+                        </li>
+                        <li>
+                            <hr>
+                            <h4>Bestsellers Products</h4>
+                            <p>It shows the products by selling automatically.</p>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img class="img" src="assets/images/theme_ext_fltproduct_bestsellers_config.png" title="Bestsellers Configuration" />
+                                </div>
+                                <div class="col-md-12">
+                                    <br>
+                                    <p><strong><em>Enable &gt;</em></strong> Enable or Disable this products type.</p>
+                                    <p>for display bestsellers products slider use below code in CMS Page or CMS Blocks.
+                                        <pre><code>{{block type="fltproducts/bestsellers_home_list" name="bestsellers" template="perfectus/fltproducts/home_bestsellers.phtml"}}</code></pre>
+                                    </p>
+                                    <p><strong><em>Title &gt;</em></strong> You can set product type title.</p>
+                                    <p><strong><em>Maximum Display Products &gt;</em></strong> Here you can set maximum number of products to show in this type of products.</p>
+                                    <p><strong><em>Product Display Styles &gt;</em></strong> Here you can choose diffrent type of products to show slider.
+                                        <ul>
+                                            <li class="col-md-6"><strong><em>Slider &gt;</em></strong> choose to display products as slider.
+                                                <img class="img" src="assets/images/theme_ext_fltproducts_slider.png" title="Slider View" />
+                                            </li>
+                                            <li class="col-md-6"><strong><em>Micro Slider &gt;</em></strong> choose to display products as micro slider.
+                                                <img class="img" src="assets/images/theme_ext_fltproducts_microslider.png" title="Micro Slider View" />
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                            <p><strong><em>Column Count &gt;</em></strong> Here you can set number of slide in slider.</p>
+                            <p><strong><em>Row Count &gt;</em></strong> Here you can set number of row in slider. this options apply only when you select product display style is <strong>Micro Slider</strong></p>
+                        </li>
+                        <li>
+                            <hr>
+                            <h4>Specials Products</h4>
+                            <p>It shows the products which "Special Price From Date" or "Special Price To Date" product attributes are inputed.</p>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img class="img" src="assets/images/theme_ext_fltproduct_specials_config.png" title="Specials Products Configuration" />
+                                </div>
+                                <div class="col-md-12">
+                                    <br>
+                                    <p><strong><em>Enable &gt;</em></strong> Enable or Disable this products type.</p>
+                                    <p>for display specials products slider use below code in CMS Page or CMS Blocks.
+                                        <pre><code> {{block type="fltproducts/specials_home_list" name="specials" template="perfectus/fltproducts/home_specials.phtml"}}</code></pre>
+                                    </p>
+                                    <p><strong><em>Title &gt;</em></strong> You can set product type title.</p>
+                                    <p><strong><em>Maximum Display Products &gt;</em></strong> Here you can set maximum number of products to show in this type of products.</p>
+                                    <p><strong><em>Product Display Styles &gt;</em></strong> Here you can choose diffrent type of products to show slider.
+                                        <ul>
+                                            <li class="col-md-6"><strong><em>Slider &gt;</em></strong> choose to display products as slider.
+                                                <img class="img" src="assets/images/theme_ext_fltproducts_slider.png" title="Slider View" />
+                                            </li>
+                                            <li class="col-md-6"><strong><em>Micro Slider &gt;</em></strong> choose to display products as micro slider.
+                                                <img class="img" src="assets/images/theme_ext_fltproducts_microslider.png" title="Micro Slider View" />
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                            <p><strong><em>Column Count &gt;</em></strong> Here you can set number of slide in slider.</p>
+                            <p><strong><em>Row Count &gt;</em></strong> Here you can set number of row in slider. this options apply only when you select product display style is <strong>Micro Slider</strong></p>
+                        </li>
+                        <li>
+                            <hr>
+                            <h4>Mostviewed Products</h4>
+                            <p>It shows the products which most viewed automatically.</p>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img class="img" src="assets/images/theme_ext_fltproduct_mostviewed_config.png" title="Mostviewed Products Configuration" />
+                                </div>
+                                <div class="col-md-12">
+                                    <br>
+                                    <p><strong><em>Enable &gt;</em></strong> Enable or Disable this products type.</p>
+                                    <p>for display mostviewed products slider use below code in CMS Page or CMS Blocks.
+                                        <pre><code>{{block type="fltproducts/mostviewed_home_list" name="mostviewed" template="perfectus/fltproducts/home_mostviewed.phtml"}} </code></pre>
+                                    </p>
+                                    <p><strong><em>Title &gt;</em></strong> You can set product type title.</p>
+                                    <p><strong><em>Maximum Display Products &gt;</em></strong> Here you can set maximum number of products to show in this type of products.</p>
+                                    <p><strong><em>Product Display Styles &gt;</em></strong> Here you can choose diffrent type of products to show slider.
+                                        <ul>
+                                            <li class="col-md-6"><strong><em>Slider &gt;</em></strong> choose to display products as slider.
+                                                <img class="img" src="assets/images/theme_ext_fltproducts_slider.png" title="Slider View" />
+                                            </li>
+                                            <li class="col-md-6"><strong><em>Micro Slider &gt;</em></strong> choose to display products as micro slider.
+                                                <img class="img" src="assets/images/theme_ext_fltproducts_microslider.png" title="Micro Slider View" />
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                            <p><strong><em>Column Count &gt;</em></strong> Here you can set number of slide in slider.</p>
+                            <p><strong><em>Row Count &gt;</em></strong> Here you can set number of row in slider. this options apply only when you select product display style is <strong>Micro Slider</strong></p>
+                        </li>
+                        <li>
+                            <hr>
+                            <h4>All Products</h4>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img class="img" src="assets/images/theme_ext_fltproduct_allproducts_config.png" title="All Products Configuration" />
+                                </div>
+                                <div class="col-md-12">
+                                    <br>
+                                    <p><strong><em>Enable &gt;</em></strong> Enable or Disable this products type.</p>
+                                    <p>for display all products slider use below code in CMS Page or CMS Blocks.
+                                        <pre><code>{{block type="fltproducts/allproducts_home_list" name="allproducts" template="perfectus/fltproducts/home_allproducts.phtml"}}</code></pre>
+                                    </p>
+                                    <p><strong><em>Title &gt;</em></strong> You can set product type title.</p>
+                                    <p><strong><em>Maximum Display Products &gt;</em></strong> Here you can set maximum number of products to show in this type of products.</p>
+                                    <p><strong><em>Product Display Styles &gt;</em></strong> Here you can choose diffrent type of products to show slider.
+                                        <ul>
+                                            <li class="col-md-6"><strong><em>Slider &gt;</em></strong> choose to display products as slider.
+                                                <img class="img" src="assets/images/theme_ext_fltproducts_slider.png" title="Slider View" />
+                                            </li>
+                                            <li class="col-md-6"><strong><em>Micro Slider &gt;</em></strong> choose to display products as micro slider.
+                                                <img class="img" src="assets/images/theme_ext_fltproducts_microslider.png" title="Micro Slider View" />
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                            <p><strong><em>Column Count &gt;</em></strong> Here you can set number of slide in slider.</p>
+                            <p><strong><em>Row Count &gt;</em></strong> Here you can set number of row in slider. this options apply only when you select product display style is <strong>Micro Slider</strong></p>
+                        </li>
+                        <li>
+                            <hr>
+                            <h4>Promotional Products</h4>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img class="img" src="assets/images/theme_ext_fltproduct_promotional_config.png" title="Promotional Products Configuration" />
+                                </div>
+                                <div class="col-md-12">
+                                    <br>
+                                    <p><strong><em>Enable &gt;</em></strong> Enable or Disable this products type.</p>
+                                    <p>for display promotional products slider use below code in CMS Page or CMS Blocks.
+                                        <pre><code>{{block type="fltproducts/promotional_home_list" name="promotional" template="perfectus/fltproducts/home_promotional.phtml"}}</code></pre>
+                                    </p>
+                                    <p><strong><em>Title &gt;</em></strong> You can set product type title.</p>
+                                    <p><strong><em>Maximum Display Products &gt;</em></strong> Here you can set maximum number of products to show in this type of products.</p>
+                                    <p><strong><em>Product Display Styles &gt;</em></strong> Here you can choose diffrent type of products to show slider.
+                                        <ul>
+                                            <li class="col-md-6"><strong><em>Slider &gt;</em></strong> choose to display products as slider.
+                                                <img class="img" src="assets/images/theme_ext_fltproducts_slider.png" title="Slider View" />
+                                            </li>
+                                            <li class="col-md-6"><strong><em>Micro Slider &gt;</em></strong> choose to display products as micro slider.
+                                                <img class="img" src="assets/images/theme_ext_fltproducts_microslider.png" title="Micro Slider View" />
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                            <p><strong><em>Column Count &gt;</em></strong> Here you can set number of slide in slider.</p>
+                            <p><strong><em>Row Count &gt;</em></strong> Here you can set number of row in slider. this options apply only when you select product display style is <strong>Micro Slider</strong></p>
+                        </li>
+                        <li>
+                            <hr>
+                            <h4>Recently Ordered Products</h4>
+                            <p> It shows the products which all products sort by latest input automatically.</p>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img class="img" src="assets/images/theme_ext_fltproduct_lastordered_config.png" title="Recently Ordered Products Configuration" />
+                                </div>
+                                <div class="col-md-12">
+                                    <br>
+                                    <p><strong><em>Enable &gt;</em></strong> Enable or Disable this products type.</p>
+                                    <p>for display recently ordered products slider use below code in CMS Page or CMS Blocks.
+                                        <pre><code>{{block type="fltproducts/lastordered_home_list" name="lastordered" template="perfectus/fltproducts/home_lastordered.phtml"}}</code></pre>
+                                    </p>
+                                    <p><strong><em>Title &gt;</em></strong> You can set product type title.</p>
+                                    <p><strong><em>Maximum Display Products &gt;</em></strong> Here you can set maximum number of products to show in this type of products.</p>
+                                    <p><strong><em>Product Display Styles &gt;</em></strong> Here you can choose diffrent type of products to show slider.
+                                        <ul>
+                                            <li class="col-md-6"><strong><em>Slider &gt;</em></strong> choose to display products as slider.
+                                                <img class="img" src="assets/images/theme_ext_fltproducts_slider.png" title="Slider View" />
+                                            </li>
+                                            <li class="col-md-6"><strong><em>Micro Slider &gt;</em></strong> choose to display products as micro slider.
+                                                <img class="img" src="assets/images/theme_ext_fltproducts_microslider.png" title="Micro Slider View" />
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                            <p><strong><em>Column Count &gt;</em></strong> Here you can set number of slide in slider.</p>
+                            <p><strong><em>Row Count &gt;</em></strong> Here you can set number of row in slider. this options apply only when you select product display style is <strong>Micro Slider</strong></p>
+                        </li>
+                    </ul>
+                </section>
+                <section id="theme_ext_pu_blog">
+                    <div class="page-header">
+                        <h3>Compatible Extension</h3></div>
+                    <h4>Blog</h4>
+                    <p>This extension for magento gives communicate with your regular customers and casual visitors.</p>
+                    <p>Blog Configuration for Go to <code>Perfectus > Blog</code></p>
+                    <p>After enabled blog you want to display blog slider in CMS Page use below code and set block_count to display maximum number of post display in slider</p>
+                    <pre><code>{{widget type="blog/slider" blocks_count="6"}}</code></pre>
+                    <p>Below list of configuration for display blog pages.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img" src="assets/images/theme_ext_blog_config.png" title="Blog Configuration" />
+                        </div>
+                        <div class="col-md-6">
+                            <br>
+                            <p><strong><em>Enable &gt;</em></strong> Enable or Disable blog.</p>
+                            <p><strong><em>Route to Blog &gt;</em></strong> You can set blog url to own name, Must not contain any slashes. "news" makes the blog accessible from domain.com/news. Leave blank for default value.</p>
+                            <p><strong><em>Blog Title &gt;</em></strong> You can set blog title.</p>
+                            <p><strong><em>Meta Keywords &gt;</em></strong> You can set blog page meta keywords.</p>
+                            <p><strong><em>Meta Description &gt;</em></strong> You can set blog page meta description.</p>
+                            <p><strong><em>Page Layout &gt;</em></strong> Here you can set page layout to "1 column", "2 columns with left bar", "2 columns with right bar", "3 columns".</p>
+                            <p><strong><em>Date Format &gt;</em></strong> Here you can set date format "Full", "Long", "Medium" and "Short".</p>
+                            <p><strong><em>Show Breadcrumbs &gt;</em></strong> Hide or Show breadcrumbs.</p>
+                            <p><strong><em>Summary Character Count &gt;</em></strong> Number of characters in a post to be displayed before it is truncated and the Read More link is added. 0 for unlimited.</p>
+                            <p><strong><em>Use Short Content Field &gt;</em></strong> If enabled, additional "Short Content Field" is taken instead of truncated main post.</p>
+                            <p><strong><em>Parse CMS Tags in Post Contents &gt;</em></strong> You can parse the tag in post contents.</p>
+                            <p><strong><em>Posts per Page &gt;</em></strong> You can set number of post to display post per page.</p>
+                            <p><strong><em>Show Bookmarks in Lists &gt;</em></strong> Set "yes" to show bookmarks in Lists.</p>
+                            <p><strong><em>Show Bookmarks in Posts &gt;</em></strong> Set "yes" to show bookmarks in Posts.</p>
+                            <p><strong><em>Show Tags in Posts &gt;</em></strong> Set "yes" to show tags in Posts.</p>
+                            <p><strong><em>Show Tags in Lists &gt;</em></strong> Set "yes" to show tags in lists.</p>
+                            <p><strong><em>Use Categories ID in Posts URLs &gt;</em></strong> Set "yes" to show categories id in posts.</p>
+                            <p><strong><em>Default Posts Sorting &gt;</em></strong > You can set sort order for the post to "newest first" or "older first".</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<img class="img" src="assets/images/theme_ext_blog_config1.png" title="Blog Configuration" />
+						</div>
+						<div class="col-md-6">
+							<br>
+							<p><strong><em>Menus & Links &gt;</em></strong> Here you can set enable or disabled menus and links.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img" src="assets/images/theme_ext_blog_config3.png" title="Blog Configuration" />
+                        </div>
+                        <div class="col-md-6">
+                            <br>
+                            <p><strong><em>Comments &gt;</em></strong> In thes options to set commetns options.</p>
+                            <p><strong><em>ReCAPTCHA &gt;</em></strong> In thes options to set ReCAPTCHA.</p>
+                            <p><strong><em>RSS Feed &gt;</em></strong> In thes options to set RSS Feed.</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="theme_faq">
+                    <div class="page-header">
+                        <h3>FAQ</h3></div>
+                    <ol class="faq_list">
+                        <li>
+                            <h4 class="faq-title theme--color">I'm getting 404 not found when trying to open theme admin pages.</h4>
+                            <p> Log out from Magento admin panel, clear the store cache under var/cache, and login again.</p>
+                        </li>
+                    </ol>
+                </section>
+                <section id="change_log">
+                    <div class="page-header">
+                        <h3>Change Log</h3></div>
+                    <div class="alert alert-info">
+                        Please read <code>log_version_changes.txt</code> file in main package for full list of files and changes.
+                    </div>
+                    <h4>Version 1.1 (25/9/2017)</h4>
+                    <pre><code>Fixed : Optimized code.Fixed : Improve speed.</code></pre>
+                </section>
+            </div>
+        </div>
+    </div>
+	<script src="assets/js/jquery.easing.js"></script>
+	<script src="assets/js/jquery.scrollTo.js"></script>
+    <script src="assets/js/docs.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+</body>
+
+</html>

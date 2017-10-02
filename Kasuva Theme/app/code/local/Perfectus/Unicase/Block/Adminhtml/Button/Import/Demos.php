@@ -1,5 +1,5 @@
 <?php
-class daeon_kasuva_Block_Adminhtml_Button_Import_Demos extends Mage_Adminhtml_Block_System_Config_Form_Field
+class Perfectus_Unicase_Block_Adminhtml_Button_Import_Demos extends Mage_Adminhtml_Block_System_Config_Form_Field
 {
     protected function _getElementHtml(Varien_Data_Form_Element_Abstract $el)
     {
@@ -17,7 +17,7 @@ class daeon_kasuva_Block_Adminhtml_Button_Import_Demos extends Mage_Adminhtml_Bl
 		if (isset($data['label']))
 			$buttonSuffix = ' ' . $data['label'];
 		
-		$url = $this->getUrl('adminhtml/kasuva_demos/' . $process.'demos'). 'demos/'.$demos;
+		$url = $this->getUrl('adminhtml/unicase_demos/' . $process.'demos'). 'demos/'.$demos;
 		
 		if (strlen($code = Mage::getSingleton('adminhtml/config_data')->getWebsite())){
             $url .= "/website/".$code;

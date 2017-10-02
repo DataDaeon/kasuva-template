@@ -24,7 +24,7 @@
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-class daeon_Ajaxfilter_Model_Catalogsearch_Layer extends Mage_CatalogSearch_Model_Layer 
+class Perfectus_Ajaxfilter_Model_Catalogsearch_Layer extends Mage_CatalogSearch_Model_Layer 
 {
     /**
      * Prepare product collection

@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <daeon_AjaxPkt>
+        <Perfectus_AjaxPkt>
             <version>1.0.0</version>
-        </daeon_AjaxPkt>
+        </Perfectus_AjaxPkt>
     </modules>
     <frontend>
         <routers>
             <ajaxpkt>
                 <use>standard</use>
                 <args>
-                    <module>daeon_AjaxPkt</module>
+                    <module>Perfectus_AjaxPkt</module>
                     <frontName>ajaxpkt</frontName>
                 </args>
             </ajaxpkt>
@@ -18,7 +18,7 @@
         <layout>
             <updates>
                 <ajaxpkt>
-                    <file>daeon_ajaxpkt.xml</file>
+                    <file>perfectus_ajaxpkt.xml</file>
                 </ajaxpkt>
             </updates>
         </layout>
@@ -32,13 +32,13 @@
         </rewrite>
 		<helpers>
             <ajaxpkt>
-                <class>daeon_AjaxPkt_Helper</class>
+                <class>Perfectus_AjaxPkt_Helper</class>
             </ajaxpkt>
         </helpers>
         <resources>
             <ajax_setup>
                 <setup>
-                    <module>daeon_AjaxPkt</module>
+                    <module>Perfectus_AjaxPkt</module>
                 </setup>
                 <connection>
                     <use>core_setup</use>

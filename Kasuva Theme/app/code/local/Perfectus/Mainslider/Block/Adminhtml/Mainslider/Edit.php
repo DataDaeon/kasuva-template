@@ -1,5 +1,5 @@
 <?php
-class daeon_Mainslider_Block_Adminhtml_Mainslider_Edit extends Mage_Adminhtml_Block_Widget_Form_Container
+class Perfectus_Mainslider_Block_Adminhtml_Mainslider_Edit extends Mage_Adminhtml_Block_Widget_Form_Container
 {
 		public function __construct()
 		{

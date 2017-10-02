@@ -1,5 +1,5 @@
 <?php   
-class daeon_Mainslider_Block_Mainslider extends Mage_Core_Block_Template{
+class Perfectus_Mainslider_Block_Mainslider extends Mage_Core_Block_Template{
 	public function _prepareLayout()
     {
 		return parent::_prepareLayout();
