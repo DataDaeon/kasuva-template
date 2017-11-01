@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Kasuva Animated Pieces</title>
+		<meta name="description" content="Kasuva Leaders" />
+		<meta name="keywords" content="Kasuva, whois, Leaders, b2b" />
+		<meta name="author" content="Kasuva" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo-switch.css" />
+		<link rel="stylesheet" type="text/css" href="pater/pater.css" />
+		<script>document.documentElement.className = 'js';</script>
+		<style type="text/css">
+			.text-kasuva{
+				    font-size: 1.3em;
+    padding: 0.8%;
+    display: inline-block;
+    position: relative;
+    top: 6px;
+			}
+		</style>
+	</head>
+	<body class="demo-switch loading">
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+			</symbol>
+		</svg>
+		<main>
+			<div class="content">
+				<header class="content__header">
+					<h2 class="content__title">Kasuva Makers</h2>
+				</header>
+				<p class="text-kasuva">Kasuva nace en 2016 con el propósito de facilitar el proceso de internacionalización entre pequeñas y medianas empresas, donde se realicen compras y ventas internacionales B2B con facilidad. <!--Queremos agilizar los procesos de comercio exterior para que sean más sencillos y de esta forma permitir que las empresas centren sus esfuerzos en su negocio, mejorando la eficiencia y potenciando sus recursos comerciales.--></p>
+				<div class="slideshow">
+					<div id="slide-1" class="slide" style="background-image: url(img/alvaro.jpg)"></div>
+					<div id="slide-2" class="slide" style="background-image: url(img/lander.jpg)"></div>
+					<div id="slide-3" class="slide" style="background-image: url(img/juan.jpg)"></div>
+					<div id="slide-4" class="slide" style="background-image: url(img/sebas.jpg)"></div>
+					<div id="slide-5" class="slide" style="background-image: url(img/dario.jpg)"></div>
+					<div class="pieces" style="background-image: url(img/alvaro.jpg)"></div>
+				</div>
+				<nav class="menu">
+					<a class="menu__item menu__item--current" href="#slide-1" data-image="img/alvaro.jpg">Álvaro Feo <span>Co-fundador</a>
+					<a class="menu__item" href="#slide-2" data-image="img/lander.jpg">Lander Benito <span>Marketing</span></a>
+					<a class="menu__item" href="#slide-3" data-image="img/juan.jpg">Juan Vallejo <span>Relaciones Institucionales</span></a>
+					<a class="menu__item" href="#slide-4" data-image="img/sebas.jpg">Sebastian Colombini <span>Tecnología</span></a>
+					<a class="menu__item" href="#slide-5" data-image="img/dario.jpg">Dario Espinosa <span>Diseño</span></a>
+					<a class="menu__item" href="#slide-5" data-image="img/temp.jpg">Gonzalo Braz <span>Relaciones Institucionales</span></a>
+				</nav>
+			</div>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+		{
+			imagesLoaded(document.body, { background: true }, () => document.body.classList.remove('loading'));
+			
+			const menuItems = Array.from(document.querySelectorAll('.menu > .menu__item'));
+			
+			const piecesObj = new Pieces(document.querySelector('.slideshow > .pieces'), {
+				pieces: {rows: 14, columns: 12},
+				delay: [0,40],
+				hasTilt: true,
+				tilt: {
+					maxRotationX: -1, 
+					maxRotationY: -1, 
+					maxTranslationX: -5, 
+					maxTranslationY: -2
+				}
+			});
+			
+			let isAnimating = false;
+			let current = 0;
+
+			const openImage = (ev, item, pos) => {
+				ev.preventDefault();
+				if ( isAnimating || current === pos ) {
+					return false;
+				}
+				isAnimating = true;
+				menuItems[current].classList.remove('menu__item--current');
+				current = pos;
+				menuItems[current].classList.add('menu__item--current');
+				const imgsrc = item.dataset.image;
+
+				piecesObj.animate({
+					duration: 200,
+					easing: 'easeOutQuad',
+					delay: (t,i,l) => {
+						return parseInt(t.dataset.row) * parseInt(t.dataset.delay);
+					},
+					translateX: (t,i) => {
+						return anime.random(-50,50)+'px';
+					},
+					translateY: (t,i) => { 
+						return anime.random(-800,-200)+'px';
+					},
+					rotateZ: (t,i) => { 
+						return anime.random(-45,45)+'deg';
+					},
+					opacity: 0,
+					complete: () => {
+						piecesObj.setImage(imgsrc);
+
+						piecesObj.animate({
+							duration: 500,
+							easing: [0.3,1,0.3,1],
+							delay: (t,i,l) => {
+								return parseInt(t.dataset.row) * parseInt(t.dataset.delay);
+							},
+							translateX: 0,
+							translateY: () => {
+								return [anime.random(200,800)+'px','0px'];
+							},
+							rotateZ: 0,
+							opacity: {
+								value: 1,
+								duration: 500,
+								easing: 'linear'
+							},
+							complete: () => {
+								isAnimating = false;
+							}
+						});
+					}
+				});
+			};
+
+			menuItems.forEach((item,pos) => item.addEventListener('click', (ev) => openImage(ev,item,pos)));
+		}
+		</script>
+		<script src="pater/pater.js"></script>
+	</body>
+</html>
