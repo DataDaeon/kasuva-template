@@ -669,7 +669,7 @@ button:focus {
 
 .list__item {
 	font-size: 1.05em;
-	line-height: 1;
+	/*line-height: 1;*/
 	position: relative;
 	display: block;
 }
